@@ -1,4 +1,32 @@
 
+
+
+div.portfolio-item {
+
+    div.row {
+        padding-top: 50px;
+    }
+
+    div.bubble-title {
+        background-color: $theme-primary;
+        text-align: center;
+        border-radius: 10px;
+        min-height: 100px;
+        color: white;
+        h4 {
+            vertical-align: center;
+        }
+    }
+
+    div.caption {
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+}
+
+
+
 hr.star-light:after, hr.star-primary:after {
   -webkit-animation: rotating 30s linear infinite;
   -moz-animation: rotating 30s linear infinite;
@@ -8,6 +36,24 @@ hr.star-light:after, hr.star-primary:after {
 
   border-radius: 50%;
 
+}
+
+hr.star-pink, hr.star-pink:after {
+    color: $star-pink;
+    background-color: $theme-success;
+    border-color: $star-pink;
+}
+
+hr.star-green, hr.star-green:after {
+    color: $star-green;
+    border-color: $star-green;
+    background-color: $theme-success;
+}
+
+hr.star-blue, hr.star-blue:after {
+    color: $star-blue;
+    border-color: $star-blue;
+    background-color: $theme-success;
 }
 
 

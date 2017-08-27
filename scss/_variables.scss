@@ -2,8 +2,19 @@
 
 // Gray and Brand Colors for use across theme
 
-$theme-primary: #2C3E50;
-$theme-success: #18BC9C;
+// Foreground colour
+$theme-primary: #e54ed0;
+// Background colour
+$theme-success: #44008b;
+
+$star-purple: #9f88d8;
+$star-green: #009085;
+$star-pink: #e54ed0;
+$star-blue: #83dbef;
+$star-yellow: #83dbef;
+
+
+$pink-lighter: lighten($theme-success, 50%;)
 
 $gray-base: #000;
 $gray-darker: lighten($gray-base, 13.5%);
