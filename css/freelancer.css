@@ -55,14 +55,14 @@ hr.star-light {
 
 hr.star-light:after {
   color: white;
-  background-color: #44008b; }
+  background-color: #444349; }
 
 hr.star-primary {
   border-color: #e54ed0; }
 
 hr.star-primary:after {
   color: #e54ed0;
-  background-color: white; }
+  background-color: #444349; }
 
 .img-centered {
   margin: 0 auto; }
@@ -74,8 +74,7 @@ section {
     margin: 0; }
 
 section.success {
-  color: white;
-  background: #44008b; }
+  color: white; }
 
 @media (max-width: 767px) {
   section {
@@ -160,8 +159,7 @@ section.success {
 
 header.masthead {
   text-align: center;
-  color: white;
-  background: #44008b; }
+  color: white; }
   header.masthead img {
     display: block;
     margin: 0 auto 20px; }
@@ -444,11 +442,15 @@ footer {
 .btn:focus {
   outline: none; }
 
+body {
+  background-image: url("/img/stardust.png") !important;
+  background: url("/img/stardust.png") !important;
+  background-color: white; }
+
 div.portfolio-item div.row {
   padding-top: 50px; }
 
 div.portfolio-item div.bubble-title {
-  background-color: #e54ed0;
   text-align: center;
   border-radius: 10px;
   min-height: 100px;
@@ -460,6 +462,12 @@ div.portfolio-item div.caption {
   font-weight: bold;
   font-size: 30px; }
 
+div.portfolio-item {
+  border: 2px solid;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
 hr.star-light:after, hr.star-primary:after {
   -webkit-animation: rotating 30s linear infinite;
   -moz-animation: rotating 30s linear infinite;
@@ -470,18 +478,18 @@ hr.star-light:after, hr.star-primary:after {
 
 hr.star-pink, hr.star-pink:after {
   color: #e54ed0;
-  background-color: #44008b;
+  background-color: #444349;
   border-color: #e54ed0; }
 
 hr.star-green, hr.star-green:after {
   color: #009085;
   border-color: #009085;
-  background-color: #44008b; }
+  background-color: #444349; }
 
 hr.star-blue, hr.star-blue:after {
   color: #83dbef;
   border-color: #83dbef;
-  background-color: #44008b; }
+  background-color: #444349; }
 
 @-webkit-keyframes rotating {
   from {

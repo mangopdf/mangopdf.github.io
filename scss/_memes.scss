@@ -1,4 +1,9 @@
 
+body {
+    background-image: url("/img/stardust.png") !important;
+    background: url("/img/stardust.png") !important;
+    background-color: white;
+}
 
 
 div.portfolio-item {
@@ -8,7 +13,6 @@ div.portfolio-item {
     }
 
     div.bubble-title {
-        background-color: $theme-primary;
         text-align: center;
         border-radius: 10px;
         min-height: 100px;
@@ -23,6 +27,13 @@ div.portfolio-item {
         font-size: 30px;
     }
 
+}
+
+div.portfolio-item {
+    border: 2px solid;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
@@ -40,20 +51,20 @@ hr.star-light:after, hr.star-primary:after {
 
 hr.star-pink, hr.star-pink:after {
     color: $star-pink;
-    background-color: $theme-success;
+    background-color: $background-grey;
     border-color: $star-pink;
 }
 
 hr.star-green, hr.star-green:after {
     color: $star-green;
     border-color: $star-green;
-    background-color: $theme-success;
+    background-color: $background-grey;
 }
 
 hr.star-blue, hr.star-blue:after {
     color: $star-blue;
     border-color: $star-blue;
-    background-color: $theme-success;
+    background-color: $background-grey;
 }
 
 

@@ -56,7 +56,7 @@ hr.star-light {
 }
 hr.star-light:after {
   color: white;
-  background-color: $theme-success;
+  background-color: $background-grey;
 }
 
 hr.star-primary {
@@ -64,7 +64,7 @@ hr.star-primary {
 }
 hr.star-primary:after {
   color: $theme-primary;
-  background-color: white;
+  background-color: $background-grey;
 }
 
 .img-centered {
@@ -81,7 +81,6 @@ section {
 
 section.success {
   color: white;
-  background: $theme-success;
 }
 @media(max-width:767px) {
   section {
