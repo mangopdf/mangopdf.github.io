@@ -19,22 +19,36 @@ div.portfolio-item {
         color: white;
         h4 {
             vertical-align: center;
+            border: 2px solid;
+            border-radius: 10px;
+            margin-right: 10px;
+            padding: 5px;
+            min-height: 100px;
+            font-weight: 200;
         }
     }
 
     div.caption {
-        font-weight: bold;
         font-size: 30px;
+        font-weight: 300;
     }
 
 }
 
-div.portfolio-item {
-    border: 2px solid;
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+.lightblue {
+    color: $lightblue !important;
 }
+
+.purple {
+    color: $purple !important;
+
+}
+
+.pink {
+    color: $pink !important;
+
+}
+
 
 
 
