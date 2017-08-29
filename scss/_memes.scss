@@ -5,6 +5,32 @@ body {
     background-color: white;
 }
 
+.btn-outline {
+    white-space: inherit !important;
+    transition: all .1s ease-in-out;
+}
+@mixin btn-color($color){
+    @extend .btn-outline;
+    color: $color;
+    border-color: $color;
+    width: 100%;
+    &:hover, :visited, :active, :focus {
+        color: darken($color, 50%);
+    }
+}
+
+.btn-lightblue {
+    @include btn-color($lightblue);
+}
+
+.btn-pink{
+    @include btn-color($pink);
+}
+
+.btn-purple{
+    @include btn-color($purple);
+}
+
 
 div.portfolio-item {
 
@@ -12,28 +38,15 @@ div.portfolio-item {
         padding-top: 50px;
     }
 
-    div.bubble-title {
-        text-align: center;
-        border-radius: 10px;
-        min-height: 100px;
-        color: white;
-        h4 {
-            vertical-align: center;
-            border: 2px solid;
-            border-radius: 10px;
-            margin-right: 10px;
-            padding: 5px;
-            min-height: 100px;
-            font-weight: 200;
-        }
-    }
-
     div.caption {
         font-size: 30px;
         font-weight: 300;
+        margin-top: 10px;
     }
 
 }
+
+
 
 .lightblue {
     color: $lightblue !important;
