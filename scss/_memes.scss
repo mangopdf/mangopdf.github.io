@@ -8,12 +8,16 @@ body {
 .btn-outline {
     white-space: inherit !important;
     transition: all .1s ease-in-out;
+    max-height: 150px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
+
 @mixin btn-color($color){
     @extend .btn-outline;
     color: $color;
     border-color: $color;
-    width: 100%;
     &:hover, :visited, :active, :focus {
         color: darken($color, 50%);
     }
@@ -82,15 +86,16 @@ hr.star-pink, hr.star-pink:after {
     border-color: $star-pink;
 }
 
-hr.star-green, hr.star-green:after {
-    color: $star-green;
-    border-color: $star-green;
-    background-color: $background-grey;
-}
 
 hr.star-blue, hr.star-blue:after {
     color: $star-blue;
     border-color: $star-blue;
+    background-color: $background-grey;
+}
+
+hr.star-purple, hr.star-purple:after {
+    color: $star-purple;
+    border-color: $star-purple;
     background-color: $background-grey;
 }
 
