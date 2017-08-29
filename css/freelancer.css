@@ -157,6 +157,7 @@ section.success {
       font-size: 1.5em; } }
 
 header.masthead {
+  padding-top: 50px;
   text-align: center;
   color: white; }
   header.masthead img {
@@ -166,11 +167,14 @@ header.masthead {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 2em;
     font-weight: 700;
-    display: block;
-    text-transform: uppercase; }
+    display: block; }
   header.masthead .intro-text .skills {
     font-size: 1.25em;
-    font-weight: 300; }
+    font-weight: 300;
+    text-align: left; }
+  header.masthead .intro-text .settings {
+    float: right;
+    font-size: 1em; }
 
 .portfolio .portfolio-item .portfolio-link {
   position: relative;
@@ -327,7 +331,7 @@ footer {
     margin-bottom: 50px; }
   footer .footer-below {
     padding: 25px 0;
-    background-color: #e54ed0; }
+    border-top: 2px solid white; }
 
 .btn-outline, .btn-lightblue, .btn-pink, .btn-purple {
   font-size: 20px;

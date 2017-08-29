@@ -69,6 +69,6 @@ footer {
   }
   .footer-below {
     padding: 25px 0;
-    background-color: darken($theme-primary, .05);
+    border-top: 2px solid white;
   }
 }
