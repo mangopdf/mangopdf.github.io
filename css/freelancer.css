@@ -499,6 +499,9 @@ hr.speedy:after {
   -o-animation-duration: 0.3s !important;
   animation-duration: 0.3s !important; }
 
+.spooked {
+  color: #e91e63; }
+
 hr.star-light:after, hr.star-primary:after {
   -webkit-animation: rotating 30s linear infinite;
   -moz-animation: rotating 30s linear infinite;
