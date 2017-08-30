@@ -453,19 +453,25 @@ body {
   color: #a3e6f5;
   border-color: #a3e6f5; }
   .btn-lightblue:hover, .btn-lightblue :visited, .btn-lightblue :active, .btn-lightblue :focus {
-    color: #0f748a; }
+    color: #d1f3fa;
+    border-color: #d1f3fa;
+    background: inherit; }
 
 .btn-pink {
   color: #ff9cf1;
   border-color: #ff9cf1; }
   .btn-pink:hover, .btn-pink :visited, .btn-pink :active, .btn-pink :focus {
-    color: #9c0086; }
+    color: #ffcff8;
+    border-color: #ffcff8;
+    background: inherit; }
 
 .btn-purple {
   color: #c6a5ff;
   border-color: #c6a5ff; }
   .btn-purple:hover, .btn-purple :visited, .btn-purple :active, .btn-purple :focus {
-    color: #3d00a5; }
+    color: #e6d8ff;
+    border-color: #e6d8ff;
+    background: inherit; }
 
 div.portfolio-item div.row {
   padding-top: 50px; }
@@ -483,6 +489,13 @@ div.portfolio-item div.caption {
 
 .pink {
   color: #ff9cf1 !important; }
+
+hr.speedy:after {
+  -webkit-animation-duration: 0.3s !important;
+  -moz-animation-duration: 0.3s !important;
+  -ms-animation-duration: 0.3s !important;
+  -o-animation-duration: 0.3s !important;
+  animation-duration: 0.3s !important; }
 
 hr.star-light:after, hr.star-primary:after {
   -webkit-animation: rotating 30s linear infinite;
