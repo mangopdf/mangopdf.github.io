@@ -171,7 +171,9 @@ header.masthead {
   header.masthead .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
-    text-align: left; }
+    text-align: left;
+    float: left;
+    display: inline-block; }
   header.masthead .intro-text .settings {
     float: right;
     font-size: 1em; }
