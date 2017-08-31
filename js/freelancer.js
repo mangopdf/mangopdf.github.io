@@ -1,5 +1,5 @@
 (function($) {
-    "use strict"; // Start of use strict
+    "use strict";
 
 
     if (document.referrer != "") {
@@ -21,26 +21,25 @@
     });
 
     var gags = {
-        'blog': 'blongo plongos',
+        'blog': '""research""""',
         'websites': 'hypertext fever dreams',
-        'talks': 'embarrassing high-speed flubs',
-        'tweets': 'the TWEET ZONE',
-        'about': 'secret hidden ctf'
+        'talks': 'high speed opsec fails',
+        'tweets': 'the goddAmn TWEET ZONE',
     };
-    var os = new OnScreen({
-        tolerance: 0,
-        debounce: 100,
-        container: window
-    });
-
-    console.log(os);
-    os.on('leave', '.scrollspy', function(elem, event) {
-        var $elem = $(elem);
-        var id = $elem.attr('id');
-        if (id) {
-            $elem.text(gags[$elem.attr('id')]);
-            $elem.addClass("spooked");
+    var spooked = 0;
+    $(window).scroll(function() {
+        for (var gagid in gags) {
+            var $elem = $('#' + gagid);
+            var offset = $elem.offset().top + $elem.height() - $(window).scrollTop();
+            if (offset < 0) {
+                $elem.text(gags[gagid]);
+                $elem.addClass("spooked");
+                spooked++;
+            }
+        }
+        if (spooked >= gags.length) {
+            $(window).unbind('scroll');
         }
     });
 
-})(jQuery); // End of use strict
+})(jQuery);
