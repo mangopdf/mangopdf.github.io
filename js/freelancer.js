@@ -2,7 +2,7 @@
     "use strict";
 
 
-    if (document.referrer != "") {
+    if (document.referrer != "" && document.referrer !== document.location.href) {
         $("div.useragent a").text(document.referrer);
         $("div.useragent").show();
     }
