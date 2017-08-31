@@ -45,4 +45,10 @@
         }
     });
 
+    $('#pdf').click(function() {
+        window.setTimeout(function() {
+            $('#hint').show();
+        }, 2000);
+    });
+
 })(jQuery);
