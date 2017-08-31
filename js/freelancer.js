@@ -1,3 +1,6 @@
+
+// Yeah it's called "freelancer.js" what EVER do not @ me
+
 (function($) {
     "use strict";
 
@@ -21,12 +24,12 @@
     });
 
     var gags = {
-        'blog': '""research""""',
-        'websites': 'hypertext fever dreams',
+        'blog': '""security research""""',
+        'websites': 'hypertext experiences',
         'talks': 'high speed opsec fails',
         'tweets': 'the goddAmn TWEET ZONE',
+        'intro': 'you have entered the ~mango zone~'
     };
-    var spooked = 0;
     $(window).scroll(function() {
         for (var gagid in gags) {
             var $elem = $('#' + gagid);
@@ -34,11 +37,11 @@
             if (offset < 0) {
                 $elem.text(gags[gagid]);
                 $elem.addClass("spooked");
-                spooked++;
             }
         }
-        if (spooked >= gags.length) {
+       if($(window).scrollTop() + $(window).height() == $(document).height()) {
             $(window).unbind('scroll');
+            $('#testimonials').show();
         }
     });
 
