@@ -83,11 +83,11 @@ hr.speedy:after {
 
 
 hr.star-light:after, hr.star-primary:after {
-  -webkit-animation: rotating 30s linear infinite;
-  -moz-animation: rotating 30s linear infinite;
-  -ms-animation: rotating 30s linear infinite;
-  -o-animation: rotating 30s linear infinite;
-  animation: rotating 30s linear infinite;
+  -webkit-animation: rotating 20s linear infinite;
+  -moz-animation: rotating 20s linear infinite;
+  -ms-animation: rotating 20s linear infinite;
+  -o-animation: rotating 20s linear infinite;
+  animation: rotating 20s linear infinite;
 
   border-radius: 50%;
 
@@ -142,9 +142,9 @@ hr.star-purple, hr.star-purple:after {
   }
 }
 .rotating {
-  -webkit-animation: rotating 5s linear infinite;
-  -moz-animation: rotating 5s linear infinite;
-  -ms-animation: rotating 5s linear infinite;
-  -o-animation: rotating 5s linear infinite;
-  animation: rotating 5s linear infinite;
+  -webkit-animation: rotating 3s linear infinite;
+  -moz-animation: rotating 3s linear infinite;
+  -ms-animation: rotating 3s linear infinite;
+  -o-animation: rotating 3s linear infinite;
+  animation: rotating 3s linear infinite;
 }

@@ -175,7 +175,6 @@ header.masthead {
     float: left;
     display: inline-block; }
   header.masthead .intro-text .settings {
-    float: right;
     font-size: 1em; }
 
 .portfolio .portfolio-item .portfolio-link {
@@ -503,11 +502,11 @@ hr.speedy:after {
   color: #f9ff96 !important; }
 
 hr.star-light:after, hr.star-primary:after {
-  -webkit-animation: rotating 30s linear infinite;
-  -moz-animation: rotating 30s linear infinite;
-  -ms-animation: rotating 30s linear infinite;
-  -o-animation: rotating 30s linear infinite;
-  animation: rotating 30s linear infinite;
+  -webkit-animation: rotating 20s linear infinite;
+  -moz-animation: rotating 20s linear infinite;
+  -ms-animation: rotating 20s linear infinite;
+  -o-animation: rotating 20s linear infinite;
+  animation: rotating 20s linear infinite;
   border-radius: 50%; }
 
 hr.star-pink, hr.star-pink:after {
@@ -550,8 +549,8 @@ hr.star-purple, hr.star-purple:after {
     transform: rotate(360deg); } }
 
 .rotating {
-  -webkit-animation: rotating 5s linear infinite;
-  -moz-animation: rotating 5s linear infinite;
-  -ms-animation: rotating 5s linear infinite;
-  -o-animation: rotating 5s linear infinite;
-  animation: rotating 5s linear infinite; }
+  -webkit-animation: rotating 3s linear infinite;
+  -moz-animation: rotating 3s linear infinite;
+  -ms-animation: rotating 3s linear infinite;
+  -o-animation: rotating 3s linear infinite;
+  animation: rotating 3s linear infinite; }
