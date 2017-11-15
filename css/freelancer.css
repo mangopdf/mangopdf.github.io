@@ -554,3 +554,44 @@ hr.star-purple, hr.star-purple:after {
   -ms-animation: rotating 3s linear infinite;
   -o-animation: rotating 3s linear infinite;
   animation: rotating 3s linear infinite; }
+
+article.post {
+  color: #ffffff;
+  width: 800px;
+  margin: 0 auto;
+  overflow-wrap: break-word;
+  line-height: 28px;
+  font-size: 20px !important;
+  font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5 {
+  font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight: 700; }
+
+p.post-meta {
+  padding-bottom: 50px; }
+
+div.post-container {
+  padding-top: 100px; }
+
+div.post-container img {
+  display: block;
+  margin: 0 auto;
+  /*
+    width: 150%;
+    margin-left: -25%;
+    margin-right: -25%;
+    */
+  width: 100%; }
+
+pre.highlight {
+  color: white; }
+
+code {
+  background-color: inherit;
+  color: inherit;
+  padding: inherit; }
+
+hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.2); }

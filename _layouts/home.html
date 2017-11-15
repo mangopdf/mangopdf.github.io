@@ -1,92 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+---
 
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>welcome to the mango zone</title>
-
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <link href="css/freelancer.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
-
-  </head>
-
-  <body id="page-top">
-
-    <header class="masthead">
-      <div class="container">
-        <div class="intro-text">
-            <p id="intro" class="skills scrollspy">"work" by <a href="https://motherboard.vice.com/en_us/article/tinder-social-lets-you-stalk-your-friends-dating-habits-hack-last-active">the hacker known as "Alex"</a> / <a href="https://twitter.com/mangopdf">@mangopdf</a></p>
-          <div class="settings">
-              <form action="#">
-                  <label for="hardmode">
-                  <input id="hardmode" type="checkbox"/>
-                      Hard mode</label>
-              </form>
-          </div>
-      </div>
-
-      </div>
-    </header>
+<div class="home">
 
     <section id="" class="portfolio success">
+      {{ content }}
       <div class="container">
         <h2 class="text-center scrollspy" id="blog">blog posts</h2>
         <hr class="star-primary star-blue">
+        {% for post in site.posts %}
         <div class="row">
 
             <div class="col-lg-4 portfolio-item">
-                <a href="https://defaultnamehere.tumblr.com/post/139351766005/graphing-when-your-facebook-friends-are-awake" class="btn btn-lg btn-outline btn-lightblue">Graphing when your Facebook friends are Awake</a>
+                <a href="{{ post.url | relative_url }}" class="btn btn-lg btn-outline btn-lightblue">{{ post.title | escape }}</a>
                 <div class="caption">
                     <div class="caption-content">
                         <p>
-                        Alex stumbles upon a dodgy Facebook API. Read for tips on how to apply at the NSA.
-                        <a href="https://news.ycombinator.com/item?id=11130688">Hacker News comments</a>
+                        {{ post.blurb }}
                         </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 portfolio-item">
-                <a href="https://defaultnamehere.tumblr.com/post/147747146865/stalking-your-facebook-friends-on-tinder" class="btn btn-lg btn-outline btn-purple">Stalking your Facebook friends on Tinder</a>
-                <div class="caption">
-                    <div class="caption-content">
-                        <p>All about how I found a way to see the Tinder profiles of your Facebook friends. I told Tinder about this and they said "it's a feature lmao".
-
-                        <a href="https://news.ycombinator.com/item?id=12141086">Hacker News comments</a>
-                        </p>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 portfolio-item">
-
-                <a href="https://defaultnamehere.tumblr.com/post/163734466355/operation-luigi-how-i-hacked-my-friend-without" class="btn btn-lg btn-outline btn-pink">
-                    Operation Luigi: How I hacked my friend without her noticing
-                    </a>
-                <div class="caption">
-                    <div class="caption-content">
-                        <p>It's probably easier if you just read it.
-
-                        <a href="https://news.ycombinator.com/item?id=14919845">Salty Hacker News comments</a>
-                        </p>
-
                     </div>
                 </div>
             </div>
 
         </div>
-      </div>
+        {% endfor %}
+
   </section>
 
     <section id="testimonials" class="portfolio success" style="display: none;">
@@ -318,29 +257,4 @@
       </div>
   </footer>
 
-  <!-- NSA tracking-->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-39885839-8', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <script type="text/javascript" src="https://unpkg.com/onscreen/dist/on-screen.umd.min.js"></script>
-    <script src="js/emojicursor.js"></script>
-    <script src="js/freelancer.min.js"></script>
-
-  </body>
-
-</html>
+</div>
