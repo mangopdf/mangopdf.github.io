@@ -9,7 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>{{title}}</title>
+    <title>{{ page.title | default: "the mango zone" }}</title>
+
 
     <link href="{{ "vendor/bootstrap/css/bootstrap.min.css" | relative_url }}" rel="stylesheet">
 

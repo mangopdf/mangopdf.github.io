@@ -450,6 +450,9 @@ body {
   overflow: hidden;
   text-overflow: ellipsis; }
 
+div.settings form {
+  float: right; }
+
 .btn-lightblue {
   color: #a3e6f5;
   border-color: #a3e6f5; }

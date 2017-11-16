@@ -25,6 +25,10 @@ body {
     }
 }
 
+div.settings form {
+    float: right;
+}
+
 .btn-lightblue {
     @include btn-color($lightblue);
 }
