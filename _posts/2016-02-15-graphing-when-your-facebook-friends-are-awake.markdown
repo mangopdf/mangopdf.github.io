@@ -3,6 +3,7 @@ layout: post
 title:  "Graphing when your Facebook friends are awake"
 date:   2016-02-15 16:02:38 +1100
 blurb: I stumbled upon a dodgy Facebook API. Read for tips on how to apply at the NSA. <a href="https://news.ycombinator.com/item?id=11130688">Hacker News comments</a>
+colour: lightblue
 ---
 
 

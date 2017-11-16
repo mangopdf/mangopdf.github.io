@@ -52,7 +52,19 @@ div.portfolio-item {
 
 }
 
+div.post-item {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 33%;
+    .caption-content p {
+        font-weight: 300;
+    }
+}
 
+div.posts {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .lightblue {
     color: $lightblue !important;

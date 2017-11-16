@@ -482,6 +482,17 @@ div.portfolio-item div.caption {
   font-weight: 300;
   margin-top: 10px; }
 
+div.post-item {
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 33%; }
+  div.post-item .caption-content p {
+    font-weight: 300; }
+
+div.posts {
+  display: flex;
+  flex-wrap: wrap; }
+
 .lightblue {
   color: #a3e6f5 !important; }
 

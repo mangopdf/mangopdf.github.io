@@ -5,15 +5,14 @@ layout: default
 <div class="home">
 
     <section id="" class="portfolio success">
-      {{ content }}
       <div class="container">
         <h2 class="text-center scrollspy" id="blog">blog posts</h2>
         <hr class="star-primary star-blue">
+        <div class="posts">
         {% for post in site.posts %}
-        <div class="row">
 
-            <div class="col-lg-4 portfolio-item">
-                <a href="{{ post.url | relative_url }}" class="btn btn-lg btn-outline btn-lightblue">{{ post.title | escape }}</a>
+            <div class="post-item">
+                <a href="{{ post.url | relative_url }}" class="btn btn-lg btn-outline btn-{{ post.colour }}">{{ post.title | escape }}</a>
                 <div class="caption">
                     <div class="caption-content">
                         <p>
@@ -23,8 +22,8 @@ layout: default
                 </div>
             </div>
 
-        </div>
         {% endfor %}
+    </div>
 
   </section>
 

@@ -3,6 +3,7 @@ layout: post
 title:  "Operation Luigi: How I hacked my friend without her noticing"
 date:   2017-08-04 16:02:38 +1100
 blurb: It's probably easier if you just read it. <a href="https://news.ycombinator.com/item?id=14919845">Salty Hacker News comments</a>
+colour: pink
 ---
 
 ![intro](https://i.imgur.com/xgqR3Ss.png)
