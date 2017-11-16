@@ -10,6 +10,21 @@ header.masthead {
 
     margin: 0 auto 20px;
   }
+  div.logo {
+      float: left;
+  }
+  i.logo {
+      padding-right: 10px;
+      color: #c6a5ff;
+      font-size: 30px;
+      &:hover {
+        color: #ff9cf1;
+      }
+  }
+  p#intro {
+      display: inline-block;
+      vertical-align: middle;
+  }
   .intro-text {
     .name {
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -21,7 +36,6 @@ header.masthead {
       font-size: 1.25em;
       font-weight: 300;
       text-align: left;
-      float: left;
       display: inline-block;
     }
     .settings {
