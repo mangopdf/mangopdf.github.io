@@ -24,8 +24,8 @@
     });
 
     var gags = {
-        'blog': '""security research""""',
-        'websites': 'hypertext experiences',
+        'blog': 'textual spaghetti',
+        'websites': 'hypertext fever dreams',
         'talks': 'high speed opsec fails',
         'tweets': 'the goddAmn TWEET ZONE',
         'intro': 'you have entered the ~mango zone~'
