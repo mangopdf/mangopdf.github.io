@@ -57,9 +57,14 @@ div.portfolio-item {
 }
 
 div.post-item {
-    padding-left: 25px;
-    padding-right: 25px;
-    width: 33%;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media (min-width: 320px) {
+        width: 100%;
+    }
+    @media (min-width: 1025px) {
+        width: 33%;
+    }
     .caption-content p {
         font-weight: 300;
     }
