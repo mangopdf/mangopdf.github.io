@@ -21,8 +21,11 @@ body {
     &:hover, :visited, :active, :focus {
         color: lighten($color, 10%);
         border-color: lighten($color, 10%);
-        background: inherit;
+        background: inherit !important;
     }
+}
+.btn:focus {
+    background: inherit !important;
 }
 
 div.settings form {
