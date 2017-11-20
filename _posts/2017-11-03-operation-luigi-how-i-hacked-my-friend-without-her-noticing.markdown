@@ -5,7 +5,7 @@ date:   2017-08-04 16:02:38 +1100
 blurb: It's probably easier if you just read it. <a href="https://news.ycombinator.com/item?id=14919845">Salty Hacker News comments</a>
 colour: pink
 description: My friend gave me permission to hack her, here's how I did it and how to stop it happening to you.
-permalink: '/operation-luigi-how-i-hacked-my-friend-without-her-noticing'
+permalink: /operation-luigi-how-i-hacked-my-friend-without-her-noticing
 ---
 
 ![intro](https://i.imgur.com/xgqR3Ss.png)
