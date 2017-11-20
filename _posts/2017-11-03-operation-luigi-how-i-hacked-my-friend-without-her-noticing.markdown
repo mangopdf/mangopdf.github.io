@@ -6,6 +6,7 @@ blurb: It's probably easier if you just read it. <a href="https://news.ycombinat
 colour: pink
 description: My friend gave me permission to hack her, here's how I did it and how to stop it happening to you.
 permalink: /operation-luigi-how-i-hacked-my-friend-without-her-noticing
+image: https://i.imgur.com/xgqR3Ss.png
 ---
 
 ![intro](https://i.imgur.com/xgqR3Ss.png)
