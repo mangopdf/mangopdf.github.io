@@ -92,7 +92,7 @@ div.posts {
 
 }
 
-hr.speedy:after {
+.speedy:after {
     -webkit-animation-duration: 0.3s !important;
     -moz-animation-duration: 0.3s !important;
     -ms-animation-duration: 0.3s !important;
@@ -106,7 +106,7 @@ hr.speedy:after {
 
 
 
-hr.star-light:after, hr.star-primary:after {
+.star-light:after, .star-primary:after {
   -webkit-animation: rotating 20s linear infinite;
   -moz-animation: rotating 20s linear infinite;
   -ms-animation: rotating 20s linear infinite;
@@ -117,20 +117,20 @@ hr.star-light:after, hr.star-primary:after {
 
 }
 
-hr.star-pink, hr.star-pink:after {
+.star-pink, .star-pink:after {
     color: $star-pink;
     background-color: $background-grey;
     border-color: $star-pink;
 }
 
 
-hr.star-blue, hr.star-blue:after {
+.star-blue, .star-blue:after {
     color: $star-blue;
     border-color: $star-blue;
     background-color: $background-grey;
 }
 
-hr.star-purple, hr.star-purple:after {
+.star-purple, .star-purple:after {
     color: $star-purple;
     border-color: $star-purple;
     background-color: $background-grey;

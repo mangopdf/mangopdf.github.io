@@ -30,8 +30,17 @@ h6 {
   font-family: 'Roboto Mono', monospace;
   font-weight: 700; }
 
-hr.star-light,
-hr.star-primary {
+.star-inline {
+  border: none !important;
+  display: inline-block;
+  text-align: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important; }
+  .star-inline:after {
+    top: 0 !important; }
+
+.star-light,
+.star-primary {
   max-width: 250px;
   margin: 25px auto 30px;
   padding: 0;
@@ -39,8 +48,8 @@ hr.star-primary {
   border: none;
   border-top: solid 5px; }
 
-hr.star-light:after,
-hr.star-primary:after {
+.star-light:after,
+.star-primary:after {
   font-family: FontAwesome;
   font-size: 2em;
   position: relative;
@@ -49,17 +58,17 @@ hr.star-primary:after {
   padding: 0 0.25em;
   content: '\f005'; }
 
-hr.star-light {
+.star-light {
   border-color: white; }
 
-hr.star-light:after {
+.star-light:after {
   color: white;
   background-color: #444349; }
 
-hr.star-primary {
+.star-primary {
   border-color: #e54ed0; }
 
-hr.star-primary:after {
+.star-primary:after {
   color: #e54ed0;
   background-color: #444349; }
 
@@ -163,12 +172,14 @@ header.masthead {
   header.masthead img {
     display: block;
     margin: 0 auto 20px; }
-  header.masthead h2.logo {
-    font-family: 'Oxygen Mono', monospace; }
-    header.masthead h2.logo:hover {
-      color: #ff9cf1;
-      text-decoration: none !important;
-      border-bottom: 0; }
+  header.masthead div.logo {
+    text-align: left; }
+    header.masthead div.logo h2 {
+      display: inline-block; }
+      header.masthead div.logo h2:hover {
+        color: #ff9cf1;
+        text-decoration: none !important;
+        border-bottom: 0; }
   header.masthead p.intro {
     vertical-align: middle;
     text-align: left;
@@ -534,7 +545,7 @@ div.posts {
 .pink {
   color: #ff9cf1 !important; }
 
-hr.speedy:after {
+.speedy:after {
   -webkit-animation-duration: 0.3s !important;
   -moz-animation-duration: 0.3s !important;
   -ms-animation-duration: 0.3s !important;
@@ -544,7 +555,7 @@ hr.speedy:after {
 .spooked {
   color: #f9ff96 !important; }
 
-hr.star-light:after, hr.star-primary:after {
+.star-light:after, .star-primary:after {
   -webkit-animation: rotating 20s linear infinite;
   -moz-animation: rotating 20s linear infinite;
   -ms-animation: rotating 20s linear infinite;
@@ -552,17 +563,17 @@ hr.star-light:after, hr.star-primary:after {
   animation: rotating 20s linear infinite;
   border-radius: 50%; }
 
-hr.star-pink, hr.star-pink:after {
+.star-pink, .star-pink:after {
   color: #e54ed0;
   background-color: #444349;
   border-color: #e54ed0; }
 
-hr.star-blue, hr.star-blue:after {
+.star-blue, .star-blue:after {
   color: #83dbef;
   border-color: #83dbef;
   background-color: #444349; }
 
-hr.star-purple, hr.star-purple:after {
+.star-purple, .star-purple:after {
   color: #9f88d8;
   border-color: #9f88d8;
   background-color: #444349; }

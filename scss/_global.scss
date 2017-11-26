@@ -30,8 +30,20 @@ h6 {
   font-weight: 700;
 }
 
-hr.star-light,
-hr.star-primary {
+.star-inline {
+    border: none !important;
+    display: inline-block;
+    text-align: inherit !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    &:after {
+        top: 0 !important;;
+    }
+}
+
+
+.star-light,
+.star-primary {
   max-width: 250px;
   margin: 25px auto 30px;
   padding: 0;
@@ -39,8 +51,8 @@ hr.star-primary {
   border: none;
   border-top: solid 5px;
 }
-hr.star-light:after,
-hr.star-primary:after {
+.star-light:after,
+.star-primary:after {
   font-family: FontAwesome;
   font-size: 2em;
   position: relative;
@@ -50,18 +62,18 @@ hr.star-primary:after {
   content: '\f005';
 }
 
-hr.star-light {
+.star-light {
   border-color: white;
 }
-hr.star-light:after {
+.star-light:after {
   color: white;
   background-color: $background-grey;
 }
 
-hr.star-primary {
+.star-primary {
   border-color: $theme-primary;
 }
-hr.star-primary:after {
+.star-primary:after {
   color: $theme-primary;
   background-color: $background-grey;
 }
