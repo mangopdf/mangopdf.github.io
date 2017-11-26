@@ -55,6 +55,9 @@ h6 {
 .star-primary:after {
   font-family: FontAwesome;
   font-size: 2em;
+  @media (max-width: 1000px) {
+      font-size: 1em;
+  }
   position: relative;
   top: -.8em;
   display: inline-block;
