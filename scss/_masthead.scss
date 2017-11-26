@@ -23,8 +23,7 @@ header.masthead {
       vertical-align: middle;
       text-align: left;
       display: inline-block;
-      float: left;
-      @media (min-width: 360px) {
+      @media (min-width: 320px) {
           display: block;
           font-size: 15px;
       }
@@ -45,9 +44,8 @@ header.masthead {
     }
     .settings {
         font-size: 1em;
-        @media (min-width: 360px) {
+        @media (min-width: 320px) {
             display: block;
-
         }
     }
     a {

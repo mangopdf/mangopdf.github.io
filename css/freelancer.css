@@ -172,9 +172,8 @@ header.masthead {
   header.masthead p.intro {
     vertical-align: middle;
     text-align: left;
-    display: inline-block;
-    float: left; }
-    @media (min-width: 360px) {
+    display: inline-block; }
+    @media (min-width: 320px) {
       header.masthead p.intro {
         display: block;
         font-size: 15px; } }
@@ -191,7 +190,7 @@ header.masthead {
     text-align: left; }
   header.masthead .intro-text .settings {
     font-size: 1em; }
-    @media (min-width: 360px) {
+    @media (min-width: 320px) {
       header.masthead .intro-text .settings {
         display: block; } }
   header.masthead .intro-text a:hover {
@@ -601,32 +600,33 @@ hr.star-purple, hr.star-purple:after {
 
 article.post {
   color: #ffffff;
-  width: 800px;
   margin: 0 auto;
   overflow-wrap: break-word;
   line-height: 28px;
   font-size: 20px !important;
   font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
   font-weight: 300; }
+  @media (min-width: 320px) {
+    article.post {
+      padding-top: 50px; } }
 
 h1, h2, h3, h4, h5 {
   font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
   font-weight: 700; }
+  @media (min-width: 320px) {
+    h1, h2, h3, h4, h5 {
+      font-size: 30px; } }
 
 p.post-meta {
   padding-bottom: 50px; }
 
-div.post-container {
-  padding-top: 100px; }
+@media (min-width: 1025px) {
+  div.post-content {
+    padding-top: 100px; } }
 
-div.post-container img {
+div.post-content img {
   display: block;
   margin: 0 auto;
-  /*
-    width: 150%;
-    margin-left: -25%;
-    margin-right: -25%;
-    */
   width: 100%; }
 
 pre.highlight {
