@@ -389,10 +389,10 @@ This can all be done through the (un)official API, so I'm assuming it's a
  GET [api.gotinder.com/user/<id>](http://api.gotinder.com/user/)
  > Returns, among other things, something like:
 
-    _connection_count":1979,"common_like_count":0,"common_friend_count":0,"common_likes":[],"common_interests":[],"uncommon_interests":[],"common_friends":[],"_id":"<tinder
+    _connection_count":1979...._id":"<tinder
     user id>","badges":[],"bio":"i dont get it is this app like twitter"
-    ","birth_date":"1987-07-[redacted]","gender":0,"name":"[redacted]","ping_time":"[utc
-    one second resolution timezoned timestamp]
+    ","birth_date":"1987-07-[redacted]","gender":0,"name":"[redacted]",
+    "ping_time":"[utc one second resolution timezoned timestamp]
 
 
 I think that you don't want to expose that information about my Facebook

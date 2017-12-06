@@ -626,7 +626,11 @@ article.post {
   font-weight: 300; }
   @media (min-width: 320px) {
     article.post {
-      padding-top: 50px; } }
+      padding-top: 50px;
+      width: 100%; } }
+  @media (min-width: 1050px) {
+    article.post {
+      width: 740px; } }
 
 h1, h2, h3, h4, h5 {
   font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -637,10 +641,6 @@ h1, h2, h3, h4, h5 {
 
 p.post-meta {
   padding-bottom: 50px; }
-
-@media (min-width: 1025px) {
-  div.post-content {
-    padding-top: 100px; } }
 
 div.post-content img {
   display: block;

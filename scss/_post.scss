@@ -1,7 +1,6 @@
 
 article.post {
     color: #ffffff;
-    // width: 800px;
     margin: 0 auto;
     overflow-wrap: break-word;
     line-height: 28px;
@@ -11,6 +10,10 @@ article.post {
 
     @media (min-width: 320px) {
         padding-top: 50px;
+        width: 100%;
+    }
+    @media (min-width: 1050px) {
+        width: 740px;
     }
 }
 h1,h2,h3,h4,h5 {
@@ -27,9 +30,6 @@ p.post-meta {
 
 div.post-content {
 
-    @media (min-width: 1025px) {
-        padding-top: 100px;
-    }
 }
 
 div.post-content img {
