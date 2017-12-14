@@ -266,43 +266,28 @@ phones now!
 
 If you send:
 
-> GET https://api.gotinder.com/user/**562.......ec8**
+> GET https://api.gotinder.com/user/562.......ec8
 
 Then Tinder sends back:
 
-> {'_id': '**562.......ec8**',  
->  'badges': [],  
-> ** 'bio': "hi every1 im new!!!!!!! *holds up spork* my name is katy but u
+> {'_id': '562.......ec8',  
+>  'bio': "hi every1 im new!!!!!!! holds up spork my name is katy but u
 can call me t3h PeNgU1N oF d00m!!!!!!!! lol…as u can see im very
-random!!!!",**  
-> ** 'birth_date': '1995-07-19T02:52:04.083Z',**  
+random!!!!",  
+>  'birth_date': '1995-07-19T02:52:04.083Z',  
 >  'birth_date_info': 'fuzzy birthdate active, not displaying real
 birth_date',  
->  'common_friend_count': 0,  
 >  'common_friends': [<common Facebook friends go here>],  
->  'common_like_count': 0,  
 >  'common_likes': [<common Facebook likes go here>],  
-> ** 'connection_count': [the number of people you’ve swiped (I think?) go
-here],**  
-> ** 'distance_mi': 1, // How far the person is from you right now**  
-> ** 'gender': 1, // 1 is female, 0 is male. C’mon Tinder that’s not how
-gender works**  
->  'jobs': [],  
-> ** 'name': 'Victoria', // Note that there’s no last name**
+>  'connection_count': [the number of people you’ve swiped (I think?) go
+here],  
+>  'distance_mi': 1, // How far the person is from you right now  
+>  'gender': 1, // 1 is female, 0 is male. C’mon Tinder that’s not how
+gender works  
+>  'name': 'Victoria', // Note that there’s no last name
+> 'ping_time': '2016-07-16T02:51:45.475Z', // The last time the person was
+on Tinder
 
->
-
-> **'ping_time': '2016-07-16T02:51:45.475Z', // The last time the person was
-on Tinder**
-
->
-
-> .....
-
->
-
-> 'schools': []}  
->
 
 Yeah look I know you probably didn’t read that so let me explain. No no, it’s
 fine, you don’t have to go back and read it now. It’s really no trouble.
