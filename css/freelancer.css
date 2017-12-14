@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
  */
 body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden; }
 
 p {
@@ -622,7 +622,7 @@ article.post {
   overflow-wrap: break-word;
   line-height: 28px;
   font-size: 20px !important;
-  font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family: Open Sans,'Helvetica Neue',Helvetica,Arial,sans-serif;
   font-weight: 300; }
   @media (min-width: 320px) {
     article.post {
@@ -633,7 +633,7 @@ article.post {
       width: 740px; } }
 
 h1, h2, h3, h4, h5 {
-  font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family: Open Sans,'Helvetica Neue',Helvetica,Arial,sans-serif;
   font-weight: 700; }
   @media (min-width: 320px) {
     h1, h2, h3, h4, h5 {
@@ -645,7 +645,8 @@ p.post-meta {
 div.post-content img {
   display: block;
   margin: 0 auto;
-  width: 100%; }
+  width: 100%;
+  max-width: 100%; }
 
 pre.highlight {
   color: white; }
