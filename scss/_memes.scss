@@ -5,6 +5,20 @@ body {
     background-color: white;
 }
 
+
+/* welcome to the grid zone */
+
+div.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @media (min-width: 320px) and (max-width: 480px) {
+    grid-template-columns: 1fr;
+    }
+    grid-column-gap: 50px;
+
+
+}
+
 .btn-outline {
     white-space: inherit !important;
     transition: all .1s ease-in-out;
@@ -57,26 +71,18 @@ div.portfolio-item {
         margin-top: 10px;
     }
 
+    a {
+        word-break: break-word;
+    }
+
 }
 
 div.post-item {
-    padding-left: 15px;
-    padding-right: 15px;
-    @media (min-width: 320px) {
-        width: 100%;
-    }
-    @media (min-width: 1025px) {
-        width: 33%;
-    }
     .caption-content p {
         font-weight: 300;
     }
 }
 
-div.posts {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .lightblue {
     color: $lightblue !important;

@@ -8,10 +8,9 @@ layout: default
       <div class="container">
         <h2 class="text-center scrollspy" id="blog">blog posts</h2>
         <hr class="star-primary star-blue">
-        <div class="posts">
+        <div class="grid">
         {% for post in site.posts %}
-
-            <div class="post-item">
+            <div class="portfolio-item">
                 <a href="{{ post.url | relative_url }}" class="btn btn-lg btn-outline btn-{{ post.colour }}">{{ post.title | escape }}</a>
                 <div class="caption">
                     <div class="caption-content">
@@ -31,9 +30,9 @@ layout: default
       <div class="container">
         <h2 class="text-center scrollspy spooked" id="">testimonials</h2>
         <hr class="star-primary star-pink">
-        <div class="row">
+        <div class="grid">
 
-            <div class="col-lg-4 portfolio-item">
+            <div class="portfolio-item">
                 <a href="#" class="btn btn-lg btn-outline btn-pink">Barack Obama</a>
                 <div class="caption">
                     <div class="caption-content">
@@ -44,7 +43,7 @@ layout: default
                 </div>
             </div>
 
-            <div class="col-lg-4 portfolio-item">
+            <div class="portfolio-item">
                 <a href="#" class="btn btn-lg btn-outline btn-lightblue">Shigeru Miyamoto</a>
                 <div class="caption">
                     <div class="caption-content">
@@ -55,7 +54,7 @@ layout: default
                 </div>
             </div>
 
-            <div class="col-lg-4 portfolio-item">
+            <div class=" portfolio-item">
                 <a href="#" class="btn btn-lg btn-outline btn-purple">Satoshi Nakamoto</a>
                 <div class="caption">
                     <div class="caption-content">
@@ -75,9 +74,9 @@ layout: default
       <div class="container">
         <h2 class="text-center scrollspy" id="websites">one-use novelty websites</h2>
         <hr class="star-primary star-purple">
-        <div class="row">
+        <div class="grid">
 
-            <div class="col-lg-4 portfolio-item">
+            <div class=" portfolio-item">
                 <a href="https://textfac.es" class="btn btn-lg btn-outline btn-purple">textfac.es</a>
                 <div class="caption">
                     <div class="caption-content">
@@ -88,7 +87,7 @@ layout: default
                 </div>
             </div>
 
-            <div class="col-lg-4 portfolio-item">
+            <div class=" portfolio-item">
                 <a href="https://verylegit.link" class="btn btn-lg btn-outline btn-pink">verylegit.link</a>
                 <div class="caption">
                     <div class="caption-content">
@@ -100,7 +99,7 @@ layout: default
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 portfolio-item">
+            <div class=" portfolio-item">
                 <a href="https://emojityper.com" class="btn btn-lg btn-outline btn-lightblue">
                     emojityper.com
                 </a>
@@ -115,10 +114,7 @@ layout: default
             </div>
 
 
-        </div>
-        <div class="row">
-
-            <div class="col-lg-4 portfolio-item">
+            <div class=" portfolio-item">
                 <a href="http://swagify.net" class="btn btn-lg btn-outline btn-pink">
                     swagify.net
                 </a>
@@ -131,7 +127,7 @@ layout: default
                     </div>
             </div>
 
-            <div class="col-lg-4 portfolio-item">
+            <div class=" portfolio-item">
                 <a href="https://gabegaming.com" class="btn btn-lg btn-outline btn-purple">
                     gabegaming.com
                 </a>
@@ -145,7 +141,7 @@ layout: default
                 </div>
             </div>
 
-            <div class="col-lg-4 portfolio-item useragent " style="display: none;">
+            <div class=" portfolio-item useragent " style="display: none;">
                 <a href="#" class="btn btn-lg btn-outline btn-purple">
                 </a>
                 <div class="caption">
@@ -159,10 +155,8 @@ layout: default
             </div>
 
         </div>
-        <div class="row">
 
 
-        </div>
       </div>
     </section>
 
@@ -170,9 +164,9 @@ layout: default
       <div class="container">
         <h2 class="text-center scrollspy" id="talks">talk recordings</h2>
         <hr class="star-primary star-pink">
-        <div class="row">
+        <div class="grid">
 
-            <div class="col-lg-4 portfolio-item">
+            <div class=" portfolio-item">
                 <a href="https://www.youtube.com/watch?v=MkSkqMvGBuo" class="btn btn-lg btn-outline btn-lightblue">Graphing when your Facebook friends are awake</a>
                 <div class="caption">
                     <div class="caption-content">
@@ -183,7 +177,7 @@ layout: default
                 </div>
             </div>
 
-            <div class="col-lg-4 portfolio-item">
+            <div class=" portfolio-item">
                 <a href="#" class="btn btn-lg btn-outline btn-purple">that's it</a>
                 <div class="caption">
                     <div class="caption-content">
@@ -214,20 +208,22 @@ layout: default
       <div class="container">
         <h2 class="text-center scrollspy" id="about">about</h2>
         <hr class="star-primary star-blue">
-        <div class="row">
-          <div class="col-lg-4 ml-auto">
+        <div class="grid">
+          <div class="portfolio-item">
               <h4>What's with the "Alex" thing?</h4>
               <p>
               Once, an article referred to me as <a href="https://motherboard.vice.com/en_us/article/tinder-social-lets-you-stalk-your-friends-dating-habits-hack-last-active">a hacker who goes by the name "Alex"</a>, so that's my hacker handle now and there's nothing I can do about it.
               </p>
           </div>
-          <div class="col-lg-4 mr-auto">
+
+          <div class="portfolio-item">
               <h4>Do you have an actual pdf called mango.pdf?</h4>
               <p>
               Sure, <a id="pdf" href="/mango.pdf" data-uh-dont-worry-about-it="lisreal2401">here you go</a>.
               <span id="hint" style="display:none;">There <em>must</em> be a way to find the password...</span>
              </p>
-          </div>
+         </div>
+
         </div>
       </div>
     </section>
