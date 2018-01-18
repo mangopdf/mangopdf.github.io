@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Hacking your neighbour's Wi-Fi"
-date:   2018-02-14 16:19:59 +1100
 blurb: You wouldn't do something like that, would you?
 colour: purple
 ---
