@@ -6,16 +6,26 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="@mangopdf">
 
     <title>{{ page.title | default: "the mango zone" }}</title>
+    <meta name="description" content="{{ page.descrption | default: "Blog and dumb websites by the hacker known as &quot;Alex&quot;" }}">
 
+    <meta property="og:title" content="{{ page.title | default: "the mango zone" }}">
+    <meta property="og:description" content="{{ page.description | default: "Blog and dumb websites by the hacker known as &quot;Alex&quot;" }}">
+    <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+    <meta property="og:image" content="{{ page.image| default: "https://pbs.twimg.com/profile_images/873870507078057984/PRlhswDp_400x400.jpg" }}">
+    <meta property="og:url" content="https://mango.pdf.zone{{ page.url }}">
+
+    <meta name="twitter:title" content="{{ page.title | default: "the mango zone" }}">
+    <meta name="twitter:description" content="{{ page.description| default: "Blog and dumb websites by the hacker known as &quot;Alex&quot;" }}">
+    <meta name="twitter:image" content="{{ page.image| default: "https://pbs.twimg.com/profile_images/873870507078057984/PRlhswDp_400x400.jpg" }}">
+    <meta name="twitter:card" content="summary_large_image">
 
     <link href="{{ "vendor/bootstrap/css/bootstrap.min.css" | relative_url }}" rel="stylesheet">
 
     <link href="{{ "vendor/font-awesome/css/font-awesome.min.css" | relative_url }}" rel="stylesheet" type="text/css">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <link href="{{ "css/freelancer.min.css" | relative_url }}" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
 
@@ -25,21 +35,24 @@
 
     <header class="masthead">
       <div class="container">
-          <div class="intro-text">
-            <div class="logo">
-                <a href="/"><i class="fa fa-heart logo"></i></a>
-            <p id="intro" class="scrollspy">"work" by <a href="/">the hacker known as "Alex"</a> / <a href="https://twitter.com/mangopdf">@mangopdf</a></p>
-        </div>
           <div class="settings">
               <form action="#">
                   <label for="hardmode">
                   <input id="hardmode" type="checkbox"/>
-                      Hard mode</label>
+                  Hard mode</label>
               </form>
           </div>
+          <div class="intro-text">
+              <div class="logo">
+              <span class="star-inline star-primary star-purple"></span>
+              <a href="/">
+                  <h2 class="logo">mango.pdf.zone</h2>
+              </a>
+              <span class="star-inline star-primary star-purple"></span>
+          </div>
+            <p class="intro" id="intro"class="scrollspy">"work" by <a href="/">the hacker known as "Alex"</a> / <a href="https://twitter.com/mangopdf">@mangopdf</a></p>
       </div>
 
-      </div>
     </header>
 
 

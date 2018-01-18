@@ -2,8 +2,10 @@
 layout: post
 title:  "Stalking your Facebook friends on Tinder"
 date: 2016-07-21 16:02:38 +1100
-blurb: How I found a way to see the Tinder profiles of your Facebook friends. I told Tinder about this and they said "it's a feature lmao".<a href="https://news.ycombinator.com/item?id=12141086">Hacker News comments</a>
+blurb: How I found a way to see the Tinder profiles of your Facebook friends. I told Tinder about this and they said "it's a feature lmao". <a href="https://news.ycombinator.com/item?id=12141086">Hacker News comments</a>
 colour: purple
+description: A hidden Tinder API lets you see the Tinder profiles of your Facebook friends.
+permalink: /stalking-your-facebook-friends-on-tinder
 ---
 
 * * *
@@ -24,7 +26,7 @@ Otherwise... Get ready for some texttttttt
 
 Hey what up it’s me ya friendly neighbourhood homeslice Alex comin’ atcha’
 LIVE with some phresh new #content. That’s _right_ it’s the inevitable
-disappointing sequel to “Graphing when your Facebook friends are awake”
+disappointing sequel to ["Graphing when your Facebook friends are awake"](https://mango.pdf.zone/graphing-when-your-facebook-friends-are-awake)
 streamed to your screen in HIGH DEFINITION TEXT.
 
 For the sake of helping you find the parts of this post that are _not_
@@ -264,43 +266,28 @@ phones now!
 
 If you send:
 
-> GET https://api.gotinder.com/user/**562.......ec8**
+> GET https://api.gotinder.com/user/562.......ec8
 
 Then Tinder sends back:
 
-> {'_id': '**562.......ec8**',  
->  'badges': [],  
-> ** 'bio': "hi every1 im new!!!!!!! *holds up spork* my name is katy but u
+> {'_id': '562.......ec8',  
+>  'bio': "hi every1 im new!!!!!!! holds up spork my name is katy but u
 can call me t3h PeNgU1N oF d00m!!!!!!!! lol…as u can see im very
-random!!!!",**  
-> ** 'birth_date': '1995-07-19T02:52:04.083Z',**  
+random!!!!",  
+>  'birth_date': '1995-07-19T02:52:04.083Z',  
 >  'birth_date_info': 'fuzzy birthdate active, not displaying real
 birth_date',  
->  'common_friend_count': 0,  
 >  'common_friends': [<common Facebook friends go here>],  
->  'common_like_count': 0,  
 >  'common_likes': [<common Facebook likes go here>],  
-> ** 'connection_count': [the number of people you’ve swiped (I think?) go
-here],**  
-> ** 'distance_mi': 1, // How far the person is from you right now**  
-> ** 'gender': 1, // 1 is female, 0 is male. C’mon Tinder that’s not how
-gender works**  
->  'jobs': [],  
-> ** 'name': 'Victoria', // Note that there’s no last name**
+>  'connection_count': [the number of people you’ve swiped (I think?) go
+here],  
+>  'distance_mi': 1, // How far the person is from you right now  
+>  'gender': 1, // 1 is female, 0 is male. C’mon Tinder that’s not how
+gender works  
+>  'name': 'Victoria', // Note that there’s no last name
+> 'ping_time': '2016-07-16T02:51:45.475Z', // The last time the person was
+on Tinder
 
->
-
-> **'ping_time': '2016-07-16T02:51:45.475Z', // The last time the person was
-on Tinder**
-
->
-
-> .....
-
->
-
-> 'schools': []}  
->
 
 Yeah look I know you probably didn’t read that so let me explain. No no, it’s
 fine, you don’t have to go back and read it now. It’s really no trouble.
@@ -368,70 +355,70 @@ just made a support ticket.
 
 Here’s what I sent them in full (feel free to skip this):
 
+
+_This isn't actually a support request. I actually want to report a security_
+_vulnerability, but I couldn't find where to do so._
+
+_Would you mind forwarding this to your security team? Thank you! <3_
+
+_I found that I can find the Tinder profiles of any of my Facebook friends_
+_who use Tinder._
+_This can all be done through the (un)official API, so I'm assuming it's a_
+_"feature" not a bug._
+
+
+_Steps to reproduce:_
+
+_GET `api.gotinder.com/group/friends`_
+_-> Returns Tinder user ids for all my Facebook friends that have Tinder_
+
+_GET `api.gotinder.com/user/<id>`_
+_-> Returns, among other things, something like:_
+
 ```
-This isn't actually a support request. I actually want to report a security
-vulnerability, but I couldn't find where to do so.
-
-Would you mind forwarding this to your security team? Thank you! <3
-
-I found that I can find the Tinder profiles of any of my Facebook friends
-who use Tinder.  
-This can all be done through the (un)official API, so I'm assuming it's a
-"feature" not a bug.
-
-
- Steps to reproduce:
- GET [api.gotinder.com/group/friends](http://api.gotinder.com/group/friends)
- > Returns Tinder user ids for all my Facebook friends that have Tinder  
-
- GET [api.gotinder.com/user/<id>](http://api.gotinder.com/user/)
- > Returns, among other things, something like:
-
-    _connection_count":1979,"common_like_count":0,"common_friend_count":0,"common_likes":[],"common_interests":[],"uncommon_interests":[],"common_friends":[],"_id":"<tinder
+    connection_count":1979...._id":"<tinder
     user id>","badges":[],"bio":"i dont get it is this app like twitter"
-    ","birth_date":"1987-07-[redacted]","gender":0,"name":"[redacted]","ping_time":"[utc
-    one second resolution timezoned timestamp]
-
-
-I think that you don't want to expose that information about my Facebook
-friends to me.
-
-If this behaviour is intentional:
-Sure, it's your app.
-Please reply to this ticket letting me know.
-
-
-If this behaviour is not intentional:  
-You should change it!  
-I recommend not having profile information available at /user/<id>, or
-limiting it only to users that have been suggested to me.
-
-Please reply promptly if you'd like me to keep this secret, since because I
-think you think this is a feature not a bug, I’ll probably blog about it
-publicly soon.
-
-
-Thanks for reading this!
+    ","birth_date":"1987-07-[redacted]","gender":0,"name":"[redacted]",
+    "ping_time":"[utc one second resolution timezoned timestamp]
 ```
+
+
+_I think that you don't want to expose that information about my Facebook_
+_friends to me._
+
+_If this behaviour is intentional:_
+_Sure, it's your app._
+_Please reply to this ticket letting me know._
+
+
+_If this behaviour is not intentional:_
+_You should change it!_
+_I recommend not having profile information available at /user/<id>, or_
+_limiting it only to users that have been suggested to me._
+
+_Please reply promptly if you'd like me to keep this secret, since because I_
+_think you think this is a feature not a bug, I’ll probably blog about it_
+_publicly soon._
+
+
+_Thanks for reading this!_
+
 
 
 And here’s the reply I got (within 48 hours, nice!):
 
-```
-Hello,
+_>Hello,_
 
-Thanks for bringing your concern to our attention. This is a part of our
-feature called Tinder Social. You may opt out of Tinder Social at anytime by
-visiting your Settings. If you opt out, you will not appear on your friends'
-lists.
+_>Thanks for bringing your concern to our attention. This is a part of our_
+_feature called Tinder Social. You may opt out of Tinder Social at anytime by_
+_visiting your Settings. If you opt out, you will not appear on your friends'_
+_lists._
 
-To learn more about Tinder Social, please read our blog post here:
-http://blog.gotinder.com/introducing-tinder-social/.
-```
+_>To learn more about Tinder Social, please read our blog post here:_
+_http://blog.gotinder.com/introducing-tinder-social/._
 
 Props to the Tinder Security Team for responding so quickly. Also, sorry about
 the barely coherent bug report, it was pretty late by the time I wrote this
-;>_>
 
 Anyway, since this thing is a feature, not a bug, I can blog about it in good
 conscience. Right?

@@ -21,8 +21,11 @@ body {
     &:hover, :visited, :active, :focus {
         color: lighten($color, 10%);
         border-color: lighten($color, 10%);
-        background: inherit;
+        background: inherit !important;
     }
+}
+.btn:focus {
+    background: inherit !important;
 }
 
 div.settings form {
@@ -57,9 +60,14 @@ div.portfolio-item {
 }
 
 div.post-item {
-    padding-left: 25px;
-    padding-right: 25px;
-    width: 33%;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media (min-width: 320px) {
+        width: 100%;
+    }
+    @media (min-width: 1025px) {
+        width: 33%;
+    }
     .caption-content p {
         font-weight: 300;
     }
@@ -84,7 +92,7 @@ div.posts {
 
 }
 
-hr.speedy:after {
+.speedy:after {
     -webkit-animation-duration: 0.3s !important;
     -moz-animation-duration: 0.3s !important;
     -ms-animation-duration: 0.3s !important;
@@ -98,7 +106,7 @@ hr.speedy:after {
 
 
 
-hr.star-light:after, hr.star-primary:after {
+.star-light:after, .star-primary:after {
   -webkit-animation: rotating 20s linear infinite;
   -moz-animation: rotating 20s linear infinite;
   -ms-animation: rotating 20s linear infinite;
@@ -109,20 +117,20 @@ hr.star-light:after, hr.star-primary:after {
 
 }
 
-hr.star-pink, hr.star-pink:after {
+.star-pink, .star-pink:after {
     color: $star-pink;
     background-color: $background-grey;
     border-color: $star-pink;
 }
 
 
-hr.star-blue, hr.star-blue:after {
+.star-blue, .star-blue:after {
     color: $star-blue;
     border-color: $star-blue;
     background-color: $background-grey;
 }
 
-hr.star-purple, hr.star-purple:after {
+.star-purple, .star-purple:after {
     color: $star-purple;
     border-color: $star-purple;
     background-color: $background-grey;

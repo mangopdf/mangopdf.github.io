@@ -5,11 +5,13 @@
     "use strict";
 
 
+    // Why does this say useragent, not referrer? Why is it "toothbrushes"? It's "teethbrush" and you know it.
     if (document.referrer != "" && document.referrer !== document.location.href) {
         $("div.useragent a").text(document.referrer);
         $("div.useragent").show();
     }
 
+    // Spin the stars faster when hard mode is on, it's only fair.
     $('#hardmode').change(function() {
         if (this.checked) {
             window.stopEmoji = false;
@@ -23,10 +25,14 @@
         }
     });
 
+    // When the logo stars are clicked, make 'em spin fast on toggle.
+    $('.star-primary').click(function() {
+            $(this).toggleClass('speedy');
+    });
     var gags = {
-        'blog': '""security research""""',
-        'websites': 'hypertext experiences',
-        'talks': 'high speed opsec fails',
+        'blog': 'textual spaghetti',
+        'websites': 'hypertext fever dreams',
+        'talks': 'legitimate educational resources',
         'tweets': 'the goddAmn TWEET ZONE',
         'intro': 'you have entered the ~mango zone~'
     };

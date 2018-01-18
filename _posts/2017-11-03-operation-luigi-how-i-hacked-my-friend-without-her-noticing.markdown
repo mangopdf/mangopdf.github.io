@@ -4,6 +4,9 @@ title:  "Operation Luigi: How I hacked my friend without her noticing"
 date:   2017-08-04 16:02:38 +1100
 blurb: It's probably easier if you just read it. <a href="https://news.ycombinator.com/item?id=14919845">Salty Hacker News comments</a>
 colour: pink
+description: My friend gave me permission to hack her, here's how I did it and how to stop it happening to you.
+permalink: /operation-luigi-how-i-hacked-my-friend-without-her-noticing
+image: https://i.imgur.com/xgqR3Ss.png
 ---
 
 ![intro](https://i.imgur.com/xgqR3Ss.png)
@@ -654,7 +657,7 @@ I come up with a simple 8-step plan to do this, with 4 easy repayments of 2 step
 
 The combo move in this is setting her password to `qwerty1`. When I phished her email password, she tried to log in to her email with `qwerty1` *even though that's not her password*. This tells me that she *thinks* her password for everything is `qwerty1`, or at least, that's what she'll try if she's not sure. The technical term for this is *next-level mindgames*💻💻💻.
 
-I do the steps above, and I'm now logged in to Diana's Twitter account. I tigheten up her Twitter security settings because I'm a Good Boy.
+I do the steps above, and I'm now logged in to Diana's Twitter account. I tighten up her Twitter security settings because I'm a Good Boy.
 I HOPE that Diana will be able to log back in as well, and not wonder why she suddenly got logged out. I wait stressfully for her to tweet something, and after a day or so she retweets a cute doggo, so we're good to go.
 
 Now I want to do the same thing on popular dating website LinkedIn. This will involve signing Diana out of LinkedIn on all her devices, and I don't want her to get too suspicious, so I wait a week. I do the same process as with Twitter. This time I don't even wait until Diana is asleep, because I'm young and invincible.

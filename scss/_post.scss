@@ -1,36 +1,43 @@
 
 article.post {
     color: #ffffff;
-    width: 800px;
     margin: 0 auto;
     overflow-wrap: break-word;
     line-height: 28px;
     font-size: 20px !important;
-    font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: Open Sans,'Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: 300;
+
+    @media (min-width: 320px) {
+        padding-top: 50px;
+        width: 100%;
+    }
+    @media (min-width: 1050px) {
+        width: 740px;
+    }
 }
 h1,h2,h3,h4,h5 {
-    font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: Open Sans,'Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: 700;
+    @media (min-width: 320px) {
+        font-size: 30px;
+    }
 }
 
 p.post-meta {
     padding-bottom: 50px;
 }
 
-div.post-container {
-    padding-top: 100px;
+div.post-content {
+
 }
 
-div.post-container img {
+div.post-content img {
     display: block;
     margin: 0 auto;
-    /*
-    width: 150%;
-    margin-left: -25%;
-    margin-right: -25%;
-    */
     width: 100%;
+    max-width: 100%;
+
 }
 
 pre.highlight {
