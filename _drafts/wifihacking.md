@@ -5,9 +5,9 @@ blurb: You wouldn't do something like that, would you?
 colour: purple
 ---
 
-Once, when I was a teenager, I was staying in a hotel. I was all like, “Oh, I’d like to have Wi-Fi now please because I feel weirdly uncomfortable not having it at all times.” There were all these Wi-Fi networks around, but I didn’t know the password to any of them. Which made me think… what if I could… use it anyway? This prompted a lot of research and devastated that particular family holiday.
+Once, when I was a teenager, I was staying in a hotel. I thought things like "Oh, I’d like to have Wi-Fi now please because I feel weirdly uncomfortable not having it at all times." There were all these Wi-Fi networks around, but I didn’t know the password to any of them. Which made me think.... what if I could... use it anyway? This prompted a lot of research and devastated that particular family holiday.
 
-This article is the 100 per cent code-free explanation of one way someone might hack your home Wi-Fi. By the end it’s okay to feel afraid, insecure, or even cripplingly alone. It’s okay. We’ve all been there.
+This article is the [SOMETHING] explanation of one way someone might hack your home Wi-Fi. By the end it’s okay to feel afraid, insecure, or even cripplingly alone. It’s okay. We’ve all been there.
 
 # When you move into a place and get an internet connection, you typically buy or are given a home router.
 # Home routers are held together with nothing but man's hubris.
