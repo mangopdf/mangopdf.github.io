@@ -21,7 +21,8 @@ It did make me think about Wi-Fi, though. Isn't is strange how when you move int
 
 This article is the 100 per cent lactose-free explanation of one way someone might hack their neighbour's home Wi-Fi. By the end it’s okay to feel afraid, insecure, or even cripplingly alone. It’s okay. We’ve all been there.
 
-The first thing you'd do is take out your laptop and run `airodump-ng`, a tool for exactly the job of hacking Wi-Fi. It would show me the names of Wi-Fi networks and also their “BSSID”, which is a bit like an ID for Wi-Fi networks. It’s actually *exactly* like that.
+## okay uhhhh let's have a go
+The first thing you'd do is take out your laptop and run `airodump-ng`, a tool for precisely the job of hacking Wi-Fi. It would show me the names of Wi-Fi networks and also their “BSSID”, which is a bit like an ID for Wi-Fi networks. It’s actually *exactly* like that.
 ```
 AIRCRACK SCREENSHOT
 ```
