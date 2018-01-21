@@ -4,9 +4,11 @@ article.post {
     margin: 0 auto;
     overflow-wrap: break-word;
     line-height: 28px;
-    font-size: 20px !important;
     font-family: Open Sans,'Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: 300;
+    font-size: 21px !important;
+    line-height: 1.58;
+    letter-spacing: -.003em;
 
     @media (min-width: 320px) {
         padding-top: 50px;
