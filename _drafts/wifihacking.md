@@ -12,6 +12,7 @@ colour: purple
 * password cracking isn't accessible, most people can't do it
 * Ethics: Is it okay to hack your neighbour's wifi? No!
 * What can you do to secure your home wifi?
+* did you know you can deauth?
 
 Once, when I was a teenager, I was staying in a hotel.
 
@@ -21,7 +22,9 @@ It did make me think about Wi-Fi, though. Isn't is strange how when you move int
 
 This article is the 100 per cent lactose-free explanation of one way you might hack your neighbour's home Wi-Fi. By the end it’s okay to feel afraid, insecure, or even cripplingly alone. It’s okay. We’ve all been there.
 
-## okay uhhhh let's have a go
+`PICTURE OF THE ENTER A PASSWORD BOX`
+
+## Plan an elaborate heist today
 
 So in our 99.99999% theoretical scenario, the first thing you'd do is take out your laptop and run `airodump-ng`, a tool for precisely the job of hacking Wi-Fi. It would show you the names of nearby Wi-Fi networks and also their “BSSID”, which is a bit like an ID for Wi-Fi networks. It’s actually *exactly* like that.
 ```
@@ -57,6 +60,10 @@ The trick here is that if you’re an eavesdropper, you get to see the following
 # GOOD PICTURE CONTENT
 
 Well what if I just encrypt the text “memes” with “cooldad1964” as the key, and it happens to encrypt to “b8%&G”?
+
+```
+WARNING this is a simplification (read: wrong), there is actually a chain of keys computed from the actual wifi password. It boils down to the above idea, tho, sorry for tricking you I'm just protecting you from the harsh truth, son.. If you want the real deal and aren't afraid of death by acronyms check out this stackoverflow answer: https://security.stackexchange.com/questions/66008/how-exactly-does-4-way-handshake-cracking-work
+```
 
 Then I know that the password was “cooldad1964”. And if “memes” encrypts to something else, then I know my guess was wrong.
 
