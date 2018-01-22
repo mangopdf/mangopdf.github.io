@@ -13,29 +13,36 @@ colour: purple
 * Ethics: Is it okay to hack your neighbour's wifi? No!
 * What can you do to secure your home wifi?
 
-Once, when I was a teenager, I was staying in a hotel. 
+Once, when I was a teenager, I was staying in a hotel.
 
 I was all like, “Oh, I’d like to have Wi-Fi now please because I feel weirdly uncomfortable not being `o n l i n e` at all times.” There were all these Wi-Fi networks around, but I didn’t know the password to any of them. Which made me think… what if I could… use it anyway? This prompted a lot of research and devastated that particular family holiday.
 
 It did make me think about Wi-Fi, though. Isn't is strange how when you move into a place and get an internet connection, you typically get given a home router as part of the package? Isn't it strange how this router is held together using nothing but matchsticks, broken promises, and man's hubris?
 
-This article is the 100 per cent lactose-free explanation of one way someone might hack their neighbour's home Wi-Fi. By the end it’s okay to feel afraid, insecure, or even cripplingly alone. It’s okay. We’ve all been there.
+This article is the 100 per cent lactose-free explanation of one way you might hack your neighbour's home Wi-Fi. By the end it’s okay to feel afraid, insecure, or even cripplingly alone. It’s okay. We’ve all been there.
 
 ## okay uhhhh let's have a go
-The first thing you'd do is take out your laptop and run `airodump-ng`, a tool for precisely the job of hacking Wi-Fi. It would show me the names of Wi-Fi networks and also their “BSSID”, which is a bit like an ID for Wi-Fi networks. It’s actually *exactly* like that.
+
+So in our 99.99999% theoretical scenario, the first thing you'd do is take out your laptop and run `airodump-ng`, a tool for precisely the job of hacking Wi-Fi. It would show you the names of nearby Wi-Fi networks and also their “BSSID”, which is a bit like an ID for Wi-Fi networks. It’s actually *exactly* like that.
 ```
 AIRCRACK SCREENSHOT
 ```
 
-Once you know the BSSID of your neighbour's Wi-Fi, it’s time to try and get their password hash. A password hash is like a scrambled version of the password. You can’t unscramble it. Kinda like how you can’t unscramble scrambled eggs back into the white and the yolk. Stop trying, it’s embarrassing.
+Once you know the BSSID of your neighbour's Wi-Fi, the goal is to get the Wi-Fi password. Unfortunately, the router won't give up the Wi-Fi password, but it will give up the _password hash_.
 
-We’re going to find the hash by watching the secret handshake.
+A password hash is like a scrambled version of the password. You can’t unscramble it. Kinda like how you can’t unscramble scrambled eggs back into the white and the yolk. Stop trying, it’s embarrassing. Everyone is looking.
+
+We’re going to find the hash by watching......the secret handshake.
+
+## The secret handshake
 
 You heard me. I can’t believe that this is a real thing, but there actually is a secret handshake that happens when you connect to a Wi-Fi network.
 
-You might be wondering why there’s a secret handshake happening every time you connect to Wi-Fi. And that’s fair enough, I’m glad you asked.
+You might be wondering why there’s a secret handshake happening every time you connect to Wi-Fi, and that’s fair enough, I’m glad you asked.
 
-Let’s say you’re a legitimate businessperson just connecting to their home Wi-Fi. No funny business. You know the password. But you need to prove to the Wi-Fi network that you know the password. The trouble is, everyone else can hear you. Wi-Fi is broadcast as radio waves out of your device and router all the time. Anyone within range can hear what you're saying.
+Let’s say you’re a legitimate businessperson just connecting to their home Wi-Fi. No funny business. You know the password. But you need to prove to the Wi-Fi network that you know the password. The trouble is, everyone else can hear you.
+
+Wi-Fi is broadcast as radio waves out of your device and router all the time. Anyone within range can hear what you're saying.
 
 It’s kinda like if you came up to me at a party and you said “I know your Facebook password”. It gets real tense. I nervously glance up at you and choke trying to chuckle. I want to know if you really do know my Facebook password, but I also don’t want you to just say “Your Facebook password is cooldude69” because everyone else at the party is listening.
 
@@ -75,4 +82,7 @@ The reason this method of hacking works is because people pick easy-to-guess pas
 
 If you’re an average internet user, your password for everything is the same, and it’s your pet’s name followed by your house number. What I’m saying is that on average, most Wi-Fi passwords don’t stand a chance against these password lists.
 
-And of course, if all that doesn’t work, I could just send you a fake email that says “Suspicious activity detected in your Netgear router – Log In  now to review” and get your password that way.
+
+## So what?
+So you can probably hack home Wi-Fi. What's the point of doing it?
+
