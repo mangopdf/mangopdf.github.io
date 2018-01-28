@@ -41,6 +41,8 @@ We’re going to find the hash by watching......the secret handshake.
 
 You heard me.
 
+The secret handshake between your device and the Wi-Fi router happens when the device connects. An attacker can just wait around until that happens, and spy on it 👀
+
 You might be wondering why there’s a secret handshake happening every time you connect to Wi-Fi, and that’s fair enough, I’m glad you asked.
 
 Let’s say you’re a legitimate businessperson just connecting to their home Wi-Fi. No funny business. You know the password. But you need to prove to the Wi-Fi network that you know the password. And the Wi-Fi needs to prove to you that _it_ knows the password. The trouble is, everyone else can hear you.
@@ -59,13 +61,15 @@ The trick here is that if you’re an eavesdropper, you get to see the following
 
 # GOOD PICTURE CONTENT
 
-Well what if I just encrypt the text “memes” with “cooldad1964” as the key, and it happens to encrypt to “b8%&G”?
+You know the text, and you know what it encrypts to. This means that you can guess something as the key, and _check_ if your guess was right.
+
+What if you just encrypt the text “memes” with “cooldad1964” as the key, and it happens to encrypt to “b8%&G”?
 
 ```
 WARNING this is a simplification (read: wrong), there's actually a chain of keys computed from the actual Wi-Fi password. It boils down to the above idea, tho, sorry for tricking you I'm just protecting you from the harsh truth, son. If you want the real deal and aren't afraid of death by acronyms check out this stackoverflow answer: https://security.stackexchange.com/questions/66008/how-exactly-does-4-way-handshake-cracking-work
 ```
 
-Then I know that the password was “cooldad1964”. And if “memes” encrypts to something else, then I know my guess was wrong.
+Then you know that the password was “cooldad1964”. And if “memes” encrypts to something else, then you know your guess was wrong.
 
 So what we’re going to do here is just guess the password. The trick is that we’re going to be able to guess passwords way faster than if we were just typing them into the “Enter the password for this Wi-Fi network” box.
 
@@ -85,11 +89,56 @@ Hashcat is software that can take a password list and a hash (“b8%&G”) and t
 
 And that’s it. Hashcat will spit out the password, and I can just type it in the Wi-Fi “Enter the password” box. The main part is furiously guessing millions of passwords until we find the right one.
 
-The reason this method of hacking works is because people pick easy-to-guess passwords. English word with the first letter maybe capitalised then one or two numbers? That pattern covers a LOT of people’s passwords and a computer can just quickly check all of them.
+The reason this method of hacking works is because people pick easy-to-guess passwords. English word with the first letter maybe capitalised then one or two numbers? That pattern covers a *lot* of people’s passwords and a computer can just quickly check all of them.
 
-If you’re an average internet user, your password for everything is the same, and it’s your pet’s name followed by your house number. What I’m saying is that on average, most Wi-Fi passwords don’t stand a chance against these password lists.
+If you’re an average internet user, your password for everything is the same, and it’s your pet’s name followed by your house number. Even worse, it's probably a password hackers already have in their password lists. What I’m saying is that on average, most Wi-Fi passwords don’t stand a chance against these password lists.
 
-
-## So what?
+# So what?
 So you can probably hack home Wi-Fi. What's the point of doing it?
+
+You could...
+
+## Find your neighbour's ISP password
+
+Routers often store the password used to connect to the ISP (your ISP may not do this) in their admin panels.
+Let me walk you through the complex process of hacking a home router.
+
+First you open up the popular hacking software, Google Chrome, and go to 192.168.0.1, which is usually the IP address of the router.
+
+When you get there, you'll see something like this.
+```
+   picture of 'admin' with empty password
+ ```
+
+Easiest "admin/admin" of your LIFE right there.
+
+Once you're in the router, the password is in the config page.
+
+```
+   screenshot of password dots
+```
+Oh no! The password is just dots! Your hacking career is over before it started!
+
+Fear not, young keyboard warlock, for there is a deus ex machina that saves you in this cutscene.
+
+You can right click > Inspect Element (hacker voice: i'm in) on the password field, and you'll see this:
+
+```
+   html showing password type
+   screen record GIF of this?
+```
+
+That's right, the dots were only put there by your browser. The password was under them all along. Trapped in a prison of your own mind.
+
+## Backdoor the router
+
+Home routers let you open up SSH or even dust the spiderwebs off telnet (like SSH but without the "secure"), and even expose these to the internet. You could connect to the router and run whatever code you want on it.
+
+## Steal your neighbour's data
+
+So this one isn't as cool as it used to be, but using ancient forbidden techniques like ARP poisoning `!!LINK!!` (not nearly as cool as it sounds), you can spy on what your neighbour is sending to the internet. This won't work for websites with that lovingly hand-forged green HTTPS lock, since your neighbour's data will be encrypted by HTTPS.  
+But, there are still plenty of sites that will ask for your password or credit card information over HTTP.
+
+Even for some HTTPS sites (which do not use Certificate Pinning or HSTS), you can force your victim to use plain unencrypted HTTP with [SSLStrip](https://avicoder.me/2016/02/22/SSLstrip-for-newbies/)
+
 
