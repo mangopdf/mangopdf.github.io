@@ -26,12 +26,12 @@ This article is the 100 per cent lactose-free explanation of one way you might h
 
 ## Plan an elaborate heist today
 
-So in our 99.99999% theoretical scenario, the first thing you'd do is take out your laptop and run `airodump-ng`, a tool for precisely the job of hacking Wi-Fi. It would show you the names of nearby Wi-Fi networks and also their “BSSID”, which is a bit like an ID for Wi-Fi networks. It’s actually *exactly* like that.
+So in our 99.99999% theoretical scenario, you and your laptop are within range of your neighbour's Wi-Fi router. The first thing you'd do is take out your laptop and run `airodump-ng`, a tool for precisely the job of hacking Wi-Fi. It would show you the names of nearby Wi-Fi networks and also their “BSSID”, which is a bit like an ID for Wi-Fi networks. It’s actually *exactly* like that.
 ```
 AIRCRACK SCREENSHOT
 ```
 
-Once you know the BSSID of your neighbour's Wi-Fi, the goal is to get the Wi-Fi password. Unfortunately, the router won't give up the Wi-Fi password, but it will give up the _password hash_.
+Once you know the BSSID of your neighbour's Wi-Fi, the goal is to get the Wi-Fi password. The router won't give up the Wi-Fi password, but it will give up the _password hash_.
 
 A password hash is like a scrambled version of the password. You can’t unscramble it. Kinda like how you can’t unscramble scrambled eggs back into the white and the yolk. Stop trying, it’s embarrassing. Everyone is looking.
 
@@ -39,11 +39,11 @@ We’re going to find the hash by watching......the secret handshake.
 
 ## The secret handshake
 
-You heard me. I can’t believe that this is a real thing, but there actually is a secret handshake that happens when you connect to a Wi-Fi network.
+You heard me.
 
 You might be wondering why there’s a secret handshake happening every time you connect to Wi-Fi, and that’s fair enough, I’m glad you asked.
 
-Let’s say you’re a legitimate businessperson just connecting to their home Wi-Fi. No funny business. You know the password. But you need to prove to the Wi-Fi network that you know the password. The trouble is, everyone else can hear you.
+Let’s say you’re a legitimate businessperson just connecting to their home Wi-Fi. No funny business. You know the password. But you need to prove to the Wi-Fi network that you know the password. And the Wi-Fi needs to prove to you that _it_ knows the password. The trouble is, everyone else can hear you.
 
 Wi-Fi is broadcast as radio waves out of your device and router all the time. Anyone within range can hear what you're saying.
 
@@ -62,7 +62,7 @@ The trick here is that if you’re an eavesdropper, you get to see the following
 Well what if I just encrypt the text “memes” with “cooldad1964” as the key, and it happens to encrypt to “b8%&G”?
 
 ```
-WARNING this is a simplification (read: wrong), there is actually a chain of keys computed from the actual wifi password. It boils down to the above idea, tho, sorry for tricking you I'm just protecting you from the harsh truth, son.. If you want the real deal and aren't afraid of death by acronyms check out this stackoverflow answer: https://security.stackexchange.com/questions/66008/how-exactly-does-4-way-handshake-cracking-work
+WARNING this is a simplification (read: wrong), there's actually a chain of keys computed from the actual Wi-Fi password. It boils down to the above idea, tho, sorry for tricking you I'm just protecting you from the harsh truth, son. If you want the real deal and aren't afraid of death by acronyms check out this stackoverflow answer: https://security.stackexchange.com/questions/66008/how-exactly-does-4-way-handshake-cracking-work
 ```
 
 Then I know that the password was “cooldad1964”. And if “memes” encrypts to something else, then I know my guess was wrong.
