@@ -6,12 +6,6 @@ colour: purple
 ---
 
 
-* Why is the software so bad? Economics, it doesn't need to be good to get bought
-* Security nope lol
-* This is all physical range so you don't gotta stress too much
-* password cracking isn't accessible, most people can't do it
-* Ethics: Is it okay to hack your neighbour's wifi? No!
-* What can you do to secure your home wifi?
 * did you know you can deauth?
 
 Once, when I was a teenager, I was staying in a hotel.
@@ -91,13 +85,12 @@ And that’s it. Hashcat will spit out the password, and I can just type it in t
 
 The reason this method of hacking works is because people pick easy-to-guess passwords. English word with the first letter maybe capitalised then one or two numbers? That pattern covers a *lot* of people’s passwords and a computer can just quickly check all of them.
 
-If you’re an average internet user, your password for everything is the same, and it’s your pet’s name followed by your house number. Even worse, it's probably a password hackers already have in their password lists. What I’m saying is that on average, most Wi-Fi passwords don’t stand a chance against these password lists.
+If you’re an average internet user, your password for everything is the same, and it’s your pet’s name followed by your house number. Even worse, it's probably a password hackers already have in their password lists. What I’m saying is that on average, most Wi-Fi passwords people choose don’t stand a chance against these password lists.
 
 # So what?
 So you can probably hack home Wi-Fi. What's the point of doing it?
 
-You could...
-
+You could....
 ## Find your neighbour's ISP password
 
 Routers often store the password used to connect to the ISP (your ISP may not do this) in their admin panels.
@@ -128,17 +121,49 @@ You can right click > Inspect Element (hacker voice: i'm in) on the password fie
    screen record GIF of this?
 ```
 
-That's right, the dots were only put there by your browser. The password was under them all along. Trapped in a prison of your own mind.
+That's right, the dots were only put there by _your_ browser. The password was under them all along. Trapped in a prison of your own mind.
 
 ## Backdoor the router
 
-Home routers let you open up SSH or even dust the spiderwebs off telnet (like SSH but without the "secure"), and even expose these to the internet. You could connect to the router and run whatever code you want on it.
+Home routers let you open up SSH or even dust the spiderwebs off telnet (like SSH but without the "secure"), and even expose these to the internet. You could connect to the router and run whatever code you want on it. In the past people have done such classic moves as making the router wait for you to log on to your banking website, and then redirect you to a phishing site.
 
 ## Steal your neighbour's data
 
-So this one isn't as cool as it used to be, but using ancient forbidden techniques like ARP poisoning `!!LINK!!` (not nearly as cool as it sounds), you can spy on what your neighbour is sending to the internet. This won't work for websites with that lovingly hand-forged green HTTPS lock, since your neighbour's data will be encrypted by HTTPS.  
+So this one isn't as cool as it used to be, but using ancient forbidden techniques like ARP poisoning `!!LINK!!` (not nearly as cool as it sounds), you can spy on what your neighbour is sending to the internet. This won't work for websites with that lovingly hand-forged green HTTPS lock, since your neighbour's data will be encrypted by HTTPS.
 But, there are still plenty of sites that will ask for your password or credit card information over HTTP.
 
-Even for some HTTPS sites (which do not use Certificate Pinning or HSTS), you can force your victim to use plain unencrypted HTTP with [SSLStrip](https://avicoder.me/2016/02/22/SSLstrip-for-newbies/)
+Even for some HTTPS sites (which do not use Certificate Pinning or HSTS), you can force your victim to use plain unencrypted HTTP with [SSLStrip](https://avicoder.me/2016/02/22/SSLstrip-for-newbies/).
+
+# oh no
+
+It's possible that reading the words on this hypertext page has made you question the bulletproof security of your own home network situation.
+
+Here are some things you can do to stop worrying about your home Wi-Fi security.
+
+## 1. Absolutely nothing
+
+Don't even worry about it. The pool of people who can attack your home Wi-Fi is limited to the people in **physical range** of it.
+
+A website like PayPal is attackable by: anyone with a computer
+
+Your home Wi-Fi is attackable by: anyone nearby your house
+
+What I'm saying here is that the chance of someone with skills and motivation to hack your Wi-Fi *actually doing it* is....really low. Probably your neighbours are just that nice family and that one guy who you notice always leaves his beer bottles in your recycling bin and sort of grunts at you when you pass eachother and well you just think that maybe Slipknot shirts aren't cool anymore, and even liking them ironically isn't cool anymore so you'd just like to not have your driveway blocked for once and go to the supermarket in peace.
+
+Anyway that guy's not gonna hack your Wi-Fi. This is why it's not a catastrophe that most people's Wi-Fi security is this bad.
+
+You might leave a spare key under the mat, or not bother to lock your windows *even though* someone could easily climb through them, because you're not worried about someone physically breaking in. In the same way, your house probably doesn't need extra-strong Wi-Fi security.
+
+So don't worry about it! Go to the beach! Participate in the capitalist machine! Eat a cupcake! Your Wi-Fi security probably isn't worth worrying about.
+
+## 2. Enable paranoia mode
+
+"Wait what if there IS someone trying to hack my home Wi-Fi, like the GOVERNMENT!!1!"
+
+I mean the goverment has far easier ways to spy on you, but if you *really* want to tighten up your Wi-Fi security, you can:
+
+* Use WPA2-PSK, and change the Wi-Fi password to something unguessable but easy to share (for your guests, of course). Good examples include `fresh*life*fresh*mangoes` and `gday$one$internet$please`. Or randomly generate one like `gV@3AdSKouI&*3Wj` if you hate your guests and love typing.
+* Install custom router firmware like [DD-WRT](https://www.dd-wrt.com/site/index). This has far fewer security holes than whatever PHP spaghetti your router came with.
+* Probably do way more than this idk what do I know about home networking?
 
 
