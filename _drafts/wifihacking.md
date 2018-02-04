@@ -186,9 +186,8 @@ I mean the government has far easier ways to spy on you, but if you *really* wan
 
 * Use WPA2-PSK, and change the Wi-Fi password to something unguessable but easy to share (for your guests, of course). Good examples include `fresh*life*fresh*mangoes` and `gday$one$internet$please`. Or randomly generate one like `gV@3AdSKouI&*3Wj` if you hate your guests and love typing.
 * Install custom router firmware like [DD-WRT](https://www.dd-wrt.com/site/index). This has far fewer security holes than whatever PHP spaghetti your router came with.
-* Probably do way more than this idk what do I know about home networking?
-*
-```Ask someone what the heck is good``
+* Turn off WPS
+* Patch your router which is impossible because of protocol upgrades (KRACK)
 
 
 * did you know you can deauth?
