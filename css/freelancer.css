@@ -646,6 +646,11 @@ pre.highlight {
 p.post-meta {
   padding-bottom: 50px; }
 
+div.footnotes {
+  font-size: 16px; }
+  div.footnotes p {
+    font-size: 16px; }
+
 div.post-content img {
   display: block;
   margin: 0 auto;

@@ -33,10 +33,14 @@ pre.highlight {
 p.post-meta {
     padding-bottom: 50px;
 }
-
-div.post-content {
+div.footnotes {
+    font-size: 16px;
+    p {
+        font-size: 16px;
+    }
 
 }
+
 
 div.post-content img {
     display: block;
