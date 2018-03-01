@@ -172,8 +172,6 @@ Even for some HTTPS sites (which do not use Certificate Pinning or HSTS or other
 
 It's possible that reading the words on this hypertext page has made you question the bulletproof security of your own home network situation.
 
-You may have realised that, for somebody, "your neighbour" means *you*.
-
 Here are some things you can do to stop worrying about your home Wi-Fi security.
 
 ## 1. Absolutely nothing
@@ -207,6 +205,7 @@ Good examples include `fresh*life*fresh*mangoes` and `gday$one$internet$please`.
 This has far fewer security holes than whatever 1997 PHP spaghetti your router came with.
 
 
-----------------------
+## Wait but where do I get the big lists of passwords?
+Thanks for taking the time to read this blog post.
 
-
+-----------------------
