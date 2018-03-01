@@ -204,8 +204,10 @@ Good examples include `fresh*life*fresh*mangoes` and `gday$one$internet$please`.
 * Install custom router firmware like [DD-WRT](https://www.dd-wrt.com/site/index).
 This has far fewer security holes than whatever 1997 PHP spaghetti your router came with.
 
+--------
 
 ## Wait but where do I get the big lists of passwords?
 Thanks for taking the time to read this blog post.
 
 -----------------------
+
