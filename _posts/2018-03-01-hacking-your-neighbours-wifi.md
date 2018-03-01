@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hacking your neighbour's Wi-Fi"
-blurb: You wouldn't do something like that, would you?
+blurb: You wouldn't do that, though. Would you?
 colour: purple
 ---
 
@@ -10,15 +10,22 @@ colour: purple
 
 Isn't is strange how when you move into a place and get an internet connection, you typically get given a home router as part of the package? Isn't it strange how this router is held together using nothing but matchsticks, broken promises, and man's hubris?
 
-```
-picture of a router being bad
-```
+![routerinterface](/img/routerinterface.png)
 
 Did you know that [anyone nearby can kick you off a Wi-Fi network?](https://en.wikipedia.org/wiki/Wi-Fi_deauthentication_attack)
 
 Did you know your phone [constantly broadcasts the names and locations (by proxy) of every Wi-Fi network you've ever connected to?](https://www.crc.id.au/tracking-people-via-wifi-even-when-not-connected/)
 
-This article is the 100% lactose-free explanation of how to hack home Wi-Fi. By the end it’s okay to feel afraid, insecure, or even the urge to bulk-purchase home networking equipment. It’s okay. We’ve all been there.
+This article is your 100% lactose-free guide to hacking home Wi-Fi. By the end it’s okay to feel afraid, insecure, or even the urge to bulk-purchase home networking equipment. It’s okay. We’ve all been there.
+
+
+### Step 0: Don't actually do this
+
+I'm using "your neighbour" as an easy-to-remember example here.
+
+You might be having what seems like a genius idea, and that's "wowee I should hack my neighbour's wifi because uhhhhhh". This idea is a bad one, in the same way that trying to break into your neighbour's house is a bad idea.
+
+If you want to actually hack some Wi-Fi, try disconnecting and doing this to your own Wi-Fi.
 
 ### Step 1: Find the right Wi-Fi
 So in our 99.99999% theoretical scenario, you, your laptop, and a whole lotta hubris are within range of your neighbour's Wi-Fi router. You don't know the password, but you want to connect.
@@ -50,6 +57,8 @@ Wi-Fi is broadcast as radio waves out of your device and router all the time. An
 
 It’s kinda like if you came up to me at a party and you said “I know your Facebook password”. It gets real tense. I nervously glance up at you and say "Really?". I want to know if you really do know my Facebook password, but I also don’t want you to just say “Your Facebook password is cooldude69” because everyone else at the party is listening.
 
+----
+
 So, the secret handshake lets you and the Wi-Fi router both prove you know the password without saying it.
 
 ##### Eavesdropping
@@ -73,7 +82,7 @@ So, get out your pen and paper and blow the dust off that compass and straighted
 
 Just kidding, we’re not going to use pen and paper you big bozo. We’re going to use a graphics card.
 
-Graphics cards are the part inside a computer that lets the computer be able to play 3D games such as Fallout 4 and Viva Piñata: Party Animals. They also happen to be really fast at encrypting stuff.
+Graphics cards are the part inside a computer that lets the computer be able to play 3D games such as PLAYERUNKNOWN'S ALLCAPS Murder Paradise and Viva Piñata: Party Animals. They also happen to be really fast at encrypting stuff.
 
 So we’re going to get a big list of millions of passwords, and try them all to try and guess the Wi-Fi password.
 
@@ -101,11 +110,11 @@ Hashcat is software that can take a password list and a hash[^hashing] (“b8%&G
 
 [^hashing]: Okay look this isn't really a hash and "hashed" and "encrypted" are used pretty much interchangably in this article which I *know* is wrong and really upsets a lot of pedantic people on Twitter but boy does it make this post easier to understand for people who are still learning anyway thanks for reading and as always do not @ me
 
-```
-Screenshot of hashcat CLI and status=cracked
-```
+You just plug the file containing the handshake that you got in Step 2 into hashcat, as well as your password lists.
 
-And that’s it. Hashcat will spit out the password, and you can just type it in the Wi-Fi “Enter the password” box. The main part is furiously guessing millions of passwords until we find the right one.
+![hashcat](/img/hashcat.png)
+
+**And that’s it**. Hashcat will likely just spit out the password, and you can just type it in the Wi-Fi “Enter the password” box. The main part is furiously guessing millions of passwords until we find the right one.
 
 ### Why does this work?
 
@@ -114,6 +123,8 @@ Because people pick easy-to-guess passwords. English word with the first letter 
 If you’re an average internet user, your password for everything is the same, and it’s your pet’s name followed by your house number. Even worse, it's probably a password hackers already have in their password lists. What I’m saying is that on average, most Wi-Fi passwords people choose don’t stand a chance against these password lists.
 
 You can check whether your password has been stolen by hackers (and published) by browsing to [https://haveibeenpwned.com](https://haveibeenpwned.com)
+
+----------
 
 # So what?
 So you can probably hack home Wi-Fi. What's the point of doing it?
@@ -133,19 +144,16 @@ Easiest `admin/admin` of your LIFE right there.
 
 Once you're in the router, the password is in the config page.
 
-```
-   screenshot of password dots
-```
+![router1](/img/routerpassword.png)
 Oh no! The password is just dots! Your hacking career is over before it started!
 
 Fear not, young keyboard warlock, for there is a deus ex machina that saves you in this cutscene.
 
 You can `Right Click > Inspect Element` (hacker voice: i'm in) on the password field, and you'll see this:
 
-```
-   html showing password type
-   screen record GIF of this?
-```
+![router2](/img/routerpasswordhtml.png)
+Edit that HTML to remove the `type="password"` aaaaaaand
+![router3](/img/routerpasswordrevealed.png)
 
 That's right, the dots were only put there by _your_ browser. The password was under them all along. You were trapped in a prison of your own mind.
 
@@ -157,6 +165,8 @@ This won't work for websites with that lovingly hand-forged green HTTPS lock, si
 But, there are still plenty of sites that will ask for your password or credit card information over plain ol' HTTP.
 
 Even for some HTTPS sites (which do not use Certificate Pinning or HSTS or other Dark Rituals), you can force your victim to use plain unencrypted HTTP with [SSLStrip](https://avicoder.me/2016/02/22/SSLstrip-for-newbies/).
+
+----------
 
 # oh no
 
@@ -176,9 +186,9 @@ A website like PayPal is attackable by:
 Your home Wi-Fi is attackable by:
 * anyone nearby your house
 
-What I'm saying here is that **the chance of someone with skills and motivation to hack your Wi-Fi *actually doing it* is....really small**. Probably your neighbours are just that nice family and that one guy who you notice always leaves his beer bottles in your recycling bin and sort of grunts at you when you pass eachother and well, you just think that maybe the classic combo of socks, sandals, and singlets isn't cool anymore, so you'd just like to not have your driveway blocked for once and go to the supermarket without bravely triumphing over evil.
+What I'm saying here is that **the chance of someone with skills and motivation to hack your Wi-Fi *actually doing it* is....really small**. Probably your neighbours are just that nice family and that one guy who you notice always leaves his beer bottles in your recycling bin and sort of grunts at you when you pass eachother and well, you just think that maybe the classic combo of socks, sandals, and singlets isn't cool anymore, so you'd just like to not have your driveway blocked for once and go to the supermarket without incident.
 
-Anyway that guy's not gonna hack your Wi-Fi. This is why it's not a *total* catastrophe that most people's Wi-Fi security is this bad.
+Anyway that guy's not gonna hack your Wi-Fi. This is why it's not a *total* catastrophe that most people's Wi-Fi security isn't very good.
 
 You might leave a spare key under the mat, or not bother to lock your windows *even though* someone could easily climb through them, because you're not worried about someone physically breaking in. In the same way, your house probably doesn't need extra-strong Wi-Fi security.
 
@@ -194,10 +204,9 @@ I mean the government has far easier ways to spy on you, but if you *really* wan
 Good examples include `fresh*life*fresh*mangoes` and `gday$one$internet$please`. Or randomly generate one like `gV@3AdSKouI&*3Wj` if you hate your guests and love typing.
 
 * Install custom router firmware like [DD-WRT](https://www.dd-wrt.com/site/index).
-This has far fewer security holes than whatever PHP spaghetti your router came with.
+This has far fewer security holes than whatever 1997 PHP spaghetti your router came with.
 
-# Wait so what did you do in the hotel on the family holiday?
-Thanks for taking the time to read this blog post.
 
-* TODO did you know you can deauth?
-* TODO Did you know about wifi probe requests
+----------------------
+
+
