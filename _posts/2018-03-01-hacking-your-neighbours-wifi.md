@@ -204,7 +204,7 @@ A website like PayPal is attackable by:
 Your home Wi-Fi is attackable by:
 * anyone nearby your house
 
-What I'm saying here is that **the chance of someone with skills and motivation to hack your Wi-Fi *actually doing it* is....really small**. Probably your neighbours are just that nice family and that one guy who you notice always leaves his beer bottles in your recycling bin.
+What I'm saying here is that **the chance of someone with skills and motivation to hack your Wi-Fi *actually doing it* is....really small**. Probably your neighbours are just that nice family and that one guy who always leaves his beer bottles in your recycling bin.
 
 Anyway that guy's not gonna hack your Wi-Fi. This is why it's not a *total* catastrophe that most people's Wi-Fi security isn't very good.
 
