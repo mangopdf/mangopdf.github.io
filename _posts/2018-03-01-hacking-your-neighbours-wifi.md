@@ -9,7 +9,12 @@ colour: purple
 image: https://iihelp.iinet.net.au/sites/iihelp.iinet.net.au/files/macoswifi3.png
 ---
 
+-------
+Hey kid, wanna hack some Wi-Fi?
 
+This article is your 100% lactose-free guide to hacking home Wi-Fi. By the end it’s okay to feel afraid, insecure, or even the urge to bulk-purchase home networking equipment. It’s okay. We’ve all been there.
+
+-------
 ![wifipasswordbox](https://iihelp.iinet.net.au/sites/iihelp.iinet.net.au/files/macoswifi3.png)
 
 Isn't is strange how when you move into a place and get an internet connection, you typically get given a home router as part of the package? Isn't it strange how this router is held together using nothing but matchsticks, broken promises, and man's hubris?
@@ -20,8 +25,9 @@ Did you know that [anyone nearby can kick you off a Wi-Fi network?](https://en.w
 
 Did you know your phone [constantly broadcasts the names and locations (by proxy) of every Wi-Fi network you've ever connected to?](https://www.crc.id.au/tracking-people-via-wifi-even-when-not-connected/)
 
-This article is your 100% lactose-free guide to hacking home Wi-Fi. By the end it’s okay to feel afraid, insecure, or even the urge to bulk-purchase home networking equipment. It’s okay. We’ve all been there.
+Yeah it's all pretty broken hey?
 
+Below are the steps for breaking it more.
 
 ### Step 0: Don't actually do this
 
@@ -32,7 +38,7 @@ You might be having what seems like a genius idea, and that's "wowee I should ha
 If you want to actually hack some Wi-Fi, try disconnecting and doing this to your own Wi-Fi.
 
 ### Step 1: Find the right Wi-Fi
-So in our 99.99999% theoretical scenario, you, your laptop, and a whole lotta hubris are within range of your neighbour's Wi-Fi router. You don't know the password, but you want to connect.
+So in our 99.99999% theoretical scenario, you and your laptop are within range of your neighbour's Wi-Fi router. You don't know the password, but you want to connect. Time to do some crimes.
 
 The first thing you'd do is take out your laptop and run [airodump-ng](https://google.com/q=aircrack-ng), a tool for precisely the job of hacking Wi-Fi.
 
@@ -72,9 +78,19 @@ The trick is that by spying on the handshake, an eavesdropper (that's us) could 
 
 You know the text, you know what it encrypts to, and you know how to do the encryption. The only thing you don't know is what the key is. This means that you can guess something as the key, and _check_ if your guess was right.
 
+---
+_We see "3b53f" encrypts to "b8%&G"_
+
+_Try encrypting "3b53f" with key "password1" -> "AAERJ" // Wrong!_
+
+_Try encrypting "3b53f" with key "cooldad1964" -> "b8%&G" // Found it!_
+
+---
+
 What if you just encrypt the text `3b5ef` with `cooldad1964` as the key, and it happens to encrypt to `b8%&G`?
 
 Then you know that the password was `cooldad1964`. And if `3b5ef` encrypts to something else, then you know your guess was wrong.
+
 
 [^corrections]: WARNING this is a simplification (read: wrong), there's actually a chain of keys computed from the actual Wi-Fi password. It boils down to the above idea, tho, sorry for tricking you I'm just protecting you from the harsh truth, son. If you want the real deal and aren't afraid of death by acronyms check out [this stackoverflow answer.](https://security.stackexchange.com/questions/66008/how-exactly-does-4-way-handshake-cracking-work)
 
@@ -188,17 +204,17 @@ A website like PayPal is attackable by:
 Your home Wi-Fi is attackable by:
 * anyone nearby your house
 
-What I'm saying here is that **the chance of someone with skills and motivation to hack your Wi-Fi *actually doing it* is....really small**. Probably your neighbours are just that nice family and that one guy who you notice always leaves his beer bottles in your recycling bin and sort of grunts at you when you pass eachother and well, you just think that maybe the classic combo of socks, sandals, and singlets isn't cool anymore, so you'd just like to not have your driveway blocked for once and go to the supermarket without incident.
+What I'm saying here is that **the chance of someone with skills and motivation to hack your Wi-Fi *actually doing it* is....really small**. Probably your neighbours are just that nice family and that one guy who you notice always leaves his beer bottles in your recycling bin.
 
 Anyway that guy's not gonna hack your Wi-Fi. This is why it's not a *total* catastrophe that most people's Wi-Fi security isn't very good.
 
 You might leave a spare key under the mat, or not bother to lock your windows *even though* someone could easily climb through them, because you're not worried about someone physically breaking in. In the same way, your house probably doesn't need extra-strong Wi-Fi security.
 
-So don't worry about it! Go to the beach! Participate in the capitalist machine! Eat a cupcake! Your Wi-Fi security probably isn't worth worrying about.
+So don't worry about it! Go to the beach! Work all day to make a rich dude slightly richer! He might thank you, but probably not! Eat a cupcake! Your Wi-Fi security probably isn't worth worrying about.
 
 ## 2. Enable Paranoia Mode
 
-"Wait what if there IS someone trying to hack my home Wi-Fi, like the GOVERNMENT!!1!"
+"Wait what if there IS someone trying to hack my home Wi-Fi, like my local government or perhaps a particularly intelligent bird?"
 
 I mean the government has far easier ways to spy on you, but if you *really* want to tighten up your Wi-Fi security, you can:
 
@@ -208,10 +224,18 @@ Good examples include `fresh*life*fresh*mangoes` and `gday$one$internet$please`.
 * Install custom router firmware like [DD-WRT](https://www.dd-wrt.com/site/index).
 This has far fewer security holes than whatever 1997 PHP spaghetti your router came with.
 
---------
+-----------------------
 
-## Wait but where do I get the big lists of passwords?
+# "Wait so have you ever actually used this?"
 Thanks for taking the time to read this blog post.
 
 -----------------------
 
+
+
+
+
+
+_Big ol' thanks to these [heroes](https://rissole.github.io/alexandhorachio/game/) for their large brains which showed me how to do words more good._
+
+_If you want to talk to me about this, [@ me on Twitter](https://twitter.com/mangopdf) I guess._
