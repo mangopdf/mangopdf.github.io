@@ -151,7 +151,10 @@ So you can probably hack home Wi-Fi. What's the point of doing it?
 
 ## Finding your neighbour's ISP password
 
-Routers often store the password used to connect to the ISP (your ISP may not do this) in their admin panels.
+Routers often store the password used to connect to the ISP in their admin pages.
+
+This password would let you prove that you are your neighbour when talking to their ISP. You can cancel their internet all together. You can see their billing information. You are them.
+
 Let me walk you through the complex process of hacking a home router.
 
 First you open up the popular hacking software, Google Chrome, and go to 192.168.0.1, which is usually the IP address of the router.
