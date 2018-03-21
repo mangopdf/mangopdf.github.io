@@ -74,7 +74,7 @@ So, the secret handshake lets you and the Wi-Fi router both prove you know the p
 ##### Eavesdropping
 The trick is that by spying on the handshake, an eavesdropper (that's us) could see:
 * A randomly chosen bit of text (e.g. `3b5ef`)
-* The same text, encrypted[^corrections] with the Wi-Fi password as the key (`b8%&G`)
+* The same text, encrypted with the Wi-Fi password as the key (`b8%&G`)
 
 You know the text, you know what it encrypts to, and you know how to do the encryption. The only thing you don't know is what the key is. This means that you can guess something as the key, and _check_ if your guess was right.
 
@@ -87,7 +87,7 @@ _Try encrypting "3b53f" with key "cooldad1964" -> "b8%&G" // Found it!_
 
 ---
 
-What if you just encrypt[^corrections] the text `3b5ef` with `cooldad1964` as the key, and it happens to encrypt to `b8%&G`?
+What if you just encrypt the text `3b5ef` with `cooldad1964` as the key, and it happens to encrypt to `b8%&G`?
 
 Then you know that the password was `cooldad1964`. And if `3b5ef` encrypts to something else, then you know your guess was wrong.
 
