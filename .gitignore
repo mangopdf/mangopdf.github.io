@@ -4,3 +4,5 @@ _site
 *.sass-cache*
 scss/.sass-cache*
 *.scssc
+.bundle
+vendor/
