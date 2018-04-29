@@ -1,17 +1,55 @@
 
 
-"Have you ever....."
+Imagine your brain was software. What kind would it be? Would it ever crash? Would there be any ways of hacking it? If you renamed a .jpg to a .mp3 and asked your brain to open it, do you think it would burst into flames instantly, leaving only a smoking crater where it once remained?
+
+Do you have an image in your head for what kind of software your brain would be? Don't worry, I do.
+
+// Windows 95
+
+Ah, just look at those sweet smooth green hills.
+
+This blog post is about how our brains get tricked. Certain inputs will reliably cause our brains to produce the *wrong* outputs. This is terrifying.
+
+## Example 1: The tax-evading number wizard (or some other gag, it has to be a funny wizard ok)
 
 
-What is this?
-Hi! This is a list of common mistakes brains make. Knowing what they are might make you less wrong! Wow, doesn't that sound great? Just think of all the Business Value you could create.
 
-Cognitive Biases
-A cognitive bias is a bias in the way we think. It’s a way in which we will be predictably wrong.
 
-Below are several examples, so please prepare your browser because we’re going on a ride.
+Plan:
+Human brain 0days - this is the theme
+Show that they're wrong - this is the hook
+Biases:
+  * Example
+  * Explanation
+  * How to talk about it (like TFAS) "Alex flubbed by saying let's look for more evidence that supports my theory (google search results)"
+how 2 not be biased? Or just say it's all hopeless
 
-Confirmation bias
+
+
+* invisible dragon story illustrates falsifiable hypotheses https://www.lesswrong.com/posts/CqyJzDZWvGhhFJ7dY/belief-in-belief
+* Maybe the dragon-claimant flinches away from the prospect of admitting to himself that there is no dragon, because it conflicts with his self-image as the glorious discoverer of the dragon, who saw in his garage what all others had failed to see.
+* Depending on how your childhood went, you may remember a time period when you first began to doubt Santa Claus's existence, but you still believed that you were supposed to believe in Santa Claus, so you tried to deny the doubts. As Daniel Dennett observes, where it is difficult to believe a thing, it is often much easier to believe that you ought to believe it.
+* Most people don't realise the difference between believing a thing, and believing it's good to believe a thing
+* And here things become complicated, as human minds are wont to do—I think even Dennett oversimplifies how this psychology works in practice. For one thing, if you believe in belief, you cannot admit to yourself that you only believe in belief, because it is virtuous to believe, not to believe in belief, and so if you only believe in belief, instead of believing, you are not virtuous. Nobody will admit to themselves, "I don't believe the Ultimate Cosmic Sky is blue and green, but I believe I ought to believe it"—not unless they are unusually capable of acknowledging their own lack of virtue. People don't believe in belief in belief, they just believe in belief.
+* Rhyming statements are perceived as more truthful. A famous example being used in the O.J Simpson trial with the defense's use of the phrase "If the gloves don't fit, then you must acquit."
+* The EASE that you understand something is what you use to decide whether it's true. Not whether it matches the real world that you see.
+* What is "true"? It's when your beliefs represent the real world. You believe that the sky is blue. You look at the sky. You see blue. Belief looks good to me. The sky could be a holographic forcefield made by aliens to sell diet coke, so which one do you believe? Base rates baybee, simple hypotheses baybee. <--- good starting point.
+* Survivorship bias and startups
+* Heuristics in judgment and decision making, including:
+  * Availability heuristic – estimating what is more likely by what is more available in memory, which is biased toward vivid, unusual, or emotionally charged examples[51]
+  * Representativeness heuristic – judging probabilities on the basis of resemblance[51]
+  * Affect heuristic – basing a decision on an emotional reaction rather than a calculation of risks and benefits[116]
+  * Anchoring: You rely too much on the first bit of information you hear. Write them all down, shuffle them, and re-assess.
+  * Groupthink -> bandwagoning. The chance of you believeing something increases if you learn that others believe it. This is why meetings are often unproductive.
+  * Confirmation bias is mandatory
+  * We don't say "we got lucky" or "it was a coincidence" enough.
+  * zero-risk bias. We love certainty, because we are bad at small probabilities. For 1-5% chances, we either ignore them completely, or massively overconsider them.
+
+Do a stunt? Do a test?
+
+
+// picture
+
 Imagine playing the following game. A mysterious number wizard is thinking of a rule that applies to lists of 3 numbers. Your goal is to discover the rule.
 
 I have included a picture of a wizard to help you get into the zone.
@@ -140,7 +178,7 @@ By searching for evidence that makes your current understanding wrong, you can s
 
 
 A security example
-In the security world, you might see an IP address from Russia. This might make you think “this IP address is a hacker”. Running with this “the IP is bad” theory, you see that the IP has visited “/admin” type URLs on your webapp. Since you suspect the IP is bad, you look for more evidence that proves the theory you already have. You look at the webapp’s logs, and find that this IP has never been seen before, and it’s reset the password for a customer’s account.
+In the security world, you might see an IP address from Russia. Because you have heard about "Russia" hacking things in the news, this might make you think “this IP address is a hacker”. Running with this “the IP is bad” theory, you see that the IP has visited “/admin” type URLs on your webapp. Since you suspect the IP is bad, you look for more evidence that proves the theory you already have. You look at the webapp’s logs, and find that this IP has never been seen before, and it’s reset the password for a customer’s account.
 
 With all this evidence, you sound the alarm and trigger a security incident.
 
