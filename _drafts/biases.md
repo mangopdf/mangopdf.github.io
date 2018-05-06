@@ -14,15 +14,51 @@ This blog post is about how our brains get tricked. Certain inputs will reliably
 
 
 
-
 Plan:
 Human brain 0days - this is the theme
-Show that they're wrong - this is the hook
+Show that they're wrong - this is the hook (you can't trust your brain (use The Dress and other optical illusions, to show that you can be consistently fooled))
+Why should I care about this?
+All these biases happen subconsciously. You don't consciously choose the wrong thing, the suggestions that your brain presents to you are just flawed. (How to engage rational thinking?). Try and predict the future "it's the day after the meeting, what do you think happened? Not what do you WANT to happen, not what would be GOOD to happen, just base the future on the past.
 Biases:
   * Example
   * Explanation
-  * How to talk about it (like TFAS) "Alex flubbed by saying let's look for more evidence that supports my theory (google search results)"
+  * [ ] How to talk about it (like TFAS) "Alex flubbed by saying let's look for more evidence that supports my theory (google search results)"
+  * How to beat it? Or do this all at the end.
+Steal zillions of examples from TFAS, but also have your own security themed ones
 how 2 not be biased? Or just say it's all hopeless
+* Planning poker
+* Diverse thinkers, will still be biased, but cover each other's biases a little
+*
+
+When you might be biased:
+* Choosing a tool
+* Choosing whether to investigate or not
+* Will my phish work?
+
+
+# Which biases/topics to teach?
+* **Base rate neglect**
+  * Example
+* **Confirmation Bias**
+  * Wizard game
+* believing that it's good to believe / actually believe
+  * Example
+* Rhymes are percieved as more truthful. The cognitive ease of something contributes to how much you believe it.
+* Survivorship bias in log analysis
+  * Example
+* Availability Heuristic
+  * Example
+* Groupthink
+  * Example
+* We don't say "we got lucky" or "it was a coincidence" enough.
+* zero-risk bias. We love certainty, because we are bad at small probabilities. For 1-5% chances, we either ignore them completely, or massively overconsider them.
+  * We weight negative outcomes more than positive, but they should be the same. (would you play a 60% $1, 40% -1$ game? (use a different thing instead of money, 60% (good meme thing) 40% (bad meme thing)))
+* Hindsight Bias: They look at the outcome of the decision, rather than the information available at the time. "wow, great move investing in bitcoin" or "you should have thought harder about your investment"
+* Planning Fallacy
+* Fundamental attribution. "what an angry person he must be"
+
+Stick figure comics for examples?
+
 
 
 
