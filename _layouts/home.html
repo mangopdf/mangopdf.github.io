@@ -9,17 +9,19 @@ layout: default
         <h2 class="text-center scrollspy" id="blog">blog posts</h2>
         <hr class="star-primary star-blue">
         <div class="grid">
-        {% for post in site.posts %}
-            <div class="portfolio-item">
-                <a href="{{ post.url | relative_url }}" class="btn btn-lg btn-outline btn-{{ post.colour }}">{{ post.title | escape }}</a>
-                <div class="caption">
-                    <div class="caption-content">
-                        <p>
-                        {{ post.blurb }}
-                        </p>
+            {% for post in site.posts %}
+                {% unless post.hidden  %}
+                    <div class="portfolio-item">
+                        <a href="{{ post.url | relative_url }}" class="btn btn-lg btn-outline btn-{{ post.colour }}">{{ post.title | escape }}</a>
+                        <div class="caption">
+                            <div class="caption-content">
+                                <p>
+                                {{ post.blurb }}
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                {% endunless %} 
 
         {% endfor %}
     </div>
@@ -167,7 +169,7 @@ layout: default
         <div class="grid">
 
             <div class=" portfolio-item">
-                <a href="https://www.youtube.com/watch?v=MkSkqMvGBuo" class="btn btn-lg btn-outline btn-lightblue">Graphing when your Facebook friends are awake</a>
+                <a href="https://www.youtube.com/watch?v=MkSkqMvGBuo" class="btn btn-lg btn-outline btn-purple">Graphing when your Facebook friends are awake</a>
                 <div class="caption">
                     <div class="caption-content">
                         <p>
@@ -178,7 +180,6 @@ layout: default
             </div>
 
             <div class=" portfolio-item">
-                <a href="#" class="btn btn-lg btn-outline btn-purple">that's it</a>
                 <a href="https://www.youtube.com/watch?v=nSu11VvVL9M" class="btn btn-lg btn-outline btn-lightblue">Tricking people</a>
                 <div class="caption">
                     <div class="caption-content">
@@ -189,8 +190,7 @@ layout: default
                 </div>
             </div>
             <div class=" portfolio-item">
-                <a href="#" class="btn btn-lg btn-outline btn-purple">that's it</a>
-                <a href="https://www.youtube.com/watch?v=4NejZ3g_vRc" class="btn btn-lg btn-outline btn-lightblue">Operation Luigi: How I hacked my friend without her noticing</a>
+                <a href="https://www.youtube.com/watch?v=4NejZ3g_vRc" class="btn btn-lg btn-outline btn-pink">Operation Luigi: How I hacked my friend without her noticing</a>
 
                 <div class="caption">
                     <div class="caption-content">
