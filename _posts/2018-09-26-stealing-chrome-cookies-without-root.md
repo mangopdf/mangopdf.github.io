@@ -176,7 +176,8 @@ I'm going to save you the 50 open Chrome tabs, reading of Ruby from 2012 on GitH
   ...<the rest of the cookies>
 ```
 
-![keys](/img/keys.png)
+![keys](/img/keys.jpg)
+
 Aaaand that's it. Chrome just _gives_ you the cookies. This bypasses the whole Chrome Safe Storage password thing because Chrome itself decrypts the cookies.
 
 And we did it all without needing to become the root user, or otherwise know Elon's password.
