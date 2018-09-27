@@ -6,7 +6,7 @@ blurb: I found a new way to trick Google Chrome into giving up its secrets.
 description: Stealing Chrome Cookies without root or password on OSX, Linux, and Windows via Remote Debugging Protocol.
 permalink: /stealing-chrome-cookies-without-root
 colour: blue
-image: https://iihelp.iinet.net.au/sites/iihelp.iinet.net.au/files/macoswifi3.png
+image: /img/chrome_cookies.png
 hidden: yep
 ---
 
