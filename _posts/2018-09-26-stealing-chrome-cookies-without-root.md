@@ -21,7 +21,7 @@ Unlike other ways of getting Chrome Cookies, you don't need to have the user's p
 
 Once you've stolen the cookies, you're logged in as your victim to whatever websites they've logged in to.
 
-If you wanna skip this dumb blog post and just get the "exploit", here ya go: [https://github.com/defaultnamehere/cookie_crimes](https://github.com/defaultnamehere/cookie_crimes]). Don't spend it all at once.
+If you wanna skip this dumb blog post and just get the "exploit", here ya go: [https://github.com/defaultnamehere/cookie_crimes](https://github.com/defaultnamehere/cookie_crimes). Don't spend it all at once.
 
 If you wanna know how it works, you need only _find within yourself the strength to scroll this post._
 
@@ -109,7 +109,7 @@ Basically, that remote debugging port (`localhost:9222`) is waiting for you to s
 
 
 ### Sidenote: The Chrome Dev Tools are absolutely Loose
-When I was trying to figure out whether this was possible, I stumbled across this page: https://chromedevtools.github.io/devtools-protocol/.
+When I was trying to figure out whether this was possible, I stumbled across this page: [https://chromedevtools.github.io/devtools-protocol/](https://chromedevtools.github.io/devtools-protocol/)
 
 This is some documentation for the Protocol used by the Chrome Developer Tools (`Right Click > Inspect Element`, our trusted friend and ally). Presumably, on this page, some nice people at Google are graciously going to explain to me, an Outsider, how to use their Ancient and Powerful magic.
 
