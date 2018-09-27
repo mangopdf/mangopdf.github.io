@@ -2,7 +2,7 @@
 layout: post
 title:  "Hacking your neighbour's Wi-Fi"
 date:   2018-01-01 16:20:38 +1100
-blurb: You wouldn't do that, though. Would you?
+blurb: Hacking Wi-Fi, cracking passwords, and spying on mysterious handshakes is an easy game for babies.
 description: Hacking Wi-Fi, cracking passwords, and spying on mysterious handshakes is an easy game for babies.
 permalink: /hacking-your-neighbours-wifi
 colour: purple
@@ -48,7 +48,7 @@ Here's what it looks like.
 You see the names of nearby Wi-Fi networks and also their “BSSID”, which is a bit like an ID for Wi-Fi networks. It’s actually *exactly* like that.
 
 ### Step 2: Get the password hash
-Once you know the BSSID of your neighbour's Wi-Fi, the goal is to get the Wi-Fi password. The router won't tell you the Wi-Fi password, but it will give up the _password hash_.
+Once you know the BSSID of your neighbour's Wi-Fi, the goal is to get the Wi-Fi password. The router won't tell you the Wi-Fi password, but it will give up the _password hash[^corrections]_.
 
 A password hash is like a scrambled version of the password. You can’t unscramble it. Kinda like how you can’t unscramble scrambled eggs back into the white and the yolk.
 
@@ -74,7 +74,7 @@ So, the secret handshake lets you and the Wi-Fi router both prove you know the p
 ##### Eavesdropping
 The trick is that by spying on the handshake, an eavesdropper (that's us) could see:
 * A randomly chosen bit of text (e.g. `3b5ef`)
-* The same text, encrypted with the Wi-Fi password[^corrections] as the key (`b8%&G`)
+* The same text, encrypted with the Wi-Fi password as the key (`b8%&G`)
 
 You know the text, you know what it encrypts to, and you know how to do the encryption. The only thing you don't know is what the key is. This means that you can guess something as the key, and _check_ if your guess was right.
 
@@ -151,7 +151,10 @@ So you can probably hack home Wi-Fi. What's the point of doing it?
 
 ## Finding your neighbour's ISP password
 
-Routers often store the password used to connect to the ISP (your ISP may not do this) in their admin panels.
+Routers often store the password used to connect to the ISP in their admin pages.
+
+This password would let you prove that you are your neighbour when talking to their ISP. You can cancel their internet all together. You can see their billing information. You are them.
+
 Let me walk you through the complex process of hacking a home router.
 
 First you open up the popular hacking software, Google Chrome, and go to 192.168.0.1, which is usually the IP address of the router.
