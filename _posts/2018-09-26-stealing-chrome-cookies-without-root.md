@@ -168,6 +168,7 @@ Connected to ws://localhost:9222/devtools/page/7404BF41DC4E7512E0431577BABCE18A
 Oooh. Looks like a command prompt. If we knew what to type here, we could tell Chrome what to do.
 
 I'm going to save you the 50 open Chrome tabs, reading of Ruby from 2012 on GitHub, and [discovery of the very bug report which created this feature](https://bugs.chromium.org/p/chromium/issues/detail?id=668932) and just show you the command.
+
 ```
 >{"id": 1, "method": "Network.getAllCookies"}
 {
@@ -186,7 +187,7 @@ I'm going to save you the 50 open Chrome tabs, reading of Ruby from 2012 on GitH
 
 ![keys](/img/keys.jpg)
 
-Aaaand that's it. Chrome just _gives_ you the cookies. This bypasses the whole Chrome Safe Storage password thing because Chrome itself decrypts the cookies.
+Because we asked nicely, Chrome just _gives_ us the cookies. This bypasses the whole Chrome Safe Storage password thing because Chrome itself decrypts the cookies.
 
 And we did it all without needing to become the root user, or otherwise know Elon's password.
 
@@ -221,11 +222,10 @@ Even if Chrome used it, most websites don't use Channel-Binding. This is because
 In theory, people can detect the theft of cookies. Google, for instance, knows that they gave the cookie above to Elon. They can also know, that you, with a different browser, OS, and IP address, might not be Elon. They can also detect your channel-binding errors. But hey, I haven't seen this technique fail because of this so far.
 
 
-
 # FAQ
 
 ### Wait so you have to already be running code on someone's computer for this to work? That's not a big deal at all!
-I mean yeah pretty much you're right. It's not that big a deal. Nobody panic. The kinds of people who are stealing people's browser cookies are just gonna have an easier time since there's no more decrypting.
+I mean yeah pretty much you're right. It's not that big a deal. Nobody panic. Everybody stay cool and fresh. The kinds of people who are stealing people's browser cookies are just gonna have an easier time since there's no more decrypting.
 
 ### Are you going to tell Google about this critical security flaw?
 Nah, they know about it. It's a feature of Chrome, after all. I even saw them [deciding to add it](https://bugs.chromium.org/p/chromium/issues/detail?id=668932).
