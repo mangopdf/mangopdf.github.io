@@ -23,9 +23,11 @@ this message will self distruct in 3-5 business days
 
 If you ask Google Chrome nicely, it will give you a user's Chrome Cookies.
 
-Unlike other ways of getting Chrome Cookies, you don't need to have the user's password/root access if you do it this way. It works by using Chrome's Remote Debugging Protocol.
-
 Once you've stolen the cookies, you're logged in as your victim to whatever websites they've logged in to.
+
+Unlike other ways of getting Chrome Cookies, you don't need to have the user's password/root access if you do it this way. You just need to be able to execute code on their computer. It works by using Chrome's Remote Debugging Protocol.
+
+This blog post is about how the technique works, how I found it, and man's hubris.
 
 If you wanna skip this dumb blog post and just get the "exploit", here ya go: [https://github.com/defaultnamehere/cookie_crimes](https://github.com/defaultnamehere/cookie_crimes). Don't spend it all at once.
 
@@ -190,9 +192,14 @@ And we did it all without needing to become the root user, or otherwise know Elo
 
 You can plug these cookies into a Chrome Extension (for example, [EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg)), and you'll be logged in to Elon's gmail if you just go to `mail.google.com` in your browser.
 
+Aaaaaand that's it. Crimes successful. Directed by Quentin Tarantino.
+
 ---
 
 If you want to try this at home, here's the code to just straight up do it for you: [https://github.com/defaultnamehere/cookie_crimes](https://github.com/defaultnamehere/cookie_crimes]).
+
+I'm pretty sure this is the easiest way of getting Chrome cookies once you're in someone's computer. I'm sure not going to bother with any other method anymore.
+
 
 ### Prevention
 
