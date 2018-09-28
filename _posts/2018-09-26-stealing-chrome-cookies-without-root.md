@@ -13,6 +13,12 @@ hidden: yep
 # keep it secret, keep it safe
 this is a draft post, and ya boi alex shared it with you because you are a trusted friend and ally. pls don't share it with anyone else unless you're like a spy or something in which case it's too late
 
+* pls do not post the link anywhere (or google might pick it up)
+* pls not not tell ur spy comrades about this ##technique, since it's secret as far as i know
+* i'm planning to publish this at the same time as other people write about it, so you can talk about it after then
+
+this message will self distruct in 3-5 business days
+
 ---
 
 If you ask Google Chrome nicely, it will give you a user's Chrome Cookies.
