@@ -194,15 +194,25 @@ You can plug these cookies into a Chrome Extension (for example, [EditThisCookie
 
 If you want to try this at home, here's the code to just straight up do it for you: [https://github.com/defaultnamehere/cookie_crimes](https://github.com/defaultnamehere/cookie_crimes]).
 
-### Detection
-
-In theory, people can detect the theft of cookies. Google, for instance, knows that they gave the cookie above to Elon. They can also know, that you, with a different browser, OS, and IP address, might not be Elon. But hey, I haven't seen it fail because of this so far.
-
 ### Prevention
 
 If you would not like this attack being used against you, I can wholeheartedly recommend not letting someone else execute code on your computer.
 
 The industry-standard best practice is to rapidly acquire blessed amulets, mysterious crystals of unknown but surely spicy origin, and/or pay-as-you-go racketeering schemes to prevent the aforementioned execution of code.
+
+Failing that, I guess there's also:
+
+#### Channel-binding cookies
+The good folks online have come up with a way to make stealing cookies harder. It's called [Channel-Bound Cookies](http://www.browserauth.net/channel-bound-cookies). This lets websites ask you to prove that you have a special Token Binding Key before you can use cookies on that website.
+This means that if you want to use cookies you stole from someone's machine, you also have to steal their Token Binding Key, and use it to impersonate their browser.
+
+This feature is [in Google Chrome](https://www.chromestatus.com/feature/5097603234529280), but [disabled by default](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/OkdLUyYmY1E), and [being removed accorded to the heated discussion in this thread](https://groups.google.com/a/chromium.org/forum/?utm_medium=email&utm_source=footer#!msg/net-dev/AjFQjBmaEQE/_3DM1hwGCQAJ)
+
+Even if Chrome used it, most websites don't use Channel-Binding. This is because, well, it's not much harm to the website if Elon's cookies get used by someone else. That's more Elon's problem, in their eyes.
+
+### Detection
+In theory, people can detect the theft of cookies. Google, for instance, knows that they gave the cookie above to Elon. They can also know, that you, with a different browser, OS, and IP address, might not be Elon. They can also detect your channel-binding errors. But hey, I haven't seen this technique fail because of this so far.
+
 
 
 # FAQ
