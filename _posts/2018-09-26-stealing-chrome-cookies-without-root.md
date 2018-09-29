@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Stealing Chrome cookies without root"
+title: "Stealing Chrome cookies without a password"
 date: 2018-09-26 16:20:12 +1100
 blurb: I found a new way to trick Google Chrome into giving up its secrets.
 description: Stealing Chrome Cookies without root or password on OSX, Linux, and Windows via Remote Debugging Protocol.
-permalink: /stealing-chrome-cookies-without-root
+permalink: /stealing-chrome-cookies-without-a-password
 colour: blue
 image: /img/chrome_cookies.png
 hidden: yep
@@ -67,7 +67,9 @@ Elon's delicious, tasty Chrome cookies live in a file on his computer. Cleverly,
 
 This is a perfectly legit way to get someone's cookies, but the reason we're here today is I'm pretty sure I found a way to skip all that.
 
-Why should we have to decrypt the cookies? After all, the user can get their own cookies from Chrome without typing their password. Surely there's a way to just get Chrome to give us the cookies, if we ask nicely?
+---
+
+Why should we have to decrypt the cookies? After all, Elon can get his own cookies from Chrome without typing his password (`itwasthebestofgrimesitwastheworstofgrimes`). Surely there's a way to just get Chrome to give us the cookies, if we ask nicely?
 
 
 ## Step 1: Run Headless Chrome
@@ -103,7 +105,7 @@ https://gmail.com \
 This sets remote debugging listening on localhost:9222 (the default port for
 Chrome Remote Debugging). It won't open a browser window, either. We need to tell headless Chrome browse to something so we can open a tab and start debugging it. You can replace `gmail.com` with anything you like.
 
-At this point, you can view any page as if Elon opened it in a new tab (and so, see all his Facebook messages, in our example). You can do that by adding `--dump-dom` to the command above, which will print out the HTML of the page you ask for (`gmail.com` above). But that seems a bit tedious and not very stealthy, we can do better than that if we just _believe_.
+At this point, you can view any page as if Elon opened it in a new tab (and so, see all his Facebook messages, in our example). You can do that by adding `--dump-dom` to the command above, which will print out the HTML of the page you ask for (`gmail.com` above). But that seems a bit tedious, not very stealthy, and we can do better than that if we just _believe_.
 
 Normally, you're supposed to like, open a _second_ Chrome, point it at the first Chrome, and use it to debug Chrome itself. Ya we're not gonna do that. We're gonna remotely debug Chrome with `curl`.
 
@@ -124,7 +126,7 @@ This is some documentation for the Protocol used by the Chrome Developer Tools (
 They say "hey, if you want to remotely debug Chrome, you need to speak the Remote Debugging Protocol."
 I'm ready for this page to teach me about how to remotely debug Chrome, but it says "we don't release that kind of information to punks like you".
 
-They casually tell you to sniff and reverse-engineer the protocol if you want to know how it works, since the only client for it is the Chrome Dev Tools themselves. The way they tell you to sniff it is using the Chrome Dev Tools to inspect the _CHROME DEV TOOLS THEMSELVES_, and view the websocket data that the _first_ set of Chrome Dev Tools is sending. The ease with which they suggest this solution is quite stressful.
+They casually tell you to sniff and reverse-engineer the protocol if you want to know how it works, since the only client for it is the Chrome Dev Tools themselves. The way they tell you to sniff it is using the Chrome Dev Tools to debug the _CHROME DEV TOOLS THEMSELVES_, and view the websocket data that the _first_ set of Chrome Dev Tools is sending. The ease with which they suggest this solution is quite stressful.
 
 Finally, they have a section called "How is the protocol defined?", which has two links to json files you're supposed to read, both of which 404.
 
@@ -154,14 +156,16 @@ See that `webSocketDebuggerUrl`? That's what we want.
 ## Step 3: Issue the command over the websocket protocol
 With the magic URL we got in the previous step, we can now speak the Ancient Language to control Chrome.
 
-First we'll need something that can speak the websocket protocol. You can use anything, but I googled for some tool called `wsc`. In the [proof-of-concept](https://github.com/defaultnamehere/cookie_crimes) (which I made just for you) the whole thing is done in Python.
+First we'll need something that can speak the websocket language. You can use anything, but I googled for some tool called `wsc`. In the [proof-of-concept](https://github.com/defaultnamehere/cookie_crimes) (which I made just for you) the whole thing is done in Python, so you don't need this.
 
-### Issue the command
+### Speak the Ancient Language
+
+Ready? Let's do it
 
 Using `wsc`:
 
 ```
-wsc ws://localhost:9222/devtools/page/7404BF41DC4E7512E0431577BABCE18A 
+wsc ws://localhost:9222/devtools/page/7404BF41DC4E7512E0431577BABCE18A
 Connected to ws://localhost:9222/devtools/page/7404BF41DC4E7512E0431577BABCE18A
 >
 ```
@@ -171,7 +175,7 @@ I'm going to save you the 50 open Chrome tabs, reading of Ruby from 2012 on GitH
 
 ```
 >{"id": 1, "method": "Network.getAllCookies"}
-{
+[{
     "domain": "mail.google.com",
     "expires": -1,
     "httpOnly": false,
@@ -197,10 +201,7 @@ Aaaaaand that's it. Crimes successful. Directed by Quentin Tarantino.
 
 ---
 
-If you want to try this at home, here's the code to just straight up do it for you: [https://github.com/defaultnamehere/cookie_crimes](https://github.com/defaultnamehere/cookie_crimes]).
-
-I'm pretty sure this is the easiest way of getting Chrome cookies once you're in someone's computer. I'm sure not going to bother with any other method anymore.
-
+If you want to try this at home, here's the code to just straight up do it for you: [https://github.com/defaultnamehere/cookie_crimes](https://github.com/defaultnamehere/cookie_crimes]). If you want to try using it on someone else, [maybe this is the website for you](https://www.nsa.gov/careers/).
 
 ### Prevention
 
@@ -214,9 +215,9 @@ Failing that, I guess there's also:
 The good folks online have come up with a way to make stealing cookies harder. It's called [Channel-Bound Cookies](http://www.browserauth.net/channel-bound-cookies). This lets websites ask you to prove that you have a special Token Binding Key before you can use cookies on that website.
 This means that if you want to use cookies you stole from someone's machine, you also have to steal their Token Binding Key, and use it to impersonate their browser.
 
-This feature is [in Google Chrome](https://www.chromestatus.com/feature/5097603234529280), but [disabled by default](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/OkdLUyYmY1E), and [being removed accorded to the heated discussion in this thread](https://groups.google.com/a/chromium.org/forum/?utm_medium=email&utm_source=footer#!msg/net-dev/AjFQjBmaEQE/_3DM1hwGCQAJ)
+This feature is [in Google Chrome](https://www.chromestatus.com/feature/5097603234529280), but [disabled by default](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/OkdLUyYmY1E), and being removed if I have understood [the heated discussion in this thread](https://groups.google.com/a/chromium.org/forum/?utm_medium=email&utm_source=footer#!msg/net-dev/AjFQjBmaEQE/_3DM1hwGCQAJ)
 
-Even if Chrome used it, most websites don't use Channel-Binding. This is because, well, it's not much harm to the website if Elon's cookies get used by someone else. That's more Elon's problem, in their eyes.
+Even if Chrome used it, most websites don't use Channel-binding. This is because, well, it's not much harm to the website if Elon's cookies get used by someone else. That's more Elon's problem, in their eyes.
 
 ### Detection
 In theory, people can detect the theft of cookies. Google, for instance, knows that they gave the cookie above to Elon. They can also know, that you, with a different browser, OS, and IP address, might not be Elon. They can also detect your channel-binding errors. But hey, I haven't seen this technique fail because of this so far.
@@ -225,12 +226,25 @@ In theory, people can detect the theft of cookies. Google, for instance, knows t
 # FAQ
 
 ### Wait so you have to already be running code on someone's computer for this to work? That's not a big deal at all!
-I mean yeah pretty much you're right. It's not that big a deal. Nobody panic. Everybody stay cool and fresh. The kinds of people who are stealing people's browser cookies are just gonna have an easier time since there's no more decrypting.
+I mean yeah pretty much you're right. It's not that big a deal. Nobody panic. Everybody stay cool. The kinds of people who are stealing people's browser cookies are just gonna have an easier time since there's no more decrypting.
+
+### Why is this even good then?
+* You don't need to know someone's password to do it (unlike other methods)
+* It's simple ([one command](https://github.com/defaultnamehere/cookie_crimes]) to run)
+
+I'm pretty sure this is the best way of getting Chrome cookies once you're in someone's computer. I'm sure not going to bother with any other method anymore.
 
 ### Are you going to tell Google about this critical security flaw?
 Nah, they know about it. It's a feature of Chrome, after all. I even saw them [deciding to add it](https://bugs.chromium.org/p/chromium/issues/detail?id=668932).
 
-### Isn't it kinda irresponsible to publish this without warning?
+UPDATE: I told 'em about it juuuuuust to be nice.
+> I have to say this is working as intended. The remote debugging protocol is meant to provide full access, including cookies, and running Chrome with a flag makes it work.
+
+> I am surprised cookies can be read from a headful Chrome profile by the headless Chrome. We have plans to make profiles inter-operable, but that didn't happen yet. Maybe cookies are supported though, I didn't look too close.
+
+Thanks Google!
+
+### Isn't it kinda irresponsible to publish this outta nowhere?
 see you in hell i guess
 
 ### My head hurts a little and I feel tired.
@@ -243,12 +257,11 @@ Dunno, I haven't tried it and I have no idea how these browsers work. _You_ coul
 Thanks for taking the time to read this blog post.
 
 
-
 ---
 
 I wrote this because they were out of pearls at the bubble tea place. You can talk to me about it on Twitter if you want: [@mangopdf](https://twitter.com/mangopdf)
 
-Thanks to [@hackgnar](https://twitter.com/hackgnar), who wondered aloud "there must be _some_ way to get the cookies without root, since the user themself can get them."
+Thanks to [@hackgnar](https://twitter.com/hackgnar), who wondered aloud "there must be _some_ way to get the cookies without root, since the user can get their own cookies."
 
-Thanks to <TODO: SOMEONE>, for their guidance in pointing out that headless Chrome and remote debugging is a scary combination.
+Thanks to ``<TODO: SOMEONE>``, for their guidance in pointing out that headless Chrome and remote debugging is a scary combination.
 
