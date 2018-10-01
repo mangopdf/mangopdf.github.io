@@ -50,7 +50,7 @@ h6 {
 
 .star-light:after,
 .star-primary:after {
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
   font-size: 2em;
   position: relative;
   top: -.8em;
