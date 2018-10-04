@@ -265,3 +265,10 @@ Thanks to [@hackgnar](https://twitter.com/hackgnar), who wondered aloud "there m
 
 Thanks to ``<TODO: SOMEONE>``, for their guidance in pointing out that headless Chrome and remote debugging is a scary combination.
 
+// todo: 
+thank "wardolphin"
+thank @noncetonic from black sun labs (https://blacksunhackers.club/)
+change elon to something not an old meme
+
+
+
