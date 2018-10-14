@@ -21,17 +21,13 @@ this message will self distruct in 3-5 business days
 
 ---
 
-If you ask Google Chrome nicely, it will give you a user's Chrome Cookies.
+If you steal someone's Chrome cookies, you can log in to their account on everything they're logged in to.
 
-Once you've stolen the cookies, you're logged in as your victim to whatever websites they've logged in to.
-
-Unlike other ways of getting Chrome Cookies, you don't need to have the user's password/root access if you do it this way. You just need to be able to execute code on their computer. It works by using Chrome's Remote Debugging Protocol.
-
-This blog post is about how the technique works, how I found it, and man's hubris.
+It's often the first thing you do once you hack someone's computer. But, annoyingly, you need their password to do it. I found a way to do it without the password. You just need to be able to execute code on their computer. It works by using Chrome's Remote Debugging Protocol.
 
 If you wanna skip this dumb blog post and just get the "exploit", here ya go: [https://github.com/defaultnamehere/cookie_crimes](https://github.com/defaultnamehere/cookie_crimes). Don't spend it all at once.
 
-If you wanna know how it works, you need only _find within yourself the strength to scroll this post._
+If you want to know how it works, you need only _find within yourself the strength to scroll this post._
 
 ---
 
@@ -39,7 +35,7 @@ If you wanna know how it works, you need only _find within yourself the strength
 
 Imagine that, _for some reason_, you've hacked someone's computer. I dunno maybe you're like a spy or something?
 
-Let's call your fictitious victim, say, Elon.
+Let's call your fictitious victim, I dunno, say, Elon.
 
 Specifically, you've got the ability to execute code on Ol' Musky's computer. That's hacking, and you're already going to be slam jammed into the shadow realm for your crimes, so ya may as well do some more.
 
