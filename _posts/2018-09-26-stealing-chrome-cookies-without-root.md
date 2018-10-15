@@ -211,7 +211,7 @@ Failing that, I guess there's also:
 The good folks online have come up with a way to make stealing cookies harder. It's called [Channel-Bound Cookies](http://www.browserauth.net/channel-bound-cookies). This lets websites ask you to prove that you have a special Token Binding Key before you can use cookies on that website.
 This means that if you want to use cookies you stole from someone's machine, you also have to steal their Token Binding Key, and use it to impersonate their browser.
 
-This feature is [in Google Chrome](https://www.chromestatus.com/feature/5097603234529280), but [disabled by default](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/OkdLUyYmY1E), and being removed if I have understood [the heated discussion in this thread](https://groups.google.com/a/chromium.org/forum/?utm_medium=email&utm_source=footer#!msg/net-dev/AjFQjBmaEQE/_3DM1hwGCQAJ).
+This feature is [in Google Chrome](https://www.chromestatus.com/feature/5097603234529280), but [disabled by default](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/OkdLUyYmY1E), and being removed if I have understood [the heated discussion in this thread](https://groups.google.com/a/chromium.org/forum/?utm_medium=email&utm_source=footer#!msg/net-dev/AjFQjBmaEQE/_3DM1hwGCQAJ). The feature is also in Edge (which is what Internet Explorer is called now, post Identity Crisis).
 
 Even if Chrome used it, most websites don't use Channel-binding. This is because, well, it's not much harm to the website if Elon's cookies get used by someone else. That's more Elon's problem, in their eyes.
 
@@ -260,4 +260,11 @@ I wrote this because they were out of pearls at the bubble tea place. You can ta
 Thanks to [@hackgnar](https://twitter.com/hackgnar), who wondered aloud "there must be _some_ way to get the cookies without root, since the user can get their own cookies."
 
 Thanks to ``<TODO: SOMEONE>``, for their guidance in pointing out that headless Chrome and remote debugging is a scary combination.
+
+// todo: 
+thank "wardolphin"
+thank @noncetonic from black sun labs (https://blacksunhackers.club/)
+change elon to something not an old meme
+
+
 
