@@ -198,7 +198,7 @@ Aaaaaand that's it. Crimes successful. Directed by Quentin Tarantino.
 
 ---
 
-If you want to try this at home, here's the code to just straight up do it for you: [https://github.com/defaultnamehere/cookie_crimes](https://github.com/defaultnamehere/cookie_crimes]). If you want to try using it on someone else, [maybe this is the website for you](https://www.nsa.gov/careers/).
+If you want to try this at home, here's the code to just straight up do it for you: [https://github.com/defaultnamehere/cookie_crimes](https://github.com/defaultnamehere/cookie_crimes). If you want to try using it on someone else, [maybe this is the website for you](https://www.nsa.gov/careers/).
 
 ### Prevention
 
@@ -227,7 +227,7 @@ I mean yeah pretty much you're right. It's not that big a deal. Nobody panic. Ev
 
 ### Why is this even good then?
 * You don't need to know someone's password to do it (unlike other methods)
-* It's simple ([one command](https://github.com/defaultnamehere/cookie_crimes]) to run)
+* It's simple ([one command](https://github.com/defaultnamehere/cookie_crimes) to run)
 
 I'm pretty sure this is the best way of getting Chrome cookies once you're in someone's computer. I sure wouldn't bother with any other method.
 
