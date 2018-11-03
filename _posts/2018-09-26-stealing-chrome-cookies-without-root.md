@@ -5,29 +5,17 @@ date: 2018-09-26 16:20:12 +1100
 blurb: I found a new way to trick Google Chrome into giving up its secrets.
 description: Stealing Chrome Cookies without root or password on OSX, Linux, and Windows via Remote Debugging Protocol.
 permalink: /stealing-chrome-cookies-without-a-password
-colour: blue
+colour: lightblue
 image: /img/chrome_cookies.png
-hidden: yep
 ---
 
-# keep it secret, keep it safe
-this is a draft post, and ya boi alex shared it with you because you are a trusted friend and ally. pls don't share it with anyone else unless you're like a spy or something in which case it's too late
+If you steal someone's Chrome cookies, you can log in to their accounts on **every website** they're logged in to.
 
-* pls do not post the link anywhere (or google might pick it up)
-* pls not not tell ur spy comrades about this ##technique, since it's secret as far as i know
-* i'm planning to publish this at the same time as other people write about it, so you can talk about it after then
+Normally you need the user's password to do it, but I found a way to do it without the password. You just need to be able to execute code on their computer. It works by using Chrome's Remote Debugging Protocol.
 
-this message will self distruct in 3-5 business days
+If you wanna skip this dumb blog post and just get the demo code, here ya go: [https://github.com/defaultnamehere/cookie_crimes](https://github.com/defaultnamehere/cookie_crimes). Don't spend it all at once.
 
----
-
-If you steal someone's Chrome cookies, you can log in to their account on everything they're logged in to.
-
-It's often the first thing you do once you hack someone's computer. But, annoyingly, you need their password to do it. I found a way to do it without the password. You just need to be able to execute code on their computer. It works by using Chrome's Remote Debugging Protocol.
-
-If you wanna skip this dumb blog post and just get the "exploit", here ya go: [https://github.com/defaultnamehere/cookie_crimes](https://github.com/defaultnamehere/cookie_crimes). Don't spend it all at once.
-
-If you want to know how it works, you need only _find within yourself the strength to scroll this post._
+For how it works and how I found it, you need only _find within yourself the strength to scroll this page_.
 
 ---
 
@@ -35,37 +23,45 @@ If you want to know how it works, you need only _find within yourself the streng
 
 Imagine that, _for some reason_, you've hacked someone's computer. I dunno maybe you're like a spy or something?
 
-Let's call your fictitious victim, I dunno, say, Elon.
+Let's call your fictitious victim, uh, "Naruto".
 
-Specifically, you've got the ability to execute code on Ol' Musky's computer. That's hacking, and you're already going to be slam jammed into the shadow realm for your crimes, so ya may as well do some more.
+Specifically, you've got the ability to execute code on Naruto's computer. That's like, probably hacking, and you're already going to be slam jammed into the shadow realm for your crimes, so ya may as well do some more.
 
-One obvious crime you might want to do with this access is to steal Elon's Chrome cookies. This would let you log in as him to anything he's logged in to. Oooooh yeah definitely. Imagine the trouble you could get up to with _that_.
+One obvious crime you might want to do with this access is to steal Naruto's Chrome cookies. This would let you log in as him to anything he's logged in to. Oooooh yeah definitely. Imagine the trouble you could get up to with _that_.
+
+![crimes](https://i.imgflip.com/2llk9b.jpg)
 
 ### How do cookies work?
 
 You know how you don't have to log in every time you go to Facebook? How when you go to `facebook.com` it just shows you your timeline? How does Facebook know it's you?
 
-It's because when you log in to Facebook, Facebook gives you a cookie, which lives on your computer. Next time you go to Facebook, you just show it that cookie, and it lets you in without having to type your password again.
+It's because when you log in to Facebook, Facebook gives you a cookie, which lives on your computer. Next time you go to Facebook, you just _show_ it that cookie, and it lets you in without having to type your password again.
 
 It's like those wristbands they give you at the club to show you're of drinking age, except I'm not sure if they still do that because I haven't been to an Event since the release of Stardew Valley.
 
+![wristband](https://cdn.shopify.com/s/files/1/1062/4304/products/drinking-age-verified-wristbands_1024x1024.png?v=1529782466)
+
 ### And if someone were to....\*sideways look\* _steal_ those cookies?
 
-For example, if you had Elon's Facebook cookies, it doesn't matter whether he has a really good password, 2 Factor Authentication, or is particularly good mates with zucc and the boys. You can just put Elon's Facebook cookie in you own browser, and go to `facebook.com`, and you'll see _Elon's_ Facebook account logged in.
+For example, if you had Naruto's Facebook cookies, it doesn't matter whether he has a really good password, 2 Factor Authentication, or is particularly good mates with zucc and the boys.
+
+You can just put Naruto's Facebook cookie in you own browser, and go to `facebook.com`, and you'll see _Naruto's_ Facebook account logged in.
 
 It's as easy as that.
 
 ### Chrome's cookie security
 
-Let's assume Elon, the absolute chap, has OS X - but this works on Windows and Linux too.
+Let's assume Naruto, the absolute chap, has OS X - but this works on Windows and Linux too.
 
-Elon's delicious, tasty Chrome cookies live in a file on his computer. Cleverly, Chrome encrypts his cookies with its own "Chrome Safe Storage" password. This password lives in Elon's Login Keychain, so the only way to get the cookies is to unlock the keychain by typing in his password.
+Naruto's delicious, tasty Chrome cookies live in a file on his computer. Cleverly, Chrome encrypts his cookies with its own "Chrome Safe Storage" password. This password lives in Naruto's Login Keychain, so the only way to get the cookies is to unlock the keychain by typing in his password.
 
 This is a perfectly legit way to get someone's cookies, but the reason we're here today is I'm pretty sure I found a way to skip all that.
 
+![diagram](/img/chrome-cookies/diagram.png)
+
 ---
 
-Why should we have to decrypt the cookies? After all, Elon can get his own cookies from Chrome without typing his password (`itwasthebestofgrimesitwastheworstofgrimes`). Surely there's a way to just get Chrome to give us the cookies, if we ask nicely?
+Why should we have to decrypt the cookies? After all, Naruto can get his own cookies from Chrome without typing his password. Surely there's a way to just get Chrome to give us the cookies, if we ask nicely?
 
 
 ## Step 1: Run Headless Chrome
@@ -88,6 +84,11 @@ Because we live in a dystopian future, Chrome allows you to remotely control it 
 We're going to set up a headless Chrome window, using the same `user-data-dir`
 as our victim.
 
+This is apparently [not possible](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/user_data_dir.md#Chrome-Remote-Desktop-sessions-Linux) according to Google.
+>  "two running Chrome instances cannot share the same user data directory"
+
+What, you're not gonna try it just because a _webpage_ told you not to? Of course we are.
+
 Here's what to run:
 
 ```
@@ -98,10 +99,10 @@ https://gmail.com \
 --remote-debugging-port=9222
 ```
 
-This sets remote debugging listening on localhost:9222 (the default port for
-Chrome Remote Debugging). It won't open a browser window, either. We need to tell headless Chrome browse to something so we can open a tab and start debugging it. You can replace `gmail.com` with anything you like.
+This sets remote debugging listening on `localhost:9222` (the default port for
+Chrome Remote Debugging, now _that's_ stealthy). It won't open a browser window, either. We need to tell headless Chrome browse to something so we can open a tab and start debugging it. You can replace `gmail.com` with anything you like.
 
-At this point, you can view any page as if Elon opened it in a new tab (and so, see all his Facebook messages, in our example). You can do that by adding `--dump-dom` to the command above, which will print out the HTML of the page you ask for (`gmail.com` above). But that seems a bit tedious, not very stealthy, and we can do better than that if we just _believe_.
+At this point, you can view any page as if Naruto opened it in a new tab (and so, see all his Facebook messages, in our example). You can do that by adding `--dump-dom` to the command above, which will print out the HTML of the page you ask for (`gmail.com` above). But that seems a bit tedious, not very stealthy, and we can do better than that if we just _believe_.
 
 Normally, you're supposed to like, open a _second_ Chrome, point it at the first Chrome, and use it to debug Chrome itself. Ya we're not gonna do that. We're gonna remotely debug Chrome with `curl`.
 
@@ -122,7 +123,7 @@ This is some documentation for the Protocol used by the Chrome Developer Tools (
 They say "hey, if you want to remotely debug Chrome, you need to speak the Remote Debugging Protocol."
 I'm ready for this page to teach me about how to remotely debug Chrome, but it says "we don't release that kind of information to punks like you".
 
-They casually tell you to sniff and reverse-engineer the protocol if you want to know how it works, since the only client for it is the Chrome Dev Tools themselves. The way they tell you to sniff it is using the Chrome Dev Tools to debug the _CHROME DEV TOOLS THEMSELVES_, and view the websocket data that the _first_ set of Chrome Dev Tools is sending. The ease with which they suggest this solution is quite stressful.
+They casually tell you to sniff and reverse-engineer the protocol if you want to know how it works, since the only client that speaks it is the Chrome Dev Tools themselves. The way they tell you to sniff it is using the Chrome Dev Tools to debug the _CHROME DEV TOOLS THEMSELVES_, and view the websocket data that the _first_ set of Chrome Dev Tools is sending. The ease with which they suggest this solution is quite stressful.
 
 Finally, they have a section called "How is the protocol defined?", which has two links to json files you're supposed to read, both of which 404.
 
@@ -189,9 +190,9 @@ I'm going to save you the 50 open Chrome tabs, reading of Ruby from 2012 on GitH
 
 Because we asked nicely, Chrome just _gives_ us the cookies. This bypasses the whole Chrome Safe Storage password thing because Chrome itself decrypts the cookies.
 
-And we did it all without needing to become the root user, or otherwise know Elon's password.
+And we did it all without needing to become the root user, or otherwise know Naruto's password.
 
-You can plug these cookies into a Chrome Extension (for example, [EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg)), and you'll be logged in to Elon's gmail if you just go to `mail.google.com` in your browser.
+You can plug these cookies into a Chrome Extension (for example, [EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg)), and you'll be logged in to Naruto's gmail if you just go to `mail.google.com` in your browser.
 
 Aaaaaand that's it. Crimes successful. Directed by Quentin Tarantino.
 
@@ -213,10 +214,10 @@ This means that if you want to use cookies you stole from someone's machine, you
 
 This feature is [in Google Chrome](https://www.chromestatus.com/feature/5097603234529280), but [disabled by default](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/OkdLUyYmY1E), and being removed if I have understood [the heated discussion in this thread](https://groups.google.com/a/chromium.org/forum/?utm_medium=email&utm_source=footer#!msg/net-dev/AjFQjBmaEQE/_3DM1hwGCQAJ). The feature is also in Edge (which is what Internet Explorer is called now, post Identity Crisis).
 
-Even if Chrome used it, most websites don't use Channel-binding. This is because, well, it's not much harm to the website if Elon's cookies get used by someone else. That's more Elon's problem, in their eyes.
+Even if Chrome used it, most websites don't use Channel-binding. This is because, well, it's not much harm to the website if Naruto's cookies get used by someone else. That's more Naruto's problem, in their eyes.
 
 ### Detection
-In theory, people can detect the theft of cookies. Google, for instance, knows that they gave the cookie above to Elon. They can also know, that you, with a different browser, OS, and IP address, might not be Elon. They can also detect your channel-binding errors. But hey, I haven't seen this technique fail because of this so far.
+In theory, people can detect the theft of cookies. Google, for instance, knows that they gave the Gmail cookie above to Naruto. They can also know, that you, with a different browser, OS, and IP address, might not be Naruto. They can also detect your channel-binding errors. But hey, I haven't seen this technique fail because of this so far.
 
 
 # FAQ
@@ -228,12 +229,13 @@ I mean yeah pretty much you're right. It's not that big a deal. Nobody panic. Ev
 * You don't need to know someone's password to do it (unlike other methods)
 * It's simple ([one command](https://github.com/defaultnamehere/cookie_crimes]) to run)
 
-I'm pretty sure this is the best way of getting Chrome cookies once you're in someone's computer. I'm sure not going to bother with any other method anymore.
+I'm pretty sure this is the best way of getting Chrome cookies once you're in someone's computer. I sure wouldn't bother with any other method.
 
 ### Are you going to tell Google about this critical security flaw?
 Nah, they know about it. It's a feature of Chrome, after all. I even saw them [deciding to add it](https://bugs.chromium.org/p/chromium/issues/detail?id=668932).
 
-UPDATE: I told 'em about it juuuuuust to be nice.
+UPDATE: I told 'em about it juuuuuust in case.
+
 > I have to say this is working as intended. The remote debugging protocol is meant to provide full access, including cookies, and running Chrome with a flag makes it work.
 
 > I am surprised cookies can be read from a headful Chrome profile by the headless Chrome. We have plans to make profiles inter-operable, but that didn't happen yet. Maybe cookies are supported though, I didn't look too close.
@@ -257,14 +259,8 @@ Thanks for taking the time to read this blog post.
 
 I wrote this because they were out of pearls at the bubble tea place. You can talk to me about it on Twitter if you want: [@mangopdf](https://twitter.com/mangopdf)
 
-Thanks to [@hackgnar](https://twitter.com/hackgnar), who wondered aloud "there must be _some_ way to get the cookies without root, since the user can get their own cookies."
+---
 
-Thanks to ``<TODO: SOMEONE>``, for their guidance in pointing out that headless Chrome and remote debugging is a scary combination.
+Thanks to [@hackgnar](https://twitter.com/hackgnar), who wondered aloud "there must be _some_ way to get the cookies without root, since the user can get their own cookies".
 
-// todo: 
-thank "wardolphin"
-thank @noncetonic from black sun labs (https://blacksunhackers.club/)
-change elon to something not an old meme
-
-
-
+Thanks also to [@noncetonic](https://twitter.com/noncetonic) and wardolphin, for their guidance in pointing out that headless Chrome and remote debugging is a scary combination.
