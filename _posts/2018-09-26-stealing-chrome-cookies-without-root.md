@@ -39,7 +39,6 @@ It's because when you log in to Facebook, Facebook gives you a cookie, which liv
 
 It's like those wristbands they give you at the club to show you're of drinking age, except I'm not sure if they still do that because I haven't been to an Event since the release of Stardew Valley.
 
-![wristband](https://cdn.shopify.com/s/files/1/1062/4304/products/drinking-age-verified-wristbands_1024x1024.png?v=1529782466)
 
 ### And if someone were to....\*sideways look\* _steal_ those cookies?
 
