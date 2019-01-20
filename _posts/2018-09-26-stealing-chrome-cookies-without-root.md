@@ -6,14 +6,14 @@ blurb: I found a new way to trick Google Chrome into giving up its secrets.
 description: Stealing Chrome Cookies without root or password on OSX, Linux, and Windows via Remote Debugging Protocol.
 permalink: /stealing-chrome-cookies-without-a-password
 colour: lightblue
-image: /img/chrome_cookies.png
+image: img/chrome_cookies.png
 ---
 
 If you steal someone's Chrome cookies, you can log in to their accounts on **every website** they're logged in to.
 
 Normally you need the user's password to do it, but I found a way to do it without the password. You just need to be able to execute code on their computer. It works by using Chrome's Remote Debugging Protocol.
 
-If you wanna skip this dumb blog post and just get the demo code, here ya go: [https://github.com/defaultnamehere/cookie_crimes](https://github.com/defaultnamehere/cookie_crimes). There's also a [Metasploit module](https://github.com/rapid7/metasploit-framework/blob/9616a9f79de0b22bfd142f12affd74cecbbd4413/documentation/modules/post/multi/gather/chrome_cookies.md). Don't spend it all at once.
+If you wanna skip this dumb blog post and just get the demo code, here ya go: [https://github.com/defaultnamehere/cookie_crimes](https://github.com/defaultnamehere/cookie_crimes). There's also a [Metasploit module](https://github.com/rapid7/metasploit-framework/blob/9616a9f79de0b22bfd142f12affd74cecbbd4413/documentation/modules/post/multi/gather/chrome_cookies.md). Don't spend 'em all at once.
 
 For how it works and how I found it, you need only _find within yourself the strength to scroll this page_.
 
