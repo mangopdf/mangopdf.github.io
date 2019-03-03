@@ -2,7 +2,7 @@
 layout: post
 title:  "Hacking your neighbour's Wi-Fi"
 date:   2018-01-01 16:20:38 +1100
-blurb: Hacking Wi-Fi, cracking passwords, and spying on mysterious handshakes is an easy game for babies.
+excerpt: Hacking Wi-Fi, cracking passwords, and spying on mysterious handshakes is an easy game for babies.
 description: Hacking Wi-Fi, cracking passwords, and spying on mysterious handshakes is an easy game for babies.
 permalink: /hacking-your-neighbours-wifi
 colour: purple

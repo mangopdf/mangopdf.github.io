@@ -2,7 +2,7 @@
 layout: post
 title:  "Stalking your Facebook friends on Tinder"
 date: 2016-07-21 16:02:38 +1100
-blurb: How I found a way to see the Tinder profiles of your Facebook friends. I told Tinder about this and they said "it's a feature lmao". <a href="https://news.ycombinator.com/item?id=12141086">Hacker News comments</a>
+excerpt: How I found a way to see the Tinder profiles of your Facebook friends. I told Tinder about this and they said "it's a feature lmao". <a href="https://news.ycombinator.com/item?id=12141086">Hacker News comments</a>
 colour: purple
 description: A hidden Tinder API lets you see the Tinder profiles of your Facebook friends.
 permalink: /stalking-your-facebook-friends-on-tinder

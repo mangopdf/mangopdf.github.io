@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: the mango zone
-email: mangodotpdf@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-    memes
+title: mango.pdf.zone
+url: https://mango.pdf.zone
+description: "you have entered the m a n g o  z o n e"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mangopdf
 github_username:  mangopdf
+author: mangopdf
 show_drafts: false
 # Build settings
 markdown: kramdown
