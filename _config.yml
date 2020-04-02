@@ -13,7 +13,7 @@ author: mangopdf
 show_drafts: false
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 
