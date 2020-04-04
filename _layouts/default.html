@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
-
   <head>
 
     <meta charset="utf-8">
@@ -22,6 +20,10 @@
     <meta name="twitter:image" content="{{ page.image| default: "https://pbs.twimg.com/profile_images/873870507078057984/PRlhswDp_400x400.jpg" }}">
     <meta name="twitter:card" content="summary_large_image">
 
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+/>
     <link href="{{ "vendor/bootstrap/css/bootstrap.min.css" | relative_url }}" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -29,7 +31,10 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
-
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+    />
     <link href="feed.xml" type="application/atom+xml" rel="alternate" title="Sitewide Atom (RSS) feed" />
 
 </head>
@@ -82,11 +87,15 @@
     <script src="{{ "vendor/jquery/jquery.min.js" | relative_url }}"></script>
     <script src="{{ "vendor/popper/popper.min.js" | relative_url }}"></script>
     <script src="{{ "vendor/bootstrap/js/bootstrap.min.js" | relative_url }}"></script>
-
-    <script src="{{ "vendor/jquery-easing/jquery.easing.min.js" | relative_url }}"></script>
-
-    <script src="{{ "js/emojicursor.js" | relative_url }}"></script>
     <script src="{{ "js/freelancer.min.js" | relative_url }}"></script>
+    <script
+      src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+      type="application/javascript"
+    ></script>
+    <script type="application/javascript">
+      littlefoot.default()
+    </script>
+    <script src="{{ "js/emojicursor.js" | relative_url }}"></script>
 
   </body>
 

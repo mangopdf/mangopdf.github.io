@@ -28,12 +28,13 @@
   "dependencies": {
     "bootstrap": "^4.0.0-beta",
     "font-awesome": "4.7.0",
-    "jquery": "^3.2.1",
+    "jquery": "^3.4.1",
     "jquery.easing": "^1.4.1",
+    "littlefoot": "^3.2.4",
     "popper.js": "^1.11.1"
   },
   "devDependencies": {
-    "browser-sync": "2.18.13",
+    "browser-sync": "^2.26.7",
     "gulp": "^3.9.1",
     "gulp-clean-css": "3.7.0",
     "gulp-filter": "^5.0.1",
@@ -41,5 +42,11 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "3.0.0"
+  },
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
   }
 }

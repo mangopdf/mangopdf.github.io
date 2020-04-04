@@ -1,6 +1,6 @@
 /*!
- * Start Bootstrap - Freelancer v4.0.0-beta (https://startbootstrap.com/template-overviews/freelancer)
- * Copyright 2013-2018 Start Bootstrap
+ * Start Bootstrap - Freelancer v4.0.0-beta (https://mango.pdf.zone)
+ * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
  */
 body {
@@ -545,6 +545,11 @@ div.portfolio-item {
 div.post-item .caption-content p {
   font-weight: 300; }
 
+.littlefoot-footnote__content {
+  background: #444349 !important; }
+  .littlefoot-footnote__content p {
+    font-size: 14px; }
+
 .lightblue {
   color: #a3e6f5 !important; }
 
@@ -564,7 +569,8 @@ div.post-item .caption-content p {
 .spooked {
   color: #f9ff96 !important; }
 
-.star-light:after, .star-primary:after {
+.star-light:after,
+.star-primary:after {
   -webkit-animation: rotating 20s linear infinite;
   -moz-animation: rotating 20s linear infinite;
   -ms-animation: rotating 20s linear infinite;
@@ -633,8 +639,7 @@ article.post {
   article.post h1 {
     font-size: 50px; }
   article.post h2 {
-    font-size: 40px;
-    margin-bottom: 20px; }
+    font-size: 40px; }
   article.post h3 {
     font-size: 30px; }
   article.post h4 {
