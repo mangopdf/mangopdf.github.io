@@ -30,7 +30,7 @@ div.grid {
 
 @mixin btn-color($color){
     @extend .btn-outline;
-    color: $color;
+    color: white;
     border-color: $color;
     &:hover, :visited, :active, :focus {
         color: lighten($color, 10%);
@@ -67,7 +67,6 @@ div.portfolio-item {
     }
 
     div.caption {
-        font-size: 30px;
         font-weight: 300;
         margin-top: 10px;
     }
@@ -75,23 +74,15 @@ div.portfolio-item {
     a {
         word-break: break-word;
     }
+    p {
+        font-size: 17px;
+    }
 
 }
 
 div.post-item {
     .caption-content p {
         font-weight: 300;
-    }
-}
-
-
-
-// Littlefoot
-
-.littlefoot-footnote__content {
-    background: #444349 !important;
-    p {
-        font-size: 14px;
     }
 }
 

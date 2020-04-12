@@ -72,6 +72,12 @@ gulp.task('copy', function() {
     ])
     .pipe(gulp.dest('vendor/bootstrap'))
 
+  gulp.src([
+      'node_modules/littlefoot/dist/littlefoot.css',
+      'node_modules/littlefoot/dist/littlefoot.js',
+    ])
+    .pipe(gulp.dest('vendor/littlefoot'))
+
   gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
     .pipe(gulp.dest('vendor/jquery'))
 
@@ -103,7 +109,7 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js'], function() {
+gulp.task('dev', ['browserSync', 'copy', 'sass', 'minify-css', 'minify-js'], function() {
   gulp.watch('scss/*.scss', ['sass']);
   gulp.watch('css/*.css', ['minify-css']);
   gulp.watch('js/*.js', ['minify-js']);

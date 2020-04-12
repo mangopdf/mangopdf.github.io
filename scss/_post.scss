@@ -19,7 +19,7 @@ article.post {
         font-size: 50px;
     }
     h2 {
-        font-size: 40px;
+        font-size: 35px;
     }
     h3 {
         font-size: 30px;
@@ -32,6 +32,21 @@ article.post {
         padding-top: 50px;
         width: 100%;
     }
+    @media (max-width: 321px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 19px;
+    }
+    }
+
     @media (min-width: 1050px) {
         width: 740px;
     }
@@ -79,8 +94,10 @@ div.footnotes {
 div.post-content img {
     display: block;
     margin: 0 auto;
-    width: 100%;
+    //width: 100%;
     max-width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
 }
 

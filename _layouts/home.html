@@ -5,273 +5,258 @@ layout: default
 <div class="home">
 
     <section id="" class="portfolio success">
-      <div class="container">
-        <h2 class="text-center scrollspy" id="blog">blog posts</h2>
-        <hr class="star-primary star-blue">
-        <div class="grid">
-            {% for post in site.posts %}
+        <div class="container">
+            <h2 class="text-center scrollspy" id="blog">blog posts</h2>
+            <hr class="star-primary star-blue">
+            <div class="grid">
+                {% for post in site.posts %}
                 {% unless post.hidden  %}
-                    <div class="portfolio-item">
-                        <a href="{{ post.url | relative_url }}" class="btn btn-lg btn-outline btn-{{ post.colour }}">{{ post.title | escape }}</a>
-                        <div class="caption">
-                            <div class="caption-content">
-                                <p>
-                                {{ post.excerpt }}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                {% endunless %} 
-
-        {% endfor %}
-    </div>
-
-  </section>
-
-    <section id="testimonials" class="portfolio success" style="display: none;">
-      <div class="container">
-        <h2 class="text-center scrollspy spooked" id="">testimonials</h2>
-        <hr class="star-primary star-pink">
-        <div class="grid">
-
-            <div class="portfolio-item">
-                <a href="#" class="btn btn-lg btn-outline btn-pink">Barack Obama</a>
-                <div class="caption">
-                    <div class="caption-content">
-                        <p>
-                        "Alex has allowed access to healthcare for over 7 million Americans."
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item">
-                <a href="#" class="btn btn-lg btn-outline btn-lightblue">Shigeru Miyamoto</a>
-                <div class="caption">
-                    <div class="caption-content">
-                        <p>
-                        "When I met Alex as a baby, it gave me the idea for Luigi."
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class=" portfolio-item">
-                <a href="#" class="btn btn-lg btn-outline btn-purple">Satoshi Nakamoto</a>
-                <div class="caption">
-                    <div class="caption-content">
-                        <p>
-                            "Alex's help was invaluable in both the creation and downfall of Bitcoin."
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-      </div>
-  </section>
-
-
-    <section id="" class="portfolio success">
-      <div class="container">
-        <h2 class="text-center scrollspy" id="websites">one-use novelty websites</h2>
-        <hr class="star-primary star-purple">
-        <div class="grid">
-
-            <div class=" portfolio-item">
-                <a href="https://purplecon.nz" class="btn btn-lg btn-outline btn-purple">purplecon.nz</a>
-                <div class="caption">
-                    <div class="caption-content">
-                        <p>
-                        a gentle, pastel information security conference.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item">
-                <a href="https://textfac.es" class="btn btn-lg btn-outline btn-lightblue">textfac.es</a>
-                <div class="caption">
-                    <div class="caption-content">
-                        <p>
-                        Click-to-copy unicode faces like these guys: ( ͡° ͜ʖ ͡°) ¯\_(ツ)_/¯
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class=" portfolio-item">
-                <a href="https://verylegit.link" class="btn btn-lg btn-outline btn-pink">verylegit.link</a>
-                <div class="caption">
-                    <div class="caption-content">
-                        <p>
-                        A URL shortener that also makes the URL look extremely dodgy. For example: <a href="https://ftp.verylegit.link/z,p_0GL.;q_YP-87filehost=spyware.pptx.min.css.exe">ftp.verylegit.link/z,p_0GL.;q_YP-87filehost=spyware.pptx.min.css.exe</a>
-                        Here's the <a href="https://news.ycombinator.com/item?id=14628278">Hacker News Comments</a>.
-                        </p>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class=" portfolio-item">
-                <a href="https://emojityper.com" class="btn btn-lg btn-outline btn-lightblue">
-                    emojityper.com
-                </a>
+                <div class="portfolio-item">
+                    <a href="{{ post.url | relative_url }}" class="btn btn-lg btn-outline btn-{{ post.colour }}">{{ post.title | escape }}</a>
                     <div class="caption">
                         <div class="caption-content">
                             <p>
-                            Type words, get emoji. It's for when you want emoji on desktop. I made v1, and <a href="https://twitter.com/samthor">@samthor</a> made the vastly more web-17.0 v2.
+                            {{ post.excerpt }}
                             </p>
-
                         </div>
                     </div>
+                </div>
+                {% endunless %} 
+
+                {% endfor %}
             </div>
 
+    </section>
 
-            <div class=" portfolio-item">
-                <a href="http://swagify.net" class="btn btn-lg btn-outline btn-pink">
-                    swagify.net
-                </a>
+    <section id="testimonials" class="portfolio success" style="display: none;">
+        <div class="container">
+            <h2 class="text-center scrollspy spooked" id="">testimonials</h2>
+            <hr class="star-primary star-pink">
+            <div class="grid">
+
+                <div class="portfolio-item">
+                    <a href="#" class="btn btn-lg btn-outline btn-pink">Barack Obama</a>
                     <div class="caption">
                         <div class="caption-content">
-                            <p>Generates SICK 2003 usernames like [MTNDEW]xxX_m@ng0PdF_Xxx. Read the js for a pleasant surprise.
+                            <p>
+                            "Alex has allowed access to healthcare for over 7 million Americans."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="#" class="btn btn-lg btn-outline btn-lightblue">Shigeru Miyamoto</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                            "When I met Alex as a baby, it gave me the idea for Luigi."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" portfolio-item">
+                    <a href="#" class="btn btn-lg btn-outline btn-purple">The Catholic Church</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                            "In 1633 Alex was banished for insisting that the Earth revolves around the Sun."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="" class="portfolio success">
+        <div class="container">
+            <h2 class="text-center scrollspy" id="websites">one-use novelty websites</h2>
+            <hr class="star-primary star-purple">
+            <div class="grid">
+
+                <div class=" portfolio-item">
+                    <a href="https://purplecon.nz" class="btn btn-lg btn-outline btn-purple">purplecon.nz</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                            a gentle, pastel information security conference.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="https://textfac.es" class="btn btn-lg btn-outline btn-lightblue">textfac.es</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                            Click-to-copy unicode faces like these guys: ( ͡° ͜ʖ ͡°) ¯\_(ツ)_/¯
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" portfolio-item">
+                    <a href="https://verylegit.link" class="btn btn-lg btn-outline btn-pink">verylegit.link</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                            A link shortener that makes the link look really dodgy. <a href="https://news.ycombinator.com/item?id=14628278">Hacker News Comments</a>.
+                            </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" portfolio-item">
+                    <a href="https://emojityper.com" class="btn btn-lg btn-outline btn-lightblue">
+                        emojityper.com
+                    </a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                            Type words, get emoji. Made with <a href="https://twitter.com/samthor">@samthor</a>. Possibly a Google product.
                             </p>
 
                         </div>
                     </div>
-            </div>
+                </div>
 
-            <div class=" portfolio-item">
-                <a href="https://gabegaming.com" class="btn btn-lg btn-outline btn-purple">
-                    gabegaming.com
-                </a>
-                <div class="caption">
-                    <div class="caption-content">
-                        <p>
-                        Ummmmm you had to be there okay. A collab with <a href="https://twitter.com/RakeDodgers">@RakeDodgers</a>. Steam is embedded in an iframe and changes a lot and this site is held together with nothing but man's hubris so it might be broken, sorry.
-                        </p>
 
+                <div class=" portfolio-item">
+                    <a href="http://swagify.net" class="btn btn-lg btn-outline btn-pink">
+                        swagify.net
+                    </a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>Generates SICK 2003 usernames like [MTNDEW]xxX_m@ng0PdF_Xxx. 
+                            </p>
+
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class=" portfolio-item useragent " style="display: none;">
-                <a href="#" class="btn btn-lg btn-outline btn-purple">
-                </a>
-                <div class="caption">
-                    <div class="caption-content">
-                        <p>
-                        Juuuuuust kidding.
-                        </p>
+                <div class=" portfolio-item useragent " style="display: none;">
+                    <a href="#" class="btn btn-lg btn-outline btn-purple">
+                    </a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                            Juuuuuust kidding.
+                            </p>
 
+                        </div>
                     </div>
                 </div>
+
             </div>
+
 
         </div>
-
-
-      </div>
     </section>
 
     <section id="" class="portfolio success">
-      <div class="container">
-        <h2 class="text-center scrollspy" id="talks">talk recordings</h2>
-        <hr class="star-primary star-pink">
-        <div class="grid">
+        <div class="container">
+            <h2 class="text-center scrollspy" id="talks">talk recordings</h2>
+            <hr class="star-primary star-pink">
+            <div class="grid">
 
-            <div class=" portfolio-item">
-                <a href="https://www.youtube.com/watch?v=9S3zwwCEe0E" class="btn btn-lg btn-outline btn-purple">Operation Luigi: How I hacked my friend without her noticing</a>
-                <div class="caption">
-                    <div class="caption-content">
-                        <p>
-                        Come on down to luigi town, we've got: the 2013 tumblr hack, linkedin roasting, your sweet mango boy, one loopy b o i, regrets
-                        </p>
+                <div class=" portfolio-item">
+                    <a href="https://www.youtube.com/watch?v=9S3zwwCEe0E" class="btn btn-lg btn-outline btn-purple">Operation Luigi: How I hacked my friend without her noticing</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                            Come on down to luigi town, we've got: the 2013 tumblr hack, linkedin roasting, your sweet mango boy, one loopy b o i, regrets
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="portfolio-item">
-                <a href="https://www.youtube.com/watch?v=BWAetsJqey0" class="btn btn-lg btn-outline btn-lightblue">Stealing Chrome Cookies without a password</a>
-                <div class="caption">
-                    <div class="caption-content">
-                        <p>
-                        I found a new way to get Chrome to give you someone's Chrome cookies after you get into their computer, logging you in as them. Here's how I flubbed my way there.
-                        </p>
+                <div class="portfolio-item">
+                    <a href="https://www.youtube.com/watch?v=BWAetsJqey0" class="btn btn-lg btn-outline btn-lightblue">Stealing Chrome Cookies without a password</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                            I found a new way to get Chrome to give you someone's Chrome cookies after you get into their computer, logging you in as them.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="portfolio-item">
-                <a href="https://www.youtube.com/watch?v=nSu11VvVL9M" class="btn btn-lg btn-outline btn-pink">Tricking people</a>
-                <div class="caption">
-                    <div class="caption-content">
-                        <p>
-                        The techniques magicians and pickpockets use to trick people work for hacking too.
-                        </p>
+                <div class="portfolio-item">
+                    <a href="https://www.youtube.com/watch?v=nSu11VvVL9M" class="btn btn-lg btn-outline btn-pink">Tricking people</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                            The techniques magicians and pickpockets use to trick people work for hacking too.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class=" portfolio-item">
-                <a href="https://www.youtube.com/watch?v=MkSkqMvGBuo" class="btn btn-lg btn-outline btn-lightblue">Graphing when your Facebook friends are awake</a>
-                <div class="caption">
-                    <div class="caption-content">
-                        <p>
-                        At PyCon AU 2016. For the record, this is creepy and I think doing it is not okay!
-                        </p>
+                <div class=" portfolio-item">
+                    <a href="https://www.youtube.com/watch?v=MkSkqMvGBuo" class="btn btn-lg btn-outline btn-lightblue">Graphing when your Facebook friends are awake</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                            At PyCon AU 2016. For the record, this is creepy and I think doing it is not okay!
+                            </p>
+                        </div>
                     </div>
                 </div>
+
+
             </div>
-
-
         </div>
-      </div>
-  </section>
+    </section>
 
     <section id="" class="portfolio success">
-      <div class="container">
-        <h2 class="text-center scrollspy" id="tweets">tweets</h2>
-        <hr class="star-primary star-purple">
-        <div class="container col-lg-8">
-            <a class="twitter-timeline" data-width="700" data-height="400" data-dnt="true" data-theme="dark" data-link-color="#9266CC" href="https://twitter.com/mangopdf">Tweets by mangopdf</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
+        <div class="container">
+            <h2 class="text-center scrollspy" id="tweets">tweets</h2>
+            <hr class="star-primary star-purple">
+            <div class="container col-lg-8">
+                <a class="twitter-timeline" data-width="700" data-height="400" data-dnt="true" data-theme="dark" data-link-color="#9266CC" href="https://twitter.com/mangopdf">Tweets by mangopdf</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
 
         </div>
-      </div>
-  </section>
+        </div>
+    </section>
 
     <section class="portfolio success" id="">
-      <div class="container">
-        <h2 class="text-center scrollspy" id="about">about</h2>
-        <hr class="star-primary star-blue">
-        <div class="grid">
-          <div class="portfolio-item">
-              <h4>What's with the "Alex" thing?</h4>
-              <p>
-              Once, an article referred to me as <a href="https://motherboard.vice.com/en_us/article/tinder-social-lets-you-stalk-your-friends-dating-habits-hack-last-active">a hacker who goes by the name "Alex"</a>, so that's my hacker handle now and there's nothing I can do about it.
-              </p>
-          </div>
+        <div class="container">
+            <h2 class="text-center scrollspy" id="about">about</h2>
+            <hr class="star-primary star-blue">
+            <div class="grid">
+                <div class="portfolio-item">
+                    <h4>What's with the "Alex" thing?</h4>
+                    <p>
+                    Once, an article referred to me as <a href="https://motherboard.vice.com/en_us/article/tinder-social-lets-you-stalk-your-friends-dating-habits-hack-last-active">a hacker who goes by the name "Alex"</a>, so that's my hacker handle now and there's nothing I can do about it.
+                    </p>
+                </div>
 
-          <div class="portfolio-item">
-              <h4>Do you have an actual pdf called mango.pdf?</h4>
-              <p>
-              Sure, <a id="pdf" href="/mango.pdf" data-uh-dont-worry-about-it="lisreal2401">here you go</a>.
-              It's got a password on it though. The password is hidden somewhere in this page. Have fun!
-             </p>
-         </div>
+                <div class="portfolio-item">
+                    <h4>Do you have an actual pdf called mango.pdf?</h4>
+                    <p>
+                    Sure, <a id="pdf" href="/mango.pdf" data-uh-dont-worry-about-it="lisreal2401">here you go</a>.
+                    It's got a password on it though. The password is hidden somewhere in this page. Have fun!
+                    </p>
+                </div>
 
+            </div>
         </div>
-      </div>
     </section>
 
     <footer class="text-center">
-      <div class="footer-below">
-        <div class="container">
-          <div class="row">
-              <div class="col-lg-12">
-                  Whoa, you scrolling down here felt weird. Did something happen up there?
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Whoa, you scrolling down here felt weird. Did something happen up there?
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-  </footer>
+    </footer>
 </div>

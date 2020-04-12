@@ -1,66 +1,62 @@
 // Styling for the masthead
 header.masthead {
-  padding-top: 50px;
-
-  text-align: center;
-
-  color: white;
-  img {
-    display: block;
-
-    margin: 0 auto 20px;
-  }
-
-  div.logo {
-      text-align: left;
-      h2 {
+    padding-top: 25px;
+    text-align: center;
+    color: white;
+    img {
+        display: block;
+        margin: 0 auto 20px;
+    }
+    div.logo {
+        text-align: left;
+        h2 {
+            display: inline-block;
+            &:hover {
+                color: #ff9cf1;
+                text-decoration: none !important;
+                border-bottom: 0;
+            }
+            @media (max-width: 1000px) {
+                font-size: 20px;
+            }
+        }
+    }
+    p.intro {
+        vertical-align: middle;
+        text-align: left;
         display: inline-block;
-          &:hover {
-            color: #ff9cf1;
-            text-decoration: none !important;
-            border-bottom: 0;
-          }
-          @media (max-width: 1000px) {
-              font-size: 20px;
-          }
-      }
-  }
-  p.intro {
-      vertical-align: middle;
-      text-align: left;
-      display: inline-block;
-      @media (min-width: 320px) {
-          display: block;
-          font-size: 15px;
-      }
-      @media (min-width: 1050px) {
-          font-size: 25px;;
-      }
-  }
-  .intro-text {
-    .name {
-      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      font-size: 2em;
-      font-weight: 700;
-    }
-    .skills {
-      font-size: 1.25em;
-      font-weight: 300;
-      text-align: left;
-    }
-    .settings {
-        font-size: 1em;
         @media (min-width: 320px) {
             display: block;
+            font-size: 15px;
+        }
+        @media (min-width: 1050px) {
+            font-size: 16px;
         }
     }
-    a {
-        &:hover {
-            text-decoration: none;
+    .intro-text {
+        .name {
+            font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 2em;
+            font-weight: 700;
+        }
+        .skills {
+            font-size: 1.25em;
+            font-weight: 300;
+            text-align: left;
+        }
+        .settings {
+            font-size: 1em;
+            @media (min-width: 320px) {
+                display: block;
+            }
+        }
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        h2 {
+            text-align: left;
         }
     }
-    h2 {
-        text-align: left;
-    }
-  }
 }
