@@ -689,8 +689,14 @@ div.post-content img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
-  margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-top: 40px;
+  margin-bottom: 10px; }
+
+/* cursed image caption markdown hack */
+img + em {
+  display: inherit;
+  text-align: center;
+  font-size: 90%; }
 
 code {
   background-color: inherit;
