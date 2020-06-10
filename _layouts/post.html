@@ -3,23 +3,28 @@ layout: default
 ---
 <article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <hr class="star-primary star-{{ page.colour }}">
-    <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        {{ page.date | date: date_format }}
-    </time>
-      {% if page.author %}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+        <hr class="star-primary star-{{ page.colour }}">
+        <p class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+            {{ page.date | date: date_format }}
+        </time>
+        {% if page.author %}
+            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
         {% endif %}
         </p>
-  </header>
+        {% if page.standfirst %}
+        <p class="standfirst">
+            {{ page.standfirst }}
+        </p>
+        {% endif %}
+    </header>
 
-  <div class="post-content" itemprop="articleBody">
-      <hr/>
-    {{ content }}
-  </div>
+    <div class="post-content text-{{ page.text-colour }}" itemprop="articleBody">
+        <hr/>
+        {{ content }}
+    </div>
 
 </article>

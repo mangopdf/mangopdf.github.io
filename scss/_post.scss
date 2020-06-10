@@ -16,7 +16,7 @@ article.post {
     }
 
     h1 {
-        font-size: 50px;
+        font-size: 40px;
     }
     h2 {
         font-size: 35px;
@@ -29,22 +29,24 @@ article.post {
     }
 
     @media (min-width: 320px) {
-        padding-top: 50px;
+        //padding-top: 50px;
         width: 100%;
     }
-    @media (max-width: 321px) {
-    h1 {
-        font-size: 30px;
-    }
-    h2 {
-        font-size: 25px;
-    }
-    h3 {
-        font-size: 20px;
-    }
-    h4 {
-        font-size: 19px;
-    }
+    @media (max-width: 480px) and (min-width: 320px) {
+       // styles for mobile browsers smaller than 480px; (iPhone) 
+
+        h1 {
+            font-size: 27px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        h4 {
+            font-size: 19px;
+        }
     }
 
     @media (min-width: 1050px) {
@@ -62,11 +64,36 @@ article.post {
         font-size: 21px !important;
         letter-spacing: -.003em;
 
+
+
         hr {
             margin-bottom: 25px;
             margin-top: 25px;
         }
+
     }
+    div.text-pink {
+        p,ul,ol,li {
+            color: #ffdaf9;
+        }
+
+    }
+
+    header.post-header {
+
+        p.post-meta {
+            margin-bottom: 0;
+            padding-bottom: 10px;
+            font-size: 14px;
+        }
+
+        p.standfirst {
+            font-size: 22px;
+            font-style: italic;
+
+        }
+    }
+
 }
 
 

@@ -633,7 +633,7 @@ article.post {
   article.post h1.post-title {
     text-align: center; }
   article.post h1 {
-    font-size: 50px; }
+    font-size: 40px; }
   article.post h2 {
     font-size: 35px; }
   article.post h3 {
@@ -642,11 +642,10 @@ article.post {
     font-size: 19px; }
   @media (min-width: 320px) {
     article.post {
-      padding-top: 50px;
       width: 100%; } }
-  @media (max-width: 321px) {
+  @media (max-width: 480px) and (min-width: 320px) {
     article.post h1 {
-      font-size: 30px; }
+      font-size: 27px; }
     article.post h2 {
       font-size: 25px; }
     article.post h3 {
@@ -668,6 +667,15 @@ article.post {
     article.post div.post-content hr {
       margin-bottom: 25px;
       margin-top: 25px; }
+  article.post div.text-pink p, article.post div.text-pink ul, article.post div.text-pink ol, article.post div.text-pink li {
+    color: #ffdaf9; }
+  article.post header.post-header p.post-meta {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    font-size: 14px; }
+  article.post header.post-header p.standfirst {
+    font-size: 22px;
+    font-style: italic; }
 
 pre.highlight {
   white-space: pre-line;
