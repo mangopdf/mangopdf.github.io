@@ -1,16 +1,16 @@
 ---
 layout: post
-#title: How I found the passport number of a former Australian Prime Minister
-title: How a boarding pass on Instagram revealed the passport number of former Australian Prime Minister Tony Abbott
-# date: 2020-06-25 16:20:00 +1100
+title:  How I found the passport number of former Australian Prime Minister Tony Abbott
+#title: How a boarding pass on Instagram revealed the passport number of former Australian Prime Minister Tony Abbott
+#date: 2020-06-25 16:20:00 +1100
 excerpt: Blah blah this goes on mango.pdf.zone
 description: what's up twitter summariser
-standfirst: "Do not get arrested" challenge 2020
-permalink: /sunburntcountry
+standfirst: Do not get arrested challenge 2020
 colour: lightblue
 text-colour: pink
 author: mangopdf
 image: /img/sunburnt-country/title.png
+permalink: /sunburntcountry
 
 ---
 
@@ -33,14 +33,12 @@ For security reasons, we try to change our Prime Minister every six months, and 
 
 But like don't get me wrong, I love Australia, let's be honest the [national anthem](https://www.youtube.com/watch?v=XfR9iY5y94s) fricken slaps. I just really wanted to say that multiple websites thing.
 
-My friend's message linked to a public Instagram[^instagram] post by [@hontonyabbott](https://www.instagram.com/hontonyabbott), showing a picture of a boarding pass and baggage receipt for a flight to Sydney. 
-
-Heyyy uh is this thing on? Present-day Alex here: Spoilers, but this picture is about to slowly and steadily cause me to call about 30 phone numbers. 
+Here's where it all goes wrong though. My friend's message linked to a public Instagram[^instagram] post by Tony Abbott, a picture of a boarding pass and baggage receipt for a flight to Sydney. 
 
 [^instagram]: A lot of people don't know that Instagram is actually short for Instantaneous Grammarphone, because it isn't true.
 
 ![Instagram post showing boarding pass](/img/sunburnt-country/instagrampost.PNG)
-*The since-deleted Instagram post showing the boarding pass and baggage receipt.*
+*The since-deleted Instagram post showing the boarding pass and baggage receipt. This picture and I have been through a lot together.*
 
 My friend[^hoggemoade] (who we will refer to by their group chat name, 𝖍𝖔𝖌𝖌𝖊 𝖒𝖔𝖆𝖉𝖊) is asking[^onbehalf] whether I can "hack this man" not because I am the kind of person who regularly commits 𝒄𝒚𝒃𝒆𝒓 𝒕𝒓𝒆𝒂𝒔𝒐𝒏 on a whim, but because we'd recently been talking about boarding passes.
 
@@ -70,9 +68,7 @@ Months ago, I'd said something in the chat like:
 
 ---
 
-### Earlier, but after that
-
-So I was just. Staring at this message. Law-abidingly.
+### Disclaimer
 
 Of course, my friend wasn't _actually_ asking me to hack the former Prime Minister.
 
@@ -91,11 +87,9 @@ Of course, my friend wasn't _actually_ asking me to hack the former Prime Minist
 <br/>
 <br/>
 
-I was not born a coward.
+I mean... What would you do, if you had that message in front of you? Would you _not_ click it? Are you gonna let a _link_ that's like 50% advertising tracking ID tell you what to do? Wouldn't you be _curious_? The former Prime Minister had just posted his boarding pass. Is that _bad_? I don't know. What I do know is: the _least_ I can do for my country would be to have a casual browse[^nocrime].
 
-I mean... What would you do, if you had that message in front of you? Would you _not_ click it? Are you gonna let a _link_ that's like 50% advertising tracking ID tell you what to do? Wouldn't you be _curious_? The former Prime Minister had just posted his boarding pass. Is that _bad_? I don't know. What I do know is: the _least_ I can do for my country would be to have a casual browse.
-
-To be clear, I didn't want to go do some fun casual identity fraud, I just wanted to know if he _had_ posted something secret (I insist, as they calmly read me my rights). 
+[^nocrime]: To be clear, I didn't want to go do some fun casual identity fraud, I just wanted to know if he _had_ posted something secret, since uh, someone should probably do something about that if it were true (I insist, as they calmly read me my rights). 
 
 ### Step 1: Hubris
 
@@ -256,21 +250,38 @@ Hey for real though? For reeeal though? What is even going on here? Why do Qanta
 
 ### Forbidden airline code
 
-I realised this allcaps spaghetti must be some airline code for something, and eventually found several ancient forbidden PDFs that explained some of the codes. 
+I realised the allcaps spaghetti must be some airline code for something, and eventually found several ancient forbidden PDFs that explained some of the codes. 
 
-Apparently, this is "SSR code" (Special Service Request). There are codes for things like "Vegetarian Meal" (TODO
+Apparently, they're called "SSR codes" (Special Service Request). There are codes for things like "Vegetarian lacto-ovo meal" (`VLML`), "Vegetarian oriental meal" (`VOML`), and even "Vegetarian vegan meal" (`VGML`). Because I was curious about these codes, here's some for you to be curious about too:
 
-The phone number section says `CTCM QF HK1 [phone number]`. Googling "SSR CTCM" led me to the [developer guide](https://guides.developer.iata.org/docs/ctcm) for some kind of airline association, which explains the term.
+```
+RFTV    Reason for Travel
+UMNR    Unaccompanied minor
+PDCO    Carbon Offset (chargeable)
+WEAP    Weapon
+DEPA    Deportee—accompanied by an escort
+ESAN    Passenger with Emotional Support Animal in Cabin
+```
+
+The phone number I saw said `CTCM QF HK1 [phone number]`. Googling "SSR CTCM" led me to the [developer guide](https://guides.developer.iata.org/docs/ctcm) for some kind of airline association, which I assume I am basically a member of now.
 
 ![CTCM](/img/sunburnt-country/ctcm.png)
 
-Moving right along from the weirdly-off spelling of "passenger's", this confirms that, yep, that phone number belongs to Sunburnt Country.
+Moving right along from the weirdly-off spelling of "passenger's", this was enough for me to translate `CTCM QF HK1` as "Contact phone number of passenger 1". 
+
+I thought maybe the phone number belonged to the travel agency that booked the flight, but I [checked](https://portal.iata.org/faq/articles/en_US/FAQ/Is-it-mandatory-for-travel-agents-to-provide-the-passenger-s-mobile-phone-and-email-address-1448977338174) and it has to be the passenger's real phone number. That would be.... Tony Abbott's phone number.
 
 ## what have i done
 
-I've now found Tony Abbott's passport details, phone number, and weird Qantas comments. My friend who messaged me has _no idea_.
+I'd now found Tony Abbott's:
+* Passport details
+* Phone number
+* Weird Qantas staff comments.
+
+My friend who messaged me had _no idea_.
 
 ## what have i _done_
+
 
 At this point I'd had enough defending my country and was thinking:
 
