@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  How I found the passport number of former Australian Prime Minister Tony Abbott
+title:  I found the passport number of former Australian Prime Minister Tony Abbott and did not get arrested
 #title: How a boarding pass on Instagram revealed the passport number of former Australian Prime Minister Tony Abbott
 #date: 2020-06-25 16:20:00 +1100
 excerpt: Blah blah this goes on mango.pdf.zone
@@ -11,7 +11,6 @@ text-colour: pink
 author: mangopdf
 image: /img/sunburnt-country/title.png
 permalink: /sunburntcountry
-
 ---
 
 ![title image what's up twitter](/img/sunburnt-country/title.png)
@@ -142,7 +141,7 @@ I hit Enter, and saw this.
 
 ![Logged in "Manage Booking" page](loggedin)
 
-# Crimes(?)
+## Crimes(?)
 
 It worked. 
 
@@ -162,6 +161,8 @@ Everything on the page looked public. Can't do much with the passenger name and 
 
 There was a Frequent Flyer number? The page informed me that this flight had been booked by a travel agent, so some information would be missing. But that's not _that_ bad. Right?
 
+### Depression
+
 I clicked around and scrolled a considerable length to the end of the page, but still didn't find anything secret-looking. 
 
 At the very end, in what was a somewhat surreal experience, I was farewelled by an ad telling me (Tony Abbott?) to rent a car in Melbourne. 
@@ -169,25 +170,21 @@ At the very end, in what was a somewhat surreal experience, I was farewelled by 
 ![Car Ad](/img/sunburnt-country/sdff.png)
 *No, Qantas, I shall not go gently into that good night. You don't understand.*
 
+### Acceptance
+
 For a moment, I felt relieved. 
 
 Maybe this wasn't such a big deal after all. 
 
-### Depression
-_"That papery-thin login screen is all that stands in the way of hackers. Security is a lie. We're all trapped in a heck of our own design."_
+𝑵𝒂𝒓𝒓𝒂𝒕𝒐𝒓: "But it was."
 
+## Absolutely not hacking
 
-### Acceptance
-_"At least things can't get any worse."_
+Having recovered from the emotional rollercoaster of the five stages someone told me were grief once and I just kinda blindly believed them, I looked at the page again, but like, harder.
 
-𝑵𝒂𝒓𝒓𝒂𝒕𝒐𝒓: "But they could."
+I didn't see anything particularly juicy, but we're not done just because a _web page_ said we're done. 
 
----
-
-// Those five stages I'd never heard any experimental evidence about.
-I didn't see anything particularly juicy on the page, but we weren't done just because a _web page_ said we were done. 
-
-Sometimes there are juicy things hidden in the page's source code (HTML), which you wouldn't be able to see just by looking at the page.
+Sometimes there are juicy things hidden in the page's source code (HTML), which you wouldn't be able to see just by looking at the page. To see them, you have to- well....
 
 This is the only step in this story that might be considered "hacking". It's not, though.
 
@@ -200,9 +197,9 @@ Suddenly wearing sunglasses, I depressed the right-hand button of my mouse, brin
 
 I cannot stress enough the degree to which this is not an elite hacker tool. 
 
-It's used by programmers to try and understand how the website works. This is ultimately futile: You cannot understand how a website works. It cannot be done. Unfortunately, it sure _looks_ like hacking the first time you see it.
-
 "Inspect Element", as it's called, is a feature of Google Chrome that lets you see the computer's representation (HTML) of the page you're looking at. Everything you see when you use it was already on your computer, you just hadn't asked Chrome to show it to you yet.
+
+Degenerate techniques such as these are used by programmers to try and understand how the website works. This is ultimately futile: You cannot understand how a website works. Unfortunately, it sure _looks_ like hacking the first time you see it.
 
 ![Diagram explaining HTML rendering to page you can look at](/img/inspect-element-diagram.png)
 
@@ -269,7 +266,8 @@ The phone number I saw said `CTCM QF HK1 [phone number]`. Googling "SSR CTCM" le
 
 Moving right along from the weirdly-off spelling of "passenger's", this was enough for me to translate `CTCM QF HK1` as "Contact phone number of passenger 1". 
 
-I thought maybe the phone number belonged to the travel agency that booked the flight, but I [checked](https://portal.iata.org/faq/articles/en_US/FAQ/Is-it-mandatory-for-travel-agents-to-provide-the-passenger-s-mobile-phone-and-email-address-1448977338174) and it has to be the passenger's real phone number. That would be.... Tony Abbott's phone number.
+#### Is the phone number actually his?
+I thought maybe the phone number belonged to the travel agency that booked the flight, but I [checked](https://portal.iata.org/faq/articles/en_US/FAQ/Is-it-mandatory-for-travel-agents-to-provide-the-passenger-s-mobile-phone-and-email-address-1448977338174) and it has to be the passenger's real phone number. That would be, if my calculations are correct,,,, Tony Abbott's phone number.
 
 ## what have i done
 
@@ -282,6 +280,7 @@ My friend who messaged me had _no idea_.
 
 ## what have i _done_
 
+I walked down the hallway and told my housemate (also a member of The Group Chat) "I think I have.... Tony Abbott's passport number???". 
 
 At this point I'd had enough defending my country and was thinking:
 
@@ -290,13 +289,72 @@ At this point I'd had enough defending my country and was thinking:
 * _can you even reset passport numbers_
 * _is it possible that i've done a crime_
 
-# Part 2: The next month
+# Part 2: The next four months
 
-I didn't _think_ any of this sounded like a crime, but you see, sometimes when the other person is rich or famous, things can suddenly _become_ crimes.
+## is it possible that i've done a crime
+I didn't _think_ any of this sounded like a crime, but I knew that sometimes when the other person is rich or famous, things can suddenly _become_ crimes.
 
-So I did what anyone would do in this situation: immediately reported my actions to the Government.
+So I was wondering like... was logging in with someone else's booking reference a crime? Was _having_ someone else's passport number a crime? Would I get in trouble for publishing a blog post about it? I mean you're reading the blog post right now so obviousl
 
-I googled "tony abbott contact". 
+Update: I have been arrested.
+
+![screenshot of me googling "did i do a big crime"]()
+
+It turned out I could just google these things, and before I knew it I was reading "the legislation". It's the rules of the law, just written down. I have no trouble reading JSON but whoever wrote the legislation was straight up making up words. I was able to divine the following wisdoms from the Times New Roman tea leaves:
+
+* It's not defamation to publish something about someone if it's true
+* If u EVER even LOOK at a computer the wrong way, the FBI will instantly slam jam you into the shadow realm
+
+I am possibly the furthest thing you can be from a lawyer, but if you are the kind of person who takes legal advice from blog posts, who am I to stand in your way? Not a lawyer, that's who. Don't do it.
+
+You know what, maybe I needed help. Maybe this was too hard for me to do on my own. Yeah, maybe I should have called someone for legal advice. That seems like a pretty common thing, so it should be easy to do. Now to take a big sip of water and google "free legal advice".
+
+### trying to ask a lawyer if i gone and done a crime
+
+Listen I'm going to save you a lot of time that I will never get back and skip a lot of this part.
+
+I spent 9 days calling legal aid numbers, lawyers, and otherwise trying to figure out if I'd done a crime[^noplan].
+
+[^noplan]: I'm not really sure what my plan was. If I had done a crime, what was I gonna do, not report the passport number being publicly available?
+
+Aside from my housemate, who I told right away, I didn't tell a soul what I'd done. I asked if I would be breaking any laws if I had "logged into a website with a publicly-posted password and found the personal information of a former politician". Do you see how that's not even a lie? I'm starting to see how lawyers do it.
+
+First I call a Legal Aid place. They tell me they don't do that here, and I should call another Legal Aid place. The second place tells me they don't do that, and I should call the First Place and "hopefully you get someone more senior". I call the First Place again, and they say "oh you've been given the run around!". You see what I mean.
+
+I eventually try to find "cybercrime" laywers, and call the one with the website with the least fear-bait marketing. A lady instantly and bluntly asks me "are you under investigation?". No, I wasn't. Well I mean, not to my knowledge? I just wanted to know whether something was a crime or not.
+
+Based on advice I got from two independent lawyers that was definitely not legal advice: I'm good, I haven't done a crime. Helllllll yeah. I mean it's a little late because at this point I had already reported my actions to the Government.
+
+## Trying to report the problem to someone, anyone, please
+
+I had Tony Abbott's passport number, phone number, and weird Qantas messages about him. I was the only one who _knew_ I had these. Anyone who saw that Instagram post could also have them. I gotta tell someone about this, but who?
+
+### wait but alex do u see the irony in this, u have his phone number right there so you could just-
+
+Yes. I see it. I _knew_ I could just call the number and hear a "G'day" I'd never be able to forget. I knew I had a rare opportunity to call someone and have them ask "how did you get this number!?". 
+
+But you can't just _do_ that.
+
+
+-----
+
+I googled "tony abbott contact", but there's only his [official website](https://tonyabbott.com.au). There's no phone number on it, only a "contact me" form. Yeah right, have you _seen_ the incredible volume of #content people want to say at politicians? No way anyone's reading that form.
+
+Did Tony Abbott even have a personal security team? I eventually realised the place I want to be reporting this lil fun fact was probably the government.
+
+## The government
+
+It's a big place.
+
+There are like fifty thousand million different departments, and they all know which acronyms to refer to eachother by, but you don't.
+
+I didn't even know where to begin with this. Who do I tell about a security problem not with a website, but the former Prime Minister of the Commonwealth of Australia serving the monarchy of Queen Elizabeth II?
+
+Well, maybe I knew someone who knew someone. I asked whichever hacker friends seemed like they might know government security people.
+
+Look I don't really have a good explanation for this so I'm just gonna post the screenshot.
+![Screenshot of 1300 CYBER1]()
+
 
 * website
 * contact us form
@@ -306,8 +364,13 @@ I googled "tony abbott contact".
 
 
 
+## Telling Qantas the bad news
+Okay, this time it's a company, so s u r e l y it'll be easier to report a security problem to them.
 
+Often websites tell you how report a security issue at `company.com/security`, maybe that'll w-
 
+![qantas security not found](/img/sunburnt-country/qantas_security_not_found.png)
+*Okay nevermind*
 
 
 
