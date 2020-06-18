@@ -184,7 +184,7 @@ Having recovered from the emotional rollercoaster of the five stages someone tol
 
 I didn't see anything particularly juicy, but we're not done just because a _web page_ said we're done. 
 
-Sometimes there are juicy things hidden in the page's source code (HTML), which you wouldn't be able to see just by looking at the page. To see them, you have to- well....
+Sometimes there are juicy things hidden in the page's source code (HTML), which you wouldn't be able to see just by looking at the page. To see them, you have to... well....
 
 This is the only step in this story that might be considered "hacking". It's not, though.
 
@@ -199,11 +199,7 @@ I cannot stress enough the degree to which this is not an elite hacker tool.
 
 "Inspect Element", as it's called, is a feature of Google Chrome that lets you see the computer's representation (HTML) of the page you're looking at. Everything you see when you use it was already on your computer, you just hadn't asked Chrome to show it to you yet.
 
-Degenerate techniques such as these are used by programmers to try and understand how the website works. This is ultimately futile: You cannot understand how a website works. Unfortunately, it sure _looks_ like hacking the first time you see it.
-
-![Diagram explaining HTML rendering to page you can look at](/img/inspect-element-diagram.png)
-
-
+Scrublord techniques such as these are used by programmers to try and understand how the website works. This is ultimately futile: You cannot understand how a website works. Unfortunately, it sure _looks_ like hacking the first time you see it.
 
 If you'd like to know more about it [I've prepared a short video](https://twitter.com/mangopdf/status/1123400764926226432).
 
@@ -226,6 +222,10 @@ It's just _there_.
 It was next to `documentNumber`, which was a number that sure _looked_ like a passport number. I googled "tony abbott" and checked the birthday on his Wikipedia page. It matched the birthday on the passport.
 
 At this point I was pretty sure I was looking at the _extremely_ secret government-issued ID of the _28th Prime Minister of the Commonwealth of Australia, servant to her Majesty Queen Elizabeth II_ and I was _kinda_ worried that I was somehow doing something wrong, but like, not enough to stop.
+
+## What can you do with a passport number?
+
+Why was it bad that
 
 ## What else is in here?
 
@@ -291,6 +291,14 @@ At this point I'd had enough defending my country and was thinking:
 
 # Part 2: The next four months
 
+I contacted a _lot_ of people about this. If my calculations are correct[^calculations], I contacted at least `PLACEHOLDER_NUMBER` people. Eventually I started keeping track of who I talked to in a note I call "the hashtag struggle".
+
+[^calculations]: I've always wanted to say that.
+
+![the hashtag struggle](/img/sunburnt-country/thehashtagstruggle.png)
+
+Alright strap yourself in I guess.
+
 ## is it possible that i've done a crime
 I didn't _think_ any of this sounded like a crime, but I knew that sometimes when the other person is rich or famous, things can suddenly _become_ crimes.
 
@@ -298,6 +306,7 @@ So I was wondering like... was logging in with someone else's booking reference 
 
 Update: I have been arrested.
 
+---
 ![screenshot of me googling "did i do a big crime"]()
 
 It turned out I could just google these things, and before I knew it I was reading "the legislation". It's the rules of the law, just written down. I have no trouble reading JSON but whoever wrote the legislation was straight up making up words. I was able to divine the following wisdoms from the Times New Roman tea leaves:
@@ -307,38 +316,42 @@ It turned out I could just google these things, and before I knew it I was readi
 
 I am possibly the furthest thing you can be from a lawyer, but if you are the kind of person who takes legal advice from blog posts, who am I to stand in your way? Not a lawyer, that's who. Don't do it.
 
-You know what, maybe I needed help. Maybe this was too hard for me to do on my own. Yeah, maybe I should have called someone for legal advice. That seems like a pretty common thing, so it should be easy to do. Now to take a big sip of water and google "free legal advice".
+You know what, maybe I needed help. Maybe this was too hard for me to do on my own. Yeah, maybe I should have called someone for legal advice. That seemed like a pretty common thing, so I thought it should be easy to do. I took a big sip of water and googled "free legal advice".
 
 ### trying to ask a lawyer if i gone and done a crime
 
-Listen I'm going to save you a lot of time that I will never get back and skip a lot of this part.
+Listen I'm going to save you a lot of time that I personally will never get back and skip a lot of this part.
 
-I spent 9 days calling legal aid numbers, lawyers, and otherwise trying to figure out if I'd done a crime[^noplan].
+Before I went and told everyone about my HTML frolicking, I spent 9 days calling legal aid numbers, lawyers, and otherwise trying to figure out if I'd done a crime[^noplan]. 
 
 [^noplan]: I'm not really sure what my plan was. If I had done a crime, what was I gonna do, not report the passport number being publicly available?
 
-Aside from my housemate, who I told right away, I didn't tell a soul what I'd done. I asked if I would be breaking any laws if I had "logged into a website with a publicly-posted password and found the personal information of a former politician". Do you see how that's not even a lie? I'm starting to see how lawyers do it.
+Aside from my housemate, who I told right away, I didn't tell a soul what I'd done. I asked if I would be breaking any laws if I had "logged into a website with a publicly-posted password and found the personal information of a former politician". Do you see how that's not even a lie? I'm starting to see how lawyers do it.[^clever]
+
+[^clever]: This sounds like maybe I'm doing something remotely clever by not confessing my potential(?) crimes, but I also did this simultaneously while emailing explicit details of my activities to the Australian Government.
 
 First I call a Legal Aid place. They tell me they don't do that here, and I should call another Legal Aid place. The second place tells me they don't do that, and I should call the First Place and "hopefully you get someone more senior". I call the First Place again, and they say "oh you've been given the run around!". You see what I mean.
 
-I eventually try to find "cybercrime" laywers, and call the one with the website with the least fear-bait marketing. A lady instantly and bluntly asks me "are you under investigation?". No, I wasn't. Well I mean, not to my knowledge? I just wanted to know whether something was a crime or not.
+I eventually try to find "cybercrime" laywers, and call the one with the website with the least fear-bait marketing. A lady instantly and bluntly asks me "are you under investigation?". No, I wasn't. Well I mean, not to my knowledge? I just wanted to know whether something was a crime or not. She said "well we're criminal defence lawyers, so...". I apologised for bothering her, but then she was all like "well what exactly are you asking?" and I explained and she seemed to think it was fine in a non-legally-binding way.
 
 Based on advice I got from two independent lawyers that was definitely not legal advice: I'm good, I haven't done a crime. Helllllll yeah. I mean it's a little late because at this point I had already reported my actions to the Government.
 
-## Trying to report the problem to someone, anyone, please
+### trying to report the problem to someone, anyone, please
 
-I had Tony Abbott's passport number, phone number, and weird Qantas messages about him. I was the only one who _knew_ I had these. Anyone who saw that Instagram post could also have them. I gotta tell someone about this, but who?
+I had Tony Abbott's passport number, phone number, and weird Qantas messages about him. I was the only one who _knew_ I had these. Anyone who saw that Instagram post could also have them. I felt like I had to tell someone about this, but who?
 
-### wait but alex do u see the irony in this, u have his phone number right there so you could just-
+### wait but alex do u see the irony in this, u have his phone number right there so u could just-
 
-Yes. I see it. I _knew_ I could just call the number and hear a "G'day" I'd never be able to forget. I knew I had a rare opportunity to call someone and have them ask "how did you get this number!?". 
+Yes, I see it. Thank u for pointing this out, wise, astute and ultimately self-imposed heading. I _knew_ I could just call the number and hear a "G'day" I'd never be able to forget. I knew I had a rare opportunity to call someone and have them ask "how did you get this number!?". 
 
 But you can't just _do_ that.
 
+You can't just call someone's phone number that you got by rummaging around in the HTML ball pit. Tony Abbott didn't _want_ me to have his phone number, so I can't just violate his privacy like that, even if it's for a good cause. Maybe if it was urgent, sure. But I'm pretty sure I should do this the Nice way, and show that I come in peace. 
 
------
+There's also this pretty yikes thing that happens where you email someone being all like "henlo ur website let me login with username `admin` and password `admin`, maybe u wanna change that??? could just be me but let me kno what u think xoxo alex" and then they reply being like "oh so you're a HACKER and a CRIMINAL and you've HACKED ME AND MY FAMILY TOO and this is a RANSOM and ur from the DARK WEB i know what that is i've seen mr robot WELL watch out kiddO bc me and my lawyers are bulk-installing tens of thousands of copies of [McAfee® Gamer Security](https://www.mcafee.com/en-us/antivirus/gaming.html) as we speak, so i'd like 2 see u try"
 
-I googled "tony abbott contact", but there's only his [official website](https://tonyabbott.com.au). There's no phone number on it, only a "contact me" form. Yeah right, have you _seen_ the incredible volume of #content people want to say at politicians? No way anyone's reading that form.
+### How about contacting Tony Abbott directly?
+I googled "tony abbott contact", but there's only his [official website](https://tonyabbott.com.au). There's no phone number on it, only a "contact me" form. Yeah right, have you _seen_ the incredible volume of #content people want to say at politicians? No way anyone's reading that form. I didn't even try it.
 
 Did Tony Abbott even have a personal security team? I eventually realised the place I want to be reporting this lil fun fact was probably the government.
 
@@ -350,17 +363,48 @@ There are like fifty thousand million different departments, and they all know w
 
 I didn't even know where to begin with this. Who do I tell about a security problem not with a website, but the former Prime Minister of the Commonwealth of Australia serving the monarchy of Queen Elizabeth II?
 
-Well, maybe I knew someone who knew someone. I asked whichever hacker friends seemed like they might know government security people.
+Well, maybe I knew someone who knew someone. I asked hacker friends who seemed like they might know government security people.
 
 Look I don't really have a good explanation for this so I'm just gonna post the screenshot.
 ![Screenshot of 1300 CYBER1]()
 
+You better _believe_ I smashed that call button on `1300 CYBER1`. Did they just make it `1300 CYBER` then realise you need one more digit for a phone number? Incredible. The planet may be dying, but we live in a truly unparalleled age of content.
 
-* website
-* contact us form
-* nah
-* liam?
-* check screenshots
+### Calling 1300 `c y b e r       o n e`
+
+I told the person who picked up that I wanted to report a security issue "where the personal identification information of a former member of parliament was publicly exposed", and they gave me an email address for [ASD](https://www.asd.gov.au/).
+
+I emailed them this:
+
+![Screenshot of my email to ASD]()
+
+Sorry for the clickbait subject line but, well, that's what happened.
+
+Unlike everyone else I talked to, they replied _instantly_ asking whether I was willing to share more details regarding the "potential" exposure of Tony Abbott's passport number. Yeah okay. The reply subject line had "SEC=Sensitive" in it so I _knew_ I'd made it big. 
+
+I sent them all the details and asked some questions, but they didn't reply for a few days. Eventually, after a big day of getting left on read by the government, I got a response 
+
+ASD were really nice to me about it and happy that I'd helped. I gave them the IP addresses I used when I was finding the boarding pass so they could figure out who was me in their logs. I dunno if they even used them, but oh well, helping? They encouraged me to report this kind of thing to them if it happened again, but I'm not really in the business of uhhhhhhhh whatever this is.
+
+I asked them if they could give me permission to write this blog post, or who to ask, and they gave me two government email addresses, neither of which replied to my emails.
+
+At one point, the person I was emailing added a P.S. telling me their favourite colour[^nope]. This is the answer to my top secret mango.pdf challenge at the end of [mango.pdf.zone](https://mangopdf.zone), which is fine, but:
+
+[^nope]: This isn't actually true, it was their favourite something else. But it's the answer to my top secret mango.pdf puzzle, so of course I can't go giving it away here. Scroll to the bottom of [mango.pdf.zone](https://mango.pdf.zone) if you wanna try it! (You'll need a computer, not a phone.)
+
+
+1. The instructions say to tweet the answer at me, not email me
+2. The prize for doing the challenge is me sending you this gif of a shakas
+
+![shakas.gif](https://media.giphy.com/media/13JoHhCFtUMAZa/giphy.gif)
+*yeahhhhhhhhhh, nice*
+
+So I guess I emailed the shakas gif to the government??? Yeah, I guess I did.
+
+![shakas attached dw](/img/sunburnt-country/shakas_attached.png)
+**
+
+
 
 
 
@@ -437,38 +481,6 @@ Maybe there's an API in the manage booking page that gives you all the secret in
 
 media folks @ me here
 
-# For the video: 
-Show the whole story, how i felt, etc. etc.
-For the blog just stick to the facts.
-
-There were 16 hits.
-
-```
-&lt;li&gt;</span>You need to show your passport or Australian government issued photo identification,
-```
-
-Nope.
-
-```
-"passPortHolder":false,"passPortHolderAttributes":{"NATNRequirement":"DISABLED",
-```
-
-Hmm, closer, but nope.
-
-There were 16 hits.
-
-```
-&lt;li&gt;</span>You need to show your passport or Australian government issued photo identification,
-```
-
-Nope.
-
-```
-"passPortHolder":false,"passPortHolderAttributes":{"NATNRequirement":"DISABLED",
-```
-
-Hmm, closer, but nope.
-
 
 // What people want to know:
 "how secret is my boarding pass?" "who can i share it with?
@@ -490,19 +502,6 @@ and so, as a joke, sent to tom, who sent to me
 
 // emoji!
 
-
-```
-&lt;li&gt;</span>You need to show your passport or Australian government issued photo identification,
-```
-
-Nope.
-
-```
-"passPortHolder":false,"passPortHolderAttributes":{"NATNRequirement":"DISABLED",
-```
-
-Hmm, closer, but nope.
-
 ---
 That would be ridiculous and in startling contrast to the rest of this story.
 ---
@@ -511,7 +510,6 @@ That would be ridiculous and in startling contrast to the rest of this story.
 
 // denying someone Tim Tams is denying their Australian right, fail to comply and you face bans of up to 3 years from the swimming carniva 
 
-// degenerate techniques (inspect element)
 // consequences be hecked
 // ah no sorry you're breaking up, i can't hear you i'm going through a phase
 // "nice sydney opera house you got here. would be a shame if it were to become the the sydney Gamer house" - @dril
