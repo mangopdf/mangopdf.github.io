@@ -8,7 +8,7 @@ description: what's up twitter summariser
 standfirst: Do not get arrested challenge 2020
 colour: lightblue
 text-colour: pink
-author: mangopdf
+author: mangopdf (Alex Hope)
 image: /img/sunburnt-country/title.png
 permalink: /sunburntcountry
 ---
@@ -28,11 +28,16 @@ It's a feeling I know all too well, and in which I was vigorously partaking when
 
 The man in question is [Tony Abbott](https://en.wikipedia.org/wiki/Tony_Abbott), one of Australia's many former Prime Ministers. 
 
+![if u google tony abbott u get this](/img/sunburnt-country/tony_abbott_wikipedia.png)
+*One of Australia's numerous former Prime Ministers*
+
 For security reasons, we try to change our Prime Minister every six months, and to never use the same Prime Minister on multiple websites.
 
 But like don't get me wrong, I love Australia, let's be honest the [national anthem](https://www.youtube.com/watch?v=XfR9iY5y94s) fricken slaps. I just really wanted to say that multiple websites thing.
 
-Here's where it all goes wrong though. My friend's message linked to a public Instagram[^instagram] post by Tony Abbott, a picture of a boarding pass and baggage receipt for a flight to Sydney. 
+Here's where it all goes wrong though.
+
+My friend's message linked to a public Instagram[^instagram] post by Tony Abbott, a picture of a boarding pass and baggage receipt for a flight to Sydney. 
 
 [^instagram]: A lot of people don't know that Instagram is actually short for Instantaneous Grammarphone, because it isn't true.
 
@@ -67,6 +72,8 @@ Months ago, I'd said something in the chat like:
 
 ---
 
+So now, my friend, having seen this Instagram post by Tony Abbott, was sending it to me because, uhhhhh
+
 ### Disclaimer
 
 Of course, my friend wasn't _actually_ asking me to hack the former Prime Minister.
@@ -86,7 +93,7 @@ Of course, my friend wasn't _actually_ asking me to hack the former Prime Minist
 <br/>
 <br/>
 
-I mean... What would you do, if you had that message in front of you? Would you _not_ click it? Are you gonna let a _link_ that's like 50% advertising tracking ID tell you what to do? Wouldn't you be _curious_? The former Prime Minister had just posted his boarding pass. Is that _bad_? I don't know. What I do know is: the _least_ I can do for my country would be to have a casual browse[^nocrime].
+I mean... What would you do, if you had that message in front of you? Would you _not_ click it? Are you gonna let a _link_ that's like 50% advertising tracking ID tell you what to do? Wouldn't you be _curious_? The former Prime Minister had just posted his boarding pass. Was that _bad_? I didn't know. What I did know was: the _least_ I could do for my country would be to have a casual browse[^nocrime].
 
 [^nocrime]: To be clear, I didn't want to go do some fun casual identity fraud, I just wanted to know if he _had_ posted something secret, since uh, someone should probably do something about that if it were true (I insist, as they calmly read me my rights). 
 
@@ -94,11 +101,11 @@ I mean... What would you do, if you had that message in front of you? Would you 
 
 A casual browse later, I had the picture of the boarding pass, but didn't really know what to do next.
 
-I'd heard that it's bad to post your boarding pass online, because if you do, a Russian 15 year-old with an anime avatar might somehow use it to commit identity fraud. But I don't know anyone like that, so I clumsily Googled "uhhh boarding pass hacking".
+I'd heard that it's bad to post your boarding pass online, because if you do, a bored 15 year-old with an anime avatar might somehow use it to commit identity fraud. But I don't know anyone like that, so I clumsily Googled "uhhh boarding pass hacking".
 
 Eventually I found [an article](https://null-byte.wonderhowto.com/how-to/hackers-use-hidden-data-airline-boarding-passes-hack-flights-0180728/) explaining that yes, pictures of boarding passes can be used for Crimes, and the valuable part is the barcode.
 
-Apparently the barcode on the boarding pass contains the "Booking Reference" (e.g. H8JA2A), which you use to log in to the airline website. That sounds suspiciously like a password to me, but I'm willing to conveniently forget to note that out loud if you are.
+Apparently the barcode on the boarding pass contains the "Booking Reference" (e.g. H8JA2A), which you use to log in to the airline website. That sounds suspiciously like a password to me, but I'm willing to conveniently forget to say that out loud if you are.
 
 ### Step 2: Scan the barcode
 I've been practicing every morning at sunrise, but still can't scan barcodes with my eyes. I had to settle for a barcode scanner app on my phone, but when I tried to scan the picture in the Instagram post, it didn't work.
@@ -186,7 +193,7 @@ I didn't see anything particularly juicy, but we're not done just because a _web
 
 Sometimes there are juicy things hidden in the page's source code (HTML), which you wouldn't be able to see just by looking at the page. To see them, you have to... well....
 
-This is the only step in this story that might be considered "hacking". It's not, though.
+This is the only step in this story that might be considered "hacking". It's not, though. Maybe later someone will show you this same thing, and tell you it's hacking. You will not go gently into that good night. You will refuse to acknowledge their showing off, killing them instantly.
 
 Suddenly wearing sunglasses, I depressed the right-hand button of my mouse, bringing a textual menu under the mouse cursor into existence. Power and glory. Using my superior intellect, I dragged the mouse pointer to the bottom of the menu, summoned all my courage, and allowed it to pour through my finger as I left-clicked on the "Inspect Element" menu item in such a way that it was clear I possessed godlike hacking abilities.
 
@@ -203,11 +210,11 @@ Scrublord techniques such as these are used by programmers to try and understand
 
 If you'd like to know more about it [I've prepared a short video](https://twitter.com/mangopdf/status/1123400764926226432).
 
----
+## Browsing the "Manage Booking" page's HTML
 
 ![Screenshot of inspect element tab open]()
 
-I scrolled around through the HTML and eventually got to a big pile of JSON data. I skimmed through it, not really knowing what it meant, furiously trying to find anything that looked out of place or secret.
+I scrolled around through the HTML and eventually got to a big pile of JSON data 🤔🤔🤔. I skimmed through it, not really knowing what it meant, furiously trying to find anything that looked out of place or secret.
 
 I eventually realised that manually reading JSON with my eyes was not an efficient way of defending my country, and Ctrl + F'd the HTML for "passport".
 
@@ -348,10 +355,14 @@ But you can't just _do_ that.
 
 You can't just call someone's phone number that you got by rummaging around in the HTML ball pit. Tony Abbott didn't _want_ me to have his phone number, so I can't just violate his privacy like that, even if it's for a good cause. Maybe if it was urgent, sure. But I'm pretty sure I should do this the Nice way, and show that I come in peace. 
 
-There's also this pretty yikes thing that happens where you email someone being all like "henlo ur website let me login with username `admin` and password `admin`, maybe u wanna change that??? could just be me but let me kno what u think xoxo alex" and then they reply being like "oh so you're a HACKER and a CRIMINAL and you've HACKED ME AND MY FAMILY TOO and this is a RANSOM and ur from the DARK WEB i know what that is i've seen mr robot WELL watch out kiddO bc me and my lawyers are bulk-installing tens of thousands of copies of [McAfee® Gamer Security](https://www.mcafee.com/en-us/antivirus/gaming.html) as we speak, so i'd like 2 see u try"
+There's also this pretty yikes thing that happens where you email someone being all like "henlo ur website let me log in with username `admin` and password `admin`, maybe u wanna change that??? could just be me but let me kno what u think xoxo alex" and then they reply being like "oh so you're a HACKER and a CRIMINAL and you've HACKED ME AND MY FAMILY TOO and this is a RANSOM and ur from the DARK WEB i know what that is i've seen several episodes of mr robot WELL watch out kiddO bc me and my lawyers are bulk-installing tens of thousands of copies of [McAfee® Gamer Security](https://www.mcafee.com/en-us/antivirus/gaming.html) as we speak, so i'd like 2 see u try"
 
 ### How about contacting Tony Abbott directly?
-I googled "tony abbott contact", but there's only his [official website](https://tonyabbott.com.au). There's no phone number on it, only a "contact me" form. Yeah right, have you _seen_ the incredible volume of #content people want to say at politicians? No way anyone's reading that form. I didn't even try it.
+I googled "tony abbott contact", but there's only his [official website](https://tonyabbott.com.au). There's no phone number on it, only a "contact me" form.
+
+![Contact me form]()
+
+Yeah right, have you _seen_ the incredible volume of #content people want to say at politicians? No way anyone's reading that form. I didn't even try it.
 
 Did Tony Abbott even have a personal security team? I eventually realised the place I want to be reporting this lil fun fact was probably the government.
 
@@ -359,9 +370,11 @@ Did Tony Abbott even have a personal security team? I eventually realised the pl
 
 It's a big place.
 
-There are like fifty thousand million different departments, and they all know which acronyms to refer to eachother by, but you don't.
+There are like fifty thousand million different departments, and they all know which acronyms to refer to eachother by, but you don't. If you EVER call it DMP&C instead of DPM&C you are gonna be sucked into a nightmare realm the likes of which cannot be expressed in any number of spreadsheet cells. And believe me, they've tried.
 
 I didn't even know where to begin with this. Who do I tell about a security problem not with a website, but the former Prime Minister of the Commonwealth of Australia serving the monarchy of Queen Elizabeth II?
+
+### The friends we made along the way
 
 Well, maybe I knew someone who knew someone. I asked hacker friends who seemed like they might know government security people.
 
@@ -372,7 +385,7 @@ You better _believe_ I smashed that call button on `1300 CYBER1`. Did they just 
 
 ### Calling 1300 `c y b e r       o n e`
 
-I told the person who picked up that I wanted to report a security issue "where the personal identification information of a former member of parliament was publicly exposed", and they gave me an email address for [ASD](https://www.asd.gov.au/).
+I told the person who picked up that I wanted to report a security issue "where the personal identification information of a former member of parliament was publicly exposed", and they gave me an email address for [ASD](https://www.asd.gov.au/) (the Australian equivalent of the NSA).
 
 I emailed them this:
 
@@ -385,6 +398,8 @@ Unlike everyone else I talked to, they replied _instantly_ asking whether I was 
 I sent them all the details and asked some questions, but they didn't reply for a few days. Eventually, after a big day of getting left on read by the government, I got a response 
 
 ASD were really nice to me about it and happy that I'd helped. I gave them the IP addresses I used when I was finding the boarding pass so they could figure out who was me in their logs. I dunno if they even used them, but oh well, helping? They encouraged me to report this kind of thing to them if it happened again, but I'm not really in the business of uhhhhhhhh whatever this is.
+
+At this point in the story I had not yet spoken to a lawyer, and so did not know whether the actions I was confessing to were illegal. This is widely regarded as a bad move, and I do not recommend anyone else rely on "but I'm being so helpful and earnest!" as a legal defence.
 
 I asked them if they could give me permission to write this blog post, or who to ask, and they gave me two government email addresses, neither of which replied to my emails.
 
@@ -403,9 +418,6 @@ So I guess I emailed the shakas gif to the government??? Yeah, I guess I did.
 
 ![shakas attached dw](/img/sunburnt-country/shakas_attached.png)
 **
-
-
-
 
 
 ## Telling Qantas the bad news
