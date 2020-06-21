@@ -508,6 +508,40 @@ Often websites tell you how report a security issue at `company.com/security`, m
 
 
 
+# FAQ
+
+### Whoa how r u such a hacker I wish I could be a hacker like u
+C'mon buDdY you read the blog post. You know this wasn't hacking. But I suppose I could,,,, detail my philosophy on hacking, unprompted.
+
+#### Unprompted and unnecessary philosophy on hacking and restaurant water
+
+Oh so you're gonna read _this_ section huh?
+
+One day in the kitchen, my housemate said "yeah I was thinking.... why didn't _I_ hack Tony Abbott? And I realised I guess it's because you have more hubris".
+
+I was deeply complimented by this, but that's not the point. The point is that you, too, can have hubris. 
+
+You know how they say to commit a crime (which once again I insist did not happen in my case) you need means, motive, and opportuity? Means is the ability to use right click > Inspect Element, motive is hubris, and opportunity is the dumb luck of having my friend message me the Instagram post.
+
+I know, I've been saying "hubris" a lot. I mean "the willingness to risk breaking the rules". Now hold up, don't go outside and do crimes. I'm not talking about breaking the _law_. I'm talking about rules you might not even realise are rules, like social rules and conventions.
+
+Here's a simple example. You're at a sufficiently fancy restaurant, like I dunno, with white tablecloths or something?. The waiter asks if you'd like "still or sparkling water?".
+
+If you say "still", it costs Eleven Dollars. If you say "sparkling", it costs Eleven Dollars and tastes all gross and fizzy. But if you say "tap water, please", what happens? It feels a bit risky. There are a lot of rules about how you're supposed to behave at fancy restaurants. Maybe the waiter will condescendlingly tell you "that's not how it works sweetie".
+
+When I've seen someone say they'd like tap water, the waiter usually just brings tap water without a fuss. And it doesn't cost anything, of course.
+
+In conclusion, to be a hacker u ask for tap water at a restaurant.
+
+For real though, when I first saw someone do this I was blown away. You can _do_ that? I didn't know you could do that! I just thought you had to pay Eleven Dollars extra at fancy restaurants. It's not written down anywhere that you can ask for tap water. But now that I know you _can_ do that, and like, nothing bad happens, I can do it too. Miss me with that Eleven Dollars fizzy water.
+
+Basically, until you've broken the rules, the idea that the rules can be broken might just not occur to you. That's how it felt for me, at least. I'm not trying to impress you with an edgy burst of performative wokeness, I swear. 
+
+
+
+
+
+
 
 
 
