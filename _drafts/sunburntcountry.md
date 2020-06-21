@@ -33,7 +33,7 @@ The man in question is [Tony Abbott](https://en.wikipedia.org/wiki/Tony_Abbott),
 
 For security reasons, we try to change our Prime Minister every six months, and to never use the same Prime Minister on multiple websites.
 
-But like don't get me wrong, I love Australia, let's be honest the [national anthem](https://www.youtube.com/watch?v=XfR9iY5y94s) fricken slaps. I just really wanted to say that multiple websites thing.
+But like don't get me wrong, I love Australia (let's be honest the [national anthem](https://www.youtube.com/watch?v=XfR9iY5y94s) fricken slaps). I just really wanted to say that multiple websites thing.
 
 Here's where it all goes wrong though.
 
@@ -230,9 +230,9 @@ It was next to `documentNumber`, which was a number that sure _looked_ like a pa
 
 At this point I was pretty sure I was looking at the _extremely_ secret government-issued ID of the _28th Prime Minister of the Commonwealth of Australia, servant to her Majesty Queen Elizabeth II_ and I was _kinda_ worried that I was somehow doing something wrong, but like, not enough to stop.
 
-## What can you do with a passport number?
+## Why is it bad for someone else to have your passport number?
 
-Why was it bad that
+//todo lol
 
 ## What else is in here?
 
@@ -298,18 +298,27 @@ At this point I'd had enough defending my country and was thinking:
 
 # Part 2: The next four months
 
-I contacted a _lot_ of people about this. If my calculations are correct[^calculations], I contacted at least `PLACEHOLDER_NUMBER` people. Eventually I started keeping track of who I talked to in a note I call "the hashtag struggle".
+I contacted a _lot_ of people about this. If my calculations are correct[^calculations], I contacted at least `PLACEHOLDER_NUMBER` people. Eventually I started keeping track of who I talked to in a Google Keep note I now refer to as "the hashtag struggle". Here it is in spreadsheet form:
 
 [^calculations]: I've always wanted to say that.
 
 ![the hashtag struggle](/img/sunburnt-country/thehashtagstruggle.png)
+*This is how much I went through to publish this blog post*
+
+There is a _lot_ going on in this section (a loT), so here is a lil cheat code from present-day me: A checklist of what the heck I was trying to accomplish here.
+
+- ⬜ figure out whether i have done a crime
+- ⬜ notify someone (tony abbott?) that this happened
+- ⬜ get permission to publish this here blog post 
+- ⬜ tell qantas about the security issue so they can fix it
+
 
 Alright strap yourself in I guess.
 
 ## is it possible that i've done a crime
-I didn't _think_ any of this sounded like a crime, but I knew that sometimes when the other person is rich or famous, things can suddenly _become_ crimes.
+I didn't _think_ anything I did sounded like a crime, but I knew that sometimes when the other person is rich or famous, things can suddenly _become_ crimes.
 
-So I was wondering like... was logging in with someone else's booking reference a crime? Was _having_ someone else's passport number a crime? Would I get in trouble for publishing a blog post about it? I mean you're reading the blog post right now so obviousl
+So I was wondering like... was logging in with someone else's booking reference a crime? Was _having_ someone else's passport number a crime? What if they were, say, the former Prime Minister? Would I get in trouble for publishing a blog post about it? I mean you're reading the blog post right now so obviousl
 
 Update: I have been arrested.
 
@@ -318,12 +327,12 @@ Update: I have been arrested.
 
 It turned out I could just google these things, and before I knew it I was reading "the legislation". It's the rules of the law, just written down. I have no trouble reading JSON but whoever wrote the legislation was straight up making up words. I was able to divine the following wisdoms from the Times New Roman tea leaves:
 
-* It's not defamation to publish something about someone if it's true
+* It's not defamation to publish something negative about someone if it's true
 * If u EVER even LOOK at a computer the wrong way, the FBI will instantly slam jam you into the shadow realm
 
 I am possibly the furthest thing you can be from a lawyer, but if you are the kind of person who takes legal advice from blog posts, who am I to stand in your way? Not a lawyer, that's who. Don't do it.
 
-You know what, maybe I needed help. Maybe this was too hard for me to do on my own. Yeah, maybe I should have called someone for legal advice. That seemed like a pretty common thing, so I thought it should be easy to do. I took a big sip of water and googled "free legal advice".
+You know what, maybe I needed help. From an adult. Maybe this was too hard for me to do on my own. "Yeah, maybe I should get some of that free government legal advice", I thought. That seemed like a pretty common thing, so I thought it should be easy to do. I took a big sip of water and googled "free legal advice".
 
 ### trying to ask a lawyer if i gone and done a crime
 
@@ -333,15 +342,20 @@ Before I went and told everyone about my HTML frolicking, I spent 9 days calling
 
 [^noplan]: I'm not really sure what my plan was. If I had done a crime, what was I gonna do, not report the passport number being publicly available?
 
-Aside from my housemate, who I told right away, I didn't tell a soul what I'd done. I asked if I would be breaking any laws if I had "logged into a website with a publicly-posted password and found the personal information of a former politician". Do you see how that's not even a lie? I'm starting to see how lawyers do it.[^clever]
+I'd already told my housemate everything, but aside from that, I didn't tell a soul. I asked if I would be breaking any laws if "someone" had "logged into a website with someone's publicly-posted password and found the personal information of a former politician". Do you see how that's not even a lie? I'm starting to see how lawyers do it.[^clever]
 
 [^clever]: This sounds like maybe I'm doing something remotely clever by not confessing my potential(?) crimes, but I also did this simultaneously while emailing explicit details of my activities to the Australian Government.
 
-First I call a Legal Aid place. They tell me they don't do that here, and I should call another Legal Aid place. The second place tells me they don't do that, and I should call the First Place and "hopefully you get someone more senior". I call the First Place again, and they say "oh you've been given the run around!". You see what I mean.
+First I call the state government's Legal Aid number. They tell me they don't do that here, and I should call another Legal Aid place named something slightly different. The second place tells me they don't do that, and I should call the First Place and "hopefully you get someone more senior". I call the First Place again, and they say "oh you've been given the run around!". You see where this is going.
 
-I eventually try to find "cybercrime" laywers, and call the one with the website with the least fear-bait marketing. A lady instantly and bluntly asks me "are you under investigation?". No, I wasn't. Well I mean, not to my knowledge? I just wanted to know whether something was a crime or not. She said "well we're criminal defence lawyers, so...". I apologised for bothering her, but then she was all like "well what exactly are you asking?" and I explained and she seemed to think it was fine in a non-legally-binding way.
+I eventually realise every legal person I talk to has no idea about "cybercrime" or even what would happen if a computer. I try to find "cybercrime" laywers, and call the one with the website with the least fear-bait marketing. A lady instantly and bluntly asks me "are you under investigation?". No, I wasn't. Well I mean, not to my knowledge? I just wanted to know whether something was a crime or not. She said "well we're criminal defence lawyers, so...". I apologised for bothering her, but then she was all like "well what exactly are you asking?" and I explained and she seemed to think it was fine in a non-legally-binding way.
 
-Based on advice I got from two independent lawyers that was definitely not legal advice: I'm good, I haven't done a crime. Helllllll yeah. I mean it's a little late because at this point I had already reported my actions to the Government.
+Let's skip a lot of phone calls here. Take my hand as I whisk you towards the slightly-more-recent past. Based on advice I got from two independent lawyers that was definitely not legal advice: I'm good, I haven't done a crime. Helllllll yeah. I mean it's a little late because at this point I had already reported my actions to the Government.
+
+- ☑️ figure out whether i have done a crime
+- ⬜ notify someone (tony abbott?) that this happened
+- ⬜ get permission to publish this here blog post 
+- ⬜ tell qantas about the security issue so they can fix it
 
 ### trying to report the problem to someone, anyone, please
 
@@ -349,13 +363,13 @@ I had Tony Abbott's passport number, phone number, and weird Qantas messages abo
 
 ### wait but alex do u see the irony in this, u have his phone number right there so u could just-
 
-Yes, I see it. Thank u for pointing this out, wise, astute and ultimately self-imposed heading. I _knew_ I could just call the number and hear a "G'day" I'd never be able to forget. I knew I had a rare opportunity to call someone and have them ask "how did you get this number!?". 
+Yes, I see it. Thank u for pointing this out, wise, astute and ultimately self-imposed heading. I _knew_ I could just call the number any time and hear a "G'day" I'd never be able to forget. I knew I had a rare opportunity to call someone and have them ask "how did you get this number!?". 
 
 But you can't just _do_ that.
 
-You can't just call someone's phone number that you got by rummaging around in the HTML ball pit. Tony Abbott didn't _want_ me to have his phone number, so I can't just violate his privacy like that, even if it's for a good cause. Maybe if it was urgent, sure. But I'm pretty sure I should do this the Nice way, and show that I come in peace. 
+You can't just call someone's phone number that you got by rummaging around in the HTML ball pit. Tony Abbott didn't _want_ me to have his phone number, because he didn't give it to me. So I felt like I couldn't just violate his privacy like that, even if it's for a good cause. Maybe if it was urgent, or I had no other option, sure. But I'm pretty sure I should do this the Nice way, and show that I come in peace. 
 
-There's also this pretty yikes thing that happens where you email someone being all like "henlo ur website let me log in with username `admin` and password `admin`, maybe u wanna change that??? could just be me but let me kno what u think xoxo alex" and then they reply being like "oh so you're a HACKER and a CRIMINAL and you've HACKED ME AND MY FAMILY TOO and this is a RANSOM and ur from the DARK WEB i know what that is i've seen several episodes of mr robot WELL watch out kiddO bc me and my lawyers are bulk-installing tens of thousands of copies of [McAfee® Gamer Security](https://www.mcafee.com/en-us/antivirus/gaming.html) as we speak, so i'd like 2 see u try"
+I want to show that I come in peace because there's also this pretty yikes thing that happens where you email someone being all like "henlo ur website let me log in with username `admin` and password `admin`, maybe u wanna change that??? could just be me but let me kno what u think xoxo alex" and then they reply being like "oh so you're a HACKER and a CRIMINAL and you've HACKED ME AND MY FAMILY TOO and this is a RANSOM and ur from the DARK WEB i know what that is i've seen several episodes of mr robot WELL watch out kiddO bc me and my lawyers are bulk-installing tens of thousands of copies of [McAfee® Gamer Security](https://www.mcafee.com/en-us/antivirus/gaming.html) as we speak, so i'd like 2 see u try"
 
 ### How about contacting Tony Abbott directly?
 I googled "tony abbott contact", but there's only his [official website](https://tonyabbott.com.au). There's no phone number on it, only a "contact me" form.
@@ -364,15 +378,17 @@ I googled "tony abbott contact", but there's only his [official website](https:/
 
 Yeah right, have you _seen_ the incredible volume of #content people want to say at politicians? No way anyone's reading that form. I didn't even try it.
 
-Did Tony Abbott even have a personal security team? I eventually realised the place I want to be reporting this lil fun fact was probably the government.
+Who handles Tony Abbott's security? Surely someone does, he's the former PM. Did Tony Abbott even have personal security staff? I eventually realised the place I want to be reporting this lil fun fact was probably the government.
 
 ## The government
 
 It's a big place.
 
-There are like fifty thousand million different departments, and they all know which acronyms to refer to eachother by, but you don't. If you EVER call it DMP&C instead of DPM&C you are gonna be sucked into a nightmare realm the likes of which cannot be expressed in any number of spreadsheet cells. And believe me, they've tried.
+There are like fifty thousand million different departments, and they all know which acronyms to refer to eachother by, but you don't. If you EVER call it DMP&C instead of DPM&C you are gonna be sucked into a nightmare realm the likes of which cannot be expressed in _any_ number of spreadsheet cells, and believe me, they've tried.
 
-I didn't even know where to begin with this. Who do I tell about a security problem not with a website, but the former Prime Minister of the Commonwealth of Australia serving the monarchy of Queen Elizabeth II?
+I didn't even know where to begin with this. I called Tony Abbott's former political party, who were like "uhhhh we dunno what to do with this, nor do we know who to ask, did u try the contact form on his website or". Skip skip skip a few more calls like this.
+
+Who do I tell about a security problem not with a website, but the former Prime Minister of the Commonwealth of Australia serving the monarchy of Queen Elizabeth II?
 
 ### The friends we made along the way
 
@@ -380,10 +396,13 @@ Well, maybe I knew someone who knew someone. I asked hacker friends who seemed l
 
 Look I don't really have a good explanation for this so I'm just gonna post the screenshot.
 ![Screenshot of 1300 CYBER1]()
+*The planet may be dying, but we live in a truly unparalleled age of content.*
 
-You better _believe_ I smashed that call button on `1300 CYBER1`. Did they just make it `1300 CYBER` then realise you need one more digit for a phone number? Incredible. The planet may be dying, but we live in a truly unparalleled age of content.
+You _know_ I smashed that call button on `1300 CYBER1`. Did they just make it `1300 CYBER` then realise you need one more digit for a phone number? Incredible.
 
 ### Calling 1300 `c y b e r       o n e`
+
+"Yes yes hello, ring ring, is this 1300 cyber one"? They _have_ to say yes if you ask that. They're legally obligated.
 
 I told the person who picked up that I wanted to report a security issue "where the personal identification information of a former member of parliament was publicly exposed", and they gave me an email address for [ASD](https://www.asd.gov.au/) (the Australian equivalent of the NSA).
 
@@ -395,18 +414,15 @@ Sorry for the clickbait subject line but, well, that's what happened.
 
 Unlike everyone else I talked to, they replied _instantly_ asking whether I was willing to share more details regarding the "potential" exposure of Tony Abbott's passport number. Yeah okay. The reply subject line had "SEC=Sensitive" in it so I _knew_ I'd made it big. 
 
-I sent them all the details and asked some questions, but they didn't reply for a few days. Eventually, after a big day of getting left on read by the government, I got a response 
+I sent them all the details and asked some questions, but they didn't reply for a few days. Eventually, after a big day of getting left on read by the government, I got a response.
 
 ASD were really nice to me about it and happy that I'd helped. I gave them the IP addresses I used when I was finding the boarding pass so they could figure out who was me in their logs. I dunno if they even used them, but oh well, helping? They encouraged me to report this kind of thing to them if it happened again, but I'm not really in the business of uhhhhhhhh whatever this is.
 
-At this point in the story I had not yet spoken to a lawyer, and so did not know whether the actions I was confessing to were illegal. This is widely regarded as a bad move, and I do not recommend anyone else rely on "but I'm being so helpful and earnest!" as a legal defence.
-
-I asked them if they could give me permission to write this blog post, or who to ask, and they gave me two government email addresses, neither of which replied to my emails.
+At this point in the story I had not yet spoken to a lawyer, and so did not know whether the actions I was confessing to were illegal. This is widely regarded as a bad move, and I do not recommend anyone else rely on "but I'm being so helpful and earnest!!!" as a legal defence.
 
 At one point, the person I was emailing added a P.S. telling me their favourite colour[^nope]. This is the answer to my top secret mango.pdf challenge at the end of [mango.pdf.zone](https://mangopdf.zone), which is fine, but:
 
 [^nope]: This isn't actually true, it was their favourite something else. But it's the answer to my top secret mango.pdf puzzle, so of course I can't go giving it away here. Scroll to the bottom of [mango.pdf.zone](https://mango.pdf.zone) if you wanna try it! (You'll need a computer, not a phone.)
-
 
 1. The instructions say to tweet the answer at me, not email me
 2. The prize for doing the challenge is me sending you this gif of a shakas
@@ -417,10 +433,49 @@ At one point, the person I was emailing added a P.S. telling me their favourite 
 So I guess I emailed the shakas gif to the government??? Yeah, I guess I did.
 
 ![shakas attached dw](/img/sunburnt-country/shakas_attached.png)
-**
+*Please find attached*
+
+The nice people at ASD didn't give me many details about what they were doing in response, though. They basically said "thanks kiddO we'll take it from here".
+
+I asked them if they could give me permission to write this blog post, or who to ask, and they gave me two government email addresses. Listen I don't wanna be an "ummm they didn't reply to my emAiLs" kinda person buT they left me no choice.
+
+- ☑️ figure out whether i have done a crime
+- ☑️ notify someone (tony abbott?) that this happened
+- ⬜ get permission to publish this here blog post 
+- ⬜ tell qantas about the security issue so they can fix it
+
+
+## Calling Parliament House
+
+
+## Finding Tony Abbott's staff
+
+They have to be somewhere. 
+
+I was kinda lost for a few weeks, waiting hopelessly for various government departments to reply to my emails. "It's in their hands", I thought. But actually, no, it's in my hands.
+
+In a moment of determination/desperation/destiny, I went and asked everyone I could think of that _might_ know how to contact Tony Abbott's staff. 
+
+I slid clumsily into the DMs of a woman I found on Twitter who seemed to have sufficient #AusGov #Cyber in her bio, asking if she knew who to contact. She asked how my local police station would feel if I told them what I told her. Ah, no, big misunderstanding. I wasn't asking for help committing a crime or anything[^twitterdms].
+
+[^twitterdms]: But, I do understand how it be sometimes. If you have anything remotely related to "hacking" in your Twitter bio, random people DM you asking you to hack their girlfriend's Instagram account. It sucks, and how was this person to know I wasn't one of those people?
+
+I also messaged a journalist friend asking for help. They had ruthlessly efficient ideas that I presume came from being a professional journalist. They suggested I find Tony Abbott's former staff from when he was PM, and contact their offices and see if they have his contact details.
+
+
+
+### Wikipedia stalking
+
+![Screenshot of Tony Abbott's former staff]()
+
+Many of them were retired.
+
+![Screenshot of Scomo in the list]()
+Oh he _definitely_ has an office.
 
 
 ## Telling Qantas the bad news
+
 Okay, this time it's a company, so s u r e l y it'll be easier to report a security problem to them.
 
 Often websites tell you how report a security issue at `company.com/security`, maybe that'll w-
