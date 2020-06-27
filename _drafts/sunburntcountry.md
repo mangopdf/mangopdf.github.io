@@ -37,7 +37,7 @@ But like don't get me wrong, I love Australia (let's be honest the [national ant
 
 Here's where it all goes wrong though.
 
-My friend's message linked to a public Instagram[^instagram] post by Tony Abbott, a picture of a boarding pass and baggage receipt for a flight to Sydney. 
+My friend's message linked to a public Instagram[^instagram] post by Tony Abbott, showing a picture of a boarding pass and baggage receipt for a flight to Sydney. 
 
 [^instagram]: A lot of people don't know that Instagram is actually short for Instantaneous Grammarphone, because it isn't true.
 
@@ -71,10 +71,6 @@ Months ago, I'd said something in the chat like:
 > brb i gotta go act in the interests of the commonwealth of australia some more
 
 ---
-
-So now, my friend, having seen this Instagram post by Tony Abbott, was sending it to me because, uhhhhh
-
-### Disclaimer
 
 Of course, my friend wasn't _actually_ asking me to hack the former Prime Minister.
 
@@ -395,6 +391,7 @@ Who do I tell about a security problem not with a website, but the former Prime 
 Well, maybe I knew someone who knew someone. I asked hacker friends who seemed like they might know government security people.
 
 Look I don't really have a good explanation for this so I'm just gonna post the screenshot.
+
 ![Screenshot of 1300 CYBER1]()
 *The planet may be dying, but we live in a truly unparalleled age of content.*
 
@@ -406,7 +403,7 @@ You _know_ I smashed that call button on `1300 CYBER1`. Did they just make it `1
 
 I told the person who picked up that I wanted to report a security issue "where the personal identification information of a former member of parliament was publicly exposed", and they gave me an email address for [ASD](https://www.asd.gov.au/) (the Australian equivalent of the NSA).
 
-I emailed them this:
+I emailed ASD this:
 
 ![Screenshot of my email to ASD]()
 
@@ -445,10 +442,58 @@ I asked them if they could give me permission to write this blog post, or who to
 - ⬜ tell qantas about the security issue so they can fix it
 
 
-## Calling Parliament House
+## Finding Tony Abbott
+
+Like 2003's _Finding Nemo_, this section was an emotional rollercoaster.
+
+The government was presumably helping Tony Abbott reset his passport number, and making sure his current one wasn't being used for any of that yucky identity fraud.
+
+But, much like Shannon Noll's 2004 _What About Me?_, what _about_ me? I wanted to write a blog post about how I found the passport number and everything, you know? So I could warn people about the non-obvious risk of sharing their boarding passes, and also make dumb and inaccessible early 2000s references.
+
+The government didn't give me permission to do so, and rather than willingly going deeper into the procedurally generated labrynth of government department email addresses, I realised I'd be better off asking Tony Abbott or his staff directly.
+
+### Calling everybody in Australia one by one
+
+I called Tony Abbott's former political party, and asked them how to contact him, or his office, or _something_. They said they weren't associated with him anymore, and suggested I call _Parliament House_. 
+
+Parliament House is sorta like the White House, I think. The Prime Minister lives there and has a nice garden out the back with a macadamia tree, and everyone works in different sections and wears matching uniforms with lil kangaroo and emu hats, and they all do a little dance sometimes to celebrate working in the Prime Minister's chocolate factory.
+
+I didn't know you could just _call_ there. But sure enough, there was a public phone number. I called up and was all like "yeah bloody g'day, day for it ay, hot enough for ya?". Once the formalities were out of the way, I skipped my usual explanation of why I was calling and just asked if they had contact details for Tony Abbott. 
+
+The person on the phone sad, "oh, no, but I can put you through to the Serjant-at-arms, who can give you the contact details of former members". 
+I was like ".....okay?????"
+Was I supposed to know who that was? Isn't a serjant like an army thing?
+
+But no, the Serjant-at-arms was just a nice lady who told me "he's in a temporary office right now, and so doesn't have a phone number. I can give you an email address or a P.O. box?".
+
+I emailed the same thing I'd been emailing to everyone else to his email address, I guess? It was a bit weird just....emailing the former PM, but I figured if it was _that_ easy to get this email address, everyone had it, and so nobody was likely to be reading the inbox.
+
+### Giving the "Contact us" form one last go
+
+Remember this?
+
+![screenshot of contact us form]()
+
+I thought "aw well, might as well slap something into this form with gusto even though nobody's gonna look at it. sure would be embarrassing if it was that simple and i never did it".
+
+So I copy/pasted the same email I'd been sending to everyone in the form, and clicked "Submit". But the page didn't reload or anything, it didn't work. This had happened what feels like years ago, when I'd tried out the "contact us" form for the first time. 
+
+I blew it off then, thinking that one of the sixteen privacy-enhancing Chrome extensions I had[^chromeextensions] was breaking the page somehow. That kinda thing happens sometimes when you're blocking all the JavaScript spaghetti that pages load from who knows where.
+
+[^chromeextensions]: mmmm, love to enhance my privacy online by giving a whole bunch of chrome extensions that can just update silenty any time full access to every page i ever look at
+
+So, I opened the page in a fresh, unmodified browser, and tried again. But the form still didn't submit? Suuuurely not.
+
+In a burst of frustration, I right click -\> Inspect Element'd once again, to see whether any errors came up when I submitted the form.
+
+![403 error]()
+
+Oh. The form was just _broken_. Not just for me, for everyone.
+
+Well, that's one way to minimise the amount of complaints you get from the general public.
 
 
-## Finding Tony Abbott's staff
+### Finding Tony Abbott's staff
 
 They have to be somewhere. 
 
@@ -567,8 +612,6 @@ Here's a little something they don't teach ya in school, because it doesn't worK
 
 I, the Icarus of carbohydrates.
 
-And the phone number for this was 1300 CYBER1. The planet may be dying, but we are truly living in an unparalleled age of content.
-
 
 # What can you do with a passport?
 * register to vote, get a sim card, get a license, etc. etc.
@@ -624,3 +667,5 @@ The Booking Reference on the boarding pass can be used to log in to the airline'
 
 
 //commenting on tony abbott's political career is left as an exercise to the reader
+
+// this (spreadsheet) is messy, sure. But you should see the other guy.
