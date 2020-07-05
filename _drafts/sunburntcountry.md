@@ -7,7 +7,6 @@ excerpt: Blah blah this goes on mango.pdf.zone
 description: what's up twitter summariser
 standfirst: Do not get arrested challenge 2020
 colour: lightblue
-text-colour: pink
 author: mangopdf (Alex Hope)
 image: /img/sunburnt-country/title.png
 permalink: /sunburntcountry
@@ -72,7 +71,7 @@ Months ago, I'd said something in the chat like:
 
 ---
 
-Of course, my friend wasn't _actually_ asking me to hack the former Prime Minister.
+Of course, 𝖍𝖔𝖌𝖌𝖊 𝖒𝖔𝖆𝖉𝖊 wasn't _actually_ asking me to hack the former Prime Minister.
 
 <br/>
 <br/>
@@ -357,9 +356,9 @@ Let's skip a lot of phone calls here. Take my hand as I whisk you towards the sl
 
 I had Tony Abbott's passport number, phone number, and weird Qantas messages about him. I was the only one who _knew_ I had these. Anyone who saw that Instagram post could also have them. I felt like I had to tell someone about this, but who?
 
-### wait but alex do u see the irony in this, u have his phone number right there so u could just-
+### wait but do u see the irony in this, u have his phone number right there so u could just-
 
-Yes, I see it. Thank u for pointing this out, wise, astute and ultimately self-imposed heading. I _knew_ I could just call the number any time and hear a "G'day" I'd never be able to forget. I knew I had a rare opportunity to call someone and have them ask "how did you get this number!?". 
+Yes I see it thank u for pointing this out, wise, astute and ultimately self-imposed heading. I _knew_ I could just call the number any time and hear a "G'day" I'd never be able to forget. I knew I had a rare opportunity to call someone and have them ask "how did you get this number!?". 
 
 But you can't just _do_ that.
 
@@ -508,7 +507,6 @@ I slid clumsily into the DMs of a woman I found on Twitter who seemed to have su
 I also messaged a journalist friend asking for help. They had ruthlessly efficient ideas that I presume came from being a professional journalist. They suggested I find Tony Abbott's former staff from when he was PM, and contact their offices and see if they have his contact details.
 
 
-
 ### Wikipedia stalking
 
 ![Screenshot of Tony Abbott's former staff]()
@@ -518,6 +516,39 @@ Many of them were retired.
 ![Screenshot of Scomo in the list]()
 Oh he _definitely_ has an office.
 
+
+### Let's call the Prime Minister's office I guess?
+
+Easy google of the number, absolutely no worries this time. When I call, I hear what sounds like two women laughing. One answers the phone, slightly out of breath, and says "Hello, Prime Minister's office?".
+
+I clumsily explain that I know this is Scott Morrison's office, but I actually was wondering if they had Tony Abbott's contact details, yes I know he's not in parliament anymore, it's for "a time-sensitive media enquiry". These were the magic words my journalist friend told me, for which I will be forever grateful, and keep close to my heart.
+
+She says "We wouldn't have that information but I'll just check for you" and then pauses for like, a long time? Like 15 seconds? I can only wonder what was happening on the other end. Then she says "Oh actually I can give you Tony Abbott's personal assistant's number". Ummmm YES thanks buckle up everyone it's HAPPENING.
+
+### Tony Abbott's personal assistant's personal assistant
+
+I fumble with my phone, furiously trying to dial the number.
+
+I ask if I'm speaking to Tony Abbott's personal assistant. The person on the other end? He says he's one of Tony Abbott's staff[^hesaidyes]. It has been a long several months of calling people. The cold ice is starting to thaw. 
+
+[^hesaidyes]: #hesaidyes?
+
+I explain the security issue I want to report, and midway through he interrupts with "sorry who are you and what's the organisation you're calling from?" and I'm like "uhhhh I mean my name is Alex and uhh I'm not calling from any organisation I'm just like a person?? I just found this thing and...". The person is mercifully forgiving, and says that he'll have to call me back. I stress once again that I'm calling to work with them on this, happy to wait to publish until they feel comfortable, and am definitely not some kind of blackmailing hacker and they don't need to start bulk-installing McAfee products just yet.
+
+
+### Tony Abbott's personal assistant
+An hour later, I get a call from a number I don't recognise. 
+
+He explains that the guy I talked to earlier was _his_ assistant, and he's Tony Abbott's PA. Folks, we made it. It's as easy as that.
+
+He says he knows what I'm talking about. He's got _the emails_. He's already in the process of getting Tony Abbott a new passport number. This is the stuff. It's all happening.
+
+And _then_ he says:
+
+"These things do interest him - he's quite keen to talk to you."
+
+exCUSE me? Former Prime Minister and 28th Hokage Tony Abbott wants to call me on the phone? 
+I suppose I owe this service to my country.
 
 ## Telling Qantas the bad news
 
@@ -621,6 +652,11 @@ I, the Icarus of carbohydrates.
 # This points to greater vulnerabilities
 Maybe there's an API in the manage booking page that gives you all the secret info.
 
+
+
+# section explaining lack of political takes
+there are many takes out there, but i don't want to distract from teaching you clowns security.
+
 -----
 
 media folks @ me here
@@ -646,7 +682,7 @@ and so, as a joke, sent to tom, who sent to me
 
 // emoji!
 
----
+
 That would be ridiculous and in startling contrast to the rest of this story.
 ---
 
