@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  I found the passport number of former Australian Prime Minister Tony Abbott and did not get arrested
+title: How I found the passport number of former Australian Prime Minister Tony Abbott
 #title: How a boarding pass on Instagram revealed the passport number of former Australian Prime Minister Tony Abbott
 #date: 2020-06-25 16:20:00 +1100
 excerpt: Blah blah this goes on mango.pdf.zone
@@ -209,9 +209,9 @@ If you'd like to know more about it [I've prepared a short video](https://twitte
 
 ![Screenshot of inspect element tab open]()
 
-I scrolled around through the HTML and eventually got to a big pile of JSON data 🤔🤔🤔. I skimmed through it, not really knowing what it meant, furiously trying to find anything that looked out of place or secret.
+I scrolled around the page's HTML, not really knowing what it meant, furiously trying to find anything that looked out of place or secret.
 
-I eventually realised that manually reading JSON with my eyes was not an efficient way of defending my country, and Ctrl + F'd the HTML for "passport".
+I eventually realised that manually reading HTML with my eyes was not an efficient way of defending my country, and Ctrl + F'd the HTML for "passport".
 
 ![Blurred screenshot of me ctrl + F-ing these terms instead of json]()
 
@@ -447,17 +447,20 @@ Like 2003's _Finding Nemo_, this section was an emotional rollercoaster.
 
 The government was presumably helping Tony Abbott reset his passport number, and making sure his current one wasn't being used for any of that yucky identity fraud.
 
-But, much like Shannon Noll's 2004 _What About Me?_, what _about_ me? I wanted to write a blog post about how I found the passport number and everything, you know? So I could warn people about the non-obvious risk of sharing their boarding passes, and also make dumb and inaccessible early 2000s references.
+But, much like Shannon Noll's 2004 _What About Me?_, what _about_ me? I really wanted to write blog post about it, you know? So I could warn people about the non-obvious risk of sharing their boarding passes, and also make dumb and inaccessible references to the early 2000s.
 
-The government didn't give me permission to do so, and rather than willingly going deeper into the procedurally generated labrynth of government department email addresses, I realised I'd be better off asking Tony Abbott or his staff directly.
+The government people I talked to couln't give me permission to write this post, so rather than willingly going deeper into the procedurally generated labrynth of government department email addresses, I realised I'd be better off asking Tony Abbott or his staff directly.
 
 ### Calling everybody in Australia one by one
 
-I called Tony Abbott's former political party, and asked them how to contact him, or his office, or _something_. They said they weren't associated with him anymore, and suggested I call _Parliament House_. 
+I called Tony Abbott's former political party, and asked them how to contact him, or his office, or _something_. They said they weren't associated with him anymore, and suggested I call _Parliament House_, like I was the Queen or something.
 
-Parliament House is sorta like the White House, I think. The Prime Minister lives there and has a nice garden out the back with a macadamia tree, and everyone works in different sections and wears matching uniforms with lil kangaroo and emu hats, and they all do a little dance sometimes to celebrate working in the Prime Minister's chocolate factory.
 
-I didn't know you could just _call_ there. But sure enough, there was a public phone number. I called up and was all like "yeah bloody g'day, day for it ay, hot enough for ya?". Once the formalities were out of the way, I skipped my usual explanation of why I was calling and just asked if they had contact details for Tony Abbott. 
+![picture of parliament house]()
+
+Parliament House is sorta like the White House, I think. The Prime Minister lives there and has a nice garden out the back with a macadamia tree, and everyone works in different sections and wears matching uniforms with lil kangaroo and emu hats, and they all do a little dance sometimes to celebrate another accident-free day in the Prime Minister's chocolate factory.
+
+I didn't know you could just _call_ the uh chocolate factory, but sure enough, I just googled the phone number. I called up and was all like "yeah bloody g'day, day for it ay, hot enough for ya?". Once the formalities were out of the way, I skipped my usual explanation of why I was calling and just asked if they had contact details for Tony Abbott. 
 
 The person on the phone sad, "oh, no, but I can put you through to the Serjant-at-arms, who can give you the contact details of former members". 
 I was like ".....okay?????"
@@ -466,6 +469,8 @@ Was I supposed to know who that was? Isn't a serjant like an army thing?
 But no, the Serjant-at-arms was just a nice lady who told me "he's in a temporary office right now, and so doesn't have a phone number. I can give you an email address or a P.O. box?".
 
 I emailed the same thing I'd been emailing to everyone else to his email address, I guess? It was a bit weird just....emailing the former PM, but I figured if it was _that_ easy to get this email address, everyone had it, and so nobody was likely to be reading the inbox.
+
+Spoilers: It didn't work.
 
 ### Giving the "Contact us" form one last go
 
@@ -483,39 +488,42 @@ I blew it off then, thinking that one of the sixteen privacy-enhancing Chrome ex
 
 So, I opened the page in a fresh, unmodified browser, and tried again. But the form still didn't submit? Suuuurely not.
 
-In a burst of frustration, I right click -\> Inspect Element'd once again, to see whether any errors came up when I submitted the form.
+Kinda in awe, I gave it the ol' right click -\> Inspect Element, to see whether any errors came up when I submitted the form.
 
 ![403 error]()
 
 Oh. The form was just _broken_. Not just for me, for everyone.
 
-Well, that's one way to minimise the amount of complaints you get from the general public.
-
+Well, that's one way to minimise the amount of complaints you get from the general public. Another dead end, I guess.
 
 ### Finding Tony Abbott's staff
 
-They have to be somewhere. 
+Okay _this_ time for sure.
 
-I was kinda lost for a few weeks, waiting hopelessly for various government departments to reply to my emails. "It's in their hands", I thought. But actually, no, it's in my hands.
+I was kinda lost for a few weeks, waiting hopelessly for various government departments to reply to my emails. "It's in their hands", I thought. But actually, the hands it was in,,,, were mine.
 
 In a moment of determination/desperation/destiny, I went and asked everyone I could think of that _might_ know how to contact Tony Abbott's staff. 
 
-I slid clumsily into the DMs of a woman I found on Twitter who seemed to have sufficient #AusGov #Cyber in her bio, asking if she knew who to contact. She asked how my local police station would feel if I told them what I told her. Ah, no, big misunderstanding. I wasn't asking for help committing a crime or anything[^twitterdms].
+I slid clumsily into the DMs of someone I found on Twitter who seemed to have sufficient #AusGov #Cyber in their bio, asking if they knew who to contact. They asked how my local police station would feel if I told them the same thing. Ah, no, big misunderstanding. I wasn't asking for help committing a crime or anything[^twitterdms].
 
 [^twitterdms]: But, I do understand how it be sometimes. If you have anything remotely related to "hacking" in your Twitter bio, random people DM you asking you to hack their girlfriend's Instagram account. It sucks, and how was this person to know I wasn't one of those people?
 
-I also messaged a journalist friend asking for help. They had ruthlessly efficient ideas that I presume came from being a professional journalist. They suggested I find Tony Abbott's former staff from when he was PM, and contact their offices and see if they have his contact details.
-
+I also messaged a journalist friend asking for help. They had ruthlessly efficient ideas that I presume came from, like, being a professional journalist. They suggested I find Tony Abbott's former staff from when he was PM, and contact their offices and see if they have his contact details.
 
 ### Wikipedia stalking
 
+Apparently Prime Ministers themselves have "ministers", and those are their staff. That's who I was looking for.
+
 ![Screenshot of Tony Abbott's former staff]()
 
-Many of them were retired.
+Okay but, the problem is that most of these people are retired now. The glory days of 2015 are over, I guess. Each time I hover over one of their names, I see "so-and-so is a former politician and....". Nope, not gonna cut it.
+
+Eventually though, I saw _this_ minister.
 
 ![Screenshot of Scomo in the list]()
-Oh he _definitely_ has an office.
+*Oh he _definitely_ has an office.*
 
+That's the _current_ Prime Minister of Australia (at the time of writing, I can only pray that between now and publishing this remains true). 
 
 ### Let's call the Prime Minister's office I guess?
 
