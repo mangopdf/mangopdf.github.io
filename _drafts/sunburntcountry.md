@@ -533,7 +533,7 @@ I clumsily explain that I know this is Scott Morrison's office, but I actually w
 
 She says "We wouldn't have that information but I'll just check for you" and then pauses for like, a long time? Like 15 seconds? I can only wonder what was happening on the other end. Then she says "Oh actually I can give you Tony Abbott's personal assistant's number". Ummmm YES thanks buckle up everyone it's HAPPENING.
 
-### Tony Abbott's personal assistant's personal assistant
+### Call: Tony Abbott's personal assistant's personal assistant
 
 I fumble with my phone, furiously trying to dial the number.
 
@@ -544,7 +544,7 @@ I ask if I'm speaking to Tony Abbott's personal assistant. The person on the oth
 I explain the security issue I want to report, and midway through he interrupts with "sorry who are you and what's the organisation you're calling from?" and I'm like "uhhhh I mean my name is Alex and uhh I'm not calling from any organisation I'm just like a person?? I just found this thing and...". The person is mercifully forgiving, and says that he'll have to call me back. I stress once again that I'm calling to work with them on this, happy to wait to publish until they feel comfortable, and am definitely not some kind of blackmailing hacker and they don't need to start bulk-installing McAfee products just yet.
 
 
-### Tony Abbott's personal assistant
+### Call: Tony Abbott's personal assistant
 An hour later, I get a call from a number I don't recognise. 
 
 He explains that the guy I talked to earlier was _his_ assistant, and he's Tony Abbott's PA. Folks, we made it. It's as easy as that.
@@ -555,8 +555,49 @@ And _then_ he says:
 
 "These things do interest him - he's quite keen to talk to you."
 
-exCUSE me? Former Prime Minister and 28th Hokage Tony Abbott wants to call me on the phone? 
-I suppose I owe this service to my country.
+I was like exCUSE me? Former Prime Minister and 28th Hokage Tony Abbott wants to call me on the _phone_? I suppose I owe this service to my country?
+
+This story is already completely cooked so sure, whatever, I don't even care. I've already delcared emotional bankruptcy, so nothing comes as a surprise at this point.
+
+### Call: Tony Abbott
+
+It was surprisingly pleasant.
+
+Mostly, he wanted to check whether his understanding of how I'd found his passport number was correct (it was). He also wanted to ask how to learn about "IT".
+
+He said something[^recording] about how if he was dropped in the middle of the bush, he could navigate his way out looking at the sun, and the direction of rivers no worries. But "the IT"? Bamboozling.
+
+[^recording]: I didn't record our call, I only took some notes, so this isn't a quote, oops. Looks like I'm not a professional journalist.
+
+This was possibly the most pure and powerful Australian energy a human can possess. The raw energy did in fact travel through the phone speaker and directly into my brain, killing me instantly.
+
+Later, he asked if there was some kind of book about the basics of IT, since he wanted to learn about it. Say what you will about Tony Abbott, but someone who's just been hacked wanting to educate themselves about how it happens? You gotta pay that. It was humanising. It made me realise that even famous people are just people too.
+
+Anyway I hadn't heard of a book that was any good, so I told a story about my mum instead.
+
+I said there probably was a book out there about "the basics of IT", but it probably wouldn't help much. I didn't learn from a book. 13 year old Instagram stars don't learn from a book, they just vibe.
+
+My mum (hi Mum) always said when I was growing up that there were "too many buttons", and she was afraid to press the buttons, because she didn't know what they did. 
+
+That actually makes complete sense, because grown ups don't have the hubris of a child. Like, when a toddler uses a spoon for the first time, they don't know what time it is, they don't know where they are, and they have no idea what the heck a spoon is. But they see the spoon and they see the cereal, and their dumb baby brain is just like "yeA" and they have a red hot go. And like, they get it wrong the first few times, but it doesn't matter, because they don't know to be afraid of getting it wrong. So eventually, they get it right.
+
+Okay so I didn't tell the spoon thing to Tony Abbott, but I did tell him what I always told my mum, which was: "Mum you just gotta press _all_ the buttons, to find out what they do".
+
+He was like "oh, you just learn by trial and error". Exactly! Now that I think about it, and the whole baby analogy, that's kinda terrifying. Anyway good luck, I guess.
+
+Somehow after all that he agreed to let me publish this blog post. He said something like "well look Alex, I don't have a problem with it, you've alerted me to something I probably should have known about, so if you wanna \[publish\], go for it!"
+
+As far as responses to security issues go, this is exactly the right thing to do. Back at the beginning, I was kinda worried that he might misunderstand, and think I was trying to hack him or something, and that I'd be instantly slam jammed into jail. But now, I got to write this post, and you, the person scrolling this post on your phone on a train, get to learn about security by real-world example. 
+
+The point of this isn't to say "wow Tony Abbott's passport number got leaked, what a mistake". The point is that if it can happen to famous people, it can happen to anyone.
+
+
+
+
+
+
+
+
 
 ## Telling Qantas the bad news
 
