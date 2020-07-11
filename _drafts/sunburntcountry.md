@@ -229,6 +229,11 @@ At this point I was pretty sure I was looking at the _extremely_ secret governme
 
 //todo lol
 
+* points of identity
+* don't always need a copy of the document, numbers can be enough
+* register a SIM card, get anonymous internet
+* who knows what else, i wouldn't know bc i have never done a crime
+
 ## What else is in here?
 
 If there's a passport number in this webpage, maybe there's even more? A phone number maybe? Searching for `phone` and `number` didn't get anywhere, so I tried searching for `614`, the first 3 digits of an Australian phone number. _That_ led me to a whole lot of _this_:
@@ -440,6 +445,17 @@ I asked them if they could give me permission to write this blog post, or who to
 - ⬜ get permission to publish this here blog post 
 - ⬜ tell qantas about the security issue so they can fix it
 
+## Telling Qantas the bad news
+
+Okay, this time it's a company, so s u r e l y it'll be easier to report a security problem to them.
+
+Often websites tell you how report a security issue at `company.com/security`, maybe that'll w-
+
+![qantas security not found](/img/sunburnt-country/qantas_security_not_found.png)
+*Okay nevermind*
+
+Okay fine maybe I should just email `security@qantas.com.au` surely that's it? I could only find a phone number to report security problems to, and I wasn't sure if it was like.... airport security? 
+
 
 ## Finding Tony Abbott
 
@@ -541,7 +557,9 @@ I ask if I'm speaking to Tony Abbott's personal assistant. The person on the oth
 
 [^hesaidyes]: #hesaidyes?
 
-I explain the security issue I want to report, and midway through he interrupts with "sorry who are you and what's the organisation you're calling from?" and I'm like "uhhhh I mean my name is Alex and uhh I'm not calling from any organisation I'm just like a person?? I just found this thing and...". The person is mercifully forgiving, and says that he'll have to call me back. I stress once again that I'm calling to work with them on this, happy to wait to publish until they feel comfortable, and am definitely not some kind of blackmailing hacker and they don't need to start bulk-installing McAfee products just yet.
+I explain the security issue I want to report, and midway through he interrupts with "sorry who are you and what's the organisation you're calling from?" and I'm like "uhhhh I mean my name is Alex and uhh I'm not calling from any organisation I'm just like a person?? I just found this thing and...". 
+
+The person is mercifully forgiving, and says that he'll have to call me back. I stress once again that I'm calling to work with them on this, happy to wait to publish until they feel comfortable, and am definitely not some kind of blackmailing hacker and they don't need to start bulk-installing McAfee products just yet.
 
 
 ### Call: Tony Abbott's personal assistant
@@ -575,38 +593,29 @@ Later, he asked if there was some kind of book about the basics of IT, since he 
 
 Anyway I hadn't heard of a book that was any good, so I told a story about my mum instead.
 
-I said there probably was a book out there about "the basics of IT", but it probably wouldn't help much. I didn't learn from a book. 13 year old Instagram stars don't learn from a book, they just vibe.
+##### A story about my mum instead
+
+I said there probably was a book out there about "the basics of IT", but it probably wouldn't help much. I didn't learn from a book. 13 year old Instagram stars don't learn from a book, they just _vibe_.
 
 My mum (hi Mum) always said when I was growing up that there were "too many buttons", and she was afraid to press the buttons, because she didn't know what they did. 
 
-That actually makes complete sense, because grown ups don't have the hubris of a child. Like, when a toddler uses a spoon for the first time, they don't know what time it is, they don't know where they are, and they have no idea what the heck a spoon is. But they see the spoon and they see the cereal, and their dumb baby brain is just like "yeA" and they have a red hot go. And like, they get it wrong the first few times, but it doesn't matter, because they don't know to be afraid of getting it wrong. So eventually, they get it right.
+That actually makes complete sense, because grown ups don't have the sheer dumb hubris of a child. Like, when a toddler uses a spoon for the first time, they don't know what time it is, where they are, or what the heck a spoon is. But they see the spoon and they see the cereal, and their dumb baby brain is just like "yeA" and they have a red hot go. And like, they get it wrong the first few times, but it doesn't matter, because they don't know to be afraid of getting it wrong. So eventually, they get it right.
 
 Okay so I didn't tell the spoon thing to Tony Abbott, but I did tell him what I always told my mum, which was: "Mum you just gotta press _all_ the buttons, to find out what they do".
 
 He was like "oh, you just learn by trial and error". Exactly! Now that I think about it, and the whole baby analogy, that's kinda terrifying. Anyway good luck, I guess.
 
-Somehow after all that he agreed to let me publish this blog post. He said something like "well look Alex, I don't have a problem with it, you've alerted me to something I probably should have known about, so if you wanna \[publish\], go for it!"
+##### Publishing this blog post
+Somehow after (despite?) all that he agreed to let me publish this blog post. He said something like "well look Alex, I don't have a problem with it, you've alerted me to something I probably should have known about, so if you wanna \[publish\], go for it!"
 
-As far as responses to security issues go, this is exactly the right thing to do. Back at the beginning, I was kinda worried that he might misunderstand, and think I was trying to hack him or something, and that I'd be instantly slam jammed into jail. But now, I got to write this post, and you, the person scrolling this post on your phone on a train, get to learn about security by real-world example. 
+As far as responses to security issues go, this is exactly the right thing to do. Back at the beginning, I was kinda worried that he might misunderstand, and think I was trying to hack him or something, and that I'd be instantly slam jammed into jail. But now you, the person scrolling this post on your phone on a train, get to learn about security by real-world example. 
 
-The point of this isn't to say "wow Tony Abbott's passport number got leaked, what a mistake". The point is that if it can happen to famous people, it can happen to anyone.
+The point of this story isn't to say "wow Tony Abbott got hacked, what a dummy". The point is that if it can happen someone famous, it can happen to anyone.
 
-
-
-
-
-
-
-
-
-## Telling Qantas the bad news
-
-Okay, this time it's a company, so s u r e l y it'll be easier to report a security problem to them.
-
-Often websites tell you how report a security issue at `company.com/security`, maybe that'll w-
-
-![qantas security not found](/img/sunburnt-country/qantas_security_not_found.png)
-*Okay nevermind*
+- ☑️ figure out whether i have done a crime
+- ☑️ notify someone (tony abbott?) that this happened
+- ☑️ get permission to publish this here blog post 
+- ☑️ tell qantas about the security issue so they can fix it
 
 
 
@@ -755,3 +764,12 @@ The Booking Reference on the boarding pass can be used to log in to the airline'
 //commenting on tony abbott's political career is left as an exercise to the reader
 
 // this (spreadsheet) is messy, sure. But you should see the other guy.
+
+
+this is cooked for many reasons
+
+1) asd
+b) sdff
+&) fkj
+F) I like trains
+
