@@ -193,22 +193,22 @@ Having recovered from the emotional rollercoaster of the five stages someone tol
 
 I didn't see anything particularly juicy, but we're not done just because a _web page_ said we're done. 
 
-Sometimes there are juicy things hidden in the page's source code (HTML), which you wouldn't be able to see just by looking at the page. To see them, you have to... well....
+Sometimes there are juicy things hidden in the page's source code (HTML), which you can't see just by looking at the page. To see them, you have to... well....
 
 This is the only step in this story that might be considered "hacking". It's not, though. Maybe later someone will show you this same thing, and tell you it's hacking. You will not go gently into that good night. You will refuse to acknowledge their showing off, killing them instantly.
 
-Suddenly wearing sunglasses, I depressed the right-hand button of my mouse, bringing a textual menu under the mouse cursor into existence. Power and glory. Using my superior intellect, I dragged the mouse pointer to the bottom of the menu, summoned all my courage, and allowed it to pour through my finger as I left-clicked on the "Inspect Element" menu item in such a way that it was clear I possessed godlike hacking abilities.
+Suddenly wearing sunglasses, I depressed the right-hand button of my mouse, summoning a textual menu under the mouse cursor into existence. Using my superior intellect, I dragged the mouse pointer to the bottom of the menu, summoned all my courage, and allowed it to pour through my finger as I left-clicked on the "Inspect Element" menu item in such a way that it was clear I possessed godlike hacking abilities.
 
 ![Right click > Inspect](/img/sunburnt-country/inspectelement.png)
 
-![](https://i.imgur.com/8uZgKCe.png)
+![fbi](https://i.imgur.com/8uZgKCe.png)
 *dw, i clicked block*
 
 I cannot stress enough the degree to which this is not an elite hacker tool. 
 
-"Inspect Element", as it's called, is a feature of Google Chrome that lets you see the computer's representation (HTML) of the page you're looking at. Everything you see when you use it was already on your computer, you just hadn't asked Chrome to show it to you yet.
+"Inspect Element", as it's called, is a feature of Google Chrome that lets you see the computer's representation (HTML) of the page you're looking at. Everything you see when you use it was already downloaded to your computer, you just hadn't asked Chrome to show it to you yet.
 
-Scrublord techniques such as these are used by programmers to try and understand how the website works. This is ultimately futile: You cannot understand how a website works. Unfortunately, it sure _looks_ like hacking the first time you see it.
+Scrublord techniques such as these are used by programmers to try and understand how the website works. This is ultimately futile: Nobody can understand how a website works. Unfortunately, it sure _looks_ like hacking the first time you see it.
 
 If you'd like to know more about it [I've prepared a short video](https://twitter.com/mangopdf/status/1123400764926226432).
 
@@ -224,24 +224,29 @@ I eventually realised that manually reading HTML with my eyes was not an efficie
 
 ## Oh _no_
 
+![Blurred screenshot of passport number]()
+
 Oh yes.
 
 It's just _there_.
 
-It was next to `documentNumber`, which was a number that sure _looked_ like a passport number. I googled "tony abbott" and checked the birthday on his Wikipedia page. It matched the birthday on the passport.
+It was called `documentNumber`, which was a number that sure _looked_ like a passport number. There was no name, so I googled "tony abbott" and checked the birthday on his Wikipedia page. It matched the birthday on the passport.
 
-At this point I was pretty sure I was looking at the _extremely_ secret government-issued ID of the _28th Prime Minister of the Commonwealth of Australia, servant to her Majesty Queen Elizabeth II_ and I was _kinda_ worried that I was somehow doing something wrong, but like, not enough to stop.
+At this point I was fairly sure I was looking at the _extremely_ secret government-issued ID of the _28th Prime Minister of the Commonwealth of Australia, servant to her Majesty Queen Elizabeth II_ and I was _kinda_ worried that I was somehow doing something wrong, but like, not enough to stop.
 
-## Why is it bad for someone else to have your passport number?
+## Passport tips and tricks with Alex
+
+Hey crime gang welcome back to my channel, today we're answering: "Why is it bad for someone else to have your passport number?"
+
+Well, it's a form of identity. It's how you prove you're you. Just having the information on the passport is not quite as powerful as the full physical passport, but it's still not good optics to post yours on Instagram.
+
+With your passport number, someone could:
 
 //todo lol
-
-* points of identity
-* don't always need a copy of the document, numbers can be enough
-* register a SIM card, get anonymous internet
+* Register a SIM card (and so get an internet connection that's traceable to you, not them)
 * who knows what else, i wouldn't know bc i have never done a crime
 
-## What else is in here?
+## What else was in the page?
 
 If there's a passport number in this webpage, maybe there's even more? A phone number maybe? Searching for `phone` and `number` didn't get anywhere, so I tried searching for `614`, the first 3 digits of an Australian phone number. _That_ led me to a whole lot of _this_:
 
@@ -484,7 +489,13 @@ I'd seen so many low-quality security issue reports, so I tried to write a real 
 - ⬜ tell qantas about the security issue so they can fix it
 
 
+* someone replied, saying they're actively working on it
+* i followed up a few times, but never heard from them again
+* eventually called the forbidden media line
+* "...yeah just send it to me, luke.blah@"
 * stuff got sent to spam, presumably for illicit hacker keywords
+* ???
+* this is why it took so long
 
 
 ## Part 4: Finding Tony Abbott
@@ -583,7 +594,7 @@ She says "We wouldn't have that information but I'll just check for you" and the
 
 I fumble with my phone, furiously trying to dial the number.
 
-I ask if I'm speaking to Tony Abbott's personal assistant. The person on the other end? He says he's one of Tony Abbott's staff[^hesaidyes]. It has been a long several months of calling people. The cold ice is starting to thaw. 
+I ask if I'm speaking to Tony Abbott's personal assistant. The person on the other end? He says he's one of Tony Abbott's staff[^hesaidyes]. It has been a long several months of calling people. The cold ice is starting to thaw. One day, I may be able to love again.
 
 [^hesaidyes]: #hesaidyes?
 
@@ -766,7 +777,6 @@ the problem: is a booking reference a username or a password?
 
 // include diagram showing boarding pass, with booking reference labelled.
 
-
 // sarah's interview
 saw the ig post, and thought of me
 because of the thing with her sending tom pics of her credit card
@@ -778,10 +788,6 @@ and so, as a joke, sent to tom, who sent to me
 "this is some real journalism"
 
 // emoji!
-
-
-That would be ridiculous and in startling contrast to the rest of this story.
----
 
 // one big tweet.
 
