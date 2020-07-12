@@ -629,7 +629,9 @@ I said there probably was a book out there about "the basics of IT", but it prob
 
 My mum (hi Mum) always said when I was growing up that there were "too many buttons", and she was afraid to press the buttons, because she didn't know what they did. 
 
-That actually makes complete sense, because grown ups don't have the sheer dumb hubris of a child. Like, when a toddler uses a spoon for the first time, they don't know what time it is, where they are, or what the heck a spoon is. But they see the spoon and they see the cereal, and their dumb baby brain is just like "yeA" and they have a red hot go. And like, they get it wrong the first few times, but it doesn't matter, because they don't know to be afraid of getting it wrong. So eventually, they get it right.
+That actually makes complete sense, because grown ups don't have the sheer dumb hubris of a child. Like, when a toddler uses a spoon for the first time, they don't know what time it is, where they are, or what the heck a spoon is. But they see the spoon and they see the cereal, and their dumb baby brain is just like "yeA" and they have a red hot go[^spoon]. And like, they get it wrong the first few times, but it doesn't matter, because they don't know to be afraid of getting it wrong. So eventually, they get it right.
+
+[^spoon]: "Nobody gives the baby a knife. You give them a spoon" - Mum, when I showed her this.
 
 ![yeA](/img/sunburnt-country/baby-spoon.jpg)
 *leaked footage of me learning how to hack*
