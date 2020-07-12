@@ -14,7 +14,7 @@ permalink: /sunburntcountry
 
 ![title image what's up twitter](/img/sunburnt-country/title.png)
 
-# Part 1: Sunday afternoon
+# Act 1: Sunday afternoon
 
 Heyyyyyy you know when you're like, flopping about at home, absolutely minding your own business, having a nice drink from your water bottle in a way that does not possess _any_ intent to subvert the Commonwealth of Australia? 
 
@@ -88,7 +88,11 @@ Of course, 𝖍𝖔𝖌𝖌𝖊 𝖒𝖔𝖆𝖉𝖊 wasn't _actually_ asking me
 <br/>
 <br/>
 
-I mean... What would you do, if you had that message in front of you? Would you _not_ click it? Are you gonna let a _link_ that's like 50% advertising tracking ID tell you what to do? Wouldn't you be _curious_? The former Prime Minister had just posted his boarding pass. Was that _bad_? I didn't know. What I did know was: the _least_ I could do for my country would be to have a casual browse[^nocrime].
+You _gotta_.
+
+I mean... What would you do, if you had that message in front of you? Would you _not_ click it? Are you gonna let a _link_ that's like 50% advertising tracking ID tell you what to do? Wouldn't you be _curious_? 
+
+The former Prime Minister had just posted his boarding pass. Was that _bad_? I didn't know. What I did know was: the _least_ I could do for my country would be to have a casual browse[^nocrime].
 
 [^nocrime]: To be clear, I didn't want to go do some fun casual identity fraud, I just wanted to know if he _had_ posted something secret, since uh, someone should probably do something about that if it were true (I insist, as they calmly read me my rights). 
 
@@ -142,6 +146,9 @@ I hesitated for a split-second, but... no, I had to know.
 I hit Enter, and saw this.
 
 ![Logged in "Manage Booking" page](loggedin)
+
+
+![gif of me logging in?? record it??](/img/sunburnt-country/qantas_login.gif)
 
 ## Crimes(?)
 
@@ -296,14 +303,16 @@ At this point I'd had enough defending my country and was thinking:
 * _can you even reset passport numbers_
 * _is it possible that i've done a crime_
 
-# Part 2: The next four months
+# Act 2: The next four months
 
-I contacted a _lot_ of people about this. If my calculations are correct[^calculations], I contacted at least `PLACEHOLDER_NUMBER` people. Eventually I started keeping track of who I talked to in a Google Keep note I now refer to as "the hashtag struggle". Here it is in spreadsheet form:
+I contacted a _lot_ of people about this. If my calculations are correct[^calculations], I contacted at least `PLACEHOLDER_NUMBER` people. Eventually I started keeping track of who I talked to in a Google Keep note I now refer to as "the hashtag struggle". Here it is in spreadsheet form, so you can see my suffering:
 
 [^calculations]: I've always wanted to say that.
 
 ![the hashtag struggle](/img/sunburnt-country/thehashtagstruggle.png)
 *This is how much I went through to publish this blog post*
+
+//todo make this into a graph diagram? of who I contacted, and who they told me to contact?
 
 There is a _lot_ going on in this section (a loT), so here is a lil cheat code from present-day me: A checklist of what the heck I was trying to accomplish here.
 
@@ -312,10 +321,9 @@ There is a _lot_ going on in this section (a loT), so here is a lil cheat code f
 - ⬜ get permission to publish this here blog post 
 - ⬜ tell qantas about the security issue so they can fix it
 
-
 Alright strap yourself in I guess.
 
-## is it possible that i've done a crime
+## Part 1: is it possible that i've done a crime
 I didn't _think_ anything I did sounded like a crime, but I knew that sometimes when the other person is rich or famous, things can suddenly _become_ crimes.
 
 So I was wondering like... was logging in with someone else's booking reference a crime? Was _having_ someone else's passport number a crime? What if they were, say, the former Prime Minister? Would I get in trouble for publishing a blog post about it? I mean you're reading the blog post right now so obviousl
@@ -357,7 +365,7 @@ Let's skip a lot of phone calls here. Take my hand as I whisk you towards the sl
 - ⬜ get permission to publish this here blog post 
 - ⬜ tell qantas about the security issue so they can fix it
 
-### trying to report the problem to someone, anyone, please
+## Part 2: trying to report the problem to someone, anyone, please
 
 I had Tony Abbott's passport number, phone number, and weird Qantas messages about him. I was the only one who _knew_ I had these. Anyone who saw that Instagram post could also have them. I felt like I had to tell someone about this, but who?
 
@@ -394,10 +402,16 @@ Who do I tell about a security problem not with a website, but the former Prime 
 
 Well, maybe I knew someone who knew someone. I asked hacker friends who seemed like they might know government security people.
 
+
 Look I don't really have a good explanation for this so I'm just gonna post the screenshot.
 
-![Screenshot of 1300 CYBER1]()
+![Screenshot of 1300 CYBER1 first half (website)]()
 *The planet may be dying, but we live in a truly unparalleled age of content.*
+
+![cyber1website](/img/sunburnt-country/cyber1website.png)
+*Thanks but no thanks*
+
+![Screenshot of 1300 CYBER1 second half]()
 
 You _know_ I smashed that call button on `1300 CYBER1`. Did they just make it `1300 CYBER` then realise you need one more digit for a phone number? Incredible.
 
@@ -440,24 +454,40 @@ The nice people at ASD didn't give me many details about what they were doing in
 
 I asked them if they could give me permission to write this blog post, or who to ask, and they gave me two government email addresses. Listen I don't wanna be an "ummm they didn't reply to my emAiLs" kinda person buT they left me no choice.
 
+Still, defending the Commonwealth was in ASD's hands now.
+
 - ☑️ figure out whether i have done a crime
 - ☑️ notify someone (tony abbott?) that this happened
 - ⬜ get permission to publish this here blog post 
 - ⬜ tell qantas about the security issue so they can fix it
 
-## Telling Qantas the bad news
+## Part 3: Telling Qantas the bad news
 
 Okay, this time it's a company, so s u r e l y it'll be easier to report a security problem to them.
 
-Often websites tell you how report a security issue at `company.com/security`, maybe that'll w-
+The first place to check is usually `company.com/security`, maybe that'll w-
 
 ![qantas security not found](/img/sunburnt-country/qantas_security_not_found.png)
 *Okay nevermind*
 
 Okay fine maybe I should just email `security@qantas.com.au` surely that's it? I could only find a phone number to report security problems to, and I wasn't sure if it was like.... airport security? 
 
+So I just... called the number and was like "heyyyy uhhhh I'd like to report a cyber security issue?", and the person was like "yyyyya just email security@qantas.com.au" and i was like "oK".
 
-## Finding Tony Abbott
+I'd seen so many low-quality security issue reports, so I tried to write a real crispy one.
+
+![Email to Qantas security](/img/sunburnt-country/qantas_security_not_found.png)
+
+- ☑️ figure out whether i have done a crime
+- ☑️ notify someone (tony abbott?) that this happened
+- ⬜ get permission to publish this here blog post 
+- ⬜ tell qantas about the security issue so they can fix it
+
+
+* stuff got sent to spam, presumably for illicit hacker keywords
+
+
+## Part 4: Finding Tony Abbott
 
 Like 2003's _Finding Nemo_, this section was an emotional rollercoaster.
 
@@ -583,7 +613,7 @@ It was surprisingly pleasant.
 
 Mostly, he wanted to check whether his understanding of how I'd found his passport number was correct (it was). He also wanted to ask how to learn about "IT".
 
-He said something[^recording] about how if he was dropped in the middle of the bush, he could navigate his way out looking at the sun, and the direction of rivers no worries. But "the IT"? Bamboozling.
+He said something[^recording] about how if he was dropped in the middle of the bush, he could navigate his way out by looking at the sun and the direction of rivers "no worries". But "the IT"? Bamboozling.
 
 [^recording]: I didn't record our call, I only took some notes, so this isn't a quote, oops. Looks like I'm not a professional journalist.
 
@@ -601,7 +631,12 @@ My mum (hi Mum) always said when I was growing up that there were "too many butt
 
 That actually makes complete sense, because grown ups don't have the sheer dumb hubris of a child. Like, when a toddler uses a spoon for the first time, they don't know what time it is, where they are, or what the heck a spoon is. But they see the spoon and they see the cereal, and their dumb baby brain is just like "yeA" and they have a red hot go. And like, they get it wrong the first few times, but it doesn't matter, because they don't know to be afraid of getting it wrong. So eventually, they get it right.
 
-Okay so I didn't tell the spoon thing to Tony Abbott, but I did tell him what I always told my mum, which was: "Mum you just gotta press _all_ the buttons, to find out what they do".
+![yeA](/img/sunburnt-country/baby-spoon.jpg)
+*leaked footage of me learning how to hack*
+
+Okay so I didn't tell the spoon thing to Tony Abbott, but I did tell him what I always told my mum, which was: "Mum you just gotta press _all_ the buttons, to find out what they do".[^mum]
+
+[^mum]: But like, I didn't call _him_ "Mum", that would be weird, in startling contrast to the rest of this story.
 
 He was like "oh, you just learn by trial and error". Exactly! Now that I think about it, and the whole baby analogy, that's kinda terrifying. Anyway good luck, I guess.
 
@@ -617,6 +652,9 @@ The point of this story isn't to say "wow Tony Abbott got hacked, what a dummy".
 - ☑️ get permission to publish this here blog post 
 - ☑️ tell qantas about the security issue so they can fix it
 
+# Act 3: Thrilling conclusion
+
+Much like 2003's "Finding Nemo", 
 
 
 
@@ -677,10 +715,6 @@ Basically, until you've broken the rules, the idea that the rules can be broken 
 
 
 
-
-
-
-
 * Trying his website
 * Calling the party
 * Giving up and asking hacker friends
@@ -711,6 +745,8 @@ I, the Icarus of carbohydrates.
 # This points to greater vulnerabilities
 Maybe there's an API in the manage booking page that gives you all the secret info.
 
+
+unblend the smoothie
 
 
 # section explaining lack of political takes
@@ -773,3 +809,4 @@ b) sdff
 &) fkj
 F) I like trains
 
+and also? I can never die.
