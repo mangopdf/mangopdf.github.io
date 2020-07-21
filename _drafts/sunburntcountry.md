@@ -1,7 +1,6 @@
 ---
 layout: post
-title: How I found the passport number of former Australian Prime Minister Tony Abbott
-#title: How a boarding pass on Instagram revealed the passport number of former Australian Prime Minister Tony Abbott
+title: Um I found the passport number of former Australian Prime Minister Tony Abbott? From an Instagram post of his boarding pass?
 #date: 2020-06-25 16:20:00 +1100
 excerpt: Blah blah this goes on mango.pdf.zone
 description: what's up twitter summariser
@@ -13,6 +12,9 @@ permalink: /sunburntcountry
 ---
 
 ![title image what's up twitter](/img/sunburnt-country/title.png)
+
+//overall:
+// be quick and fast and punchy, even if you lose people a litte, like operation luigi
 
 # Act 1: Sunday afternoon
 
@@ -208,9 +210,12 @@ I cannot stress enough the degree to which this is not an elite hacker tool.
 
 "Inspect Element", as it's called, is a feature of Google Chrome that lets you see the computer's representation (HTML) of the page you're looking at. Everything you see when you use it was already downloaded to your computer, you just hadn't asked Chrome to show it to you yet.
 
-Scrublord techniques such as these are used by programmers to try and understand how the website works. This is ultimately futile: Nobody can understand how a website works. Unfortunately, it sure _looks_ like hacking the first time you see it.
 
-If you'd like to know more about it [I've prepared a short video](https://twitter.com/mangopdf/status/1123400764926226432).
+Cheap tricks such as these are used by programmers to try and understand how the website works. This is ultimately futile: Nobody can understand how a website works. Unfortunately, it sure _looks_ like hacking the first time you see it.
+
+If you'd like to know more about it,I've prepared a short video.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">hey youtube welcome to my hacking tutorial, today we&#39;re gonna hack.... the nsa <a href="https://t.co/2Z35GJjSZE">pic.twitter.com/2Z35GJjSZE</a></p>&mdash; “Alex” (@mangopdf) <a href="https://twitter.com/mangopdf/status/1123400764926226432?ref_src=twsrc%5Etfw">May 1, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Browsing the "Manage Booking" page's HTML
 
@@ -331,6 +336,8 @@ Alright strap yourself in I guess.
 ## Part 1: is it possible that i've done a crime
 I didn't _think_ anything I did sounded like a crime, but I knew that sometimes when the other person is rich or famous, things can suddenly _become_ crimes.
 
+My usual defence against being arrested for hacking is making sure the person being hacked is okay with it. You heard me, it's the power of 🌸consent🌸. But this time I can uh only get it retroactively. Surely that'll be fine. Surely.
+
 So I was wondering like... was logging in with someone else's booking reference a crime? Was _having_ someone else's passport number a crime? What if they were, say, the former Prime Minister? Would I get in trouble for publishing a blog post about it? I mean you're reading the blog post right now so obviousl
 
 Update: I have been arrested.
@@ -338,14 +345,16 @@ Update: I have been arrested.
 ---
 ![screenshot of me googling "did i do a big crime"]()
 
+
 It turned out I could just google these things, and before I knew it I was reading "the legislation". It's the rules of the law, just written down. I have no trouble reading JSON but whoever wrote the legislation was straight up making up words. I was able to divine the following wisdoms from the Times New Roman tea leaves:
 
 * It's not defamation to publish something negative about someone if it's true
+* Having Tony Abbott's passport number isn't a crime, but using it to commit identity fraud is
 * If u EVER even LOOK at a computer the wrong way, the FBI will instantly slam jam you into the shadow realm
 
 I am possibly the furthest thing you can be from a lawyer, but if you are the kind of person who takes legal advice from blog posts, who am I to stand in your way? Not a lawyer, that's who. Don't do it.
 
-You know what, maybe I needed help. From an adult. Maybe this was too hard for me to do on my own. "Yeah, maybe I should get some of that free government legal advice", I thought. That seemed like a pretty common thing, so I thought it should be easy to do. I took a big sip of water and googled "free legal advice".
+You know what, maybe I needed help. From an adult. With like, leather shoes. Maybe this was too hard for me to do on my own. "Yeah, maybe I should get some of that free government legal advice", I thought. That seemed like a pretty common thing, so I thought it should be easy to do. I took a big sip of water and googled "free legal advice".
 
 ### trying to ask a lawyer if i gone and done a crime
 
@@ -359,7 +368,7 @@ I'd already told my housemate everything, but aside from that, I didn't tell a s
 
 [^clever]: This sounds like maybe I'm doing something remotely clever by not confessing my potential(?) crimes, but I also did this simultaneously while emailing explicit details of my activities to the Australian Government.
 
-First I call the state government's Legal Aid number. They tell me they don't do that here, and I should call another Legal Aid place named something slightly different. The second place tells me they don't do that, and I should call the First Place and "hopefully you get someone more senior". I call the First Place again, and they say "oh you've been given the run around!". You see where this is going.
+First I call the state government's Legal Aid number. They tell me they don't _do that_ here, and I should call another Legal Aid place named something slightly different. The second place tells me they don't _do that_ either, and I should call the First Place and "hopefully you get someone more senior". I call the First Place again, and they say "oh you've been given the run around!". You see where this is going.
 
 I eventually realise every legal person I talk to has no idea about "cybercrime" or even what would happen if a computer. I try to find "cybercrime" laywers, and call the one with the website with the least fear-bait marketing. A lady instantly and bluntly asks me "are you under investigation?". No, I wasn't. Well I mean, not to my knowledge? I just wanted to know whether something was a crime or not. She said "well we're criminal defence lawyers, so...". I apologised for bothering her, but then she was all like "well what exactly are you asking?" and I explained and she seemed to think it was fine in a non-legally-binding way.
 
@@ -376,7 +385,7 @@ I had Tony Abbott's passport number, phone number, and weird Qantas messages abo
 
 ### wait but do u see the irony in this, u have his phone number right there so u could just-
 
-Yes I see it thank u for pointing this out, wise, astute and ultimately self-imposed heading. I _knew_ I could just call the number any time and hear a "G'day" I'd never be able to forget. I knew I had a rare opportunity to call someone and have them ask "how did you get this number!?". 
+Yes I see it thank u for pointing this out, wise, astute, and ultimately self-imposed heading. I _knew_ I could just call the number any time and hear a "G'day" I'd never be able to forget. I knew I had a rare opportunity to call someone and have them ask "how did you get this number!?". 
 
 But you can't just _do_ that.
 
@@ -397,7 +406,7 @@ Who handles Tony Abbott's security? Surely someone does, he's the former PM. Did
 
 It's a big place.
 
-There are like fifty thousand million different departments, and they all know which acronyms to refer to eachother by, but you don't. If you EVER call it DMP&C instead of DPM&C you are gonna be sucked into a nightmare realm the likes of which cannot be expressed in _any_ number of spreadsheet cells, and believe me, they've tried.
+There are like fifty thousand million different departments, and they all know which acronyms to refer to eachother by, but you don't. If you EVER call it DMP&C instead of DPM&C you are gonna be sucked into a nightmare realm the likes of which cannot be expressed in _any_ number of spreadsheet cells. And believe me, they've tried.
 
 I didn't even know where to begin with this. I called Tony Abbott's former political party, who were like "uhhhh we dunno what to do with this, nor do we know who to ask, did u try the contact form on his website or". Skip skip skip a few more calls like this.
 
@@ -504,9 +513,9 @@ Like 2003's _Finding Nemo_, this section was an emotional rollercoaster.
 
 The government was presumably helping Tony Abbott reset his passport number, and making sure his current one wasn't being used for any of that yucky identity fraud.
 
-But, much like Shannon Noll's 2004 _What About Me?_, what _about_ me? I really wanted to write blog post about it, you know? So I could warn people about the non-obvious risk of sharing their boarding passes, and also make dumb and inaccessible references to the early 2000s.
+But, much like Shannon Noll's 2004 _What About Me?_, what _about_ me? I really wanted to write a blog post about it, you know? So I could warn people about the non-obvious risk of sharing their boarding passes, and also make dumb and inaccessible references to the early 2000s.
 
-The government people I talked to couln't give me permission to write this post, so rather than willingly going deeper into the procedurally generated labrynth of government department email addresses, I realised I'd be better off asking Tony Abbott or his staff directly.
+The government people I talked to couldn't give me permission to write this post, so rather than willingly going deeper into the procedurally generated labrynth of government department email addresses, I realised I'd be better off asking Tony Abbott or his staff directly.
 
 ### Calling everybody in Australia one by one
 
@@ -651,14 +660,16 @@ Okay so I didn't tell the spoon thing to Tony Abbott, but I did tell him what I 
 
 [^mum]: But like, I didn't call _him_ "Mum", that would be weird, in startling contrast to the rest of this story.
 
-He was like "oh, you just learn by trial and error". Exactly! Now that I think about it, and the whole baby analogy, that's kinda terrifying. Anyway good luck, I guess.
+He was like "oh, you just learn by trial and error". Exactly! Now that I think about it, and the whole baby analogy, that's kinda terrifying. Anyway good luck out there to all you big babies.
 
 ##### Publishing this blog post
 Somehow after (despite?) all that he agreed to let me publish this blog post. He said something like "well look Alex, I don't have a problem with it, you've alerted me to something I probably should have known about, so if you wanna \[publish\], go for it!"
 
 As far as responses to security issues go, this is exactly the right thing to do. Back at the beginning, I was kinda worried that he might misunderstand, and think I was trying to hack him or something, and that I'd be instantly slam jammed into jail. But now you, the person scrolling this post on your phone on a train, get to learn about security by real-world example. 
 
-The point of this story isn't to say "wow Tony Abbott got hacked, what a dummy". The point is that if it can happen someone famous, it can happen to anyone.
+The point of this story isn't to say "wow Tony Abbott got hacked, what a dummy". The point is that if it can happen someone famous, it can happen to anyone. 
+
+Anyway that's why I vote right wing now baybeeeee
 
 - ☑️ figure out whether i have done a crime
 - ☑️ notify someone (tony abbott?) that this happened

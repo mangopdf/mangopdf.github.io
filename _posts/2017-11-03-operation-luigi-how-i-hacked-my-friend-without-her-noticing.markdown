@@ -406,7 +406,7 @@ Here's what the login page does:
     }
 
 
-This works by sending her password to me when she clicks "log in". The password is sent a website of mine. Then I send her along to the real Hotmail, so it looks just liked she logged in.
+This works by sending her password to me when she clicks "log in". The password is sent to a website of mine. Then I send her along to the real Hotmail, so it looks just liked she logged in.
 The website logs everything that gets sent to it, so I can then search my logs for "DIANA" to find the log containing the password.
 
 This is all what I'm hoping for, anyway. The email says she has 48 hours to comply to create time pressure. Telling you that you have to do something _right now_ is a common tactic to make you think instinctively and irrationally.
