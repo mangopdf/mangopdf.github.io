@@ -9,13 +9,11 @@ colour: purple
 image: https://iihelp.iinet.net.au/sites/iihelp.iinet.net.au/files/macoswifi3.png
 ---
 
--------
 Hey kid, wanna hack some Wi-Fi?
 
 This article is your 100% lactose-free guide to hacking home Wi-Fi. By the end it’s okay to feel afraid, insecure, or even the urge to bulk-purchase home networking equipment. It’s okay. We’ve all been there.
 
 -------
-![wifipasswordbox](https://iihelp.iinet.net.au/sites/iihelp.iinet.net.au/files/macoswifi3.png)
 
 Isn't is strange how when you move into a place and get an internet connection, you typically get given a home router as part of the package? Isn't it strange how this router is held together using nothing but matchsticks, broken promises, and man's hubris?
 
