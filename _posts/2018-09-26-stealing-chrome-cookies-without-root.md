@@ -250,6 +250,8 @@ Maybe you're dehydrated. Try drinking some crisp cool water.
 ### Does this work on Firefox or \*shifty eyes\* Internet Explorer/Edge?
 Dunno, I haven't tried it and I have no idea how these browsers work. _You_ could try finding out.
 
+UPDATE: Ya boi wunderwuzzi23 did this for [Firefox](https://embracethered.com/blog/posts/2020/firefox-cookie-debug-client/) and [Microsoft Edge](https://embracethered.com/blog/posts/2020/cookie-crimes-on-mirosoft-edge/).
+
 ### Hey so how did you end up finding this? Like why did you need to get someone's Chrome cookies in the first place?
 Thanks for taking the time to read this blog post.
 
