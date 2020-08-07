@@ -15,6 +15,8 @@ permalink: /sunburntcountry
 
 //overall:
 // be quick and fast and punchy, even if you lose people a litte, like operation luigi
+//cut out the parts that didn't work
+// write how you talk! use that subconscious
 
 # Act 1: Sunday afternoon
 
@@ -23,59 +25,53 @@ Heyyyyyy you know when you're like, flopping about at home, absolutely minding y
 It's a feeling I know all too well, and in which I was vigorously partaking when I got this message in "the group chat"[^groupchat].
 
 ![Can you hack this man?](/img/sunburnt-country/groupchat.png)
-*A nice message from my friend 🙂. A good thing about messages from your friends is that they do not have any rippling consequences.*
+*A nice message from my friend 🙂. A good thing about messages from your friends is that they do not have any rippling consequences 🙂🙂🙂*
 
 [^groupchat]: It's one of those group chats where the name is constantly changing and you have no idea who "illegally downloaded plant farmer" is.
 
+## Tony Abbott
 The man in question is [Tony Abbott](https://en.wikipedia.org/wiki/Tony_Abbott), one of Australia's many former Prime Ministers. 
 
 ![if u google tony abbott u get this](/img/sunburnt-country/tony_abbott_wikipedia.png)
 *One of Australia's numerous former Prime Ministers*
 
+You might be thinking _"Many" former Prime Ministers? Surely you jest_. And yet I assure you I am deadly serious. We go through 'em like those wooden tea stirring sticks[^paddlepop].
+
+[^paddlepop]: Or "paddlepop sticks", as they're called if you own any clothing with an Australian flag on it.
+
+![us president google search since 2009 timeline]()
+
+![au prime minister google search since 2009 timeline]()
+*There's a lot going on here*
+
 For security reasons, we try to change our Prime Minister every six months, and to never use the same Prime Minister on multiple websites.
 
-But like don't get me wrong, I love Australia (let's be honest the [national anthem](https://www.youtube.com/watch?v=XfR9iY5y94s) fricken slaps). I just really wanted to say that multiple websites thing.
+But like don't get me wrong, I love Australia (let's be honest the [national anthem](https://www.youtube.com/watch?v=XfR9iY5y94s) fricken slaps), I just really wanted to say that multiple websites thing.
 
-Here's where it all goes wrong though.
+## "Can you hack this man?"
 
-My friend's message linked to a public Instagram[^instagram] post by Tony Abbott, showing a picture of a boarding pass and baggage receipt for a flight to Sydney.
-
-Instagram, in case you don't know it, is an app you can open up on your phone any time to look at ads.
+My friend's message linked to a public Instagram[^instagram] post by Tony Abbott, showing a picture of a boarding pass and baggage receipt for a flight to Sydney. (Instagram, in case you don't know it, is an app you can open up on your phone any time to look at ads.)
 
 [^instagram]: A lot of people don't know that Instagram is actually short for Instantaneous Grammarphone, because it isn't true.
 
 ![Instagram post showing boarding pass](/img/sunburnt-country/instagrampost.PNG)
 *The since-deleted Instagram post showing the boarding pass and baggage receipt. This picture and I have been through a lot together.*
 
+#### Boarding passes
 My friend[^hoggemoade] (who we will refer to by their group chat name, 𝖍𝖔𝖌𝖌𝖊 𝖒𝖔𝖆𝖉𝖊) is asking[^onbehalf] whether I can "hack this man" not because I am the kind of person who regularly commits 𝒄𝒚𝒃𝒆𝒓 𝒕𝒓𝒆𝒂𝒔𝒐𝒏 on a whim, but because we'd recently been talking about boarding passes.
 
 [^hoggemoade]: As for my friend's nickname being "𝖍𝖔𝖌𝖌𝖊 𝖒𝖔𝖆𝖉𝖊", I will not be providing context at this time.
 
 [^onbehalf]: On behalf of _another_ friend, my many friends a consequence of my outstanding patriotic efforts towards continuing to avoid subversion of the Commonwealth of Australia.
 
-### Earlier: Boarding passes
-Months ago, I'd said something in the chat like:
+I'd said that people post pictures of their boarding passes all the time, not knowing that it can sometimes be used to get their passport number and stuff. They just post it being like "omg going on holidayyyy", unaware that they're posting cringe.
 
----
-> yeah my dude
+![screenshot of #boardingpass on instagram]()
 
-> people post pictures of their boarding pass all the time
+Meanwhile, some hacker is rubbing their hands together, being all "yumyum identity fraud 👀" in their dark web Discord.
 
-> but they don't know their boarding pass can be used to get their passport number and stuff
-
-> so they just post it being like 
-
-> "omg going on holidayyyy"
-
-> meanwhile some hacker is rubbing their hands together, all "yumyum identity fraud 👀"
-
-> and having a vigorous browse of #flight, #airport, etc. on instagram trying to find more
-
-> brb i gotta go act in the interests of the commonwealth of australia some more
-
----
-
-Of course, 𝖍𝖔𝖌𝖌𝖊 𝖒𝖔𝖆𝖉𝖊 wasn't _actually_ asking me to hack the former Prime Minister.
+#### Surely you wouldn't
+Of course, when they messaged me, 𝖍𝖔𝖌𝖌𝖊 𝖒𝖔𝖆𝖉𝖊 wasn't _actually_ asking me to hack the former Prime Minister.
 
 <br/>
 <br/>
@@ -104,11 +100,11 @@ The former Prime Minister had just posted his boarding pass. Was that _bad_? I d
 
 A casual browse later, I had the picture of the boarding pass, but didn't really know what to do next.
 
-I'd heard that it's bad to post your boarding pass online, because if you do, a bored Russian 17 year-old with an anime avatar might somehow use it to commit identity fraud. But I don't know anyone like that, so I clumsily Googled "uhhh boarding pass hacking".
+I'd heard that it's bad to post your boarding pass online, because if you do, a bored Russian 17 year-old boy called "Katie-senpai" might somehow use it to commit identity fraud. But I don't know anyone like that, so I clumsily Googled "uhhh boarding pass hacking".
 
-Eventually I found [an article](https://null-byte.wonderhowto.com/how-to/hackers-use-hidden-data-airline-boarding-passes-hack-flights-0180728/) explaining that yes, pictures of boarding passes can be used for Crimes, and the valuable part is the barcode.
+Eventually I found [a blog post](https://null-byte.wonderhowto.com/how-to/hackers-use-hidden-data-airline-boarding-passes-hack-flights-0180728/) explaining that yes, pictures of boarding passes can be used for Crimes, and the valuable part is the barcode.
 
-Apparently the barcode on the boarding pass contains the "Booking Reference" (e.g. H8JA2A), which you use to log in to the airline website. That sounds suspiciously like a password to me, but I'm willing to conveniently forget to say that out loud if you are.
+Apparently the barcode on the boarding pass contains the "Booking Reference" (e.g. `H8JA2A`), which you use, along with your last name, to log in to the airline website. That sounds suspiciously like a password to me, but like if we're still pretending it's not, that's cool.
 
 ### Step 2: Scan the barcode
 I've been practicing every morning at sunrise, but still can't scan barcodes with my eyes. I had to settle for a barcode scanner app on my phone, but when I tried to scan the picture in the Instagram post, it didn't work.
@@ -217,7 +213,7 @@ Everything you see when you use "Inspect Element" was already downloaded to your
 
 Cheap tricks such as these are used by programmers to try and understand how the website works. This is ultimately futile: Nobody can understand how websites work. Unfortunately, it sure _looks_ like hacking the first time you see it.
 
-If you'd like to know more about it,I've prepared a short video.
+If you'd like to know more about it, I've prepared a short video.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">hey youtube welcome to my hacking tutorial, today we&#39;re gonna hack.... the nsa <a href="https://t.co/2Z35GJjSZE">pic.twitter.com/2Z35GJjSZE</a></p>&mdash; “Alex” (@mangopdf) <a href="https://twitter.com/mangopdf/status/1123400764926226432?ref_src=twsrc%5Etfw">May 1, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -608,7 +604,7 @@ I clumsily explain that I know this is Scott Morrison's office, but I actually w
 
 She says "We wouldn't have that information but I'll just check for you" and then pauses for like, a long time? Like 15 seconds? I can only wonder what was happening on the other end. Then she says "Oh actually I can give you Tony Abbott's personal assistant's number". Ummmm YES thanks buckle up everyone it's HAPPENING.
 
-### Call: Tony Abbott's personal assistant's personal assistant
+### Calling Tony Abbott's personal assistant's personal assistant
 
 I fumble with my phone, furiously trying to dial the number.
 
@@ -621,7 +617,7 @@ I explain the security issue I want to report, and midway through he interrupts 
 The person is mercifully forgiving, and says that he'll have to call me back. I stress once again that I'm calling to work with them on this, happy to wait to publish until they feel comfortable, and am definitely not some kind of blackmailing hacker and they don't need to start bulk-installing McAfee products just yet.
 
 
-### Call: Tony Abbott's personal assistant
+### Calling Tony Abbott's personal assistant
 An hour later, I get a call from a number I don't recognise. 
 
 He explains that the guy I talked to earlier was _his_ assistant, and he's Tony Abbott's PA. Folks, we made it. It's as easy as that.
@@ -636,7 +632,7 @@ I was like exCUSE me? Former Prime Minister and 28th Hokage Tony Abbott wants to
 
 This story is already completely cooked so sure, whatever, I don't even care. I've already delcared emotional bankruptcy, so nothing comes as a surprise at this point.
 
-### Call: Tony Abbott
+### Calling Tony Abbott
 
 It was surprisingly pleasant.
 
@@ -672,45 +668,27 @@ Okay so I didn't tell the spoon thing to Tony Abbott, but I did tell him what I 
 He was like "oh, you just learn by trial and error". Exactly! Now that I think about it, and the whole baby analogy, that's kinda terrifying. Anyway good luck out there to all you big babies.
 
 ##### Publishing this blog post
-Somehow after (despite?) all that he agreed to let me publish this blog post. He said something like "well look Alex, I don't have a problem with it, you've alerted me to something I probably should have known about, so if you wanna \[publish\], go for it!"
 
-As far as responses to security issues go, this is exactly the right thing to do. Back at the beginning, I was kinda worried that he might misunderstand, and think I was trying to hack him or something, and that I'd be instantly slam jammed into jail. But now you, the person scrolling this post on your phone on a train, get to learn about security by real-world example. 
+When I asked Tony Abbott for permission to publish the post you are reading right now while neglecting your responsibilities, he said something like "well look Alex, I don't have a problem with it, you've alerted me to something I probably should have known about, so if you wanna do that, go for it!"
 
-The point of this story isn't to say "wow Tony Abbott got hacked, what a dummy". The point is that if it can happen someone famous, it can happen to anyone. 
+Look you gotta hand it to him. That's _exactly_ the right way to respond to a security issue! Back at the beginning, I was kinda worried that he might misunderstand, and think I was trying to hack him or something, and that I'd be instantly slam dunked into jail. But now you, a sweet and honourable blog post browser, get to learn the dangers of posting your boarding pass by the realest of real-world examples. 
 
-Anyway that's why I vote right wing now baybeeeee
+The point of this story isn't to say "wow Tony Abbott got hacked, what a dummy[^dummy]". The point is that if it can happen someone famous, it can happen to anyone. 
+
+[^dummy]: There are many, _many_ blog posts out there roasting Tony Abbott, if you came here looking for one.
+
+Anyway that's why I vote right wing now baybeeeee.
 
 - ☑️ figure out whether i have done a crime
 - ☑️ notify someone (tony abbott?) that this happened
 - ☑️ get permission to publish this here blog post 
 - ☑️ tell qantas about the security issue so they can fix it
 
-# Act 3: Thrilling conclusion
+# Act 3: Closing credits
 
-Much like 2003's "Finding Nemo", 
+## Summary
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Conclusions
 
 
 # FAQ
@@ -718,7 +696,7 @@ Much like 2003's "Finding Nemo",
 ### Whoa how r u such a hacker I wish I could be a hacker like u
 C'mon buDdY you read the blog post. You know this wasn't hacking. But I suppose I could,,,, detail my philosophy on hacking, unprompted.
 
-//nah definitely make this into its own section.
+//nah definitely make this into its own blog post
 #### Unprompted and unnecessary philosophy on hacking and restaurant water
 
 Oh so you're gonna read _this_ section huh?
@@ -744,25 +722,7 @@ For real though, when I first saw someone do this I was blown away. You can _do_
 Basically, until you've broken the rules, the idea that the rules can be broken might just not occur to you. That's how it felt for me, at least. I'm not trying to impress you with an edgy burst of performative wokeness, I swear. 
 
 
-
-
-
-
-* Trying his website
-* Calling the party
-* Giving up and asking hacker friends
-* 1300 cyber1
-* left on read by the government
-* mango.pdf.zone refs
-* lawyerssss
-* emailing qantas
-* talking to journalists
-
-* i deleted all the stuff dw
-
-# Conclusions
-
-# Really good summary again
+---------------------------------------------------
 
 
 Here's a little something they don't teach ya in school, because it doesn't worK.
@@ -782,7 +742,7 @@ Maybe there's an API in the manage booking page that gives you all the secret in
 unblend the smoothie
 
 
-# section explaining lack of political takes
+# footnote explaining lack of political takes
 there are many takes out there, but i don't want to distract from teaching you clowns security.
 
 -----
