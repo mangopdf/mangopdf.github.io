@@ -90,9 +90,9 @@ Of course, when they messaged me, 𝖍𝖔𝖌𝖌𝖊 𝖒𝖔𝖆𝖉𝖊 wasn
 
 You _gotta_.
 
-I mean... What would you do, if you had that message in front of you? Would you _not_ click it? Are you gonna let a _link_ that's like 50% advertising tracking ID tell you what to do? Wouldn't you be _curious_? 
+I mean... what are you gonna do, _not_ click it? Are you gonna let a _link_ that's like 50% advertising tracking ID tell you what to do? Wouldn't you be _curious_? 
 
-The former Prime Minister had just posted his boarding pass. Was that _bad_? I didn't know. What I did know was: the _least_ I could do for my country would be to have a casual browse[^nocrime].
+The former Prime Minister had just posted his boarding pass. Was that _bad_? Was someone in danger? I didn't know. What I did know was: the _least_ I could do for my country would be to have a casual browse[^nocrime].
 
 [^nocrime]: To be clear, I didn't want to go do some fun casual identity fraud, I just wanted to know if he _had_ posted something secret, since uh, someone should probably do something about that if it were true (I insist, as they calmly read me my rights). 
 
@@ -111,12 +111,11 @@ I've been practicing every morning at sunrise, but still can't scan barcodes wit
 
 ![Picture of barcode scanning failing?](/img/sunburnt-country/barcodescan_fail.png)
 
-
 ### Step 2: Scan the barcode, but more
 
 //TODO replace with screenshot of photoshop
 ![](/img/sunburnt-country/boardingpass.png)
-*Maybe I shouldn't have blurred out the barcode first.*
+*Maybe I shouldn't have blurred out the barcode first*
 
 I spent around 15 minutes in an "enhance, ENHANCE" montage, fiddling around with the image, increasing the contrast, and so on. Despite the montage taking up way too much of the 22 minute episode, I couldn't even get the barcode to scan[^step3].
 
@@ -131,13 +130,18 @@ After staring at this image for fifteen minutes, I noticed the Booking Reference
 
 ### Step 3: Visit the airline's website
 
+Ayyyy it's as easY as that, we made it to step 3. 
+
 Having used my image editing skills to get the Booking Reference, I went to [qantas.com.au](https://qantas.com.au), and clicked "Manage Booking". Qantas is the main airline here in Australia, in case you live in a country with fast internet.
 
-![](/img/sunburnt-country/entering_booking_ref.png)
-*Part of collection "Pictures taken moments before disaster" (2020), 1920x1080, pixel on canvas*
+![qantas homepage with "manage booking" in focus](/img/sunburnt-country/qantas_homepage.png)
 
 ### Step 4: Type in the Booking Reference 
+
 I was looking at the same login page I'd used to check in to flights. It asked for a Booking Reference and a last name. I had just effortlessly read the Booking Reference from the boarding pass picture, and, well... I knew the last name[^lastname].
+
+![](/img/sunburnt-country/entering_booking_ref.png)
+*Part of collection "Pictures taken moments before disaster" (2020), 1920x1080, RGB pixel on canvas*
 
 [^lastname]: The last name is printed on the baggage receipt, too. So even if I didn't know who posted the picture, everything you need to manage the booking is right there on the baggage receipt in a neat little package.
 
@@ -147,36 +151,34 @@ I hit Enter, and saw this.
 
 ![Logged in "Manage Booking" page](loggedin)
 
-
 ![gif of me logging in?? record it??](/img/sunburnt-country/qantas_login.gif)
 
 ## Step 5: Crimes(?)
-
-It worked. 
 
 ![Passenger name, FF number, Flight destination and times screenshot](/img/sunburnt-country/sdff.png)
 *"Welcome, Mr. Abbott". How long I'd waited to hear those words.*
 
 ### Denial
-//probably remove this whole stages of grief thing fam
 _"Surely this can't be happening. SURELY anyone who saw that Instagram post couldn't be looking at this page with me right now."_
 
 ### Anger
-_"Why the HECK are there so many versions of Minecraft for Windows 10, why the hEcK are there MineCoins™ this isn't the future Hatsune Miku wanted."_
+_"Why the hEcK are there so many versions of Minecraft for Windows 10, why the hEcK are there MineCoins™ this isn't the future Hatsune Miku wanted."_
 
 ### Bargaining
 _"Maybe this page doesn't have anything interesting in it."_
 
-Awwww suuuuuurely it's not thaaaaat bad. 
-I mean sure I can see all this flight info, but it doesn't look _that_ secret. Name, flight takeoff/landing times, all boring. Hmm, frequent flyer number tho. Maybe that's a lil bit secret?
+Suuuuuurely it's not thaaaaat bad. 
+
+I mean sure I can see all this flight info, but it doesn't look _that_ secret.The Frequent flyer number tho. Maybe that's a lil bit secret?
 
 It said the flight had been booked by a travel agent, so some information would be missing.
 
 But that's not _that_ bad. Right?
 
 ### Depression
+_"Oh, it doesn't have anything juicy. Aw, I was kinda excited."_
 
-I clicked around and scrolled a considerable length, but still didn't find anything secret-looking. 
+I clicked around and scrolled a considerable length, but still didn't find anything secret-looking for my efforts.
 
 At the very end, in what was a somewhat surreal experience, I was farewelled by an ad telling me (Tony Abbott?) to rent a car in Melbourne. 
 
@@ -189,15 +191,15 @@ For a moment, I felt relieved.
 
 Maybe this wasn't such a big deal after all. 
 
-𝑵𝒂𝒓𝒓𝒂𝒕𝒐𝒓: "But it was."
+>𝑵𝒂𝒓𝒓𝒂𝒕𝒐𝒓: "But it was."
 
-## We're not done just because a _web page_ says we're done
+------
 
-Having recovered from the emotional rollercoaster of the five stages someone told me were grief once and I just kinda blindly believed them, I looked at the page again, but like, harder.
+### We're not done just because a _web page_ says we're done
+
+Having recovered from the emotional rollercoaster of the five stages that someone once told me were of grief, I looked at the page again, but like, harder.
 
 Sometimes there are juicy things hidden in the page's source code (HTML), which you can't see just by looking at the page. To see them, you have to... well....
-
-Listen. This is the only step in this story that might be considered "hacking". It's not, though. Maybe later someone will show you this same thing, and tell you it's hacking. You will not go gently into that good night. You will refuse to acknowledge their showing off, killing them instantly.
 
 Suddenly wearing sunglasses, I depressed the right-hand button of my mouse, summoning a textual menu under the mouse cursor into existence. Using my superior intellect, I dragged the mouse pointer to the bottom of the menu, summoned all my courage, and allowed it to pour through my finger as I left-clicked on the "Inspect Element" menu item in such a way that it was clear I possessed godlike hacking abilities.
 
@@ -207,6 +209,8 @@ Suddenly wearing sunglasses, I depressed the right-hand button of my mouse, summ
 *dw, i clicked block*
 
 I cannot stress enough the degree to which this is not an elite hacker tool. 
+
+//Listen. This is the only step in this story that might be considered "hacking". It's not, though. Maybe later someone will show you this same thing, and tell you it's hacking. You will not go gently into that good night. You will refuse to acknowledge their showing off, killing them instantly.
 
 "Inspect Element", as it's called, is a feature of Google Chrome that lets you see the computer's internal representation (HTML) of the page you're looking at. Kinda like opening up a clock and looking at the cool cog party inside. Cog ganggg.
 Everything you see when you use "Inspect Element" was already downloaded to your computer, you just hadn't asked Chrome to show it to you yet.
