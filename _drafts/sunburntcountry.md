@@ -1,6 +1,7 @@
 ---
 layout: post
-title: hey what's up i found former australian prime minister tony abbott's passport number
+title: hey what's up i found former australian prime minister tony abbott's passport number on instagram and did not get arrested
+#title: Operation Sunburnt Country: How I found former Australian Prime Minister Tony Abbott's passport number on Instagram and did not get arrested
 #date: 2020-06-25 16:20:00 +1100
 excerpt: Blah blah this goes on mango.pdf.zone
 description: what's up twitter summariser
@@ -29,7 +30,8 @@ It's a feeling I know all too well, and in which I was vigorously partaking when
 
 [^groupchat]: It's one of those group chats where the name is constantly changing and you have no idea who "illegally downloaded plant farmer" is.
 
-## Tony Abbott
+
+### Aside: Tony Abbott
 The man in question is [Tony Abbott](https://en.wikipedia.org/wiki/Tony_Abbott), one of Australia's many former Prime Ministers. 
 
 ![if u google tony abbott u get this](/img/sunburnt-country/tony_abbott_wikipedia.png)
@@ -37,14 +39,12 @@ The man in question is [Tony Abbott](https://en.wikipedia.org/wiki/Tony_Abbott),
 
 You might be thinking _"Many" former Prime Ministers? Surely you jest_. And yet I assure you I am deadly serious. 
 
-![us president google search since 2009 timeline]()
-
-![au prime minister google search since 2009 timeline]()
+![prime minsters google search since 2009 timeline](/img/sunburnt-country/pms.png)
 *australia are you ok*
 
 For security reasons, we try to change our Prime Minister every six months, and to never use the same Prime Minister on multiple websites.
 
-But like don't get me wrong, I love Australia (let's be honest the [national anthem](https://www.youtube.com/watch?v=XfR9iY5y94s) fricken slaps), I just really wanted to say that multiple websites thing.
+But like, don't get me wrong, I like Australia (let's be honest the [national anthem](https://www.youtube.com/watch?v=XfR9iY5y94s) fricken slaps), I just really wanted to say that multiple websites thing.
 
 ## "Can you hack this man?"
 
@@ -57,8 +57,6 @@ My friend's message linked to a public Instagram[^instagram] post by Tony Abbott
 
 In the caption, Tony Abbott is being all like "coming back home from japan 😍😍  looking forward to seeing everyone! climate change isn't real 😌 ok byeee".
 
-But why is my friend sending this to me?
-
 #### Boarding passes
 My friend[^hoggemoade] (who we will refer to by their group chat name, 𝖍𝖔𝖌𝖌𝖊 𝖒𝖔𝖆𝖉𝖊) is asking[^onbehalf] whether I can "hack this man" not because I am the kind of person who regularly commits 𝒄𝒚𝒃𝒆𝒓 𝒕𝒓𝒆𝒂𝒔𝒐𝒏 on a whim, but because we'd recently been talking about boarding passes.
 
@@ -68,11 +66,17 @@ My friend[^hoggemoade] (who we will refer to by their group chat name, 𝖍𝖔�
 
 I'd said that people post pictures of their boarding passes all the time, not knowing that it can sometimes be used to get their passport number and stuff. They just post it being like "omg going on holidayyyy 😍😍😍", unaware that they're posting cringe.
 
-![screenshot of #boardingpass on instagram]()
+![screenshot of #boardingpass on instagram](/img/sunburnt-country/instagramboardingpasses.png)
+*People post their boarding passes all the time, because it's not clear that they're meant to be secret*
 
-Meanwhile, some hacker is rubbing their hands together, being all "yumyum identity fraud 👀" in their dark web Discord.
+Meanwhile, some hacker is rubbing their hands together, being all "yumyum identity fraud 👀" in their dark web Discord, because this happens a _lot_.
 
-#### Surely you wouldn't
+![screenshot of #boardingpass on instagram](/img/sunburnt-country/boardingpassposts.png)
+*This happens a lot*
+
+
+
+### Surely you wouldn't
 Of course, when they messaged me, 𝖍𝖔𝖌𝖌𝖊 𝖒𝖔𝖆𝖉𝖊 wasn't _actually_ asking me to hack the former Prime Minister.
 
 <br/>
@@ -102,25 +106,25 @@ The former Prime Minister had just posted his boarding pass. Was that _bad_? Was
 
 A casual browse later, I had the picture of the boarding pass, but didn't really know what to do next.
 
-I'd heard that it's bad to post your boarding pass online, because if you do, a bored Russian 17 year-old boy called "Katie-senpai" might somehow use it to commit identity fraud. But I don't know anyone like that, so I clumsily Googled "uhhh boarding pass hacking".
+I'd heard that it's bad to post your boarding pass online, because if you do, a bored Russian 17 year-old boy called "Katie-senpai" might somehow use it to commit identity fraud. But I don't know anyone like that, so I just clumsily googled some stuff.
 
-![screenshot of google search for "uhh boarding pass hacking or something"]()
+![uhhh](/img/sunburnt-country/uhhboardingpasshacking.png)
 
 Eventually I found [a blog post](https://null-byte.wonderhowto.com/how-to/hackers-use-hidden-data-airline-boarding-passes-hack-flights-0180728/) explaining that yes, pictures of boarding passes can be used for Crimes, and the valuable part is the barcode.
 
-Apparently the barcode on the boarding pass contains the "Booking Reference" (e.g. `H8JA2A`), which you use, along with your last name, to log in to the airline website. That sounds suspiciously like a password to me, but like if we're still pretending it's not, that's cool.
+#### The Booking Reference is in the barcode
+Apparently the barcode on the boarding pass contains the "Booking Reference" (e.g. `H8JA2A`), which you use, along with your last name, to log in to the airline website. That sounds suspiciously like a password to me, but like I'm still fine to pretend it's not if you are.
 
 ### Step 2: Scan the barcode
-I've been practicing every morning at sunrise, but still can't scan barcodes with my eyes. I had to settle for a barcode scanner app on my phone, but when I tried to scan the picture in the Instagram post, it didn't work.
+I've been practicing every morning at sunrise, but still can't scan barcodes with my eyes. I had to settle for a barcode scanner app on my phone, but when I tried to scan the picture in the Instagram post, it didn't work :((
 
-![Picture of barcode scanning failing?](/img/sunburnt-country/barcodescan_fail.png)
+//TODO replace with screenshot of photoshop
+![](/img/sunburnt-country/boardingpass.png)
+*Maybe I shouldn't have blurred out the barcode first*
 
 ### Step 2: Scan the barcode, but more
 
 Well, maybe it wasn't scanning because the picture was too blurry.
-//TODO replace with screenshot of photoshop
-![](/img/sunburnt-country/boardingpass.png)
-*Maybe I shouldn't have blurred out the barcode first*
 
 I spent around 15 minutes in an "enhance, ENHANCE" montage, fiddling around with the image, increasing the contrast, and so on. Despite the montage taking up way too much of the 22 minute episode, I couldn't even get the barcode to scan[^step3].
 
@@ -128,26 +132,24 @@ I spent around 15 minutes in an "enhance, ENHANCE" montage, fiddling around with
 
 ### Step 2: Notice that the Booking Reference is printed right there on the paper
 
-After staring at this image for fifteen minutes, I noticed the Booking Reference is printed on the baggage receipt. 
+After staring at this image for fifteen minutes, I noticed the Booking Reference is just... printed on the baggage receipt. 
 
-I graduated university, but it didn't prepare me for this.
+I graduated university.
+
+But it did not prepare me for this.
 
 ![Boarding pass with booking reference highlighted](/img/sunburnt-country/bookingrefhighlighted.png)
 *askdjhaflajkshdflkh*
 
 ### Step 3: Visit the airline's website
 
-Ayyyy it's as easY as that, we made it to step 3. 
-
 I went to [qantas.com.au](https://qantas.com.au), and clicked "Manage Booking". Qantas is the main airline here in Australia, in case you live in a country with fast internet.
-
-![qantas homepage with "manage booking" in focus](/img/sunburnt-country/qantas_homepage.png)
 
 ### Step 4: Type in the Booking Reference 
 
 I was looking at the same login page I'd used to check in to flights. It asked for a Booking Reference and a last name. I had just effortlessly read the Booking Reference from the boarding pass picture, and, well... I knew the last name[^lastname].
 
-![](/img/sunburnt-country/entering_booking_ref.png)
+![Entering the booking reference](/img/sunburnt-country/entering_booking_ref.png)
 *Part of collection "Pictures taken moments before disaster" (2020), 1920x1080, RGB pixel on canvas*
 
 [^lastname]: The last name is printed on the baggage receipt, too. So even if I didn't know who posted the picture, everything you need to manage the booking is right there on the baggage receipt in a neat little package.
@@ -156,34 +158,30 @@ I hesitated for a split-second, but... no, I had to know.
 
 I hit Enter, and saw this.
 
+//todo take screenshots of screen recording
 ![Logged in "Manage Booking" page](loggedin)
 
 ![gif of me logging in?? record it??](/img/sunburnt-country/qantas_login.gif)
 
 ## Step 5: Crimes(?)
 
+
 ![Passenger name, FF number, Flight destination and times screenshot](/img/sunburnt-country/sdff.png)
 *"Welcome, Mr. Abbott". How long I'd waited to hear those words.*
 
-#### Denial
-_"Surely this can't be happening. SURELY anyone who saw that Instagram post couldn't be looking at this page with me right now."_
+So in the picture above it _looks_ a lot like I've just logged in to this plane website as 28th Prime Minister of the Commonwealth of Australia, servant to Queen Elizabeth II, Tony Abbot. But it's actually fine because dslkhjflhajsakjhgsfhl
 
-#### Anger
-_"Why the hEcK are there so many versions of Minecraft for Windows 10, why the hEcK are there MineCoins™ this isn't the future Hatsune Miku wanted."_
+### Can I get a YIKES in the chat
 
-#### Bargaining
-_"Maybe this page doesn't have anything interesting in it."_
+Yyyyyyyyyyeeeeesh it's really all happening isn't it.
 
-Suuuuuurely it's not thaaaaat bad. 
+But well, I'd only logged in. The flight was in the past, so I couldn't change anything. Maybe there's secret stuff in this page, tho.
 
-I mean sure I could see all this flight info, but it didn't look _that_ secret.The Frequent flyer number tho. Maybe that's a lil bit secret?
+When I looked around the page, I saw Tony Abbott's name[^name], flight times, and Frequent Flyer number, but not really anything secret-looking.
 
-It said the flight had been booked by a travel agent, so some information would be missing.
+[^name]: Which was "Anthony Abbott" #exposed #truthsout #dontbelieveeverythingyouhear #gaslighting
 
-But that's not _that_ bad. Right?
-
-#### Depression
-_"Oh, it doesn't have anything juicy. Aw, I was kinda excited."_
+The page said the flight had been booked by a travel agent, so I guess some information would be missing because of that.
 
 I clicked around and scrolled a considerable length, but still didn't find anything secret-looking for my efforts.
 
@@ -192,38 +190,67 @@ At the very end, in what was a somewhat surreal experience, I was farewelled by 
 ![Car Ad](/img/sunburnt-country/sdff.png)
 *No, Qantas, I shall not go gently into that good night. You don't understand.*
 
-#### Acceptance
-
-For a brief, brief moment, I felt relieved. 
-
-Maybe this wasn't such a big deal after all. 
-
->𝑵𝒂𝒓𝒓𝒂𝒕𝒐𝒓: "But it was."
-
-------
+Some people might give up here. But me? I'm too dumb to know when to stop 😎😎😎
 
 ### We're not done just because a _web page_ says we're done
 
-Having recovered from the emotional rollercoaster of the five stages that someone once told me were of grief, I looked at the page again, but like, harder.
+Having recovered from the emotional rollercoaster of the car ad, I looked at the page again, but like, harder.
 
-Sure I didn't see anything juicy scrolling around, but I wasn't going to just _give up_ just like that.
+#### Aside: Web page school with Alex
 
-Sometimes there are juicy things hidden in the page's source code (HTML), which you can't see just by looking at the page. To see them, you have to... well....
+Hey gang and welcome to: how does a website
+
+When you go to [google.com](https://en.wikipedia.org/wiki/Scroogled), it looks like this.
+
+![google homepage](/img/sunburnt-country/google.png)
+*google.com*
+
+But what Google _actually_ sends to your computer is _this_:
+
+![google homepage](/img/sunburnt-country/googlepagesource.png)
+*The HTML (or "page source" or "page sauce") for google.com*
+
+What? But that's not the webpage you filthy hacker, that's some kind of `<pointy gang>` spaghetti. The answer is, it's both.
+
+Google sends your computer the HTML above, and then _your_ computer turns that textual spaghetti up there into the nice colourful webpage you actually look at ads on.
+
+![html rendering diagram](/img/sunburnt-country/htmlrendering.png)
+
+##### The problem
+Do you see the problem with this?
+
+Do you see how there's _way_ more information in the HTML version of the page than the page you actually look at?[^normal] But you don't _see_ all that information when you look at the page.
+
+[^normal]: That's normal, because it takes a lot of instructions to describe to your computer how to draw the [google.com](https://www.google.com/search?q=ads) homepage.
+
+Well, what if there was a way to go _back_ to the HTML from the webpage? 
+
+Why, then you'd be able to see _more_ about the page you're looking at, for _any_ page.
+
+And of course, the people who make the webpages _know_ that nobody looks at the HTML, they just look at the actual page. Maybe _they_ don't even know what's in the HTML.
+
+Do you see where this is going?
+
+Sometimes there are juicy things hidden in the page's HTML, because, well, someone left them there accidentally, or they're needed for the page to work. 
+
+To see them, you have to... well....
+
+### "Inspect Element"
 
 Suddenly wearing sunglasses, I depressed the right-hand button of my mouse, summoning a textual menu under the mouse cursor. Using my superior intellect, I dragged the mouse pointer to the bottom of the menu, and left-clicked on the "Inspect Element" menu item in such a way that it was clear I possessed godlike hacking abilities.
 
 ![Right click > Inspect](/img/sunburnt-country/inspectelement.png)
 
-![fbi](https://i.imgur.com/8uZgKCe.png)
-*dw, i clicked block*
-
 Listen. This is the only step in this story that might be considered "hacking". It's not, though. Maybe later someone will show you this same thing, and tell you it's hacking. You will not go gently into that good night. You will refuse to acknowledge their showing off, killing them instantly.
 
-"Inspect Element", as it's called, is a feature of Google Chrome that lets you see the computer's internal representation (HTML) of the page you're looking at. Kinda like opening up a clock and looking at the cool cog party inside. Yeahhh go little cogs, look at 'em absolutely going off. But yeah imagine that but with like, JavaScript.
+"Inspect Element", as it's called, is a feature of Google Chrome that lets you see the computer's internal representation (HTML) of the page you're looking at. Kinda like opening up a clock and looking at the cool cog party inside. 
 
-Everything you see when you use "Inspect Element" was already downloaded to your computer, you just hadn't asked Chrome to show it to you yet.
+![cog party](https://upload.wikimedia.org/wikipedia/commons/6/67/Pocketwatch_cutaway_drawing.jpg)
+*Yeahhh go little cogs, look at 'em absolutely going off. Now imagine this but with like, JavaScript*
 
-Cheap tricks such as these are used by programmers to try and understand how the website works. This is ultimately futile: Nobody can understand how websites work. Unfortunately, it sure _looks_ like hacking the first time you see it.
+Everything you see when you use "Inspect Element" was already downloaded to your computer, you just hadn't asked Chrome to show it to you yet. Just like how the cogs were already in the watch, you just hadn't opened it up to look.
+
+But enough about cogs. Cheap tricks such as "Inspect Element" are used by programmers to try and understand how the website works. This is ultimately futile: Nobody can understand how websites work. Unfortunately, it sure _looks_ like hacking the first time you see it.
 
 If you'd like to know more about it, I've prepared a short video.
 
@@ -249,7 +276,7 @@ It's just _there_.
 
 I saw a thing called `documentNumber`, which was a number that sure _looked_ like a passport number. There was no name, and I guess it _could_ somehow be someone else's passport number, so I googled "tony abbott" and checked the birthday on his Wikipedia page. It matched the birthday on the passport.
 
-At this point I was fairly sure I was looking at the _extremely_ secret government-issued ID of the _28th Prime Minister of the Commonwealth of Australia, servant to her Majesty Queen Elizabeth II_ and I was _kinda_ worried that I was somehow doing something wrong, but like, not enough to stop.
+At this point I was fairly sure I was looking at the _extremely_ secret government-issued ID of the _28th Prime Minister of the Commonwealth of Australia, servant to her Majesty Queen Elizabeth II_ and I was _kinda_ worried that I was somehow doing something wrong, but like, not enough to stop. Big yikes tho.
 
 ### Aside: Identity fraud tips and tricks with Alex
 
@@ -811,3 +838,58 @@ b) sdff
 F) I like trains
 
 and also? I can never die.
+
+
+* timeline picture of events
+* ask tony why the phone number is from christmas island
+
+But sorry, let's get to know eachother. In 1633 I was excommunicated from the Catholic church for insisting the Earth revolves around the Sun.
+
+
+
+
+
+
+
+
+
+
+
+#### Denial
+_"Surely this can't be happening. SURELY anyone who saw that Instagram post couldn't be looking at this page with me right now."_
+
+#### Anger
+_"Why the hEcK are there so many versions of Minecraft for Windows 10, why the hEcK are there MineCoins™ this isn't the future Hatsune Miku wanted."_
+
+#### Bargaining
+_"Maybe this page doesn't have anything interesting in it."_
+
+Suuuuuurely it's not thaaaaat bad. 
+
+I mean sure I could see all this flight info, but it didn't look _that_ secret.The Frequent flyer number tho. Maybe that's a lil bit secret?
+
+It said the flight had been booked by a travel agent, so some information would be missing.
+
+But that's not _that_ bad. Right?
+
+#### Depression
+_"Oh, it doesn't have anything juicy. Aw, I was kinda excited."_
+
+I clicked around and scrolled a considerable length, but still didn't find anything secret-looking for my efforts.
+
+At the very end, in what was a somewhat surreal experience, I was farewelled by an ad telling me (Tony Abbott?) to rent a car in Melbourne. 
+
+![Car Ad](/img/sunburnt-country/sdff.png)
+*No, Qantas, I shall not go gently into that good night. You don't understand.*
+
+#### Acceptance
+
+For a brief, brief moment, I felt relieved. 
+
+Maybe this wasn't such a big deal after all. 
+
+>𝑵𝒂𝒓𝒓𝒂𝒕𝒐𝒓: "But it was."
+
+------
+
+![computer hacking](/img/sunburnt-country/computer_hacking_wikipedia.png)
