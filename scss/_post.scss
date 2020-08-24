@@ -6,18 +6,15 @@ h1,h2,h3,h4,h5 {
 article.post {
     color: #ffffff;
 
-    h1,h2,h3,h4,h5 {
-        margin-top: 50px;
-        margin-bottom: 10px;
+    h1 {
+        font-size: 40px;
+
     }
 
     h1.post-title {
         text-align: center;
     }
 
-    h1 {
-        font-size: 40px;
-    }
     h2 {
         font-size: 35px;
     }
@@ -26,6 +23,11 @@ article.post {
     }
     h4 {
         font-size: 19px;
+    }
+
+    h1,h2,h3,h4,h5 {
+        margin-top: 50px;
+        margin-bottom: 10px;
     }
 
     @media (min-width: 320px) {
@@ -38,12 +40,21 @@ article.post {
         h1 {
             font-size: 27px;
         }
-        h2 {
-            font-size: 25px;
+
+        h1.post-title {
+            text-align: center;
+            margin-top: 0px;
+            font-size: 28px
         }
+
+        h2 {
+            font-size: 23px;
+        }
+
         h3 {
             font-size: 20px;
         }
+
         h4 {
             font-size: 19px;
         }
@@ -91,7 +102,12 @@ article.post {
             font-size: 22px;
             font-style: italic;
 
+            @media (max-width: 480px) and (min-width: 320px) {
+                font-size: 20px;
+            }
         }
+
+
     }
 
 }

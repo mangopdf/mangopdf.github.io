@@ -173,9 +173,11 @@ strong {
       font-size: 1.5em; } }
 
 header.masthead {
-  padding-top: 25px;
   text-align: center;
   color: white; }
+  @media (min-width: 320px) {
+    header.masthead {
+      padding-top: 25px; } }
   header.masthead img {
     display: block;
     margin: 0 auto 20px; }
@@ -627,27 +629,31 @@ h1, h2, h3, h4, h5 {
 article.post {
   color: #ffffff;
   margin-bottom: 300px; }
-  article.post h1, article.post h2, article.post h3, article.post h4, article.post h5 {
-    margin-top: 50px;
-    margin-bottom: 10px; }
-  article.post h1.post-title {
-    text-align: center; }
   article.post h1 {
     font-size: 40px; }
+  article.post h1.post-title {
+    text-align: center; }
   article.post h2 {
     font-size: 35px; }
   article.post h3 {
     font-size: 30px; }
   article.post h4 {
     font-size: 19px; }
+  article.post h1, article.post h2, article.post h3, article.post h4, article.post h5 {
+    margin-top: 50px;
+    margin-bottom: 10px; }
   @media (min-width: 320px) {
     article.post {
       width: 100%; } }
   @media (max-width: 480px) and (min-width: 320px) {
     article.post h1 {
       font-size: 27px; }
+    article.post h1.post-title {
+      text-align: center;
+      margin-top: 0px;
+      font-size: 28px; }
     article.post h2 {
-      font-size: 25px; }
+      font-size: 23px; }
     article.post h3 {
       font-size: 20px; }
     article.post h4 {
@@ -676,6 +682,9 @@ article.post {
   article.post header.post-header p.standfirst {
     font-size: 22px;
     font-style: italic; }
+    @media (max-width: 480px) and (min-width: 320px) {
+      article.post header.post-header p.standfirst {
+        font-size: 20px; } }
 
 pre.highlight {
   white-space: pre-line;

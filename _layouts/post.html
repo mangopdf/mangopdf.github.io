@@ -5,8 +5,13 @@ layout: default
 
     <header class="post-header">
         <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-        <hr class="star-primary star-{{ page.colour }}">
+        <hr class="star-primary star-{{ page.colour }} star-post">
         <p class="post-meta">
+            {% if page.standfirst %}
+                <p class="standfirst">
+                    {{ page.standfirst }}
+                </p>
+            {% endif %}
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
             {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
             {{ page.date | date: date_format }}
@@ -15,11 +20,6 @@ layout: default
             • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
         {% endif %}
         </p>
-        {% if page.standfirst %}
-        <p class="standfirst">
-            {{ page.standfirst }}
-        </p>
-        {% endif %}
     </header>
 
     <div class="post-content text-{{ page.text-colour }}" itemprop="articleBody">

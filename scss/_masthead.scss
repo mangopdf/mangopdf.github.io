@@ -1,6 +1,11 @@
 // Styling for the masthead
 header.masthead {
-    padding-top: 25px;
+
+
+    @media (min-width: 320px) {
+        padding-top: 25px;
+    }
+
     text-align: center;
     color: white;
     img {
