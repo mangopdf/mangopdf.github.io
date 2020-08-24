@@ -162,7 +162,7 @@ Leave a YIKES in the chat if you really felt that.
 
 There I was, logged the heck in as Tony Abbott. And for all I know, everyone else who saw his Instagram post was right there with me.
 
-But, well, let's not get carried away[^carriedaway]. I'd only logged in. The flight was in the past, so I couldn't change anything.
+But, well, let's not get carried away[^carriedaway]. The flight was in the past, so I couldn't change anything.
 
 [^carriedaway]: hahahahahahahahaha
 
@@ -250,11 +250,9 @@ I eventually realised that manually reading HTML with my eyes was not an efficie
 
 Oh yes.
 
-I remember thinking "It's just _there_."
+I saw something called `documentNumber`, that sure _looked_ like a passport number. There was no name, but surely it was Tony Abbott's? Just in case, I googled "tony abbott" and checked the birthday on his Wikipedia page. It matched the birthday on the passport.
 
-It was called `documentNumber`, and it sure _looked_ like a passport number. There was no name, but surely it was Tony Abbott's? Just in case, I googled "tony abbott" and checked the birthday on his Wikipedia page. It matched the birthday on the passport.
-
-At this point I was fairly sure I was looking at the _extremely_ secret government-issued ID of the _28th Prime Minister of the Commonwealth of Australia, servant to her Majesty Queen Elizabeth II_ and I was _kinda_ worried that I was somehow doing something wrong, but like, not enough to stop[^queen]. Big yikes tho.
+At this point I was fairly sure I was looking at the _extremely_ secret government-issued ID of the _28th Prime Minister of the Commonwealth of Australia, servant to her Majesty Queen Elizabeth II_ and I was _kinda_ worried that I was somehow doing something wrong, but like, not enough to stop[^queen].
 
 [^queen]: bro whenever things get tense u just talk about queen elizabeth
 
@@ -274,30 +272,28 @@ With your passport number, someone could:
 
 ## ....anything _else_ in this page?
 
-If there's a passport number in this page, maybe there's even more? Maybe all bets are off and there's the lost launch codes to the Sydney Opera House, or Harold Holt[^holt].
-
-A phone number maybe? Searching for `phone` and `number` didn't get anywhere, but sometimes you gotta do a huge galaxy brain move. So I searched for `614`, the first 3 digits of an Australian phone number. _That_ led me to a whole lot of _this_:
+Well damn if Tony Abbott's passport number is in here, maybe there's like wayyyyy more. Maybe this page goes off and there's the lost launch codes to the Sydney Opera House, or Harold Holt[^holt].
 
 [^holt]: Backstory: Harold Holt was another former Prime Minster and we... lost him? He disappeared while going for a swim one morning. This is not a joke. We named Harold Holt Memorial Swimming Pool after him. I repeat, this is _not_ a joke. //todo references
+
+Well, maybe there's a phone number. Searching for `phone` and `number` didn't get anywhere, but sometimes you gotta do a huge galaxy brain move. So I searched for `614`, the first 3 digits of an Australian phone number, using my colossal and highly celestial galaxy brain. _That_ led me to something called `PNRRemarks`, which looked like this:
 
 //todo replace with screenshot
 
 ```
 RQST QF HK1 HNDSYD/03EN|FQTV QF HK1|CTCM QF HK1 61[redacted passenger phone number]|CKIN QF HN1 DO NOT SEAT ROW [row number] PLS SEAT LAST ROW OF [row letter] WINDOW
 ```
-It keeps going, too. It's labelled `PNRRemarks`. 
-
 In what is surely the subtweeting of the century, it also has a section saying "HITOMI CALLED RQSTING FASTTRACK FOR MR. ABBOTT". 
 
 ![Blurred picture of PNRRemarks section showing "hitomi called"]()
 
-So this looks like... Qantas staff talking to eachother _about_ Tony Abbott, but not _to_ him. The flight was from Tokyo to Sydney, so presumably she works at Qantas in Tokyo. She must be requesting a "fasttrack" (I thought that was only a thing in movies???) from another Qantas employee. 
+I realised this was like... Qantas staff talking to eachother _about_ Tony Abbott, but not _to_ him?. Hitomi must be requesting a "fasttrack" (I thought that was only a thing in movies???) from another Qantas employee. 
 
-Hey for real though? For reeeal though? What is even going on here? Why do Qantas flight staff talk to eachother via this passenger information field? Why do they send the messages about you _to_ you when you manage your booking?
+Hey for real though? For reeeal though? What is even going on here? Why do Qantas flight staff talk to eachother via this passenger information field? Why do they send the messages about you _to_ you when you manage your booking? I'll never know because I suddenly got distracted with
 
 ### Forbidden airline code
 
-I realised the allcaps spaghetti must be some airline code for something, and eventually found several ancient forbidden PDFs that explained some of the codes. 
+I realised the allcaps museli must be some airline code for something, and eventually found several ancient forbidden PDFs that explained some of the codes. 
 
 Apparently, they're called "SSR codes" (Special Service Request). There are codes for things like "Vegetarian lacto-ovo meal" (`VLML`), "Vegetarian oriental meal" (`VOML`), and even "Vegetarian vegan meal" (`VGML`). Because I was curious about these codes, here's some for you to be curious about too (tag urself, I'm `UMNR`):
 
@@ -313,11 +309,10 @@ ESAN    Passenger with Emotional Support Animal in Cabin
 Back to the phone number, it looked like this: `CTCM QF HK1 [phone number]`. Googling "SSR CTCM" led me to the [developer guide](https://guides.developer.iata.org/docs/ctcm) for some kind of airline association, which I assume I am basically a member of now.
 
 ![CTCM](/img/sunburnt-country/ctcm.png)
-
-Moving right along from the weirdly-off spelling of "passenger's", this was enough to translate `CTCM QF HK1` as "Contact phone number of passenger 1". 
+*`CTCM QF HK1` translates as "Contact phone number of passenger 1"*
 
 #### Is the phone number actually his?
-I thought maybe the phone number belonged to the travel agency that booked the flight, but I [checked](https://portal.iata.org/faq/articles/en_US/FAQ/Is-it-mandatory-for-travel-agents-to-provide-the-passenger-s-mobile-phone-and-email-address-1448977338174) and it has to be the passenger's real phone number. That would be, if my calculations are correct,,,, Tony Abbott's phone number.
+I thought maybe the phone number belonged to the travel agency, but I [checked](https://portal.iata.org/faq/articles/en_US/FAQ/Is-it-mandatory-for-travel-agents-to-provide-the-passenger-s-mobile-phone-and-email-address-1448977338174) and it has to be the passenger's real phone number. That would be, if my calculations are correct,,,, Tony Abbott's phone number.
 
 ## what have i done
 
@@ -329,8 +324,6 @@ I'd now found Tony Abbott's:
 My friend who messaged me had _no idea_.
 
 ## what have i _done_
-
-I walked down the hallway and told my housemate (also a member of The Group Chat) "I think I have.... Tony Abbott's passport number???". 
 
 By this point I'd had enough defending my country and was thinking:
 
@@ -357,7 +350,7 @@ There is a _lot_ going on in this section (a loT), so here is a lil cheat code f
 - ⬜ get permission to publish this here blog post 
 - ⬜ tell qantas about the security issue so they can fix it
 
-Alright strap yourself in for a carnival of flubs.
+Alright strap yourself in as I am drop-kicked through the goal posts of life. 
 
 ## Part 1: is it possible that i've done a crime
 I didn't _think_ anything I did sounded like a crime, but I knew that sometimes when the other person is rich or famous, things can suddenly _become_ crimes.
@@ -369,10 +362,10 @@ So I was wondering like... was logging in with someone else's booking reference 
 Update: I have been arrested.
 
 ---
-![screenshot of me googling "did i do a big crime"]()
 
+It turned out I could just google these things, and before I knew it I was reading "the legislation". It's the rules of the law, just written down. 
 
-It turned out I could just google these things, and before I knew it I was reading "the legislation". It's the rules of the law, just written down. I have no trouble reading pages of HTML, but whoever wrote the legislation was straight up making up words. Eventually, I was able to divine the following wisdoms from the Times New Roman tea leaves:
+I have no trouble reading pages of HTML, but whoever wrote the legislation was straight up making up words. Eventually, I was able to divine the following wisdoms from the Times New Roman tea leaves:
 
 * It's not defamation to publish something negative about someone if it's true
 * Having Tony Abbott's passport number isn't a crime, but using it to commit identity fraud is
@@ -384,19 +377,19 @@ You know what, maybe I needed help. From an adult. With like, leather shoes. May
 
 ### trying to ask a lawyer if i gone and done a crime
 
-Listen I'm going to save you a lot of time that I personally will never get back and skip a lot of this part.
-
 Before I went and told everyone about my HTML frolicking, I spent 9 days calling legal aid numbers, lawyers, and otherwise trying to figure out if I'd done a crime[^noplan]. 
 
 [^noplan]: I'm not really sure what my plan was. If I had done a crime, what was I gonna do, not report the passport number being publicly available?
 
-I'd already told my housemate everything, but aside from that, I didn't tell a soul. I asked if I would be breaking any laws if "someone" had "logged into a website with someone's publicly-posted password and found the personal information of a former politician". Do you see how that's not even a lie? I'm starting to see how lawyers do it.[^clever]
+During this time, I didn't tell a soul what I'd done. I asked if any laws would be broken if "someone" had "logged into a website with someone's publicly-posted password and found the personal information of a former politician". Do you see how that's not even a lie? I'm starting to see how lawyers do it.[^clever]
 
 [^clever]: This sounds like maybe I'm doing something remotely clever by not confessing my potential(?) crimes, but I also did this simultaneously while emailing explicit details of my activities to the Australian Government.
 
+#### "Oh you've been given the run around": Calling Legal Aid places
+
 First I call the state government's Legal Aid number. They tell me they don't _do that_ here, and I should call another Legal Aid place named something slightly different. The second place tells me they don't _do that_ either, and I should call the First Place and "hopefully you get someone more senior". I call the First Place again, and they say "oh you've been given the run around!". You see where this is going.
 
-I eventually realise every legal person I talk to has no idea about "cybercrime" or even what would happen if a computer. I try to find "cybercrime" laywers, and call the one with the website with the least fear-bait marketing. A lady instantly and bluntly asks me "are you under investigation?". No, I wasn't. Well I mean, not to my knowledge? I just wanted to know whether something was a crime or not. She said "well we're criminal defence lawyers, so...". I apologised for bothering her, but then she was all like "well what exactly are you asking?" and I explained and she seemed to think it was fine in a non-legally-binding way.
+I eventually realised every legal person I talked to has no idea about "cybercrime" or even what would happen if a computer. I try to find "cybercrime" laywers, and call the one with the website with the least fear-bait marketing. A lady instantly and bluntly asks me "are you under investigation?". No, I wasn't. Well I mean, not to my knowledge? I just wanted to know whether something was a crime or not. She said "well we're criminal defence lawyers, so...". I apologised for bothering her, but then she was all like "well what exactly are you asking?" and I explained and she seemed to think it was fine in a non-legally-binding way.
 
 Let's skip a lot of phone calls here. Take my hand as I whisk you towards the slightly-more-recent past. Based on advice I got from two independent lawyers that was definitely not legal advice: I'm good, I haven't done a crime. Helllllll yeah. I mean it's a little late because at this point I had already reported my actions to the Government.
 
@@ -415,11 +408,11 @@ Yes I see it thank u for pointing this out, wise, astute, and ultimately self-im
 
 But you can't just _do_ that.
 
-You can't just call someone's phone number that you got by rummaging around in the HTML ball pit. Tony Abbott didn't _want_ me to have his phone number, because he didn't give it to me. So I felt like I couldn't just violate his privacy like that, even if it's for a good cause. Maybe if it was urgent, or I had no other option, sure. But I'm pretty sure I should do this the Nice way, and show that I come in peace. 
+You can't just call someone's phone number that you got by rummaging around in the HTML ball pit. Tony Abbott didn't _want_ me to have his phone number, because he didn't give it to me. Maybe if it was urgent, or I had no other option, sure. But I was pretty sure I should do this the Nice way, and show that I come in peace. 
 
-I want to show that I come in peace because there's also this pretty yikes thing that happens where you email someone being all like "henlo ur website let me log in with username `admin` and password `admin`, maybe u wanna change that??? could just be me but let me kno what u think xoxo alex" and then they reply being like "oh so you're a HACKER and a CRIMINAL and you've HACKED ME AND MY FAMILY TOO and this is a RANSOM and ur from the DARK WEB i know what that is i've seen several episodes of mr robot WELL watch out kiddO bc me and my lawyers are bulk-installing tens of thousands of copies of [McAfee® Gamer Security](https://www.mcafee.com/en-us/antivirus/gaming.html) as we speak, so i'd like 2 see u try"
+I wanted to show that I come in peace because there's also this pretty yikes thing that happens where you email someone being all like "henlo ur website let me log in with username `admin` and password `admin`, maybe u wanna change that??? could just be me but let me kno what u think xoxo alex" and then they reply being like "oh so you're a HACKER and a CRIMINAL and you've HACKED ME AND MY FAMILY TOO and this is a RANSOM and ur from the DARK WEB i know what that is i've seen several episodes of mr robot WELL watch out kiddO bc me and my lawyers are bulk-installing tens of thousands of copies of [McAfee® Gamer Security](https://www.mcafee.com/en-us/antivirus/gaming.html) as we speak, so i'd like 2 see u try"
 
-### How about contacting Tony Abbott officially?
+### Surely you just contact Tony Abbott officially
 I googled "tony abbott contact", but there's only his [official website](https://tonyabbott.com.au). There's no phone number on it, only a "contact me" form.
 
 ![Contact me form]()
@@ -432,7 +425,7 @@ I eventually realised the place I want to be reporting this lil fun fact was pro
 
 It's a big place.
 
-There are like fifty thousand million different departments, and they all know which acronyms to refer to eachother by, but you don't. If you EVER call it DMP&C instead of DPM&C you are gonna be sucked into a nightmare realm the likes of which cannot be expressed in _any_ number of spreadsheet cells. And believe me, they've lost a lotta good people trying. 
+There are like fifty thousand million different departments, and they all know which acronyms to refer to eachother by, but you don't. If you EVER call it DMP&C instead of DPM&C you are gonna be email forwarded into a nightmare realm the likes of which cannot be expressed in _any_ number of spreadsheet cells. And believe me, they've lost a lotta good people trying. 
 
 I didn't even know where to begin with this. I called Tony Abbott's former political party, who were like "uhhhh we dunno what to do with this, nor do we know who to ask, did u try the contact form on his website or". Skip skip skip a few more calls like this.
 
