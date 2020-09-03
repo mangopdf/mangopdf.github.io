@@ -153,75 +153,40 @@ I hesitated for a split-second, but... no, I had to know.
 
 ## Step 5: Crimes(?)
 
-![gif of me logging the hEck in](/img/sunburnt-country/summary.gif)
-*Part of collection "Pictures taken moments before disaster" (2020), 1920x1080, RGB pixel on canvas*
+<video class="sunburntcountry" controls>
 
-So in the picture above it _looks_ a lot like I've just logged in to this plane website as 28th Prime Minister of the Commonwealth of Australia, servant to Queen Elizabeth II, Tony Abbot. But it's actually fine because dslkhjflhajsakjhgsfhl
+    <source src="/img/sunburnt-country/youngman.mp4"
+            type="video/mp4">
+
+
+<img src="/img/sunburnt-country/summary.gif"/>
+</video>
 
 ### Can I get a YIKES in the chat
 
-Leave a YIKES in the chat if you really felt that.
+Leave a comment if you really felt that.
 
 I was now logged the heck in as Tony Abbott. And for all I know, everyone else who saw his Instagram post was right there with me.
 
-But, well, let's not get carried away[^carriedaway]. The flight was in the past, so I couldn't change anything.
+But, well, let's not get carried away[^carriedaway]. The flight was in the past, so I couldn't change anything. I thought maybe it wasn't so bad?
 
 [^carriedaway]: hahahahahahahahaha
 
 When I looked around the page, I saw Tony Abbott's name[^name], flight times, and Frequent Flyer number, but not really anything _super_ secret-looking. Not gonna be committing any cyber treason with a Frequent Flyer number.
 
-[^name]: Which was "Anthony Abbott" #exposed #truthsout #dontbelieveeverythingyouhear #gaslighting
+[^name]: Which was actually "Anthony Abbott" #whoisanthonyabbott
 
 The page said the flight had been booked by a travel agent, so I guessed some information would be missing because of that.
 
 I clicked around and scrolled a considerable length, but still didn't find anything secret-looking for my efforts.
 
-At the very end, in what was a somewhat surreal experience, I was farewelled by an ad with extremely Travel energy telling me (Tony Abbott?) to rent a car in Melbourne. 
-
-![Car Ad](/img/sunburnt-country/sdff.png)
-*No, Qantas, I shall not go gently into that good night. You don't understand.*
-
-Some people might give up here. But me? I'm too dumb to know when to stop 😎😎😎
+Some people might give up here. But me, the Icarus of computers? I am simply too dumb to know when to stop 😎😎😎
 
 ### We're not done just because a _web page_ says we're done
 
-Having recovered from the emotional rollercoaster of the car ad, I looked at the page again, but like, harder.
-
-
-#### Aside: Web page school with Alex
----------
-
-Hey gang and welcome to: how does a website
-
-Forgive me for stating the exasperatingly obvious, but when you go to [google.com](https://en.wikipedia.org/wiki/Scroogled), it looks like this.
-
-![google homepage](/img/sunburnt-country/google.png)
-*google.com*
-
-But what Google _actually_ sends to your computer is _this_:
-
-![google homepage](/img/sunburnt-country/googlepagesource.png)
-*The HTML (or "page source" or "page sauce") for google.com*
-
-What? "But that's not the webpage you filthy hacker, that's some kind of `<pointy gang>` spaghetti." The tea is, it's both.
-
-Google sends your computer the HTML above (although the technical term for it _is_ actually "`<pointy gang>` spaghetti"), and then _your_ computer turns that textual spaghetti into the nice colourful webpage you actually look at ads on[^complicated].
-
-[^complicated]: If you think this is too complicated, don't worry. That's as complex as computers get. It's all downhill from here.
-
-![html rendering diagram](/img/sunburnt-country/htmlrendering.png)
-
-So when you look at a web page, you don't see it, but the HTML is still _there_, hidden underneath.
-
-What's in the HTML? For all you know there's an assortment of clowns in there. I'm not _saying_ there's an unreasonable volume of clowns in there, just, maybe you wanna check.
-
-Or even in the (I assure you, likely) scenario in which it _isn't_ clowns upon clowns, there might be juicy things hidden in the page's HTML, because, well, someone left them there accidentally, or they're needed for the page to work. And of course, nobody's expecting you to look in the HTML, even though you totally can.
-
-### How do you see the HTML of a page?
+Listen. This is the only step in this story that might be considered "hacking". It's not, though. Maybe later someone will show you this same thing, and tell you it's hacking. You will not go gently into that good night. You will refuse to acknowledge their showing off, killing them instantly.
 
 ![Right click > Inspect](/img/sunburnt-country/inspectelement.png)
-
-//Listen. This is the only step in this story that might be considered "hacking". It's not, though. Maybe later someone will show you this same thing, and tell you it's hacking. You will not go gently into that good night. You will refuse to acknowledge their showing off, killing them instantly.
 
 "Inspect Element", as it's called, is a feature of Google Chrome that lets you see the computer's internal representation (HTML) of the page you're looking at. Kinda like opening up a clock and looking at the cool cog party inside. 
 
@@ -230,12 +195,11 @@ Or even in the (I assure you, likely) scenario in which it _isn't_ clowns upon c
 
 Everything you see when you use "Inspect Element" was already downloaded to your computer, you just hadn't asked Chrome to show it to you yet. Just like how the cogs were already in the watch, you just hadn't opened it up to look.
 
-But enough about cogs. Cheap tricks such as "Inspect Element" are used by programmers to try and understand how the website works. This is ultimately futile: Nobody can understand how websites work. Unfortunately, it kinda _looks_ like hacking the first time you see it.
+But enough talk of cogs. Cheap tricks such as "Inspect Element" are used by programmers to try and understand how the website works. This is ultimately futile: Nobody can understand how websites work. Unfortunately, it kinda _looks_ like hacking the first time you see it.
 
 If you'd like to know more about it, I've prepared a short video.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">hey youtube welcome to my hacking tutorial, today we&#39;re gonna hack.... the nsa <a href="https://t.co/2Z35GJjSZE">pic.twitter.com/2Z35GJjSZE</a></p>&mdash; “Alex” (@mangopdf) <a href="https://twitter.com/mangopdf/status/1123400764926226432?ref_src=twsrc%5Etfw">May 1, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 ## Browsing the "Manage Booking" page's HTML
 
@@ -243,11 +207,9 @@ I scrolled around the page's HTML, not really knowing what it meant, furiously t
 
 I eventually realised that manually reading HTML with my eyes was not an efficient way of defending my country, and Ctrl + F'd the HTML for "passport".
 
-![Blurred screenshot of me ctrl + F-ing "passport"](/img/sunburnt-country/)
-
 ## Oh _no_
 
-![Blurred screenshot of close up "passport" number](/img/sunburnt-country/)
+![Blurred screenshot of close up "passport" number](/img/sunburnt-country/passportjson.gif)
 
 Oh yes.
 
@@ -256,7 +218,6 @@ That sure _looks_ like a passport number.
 At this point I was fairly sure I was looking at the _extremely_ secret government-issued ID of the _28th Prime Minister of the Commonwealth of Australia, servant to her Majesty Queen Elizabeth II_ and I was _kinda_ worried that I was somehow doing something wrong, but like, not enough to stop[^queen].
 
 [^queen]: bro whenever things get tense u just talk about queen elizabeth
-
 
 ## ....anything _else_ in this page?
 
@@ -317,6 +278,8 @@ I'd now found Tony Abbott's:
 
 My friend who messaged me had _no idea_.
 
+Tony Abbott's passport is probably a [Diplomatic passport](https://en.wikipedia.org/wiki/Australian_passport#Diplomatic_and_Official_Passport), which is used to "represent the Australian Government overseas in an official capacity".
+
 ## what have i _done_
 
 By this point I'd had enough defending my country, and had recently noticed some new thoughts in my brain[^brain], which were:
@@ -331,7 +294,7 @@ By this point I'd had enough defending my country, and had recently noticed some
 ------
 
 # Intermission
-![](/img/sunburnt-country/intermission.jpg)
+![anime is real](/img/sunburnt-country/intermission.jpg)
 
 ------
 
@@ -373,7 +336,7 @@ It turned out I could just google these things, and before I knew it I was readi
 I have no trouble reading pages of HTML, but whoever wrote the legislation was straight up making up words. Eventually, I was able to divine the following wisdoms from the Times New Roman tea leaves:
 
 * Defamation is where you get in trouble for publishing something that makes someone look bad. 
-  * But, it's not defamation if you prove it's _true_
+  * But, it's not defamation if you can prove it's _true_
 * Having Tony Abbott's passport number isn't a crime
   * But using it to commit identity fraud would be
 * There are laws about what it's okay to do on a computer
@@ -395,7 +358,11 @@ This sounds like maybe I'm doing something remotely clever by not confessing my 
 
 #### Calling Legal Aid places
 
-First I call the state government's Legal Aid number. They tell me they don't _do that_ here, and I should call another Legal Aid place named something slightly different. The second place tells me they don't _do that_ either, and I should call the First Place and "hopefully you get someone more senior". I call the First Place again, and they say "oh you've been given the run around!". You see where this is going.
+First I call the state government's Legal Aid number. They tell me they don't _do that_ here, and I should call another Legal Aid place named something slightly different. 
+
+The second place tells me they don't _do that_ either, and I should call the First Place and "hopefully you get someone more senior". 
+
+I call the First Place again, and they say "oh you've been given the run around!". You see where this is going.
 
 Let's skip a lot of phone calls here. Take my hand as I whisk you towards the slightly-more-recent past. Based on advice I got from two independent lawyers that was definitely not legal advice: I'm good, I haven't done a crime. 
 
@@ -415,7 +382,7 @@ Anyone who saw that Instagram post could also have them. I felt like I had to li
 
 ### wait but do u see the irony in this, u have his phone number right there so u could just-
 
-Yes I see it thank u for pointing this out, wise, astute, and ultimately self-imposed heading. I _knew_ I could just call the number any time and hear a "G'day" I'd never be able to forget. I knew I had a rare opportunity to call someone and have them ask "how did you get this number!?". 
+Yes I see it thank u for pointing this out, wise, astute, and ultimately self-imposed heading. I _knew_ I could just call the number any time and hear a "G'day" I'd _never_ be able to forget. I knew I had a rare opportunity to call someone and have them ask "how did you get this number!?". 
 
 But you can't just _do_ that.
 
@@ -500,7 +467,7 @@ Still, defending the Commonwealth was in ASD's hands now, we take those.
 
 -----
 - ☑️ figure out whether i have done a crime
-- ☑️ notify someone (tony abbott?) that this happened
+- ☑️ notify someone (The Government) that this happened
 - ⬜ get permission to publish this here blog post 
 - ⬜ tell qantas about the security issue so they can fix it
 
@@ -559,23 +526,14 @@ This process took five months, and is why it took so for you and I to be having 
 
 Normally the time limit companies are given for fixing a bug is 90 days, but, well, Qantas was going through some #struggles, so it was taking longer. At the same time, hardly anybody was flying at the time, due to see above re: #struggles. So, I gave Qantas as much time as they needed.
 
-BUT we got there baybee, Qantas emailed me 
-
+I originally found the bug in March, which was about 60 years ago. BUT we got there baybee, Qantas emailed me saying the bug had been fixed on August 21. 
 
 ------
+
 - ☑️ figure out whether i have done a crime
-- ☑️ notify someone (tony abbott?) that this happened
+- ☑️ notify someone (The Government) that this happened
 - ⬜ get permission to publish this here blog post 
-- ⬜ tell qantas about the security issue so they can fix it
-
-
-* someone replied, saying they're actively working on it
-* i followed up a few times, but never heard from them again
-* eventually called the forbidden media line
-* "...yeah just send it to me, luke.blah@"
-* stuff got sent to spam, presumably for illicit hacker keywords
-* ???
-* this is why it took so long
+- ☑️ tell qantas about the security issue so they can fix it
 
 
 ## Part 4: Finding Tony Abbott
@@ -586,27 +544,25 @@ The government was presumably helping Tony Abbott reset his passport number, and
 
 But, much like Shannon Noll's 2004 _What About Me?_, what _about_ me? I really wanted to write a blog post about it, you know? So I could warn people about the non-obvious risk of sharing their boarding passes, and also make dumb and inaccessible references to the early 2000s.
 
-The government people I talked to couldn't give me permission to write this post, so rather than willingly going deeper into the procedurally generated labrynth of government department email addresses, I realised I'd be better off asking Tony Abbott or his staff directly.
+The government people I talked to couldn't give me permission to write this post, so rather than willingly wandering deeper into the procedurally generated labrynth of government department email addresses (it's dark in there), I tried to find Tony Abbott or his staff directly.
 
 ### Calling everybody in Australia one by one
 
-I called Tony Abbott's former political party, and asked them how to contact him, or his office, or _something_. They said they weren't associated with him anymore, and suggested I call _Parliament House_, like I was the Queen or something.
+I called Tony Abbott's former political party, and asked them how to contact him, or his office, or _something_ I'm really having a moment rn. They said they weren't associated with him anymore, and suggested I call _Parliament House_, like I was the Queen or something.
 
 ![picture of parliament house](https://www.fma.com.au/sites/default/files/imagecache/event_full/uploaded-content/field_f_content_image/aph_from_website.jpg)
 
-Parliament House is sorta like the White House, I think. The Prime Minister lives there and has a nice garden out the back with a macadamia tree, and everyone works in different sections and wears matching uniforms with lil kangaroo and emu hats, and they all do a little dance sometimes to celebrate another accident-free day in the Prime Minister's chocolate factory.
+Parliament House is sorta like the White House, I think? The Prime Minister lives there and has a nice garden out the back with a macadamia tree, and everyone works in different sections and wears matching uniforms with lil kangaroo and emu hats, and they all do a little dance every hour on the hour to celebrate another accident-free day in the Prime Minister's chocolate factory.
 
 I didn't know you could just _call_ the uh chocolate factory, but sure enough, I just googled the phone number. 
 
-I called up and was all like "yeah bloody g'day, day for it ay, hot enough for ya?". Once the formalities were out of the way, I skipped my usual explanation of why I was calling and just asked if they had contact details for Tony Abbott. 
+Not really sure what to expect, I called up and was all like "yeah bloody g'day, day for it ay, hot enough for ya?". Once the formalities were out of the way, I skipped my usual explanation of why I was calling and just asked if they had contact details for Tony Abbott. 
 
-The person on the phone sad, "oh, no, but I can put you through to the Serjant-at-arms, who can give you the contact details of former members". 
-I was like ".....okay?????"
-Was I supposed to know who that was? Isn't a serjant like an army thing?
+The person on the phone sad, "Oh, no, but I can put you through to the _Serjant-at-arms_, who can give you the contact details of former members". I was like ".....okay?????". Was I supposed to know who that was? Isn't a serjant like an army thing?
 
-But no, the Serjant-at-arms was just a nice lady who told me "he's in a temporary office right now, and so doesn't have a phone number. I can give you an email address or a P.O. box?".
+But no, the Serjant-at-arms was just a nice lady who told me "he's in a temporary office right now, and so doesn't have a phone number. I can give you an email address or a P.O. box?". I was like "th-thank you your majesty".
 
-I emailed the same thing I'd been emailing to everyone else to his email address, I guess? It was a bit weird just....emailing the former PM, but I figured if it was _that_ easy to get this email address, everyone had it, and so nobody was likely to be reading the inbox.
+It felt a bit weird just.... emailing the former PM, but I figured if it was _that_ easy to get this email address, everyone had it, and so nobody was likely to be reading the inbox.
 
 Spoilers: It didn't work.
 
@@ -614,90 +570,98 @@ Spoilers: It didn't work.
 
 Okay _this_ time for sure.
 
-I was kinda lost for a few weeks, waiting hopelessly for various government departments to reply to my emails. "It's in their hands", I thought. But actually, the hands it was in,,,, were mine.
+I was kinda lost for a few weeks, waiting hopelessly for various government departments to reply to my emails. It's a terrible fate, I wouldn't wish it on anybody. "It's in their hands", I thought, displaying an embarassing lack of hubris. But actually, the hands it was in,,,, were mine.
 
-In a moment of determination/desperation/destiny, I went and asked everyone I could think of that _might_ know how to contact Tony Abbott's staff. 
+In a moment of determination/desperation/hubris, I went and asked everyone I could think of that _might_ know how to contact Tony Abbott's staff. 
 
-I slid clumsily into the DMs of someone I found on Twitter who seemed to have sufficient #AusGov #Cyber in their bio, asking if they knew who to contact. They asked how my local police station would feel if I told them the same thing. Ah, no, big misunderstanding. I wasn't asking for help committing a crime or anything[^twitterdms].
+I messaged a journalist friend asking for help. They had the kind of ruthlessly efficient ideas that come from, like, being a professional journalist. They suggested I find Tony Abbott's former staff from when he was PM, and contact their offices and see if they have his contact details.
 
-[^twitterdms]: But, I do understand how it be sometimes. If you have anything remotely related to "hacking" in your Twitter bio, random people DM you asking you to hack their girlfriend's Instagram account. It sucks, and how was this person to know I wasn't one of those people?
-
-I also messaged a journalist friend asking for help. They had ruthlessly efficient ideas that I presume came from, like, being a professional journalist. They suggested I find Tony Abbott's former staff from when he was PM, and contact their offices and see if they have his contact details.
+It was a strange sounding plan to me, which I thought meant it would _definitely_ work.
 
 ### Wikipedia stalking
 
-Apparently Prime Ministers themselves have "ministers", and those are their staff. That's who I was looking for.
+Apparently Prime Ministers themselves have "ministers" (not prime), and those are their staff. That's who I was looking for.
 
-![Screenshot of Tony Abbott's former staff]()
+![Screenshot of Tony Abbott's former staff](/img/sunburnt-country/ministers.png)
+*Pretty sure they're just making these up but go off i guess*
 
 Okay but, the problem is that most of these people are retired now. The glory days of 2015 are over, I guess. Each time I hover over one of their names, I see "so-and-so is a former politician and....". Nope, not gonna cut it.
 
 Eventually though, I saw _this_ minister.
 
-![Screenshot of Scomo in the list]()
-*Oh he _definitely_ has an office.*
+![Screenshot of Scomo in the list](/img/sunburnt-country/scomo-minister.png)
+*Oh he definitely has an office.*
 
-That's the _current_ Prime Minister of Australia (at the time of writing, I can only pray that between now and publishing this remains true). 
+That's the _current_ Prime Minister of Australia (at the time of writing, I can only pray that between now and publishing this remains true), he's _definitely_ gonna be easier to find. 
 
 ### Let's call the Prime Minister's office I guess?
 
-Easy google of the number, absolutely no worries this time. When I call, I hear what sounds like two women laughing. One answers the phone, slightly out of breath, and says "Hello, Prime Minister's office?".
+Easy google of the number, absolutely no worries this time. When I call, I hear what sounds like two women laughing in the background? One answers the phone, slightly out of breath, and says "Hello, Prime Minister's office?". I'm like "....hello? Am I interrupting something???".
 
-I clumsily explain that I know this is Scott Morrison's office, but I actually was wondering if they had Tony Abbott's contact details, yes I know he's not in parliament anymore, it's for "a time-sensitive media enquiry". These were the magic words my journalist friend told me, for which I will be forever grateful, and keep close to my heart.
+I clumsily explain that I know this is Scott Morrison's office, but I actually was wondering if they had Tony Abbott's contact details, yes I know he's not in parliament anymore, it's for "a time-sensitive media enquiry"[^magicwords], and I j-
+She interrupts to explain "so Tony Abbott isn't Prime Minister anymore, this is Scott Morrison's office" and I'm like "yA I _know_ please I am desperate for these contact details".
 
-She says "We wouldn't have that information but I'll just check for you" and then pauses for like, a long time? Like 15 seconds? I can only wonder what was happening on the other end. Then she says "Oh actually I can give you Tony Abbott's personal assistant's number". Ummmm YES thanks buckle up everyone it's HAPPENING.
+[^magicwords]:These were the magic words my journalist friend told me, for which I will be forever grateful, and keep close to my heart.
+
+She says "We wouldn't have that information but I'll just check for you" and then pauses for like, a long time? Like 15 seconds? I can only wonder what was happening on the other end. Then she says "Oh actually I can give you Tony Abbott's personal assistant's number? Is that good?". Ummmm YES thanks buckle up everyone it's HAPPENING.
 
 ### Calling Tony Abbott's personal assistant's personal assistant
 
 I fumble with my phone, furiously trying to dial the number.
 
-I ask if I'm speaking to Tony Abbott's personal assistant. The person on the other end? He says he's one of Tony Abbott's staff[^hesaidyes]. It has been a long several months of calling people. The cold ice is starting to thaw. One day, I may be able to love again.
+I ask if I'm speaking to Tony Abbott's personal assistant. The person on the other end says no, but he's one of Tony Abbott's staff. It has been a long several months of calling people. The cold ice is starting to thaw. One day, with enough therapy, I may be able to call another government phone number.
 
-[^hesaidyes]: #hesaidyes?
+I explain the security issue I want to report, and midway through he interrupts with "sorry.... _who_ are you and what's the organisation you're calling from?" and I'm like "uhhhh I mean my name is Alex and uhh I'm not calling from any organisation I'm just like a person?? I just found this thing and...". 
 
-I explain the security issue I want to report, and midway through he interrupts with "sorry who are you and what's the organisation you're calling from?" and I'm like "uhhhh I mean my name is Alex and uhh I'm not calling from any organisation I'm just like a person?? I just found this thing and...". 
-
-The person is mercifully forgiving, and says that he'll have to call me back. I stress once again that I'm calling to work with them on this, happy to wait to publish until they feel comfortable, and am definitely not some kind of blackmailing hacker and they don't need to start bulk-installing McAfee products just yet.
-
+The person is mercifully forgiving, and says that he'll have to call me back. I stress once again that I'm calling to work with them on this, happy to wait to publish until they feel comfortable, and am definitely not some kind of blackmailing hacker warranting the bulk-installation of antivirus products.
 
 ### Calling Tony Abbott's personal assistant
 An hour later, I get a call from a number I don't recognise. 
 
 He explains that the guy I talked to earlier was _his_ assistant, and he's Tony Abbott's PA. Folks, we made it. It's as easy as that.
 
-He says he knows what I'm talking about. He's got _the emails_. He's already in the process of getting Tony Abbott a new passport number. This is the stuff. It's all happening.
+He says he knows what I'm talking about. He's got _the emails_. He's already in the process of getting Tony Abbott a new passport number. This is the stuff. It's all coming together.
 
-And _then_ he says:
+I ask if I can publish a blog post about it, and we agree I'll send a draft for him to review.
 
-"These things do interest him - he's quite keen to talk to you."
+And _then_ he says
+
+## "These things do interest him - he's quite keen to talk to you"
 
 I was like exCUSE me? Former Prime Minister and 28th Hokage Tony Abbott wants to call me on the _phone_? I suppose I owe this service to my country?
 
 This story is already completely cooked so sure, whatever, I don't even care. I've already delcared emotional bankruptcy, so nothing comes as a surprise at this point.
 
+I asked what he wanted to talk about. "Just to pick your brain on these things". We schedule a call for 3:30 on Monday.
+
 ### Calling Tony Abbott
 
-It was surprisingly pleasant.
+Mostly, he wanted to check whether his understanding of how I'd found his passport number was correct (it was). He also wanted to ask how to learn about "the IT".
 
-Mostly, he wanted to check whether his understanding of how I'd found his passport number was correct (it was). He also wanted to ask how to learn about "IT".
+He asked some intelligent questions, like "how much information is in a boarding pass, and what do people like me need to know to be safe?", and "why can you get a passport number from a boarding pass, but not from a bus ticket?".
+
+This is actually a really Good question. The answer is that boarding passes have your password printed on them, and bus tickets don't. You can use that password to log in to a _website_, and at that point all bets are off, websites can just do whatever they want.
 
 He said something[^recording] about how if he was dropped in the middle of the bush, he could navigate his way out by looking at the sun and the direction of rivers "no worries". But "the IT"? Bamboozling.
 
-[^recording]: I didn't record our call, I only took some notes, so this isn't a quote, oops. Looks like I'm not a professional journalist.
+[^recording]: I didn't record our call, I only took some notes, so this isn't a quote, oops. I might have written it down wrong, so nothing in this section has any journalistic integirty, oops again. Looks like I'm not a professional journalist.
 
-This was possibly the most pure and powerful Australian energy a human can possess. The raw energy did in fact travel through the phone speaker and directly into my brain, killing me instantly.
+This was possibly the most pure and powerful Australian energy a human can possess. The raw energy did in fact travel through the phone speaker and directly into my brain, killing me instantly. It all makes sense now, how we as Australians elect our strongest as our leader.
 
-Later, he asked if there was some kind of book about the basics of IT, since he wanted to learn about it. Say what you will about Tony Abbott, but someone who's just been hacked wanting to educate themselves about how it happens? You gotta pay that. It was humanising. It made me realise that even famous people are just people too.
+Later, he asked if there was some kind of book about the basics of IT, since he wanted to learn about it. That was kinda humanising, since it made me realise that even famous people are just people too.
 
 Anyway I hadn't heard of a book that was any good, so I told a story about my mum instead.
 
-##### A story about my mum instead
+##### "Too many buttons"
 
 I said there probably was a book out there about "the basics of IT", but it probably wouldn't help much. I didn't learn from a book. 13 year old Instagram stars don't learn from a book, they just _vibe_.
 
-My mum (hi Mum) always said when I was growing up that there were "too many buttons", and she was afraid to press the buttons, because she didn't know what they did. 
+My mum[^mum] always said when I was growing up that there were "too many buttons", and she was afraid to press the buttons, because she didn't know what they did. 
 
-That actually makes complete sense, because grown ups don't have the sheer dumb hubris of a child. Like, when a toddler uses a spoon for the first time, they don't know what time it is, where they are, or what the heck a spoon is. But they see the spoon and they see the cereal, and their dumb baby brain is just like "yeA" and they have a red hot go[^spoon]. And like, they get it wrong the first few times, but it doesn't matter, because they don't know to be afraid of getting it wrong. So eventually, they get it right.
+[^mum]: hi mum
+
+It makes sense that she felt that way, because grown ups don't have the sheer dumb hubris of a child.
+Like, when a toddler uses a spoon for the first time, they don't know what time it is, where they are, or what the heck a spoon is. But they see the spoon and they see the cereal, and their dumb baby brain is just like "yeA" and they have a red hot go[^spoon]. And like, they get it wrong the first few times, but it doesn't matter, because they don't know to be afraid of getting it wrong. So eventually, they get it right.
 
 [^spoon]: "Nobody gives the baby a knife. You give them a spoon" - Mum, when I showed her this.
 
@@ -710,26 +674,35 @@ Okay so I didn't tell the spoon thing to Tony Abbott, but I did tell him what I 
 
 He was like "oh, you just learn by trial and error". Exactly! Now that I think about it, and the whole baby analogy, that's kinda terrifying. Anyway good luck out there to all you big babies.
 
-##### Publishing this blog post
+##### Asking to publish this blog post
 
-When I asked Tony Abbott for permission to publish the post you are reading right now while neglecting your responsibilities, he said something like "well look Alex, I don't have a problem with it, you've alerted me to something I probably should have known about, so if you wanna do that, go for it"
+When I asked Tony Abbott for permission to publish the post you are reading right now while neglecting your responsibilities, he said something like "well look Alex, I don't have a problem with it, you've alerted me to something I probably should have known about, so if you wanna do that, go for it".
 
-Look you gotta hand it to him. That's _exactly_ the right way to respond to a security issue! Back at the beginning, I was kinda worried that he might misunderstand, and think I was trying to hack him or something, and that I'd be instantly slam dunked into jail. But now you, a sweet and honourable blog post browser, get to learn the dangers of posting your boarding pass by the realest of real-world examples. 
+Look you gotta hand it to him. That's exactly the right way to respond when someone tells you about a security problem. Back at the beginning, I was kinda worried that he might misunderstand, and think I was trying to hack him or something, and that I'd be instantly slam dunked into jail. But nope, he was fine with it. And now you, a sweet and honourable blog post browser, get to learn the dangers of posting your boarding pass by the realest of real-world examples. 
 
-The point of this story isn't to say "wow Tony Abbott got hacked, what a dummy[^dummy]". The point is that if it can happen someone famous, it can happen to anyone. 
+The point of this story isn't to say "wow Tony Abbott got hacked, what a dummy[^dummy]". The point is that someone famous can unknowingly post their boarding pass, anyone can. 
 
-[^dummy]: There are many, _many_ blog posts out there roasting Tony Abbott, if you came here looking for one.
+[^dummy]: There are many, _many_ blog posts out there roasting Tony Abbott, if that's what you're looking for.
 
 Anyway that's why I vote right wing now baybeeeee.
 
+-------
+
 - ☑️ figure out whether i have done a crime
-- ☑️ notify someone (tony abbott?) that this happened
+- ☑️ notify someone (The Government) that this happened
 - ☑️ get permission to publish this here blog post 
 - ☑️ tell qantas about the security issue so they can fix it
 
 # Act 3: Closing credits
 
-## Summary
+## What the heck did I just read
+
+#### tl; dr
+Your boarding pass for a flight can sometimes be used to get your passport number. Don't post your boarding pass or baggage receipt online, keep it as secret as your passport.
+
+#### How it works
+The Booking Reference on the boarding pass can be used to log in to the airline's "Manage Booking" page, which contains the passport number. I saw that former Australian Prime Minister Tony Abbott had posted a photo of his boarding pass on Instagram, and used it to get his passport details, phone number, and internal messages between Qantas flight staff about his flight booking.
+
 
 ## Conclusions
 
@@ -739,19 +712,27 @@ Anyway that's why I vote right wing now baybeeeee.
 
 ### Why is it bad for someone else to have your passport number?
 
-Hey crime gang, welcome back to Identity Fraud tips and tricks with Alex
+Hey crime gang, welcome back to Identity Fraud tips and tricks with Alex.
 
-Well, it's government-issued ID. It's how you prove you're you. Just having the information on the passport is not quite as powerful as the full physical passport, but it's still not good optics to post yours on Instagram.
+Well, it's government-issued ID. It's how you prove you're you. The fact that you have your passport and I don't is how you prevent _me_ from convincing the government that I'm you.
+
+Just having the information on the passport is not quite as powerful as a photo of the full physical passport, with your photo and everything.
 
 With your passport number, someone could:
 
-//todo lol
-* Register a SIM card (and so get an internet connection that's traceable to you, not them)
+* Book an international flight as you (but not actually fly on it without the physical passport)
+* Register a SIM card (and so get an internet connection that's traceable to you, not them, hiding them from the government)
+* Create a fake physical passport from a template, with the correct passport number (which they then use to cross a border, open a bank account, or anything)
 * who knows what else, not me, bc i have never done a crime
 
 ### Is a booking reference a password?
 
 Yes, but it's not treated like one.
+
+## When did all of this happen? 
+
+## I'm like, a journalist or something, and I want to talk to you
+Sure! Slide into my DMs at [@mangopdf](https://twitter.com/mangopdf), or, if you must, my bad DMs at [mangodotpdf@gmail.com](mailto:mangodotpdf@gmail.com).
 
 ### Whoa how r u such a hacker I wish I could be a hacker like u
 C'mon buDdY you read the blog post. You know this wasn't hacking. But I suppose I could,,,, detail my philosophy on hacking, unprompted.
@@ -767,7 +748,7 @@ I was deeply complimented by this, but that's not the point. The point is that y
 
 You know how they say to commit a crime (which once again I insist did not happen in my case) you need means, motive, and opportuity? Means is the ability to use right click > Inspect Element, motive is hubris, and opportunity is the dumb luck of having my friend message me the Instagram post.
 
-I know, I've been saying "hubris" a lot. I mean "the willingness to risk breaking the rules". Now hold up, don't go outside and do crimes. I'm not talking about breaking the _law_. I'm talking about rules you might not even realise are rules, like social rules and conventions.
+I know, I've been saying "hubris" a lot. I mean "the willingness to risk breaking the rules". Now hold up, don't go outside and do crimes (unless it's _really_ funny). I'm not talking about breaking the _law_. I'm talking about rules you might not even realise are rules, like social rules and conventions.
 
 Here's a simple example. You're at a sufficiently fancy restaurant, like I dunno, with white tablecloths or something? The waiter asks if you'd like "still or sparkling water?"
 
@@ -779,95 +760,109 @@ In conclusion, to be a hacker u ask for tap water at a restaurant.
 
 For real though, when I first saw someone do this I was blown away. You can _do_ that? I didn't know you could do that! I just thought you had to pay Eleven Dollars extra at fancy restaurants. It's not written down anywhere that you can ask for tap water. But now that I know you _can_ do that, and like, nothing bad happens, I can do it too. Miss me with that Eleven Dollars fizzy water.
 
-Basically, until you've broken the rules, the idea that the rules can be broken might just not occur to you. That's how it felt for me, at least. I'm not trying to impress you with an edgy burst of performative wokeness, I swear. 
+Basically, until you've broken the rules, the idea that the rules can be broken might just not occur to you. That's how it felt for me, at least. I'm _swear_ I am now not trying to impress you with an edgy burst of performative wokeness.
 
+Wanna learn hacking? Come with me. [link]()
 
 ---------------------------------------------------
 
 
-Here's a little something they don't teach ya in school, because it doesn't worK.
 
-I, the Icarus of carbohydrates.
-
-
-# What can you do with a passport?
-* register to vote, get a sim card, get a license, etc. etc.
-
-
-
-# This points to greater vulnerabilities
-Maybe there's an API in the manage booking page that gives you all the secret info.
-
-
-unblend the smoothie
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 # footnote explaining lack of political takes
 there are many takes out there, but i don't want to distract from teaching you clowns security.
-
-#timeline 
------
-
-media folks @ me here
-
-
-// What people want to know:
-"how secret is my boarding pass?" "who can i share it with?
-
-the problem: is a booking reference a username or a password?
-
-// include diagram showing boarding pass, with booking reference labelled.
-
-// sarah's interview
-saw the ig post, and thought of me
-because of the thing with her sending tom pics of her credit card
-
-she analysed the photo and saw the barcode and that the flight was in the past
-
-and so, as a joke, sent to tom, who sent to me
-
-"this is some real journalism"
 
 // emoji!
 
 // one big tweet.
 
-// denying someone Tim Tams is denying their Australian right, fail to comply and you face bans of up to 3 years from the swimming carniva 
-
 // consequences be hecked
-// ah no sorry you're breaking up, i can't hear you i'm going through a phase
-// "nice sydney opera house you got here. would be a shame if it were to become the the sydney Gamer house" - @dril
 // they were mad at galileo too y'know. they couldn't handle the truth.
 
-
-// abstract
-Your boarding pass for a flight can sometimes be used to get your passport number. Don't post your boarding pass online, keep it as secret as your passport.
-
-The Booking Reference on the boarding pass can be used to log in to the airline's "Manage Booking" page, which contains the passport number. I saw that former Australian Prime Minister Tony Abbott had posted a photo of his boarding pass on Instagram, and was able to obtain his passport details, phone number, and internal messages between Qantas flight staff about his flight booking.
-
-
 //commenting on tony abbott's political career is left as an exercise to the reader
-
-// this (spreadsheet) is messy, sure. But you should see the other guy.
 
 
 this is cooked for many reasons
 
 and also? I can never die.
 
-
-* timeline picture of events
 * ask tony why the phone number is from christmas island
 
 But sorry, let's get to know eachother. In 1633 I was excommunicated from the Catholic church for insisting the Earth revolves around the Sun.
-
-
 
 ------
 
 ![computer hacking](/img/sunburnt-country/computer_hacking_wikipedia.png)
 
+* use wordart instead of fonts/headings
 
-* use wordart instead of fonts
+recurring joke e.g. "you can make a religion out of this"
 
-* leave a comment if you really felt that
+"how about i do anyway"
+
+
+------
+
+
+#### Aside: Web page school with Alex
+Hey gang and welcome to: how does a website
+
+Forgive me for stating the exasperatingly obvious, but when you go to [google.com](https://en.wikipedia.org/wiki/Scroogled), it looks like this.
+
+![google homepage](/img/sunburnt-country/google.png)
+*google.com*
+
+But what Google _actually_ sends to your computer is _this_:
+
+![google homepage](/img/sunburnt-country/googlepagesource.png)
+*The HTML (or "page source" or "page sauce") for google.com. It's messy, sure, but you should see the other guy.*
+
+What? "But that's not the webpage you filthy hacker, that's some kind of `<pointy gang>` spaghetti." The tea is, it's both.
+
+Google sends your computer the HTML above (although the technical term for it _is_ actually "`<pointy gang>` spaghetti"), and then _your_ computer turns that textual spaghetti into the nice colourful webpage you actually look at ads on[^complicated].
+
+[^complicated]: If you think this is too complicated, don't worry. That's as complex as computers get. It's all downhill from here.
+
+![html rendering diagram](/img/sunburnt-country/htmlrendering.png)
+
+So when you look at a web page, you don't see it, but the HTML is still _there_, hidden underneath.
+
+What's in the HTML? For all you know there's an assortment of clowns in there. I'm not _saying_ there's an unreasonable volume of clowns in there, just, maybe you wanna check.
+
+Or even in the (I assure you, likely) scenario in which it _isn't_ clowns upon clowns, there might be juicy things hidden in the page's HTML, because, well, someone left them there accidentally, or they're needed for the page to work. And of course, nobody's expecting you to look in the HTML, even though you totally can.
+
+
+------
+
+
+At the very end, in what was a somewhat surreal experience, I was farewelled by an ad with extremely Travel energy telling me (Tony Abbott?) to rent a car in Melbourne. 
+
+![Car Ad](/img/sunburnt-country/sdff.png)
+*No, Qantas, I shall not go gently into that good night. You don't understand.*

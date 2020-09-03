@@ -726,3 +726,6 @@ hr {
 blockquote {
   font-style: italic;
   margin-left: 2rem; }
+
+video.sunburntcountry {
+  width: 100%; }
