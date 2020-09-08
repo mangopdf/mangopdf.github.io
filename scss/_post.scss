@@ -134,14 +134,34 @@ div.footnotes {
 }
 
 
-div.post-content img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    margin-top: 40px;
-    margin-bottom: 10px;
+div.post-content {
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
 
+
+    @media (min-width: 500px) {
+        img[alt$=tiny] {
+            width: 25%;
+        }
+        img[alt$=small] {
+            width: 50%;
+        }
+
+        img[alt$=medium] {
+            width: 75%;
+        }
+
+        img[alt$=large] {
+            width: 90%;
+        }
+    }
 }
+
 
 /* cursed image caption markdown hack */
 img + em {

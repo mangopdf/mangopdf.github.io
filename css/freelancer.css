@@ -709,6 +709,16 @@ div.post-content img {
   margin-top: 40px;
   margin-bottom: 10px; }
 
+@media (min-width: 500px) {
+  div.post-content img[alt$=tiny] {
+    width: 25%; }
+  div.post-content img[alt$=small] {
+    width: 50%; }
+  div.post-content img[alt$=medium] {
+    width: 75%; }
+  div.post-content img[alt$=large] {
+    width: 90%; } }
+
 /* cursed image caption markdown hack */
 img + em {
   display: inherit;

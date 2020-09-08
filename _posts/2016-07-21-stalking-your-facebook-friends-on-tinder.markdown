@@ -8,7 +8,6 @@ description: A hidden Tinder API lets you see the Tinder profiles of your Facebo
 permalink: /stalking-your-facebook-friends-on-tinder
 ---
 
-* * *
 Whoa hello hey look I think I made a thing that lets you see the Tinder
 profiles of your Facebook friends. That’s Tinder photos, bios, and the last
 time they were on Tinder. You can also swipe right on their Tinder profiles,

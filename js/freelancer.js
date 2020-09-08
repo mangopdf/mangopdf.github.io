@@ -29,6 +29,8 @@
     $('.star-primary').click(function() {
             $(this).toggleClass('speedy');
     });
+
+
     var gags = {
         'blog': 'textual spaghetti',
         'websites': 'hypertext fever dreams',
@@ -36,25 +38,29 @@
         'tweets': 'the goddAmn TWEET ZONE',
         'intro': 'you have entered the ~mango zone~'
     };
-    $(window).scroll(function() {
-        for (var gagid in gags) {
-            var $elem = $('#' + gagid);
-            var offset = $elem.offset().top + $elem.height() - $(window).scrollTop();
-            if (offset < 0) {
-                $elem.text(gags[gagid]);
-                $elem.addClass("spooked");
-            }
-        }
-       if($(window).scrollTop() + $(window).height() > $(document).height() - 200) {
-            $(window).unbind('scroll');
-            $('#testimonials').show();
-        }
-    });
 
-    $('#pdf').click(function() {
-        window.setTimeout(function() {
-            $('#hint').show();
-        }, 2000);
-    });
+
+    if (window.location.pathname === '/') {
+        $(window).scroll(function() {
+            for (var gagid in gags) {
+                var $elem = $('#' + gagid);
+                var offset = $elem.offset().top + $elem.height() - $(window).scrollTop();
+                if (offset < 0) {
+                    $elem.text(gags[gagid]);
+                    $elem.addClass("spooked");
+                }
+            }
+           if($(window).scrollTop() + $(window).height() > $(document).height() - 200) {
+                $(window).unbind('scroll');
+                $('#testimonials').show();
+            }
+        });
+
+        $('#pdf').click(function() {
+            window.setTimeout(function() {
+                $('#hint').show();
+            }, 2000);
+        });
+    }
 
 })(jQuery);
