@@ -1,8 +1,6 @@
 ---
 layout: post
-#title: "Finding former Australian Prime Minister Tony Abbott's publicly exposed passport number"
 #title: "Finding former Australian Prime Minister Tony Abbott's passport number from a boarding pass posted on Instagram"
-#title: "When you former Australian Prime Minister Tony Abbott's passport number on Instagram"
 #title: "Finding former Australian Prime Minister Tony Abbott's passport number from an Instagram post of his boarding pass"
 title: "When you browse Instagram and find former Australian Prime Minister Tony Abbott's passport number"
 #date: 2020-09-25 16:20:00 +1100
@@ -674,7 +672,7 @@ I ask if I can publish a blog post about it, and we agree I'll send a draft for 
 
 And _then_ he says
 
-## "These things do interest him - he's quite keen to talk to you"
+### "These things do interest him - he's quite keen to talk to you"
 
 I was like exCUSE me? Tony Abbott, Leader of the [69th Ministry of Australia](https://en.wikipedia.org/wiki/Abbott_Ministry), wants to call me on the _phone_? I suppose I owe this service to my country?
 
