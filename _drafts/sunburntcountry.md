@@ -1,16 +1,15 @@
 ---
 layout: post
-#title: "Finding former Australian Prime Minister Tony Abbott's passport number from a boarding pass posted on Instagram"
-#title: "Finding former Australian Prime Minister Tony Abbott's passport number from an Instagram post of his boarding pass"
 title: "When you browse Instagram and find former Australian Prime Minister Tony Abbott's passport number"
-#date: 2020-09-25 16:20:00 +1100
-excerpt: I went on an emotional rollercoaster. A spiritual journey. I sent a lot of emails.
+date: 2020-09-16 09:30:00 +1100
+excerpt: I went on an emotional rollercoaster. A spiritual journey. I sent a lot of emails. I tried so, so much not to get arrested.
 description: Do not get arrested challenge 2020
 standfirst: Do not get arrested challenge 2020
 colour: lightblue
 author: mangopdf (Alex Hope)
 image: /img/sunburnt-country/title.png
-permalink: /sunburntcountry
+permalink: /finding-former-australian-prime-minister-tony-abbotts-passport-number-on-instagram
+
 ---
 
 ![title image what's up twitter-large](/img/sunburnt-country/title.png)
@@ -88,7 +87,7 @@ I mean... what are you gonna do, _not_ click it? Are you gonna let a _link_ that
 
 The former Prime Minister had just posted his boarding pass. Was that _bad_? Was someone in danger? I didn't know. 
 
-What I did know was: the _least_ I could do for my country would be to have a casual browse[^nocrime].
+What I did know was: the _least_ I could do[^nocrime] for my country would be to have a casual browse 👀 
 
 [^nocrime]: To be clear, I didn't want to go do some fun casual identity fraud, I just wanted to know if he _had_ posted something secret, since uh, someone should probably do something about that if it were true (I insist, as they drag me away). 
 
@@ -152,7 +151,7 @@ Well, the login form was just... _there_, and it was asking for a Booking Refere
 
 I did hesitate for a split-second, but... no, I had to know.
 
-## Step 5: Crimes(?)
+### Step 5: Crimes(?)
 
 <video class="sunburntcountry" controls preload="auto">
 
@@ -211,23 +210,23 @@ If you'd like to know more about it, I've prepared a short video.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">hey youtube welcome to my hacking tutorial, today we&#39;re gonna hack.... the nsa <a href="https://t.co/2Z35GJjSZE">pic.twitter.com/2Z35GJjSZE</a></p>&mdash; “Alex” (@mangopdf) <a href="https://twitter.com/mangopdf/status/1123400764926226432?ref_src=twsrc%5Etfw">May 1, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## Browsing the "Manage Booking" page's HTML
+### Browsing the "Manage Booking" page's HTML
 
 I scrolled around the page's HTML, not really knowing what it meant, furiously trying to find anything that looked out of place or secret.
 
 I eventually realised that manually reading HTML with my eyes was not an efficient way of defending my country, and Ctrl + F'd the HTML for "passport".
 
-## oh no
+### oh no
 
 ![Blurred screenshot of close up "passport" number](/img/sunburnt-country/passportjson.gif)
 
-## Oh yes
+### Oh yes
 
-That sure _looks_ like a passport number.
+It's just _there_.
 
 At this point I was fairly sure I was looking at the _extremely_ secret government-issued ID of the _28th Prime Minister of the Commonwealth of Australia, servant to her Majesty Queen Elizabeth II_ and I was _kinda_ worried that I was somehow doing something wrong, but like, not enough to stop.
 
-## ....anything _else_ in this page?
+### ....anything _else_ in this page?
 
 Well damn, if Tony Abbott's passport number is in this treasure trove of computer spaghetti, maybe there's wayyyyy more. Perhaps this HTML contains the lost launch codes to the Sydney Opera House, or Harold Holt[^holt].
 
@@ -248,7 +247,7 @@ So, there's a lot going on here. There is indeed a phone number in here. But wha
 
 I realised this was like... Qantas staff talking to eachother _about_ Tony Abbott, but not _to_ him?
 
-In what is surely the subtweeting of the century, it has a section saying "HITOMI CALLED RQSTING FASTTRACK FOR MR. ABBOTT". Hitomi must be requesting a "fasttrack" (I thought that was only a thing in movies???) from another Qantas employee. 
+In what is surely the subtweeting of the century, it has a section saying `HITOMI CALLED RQSTING FASTTRACK FOR MR. ABBOTT`. Hitomi must be requesting a "fasttrack" (I thought that was only a thing in movies???) from another Qantas employee. 
 
 ##### This is messed up for many reasons
 
@@ -256,7 +255,7 @@ What is even going on here? Why do Qantas flight staff talk to eachother via thi
 
 ### Forbidden airline code
 
-I realised the allcaps museli I saw must be some airline code for something, and eventually found several ancient forbidden PDFs that explained some of the codes. 
+I realised the allcaps museli I saw must be some airline code for something. Furious and intense googling led me to several ancient forbidden PDFs that explained some of the codes. 
 
 Apparently, they're called "SSR codes" (Special Service Request). There are codes for things like "Vegetarian lacto-ovo meal" (`VLML`), "Vegetarian oriental meal" (`VOML`), and even "Vegetarian vegan meal" (`VGML`). Because I was curious about these codes, here's some for you to be curious about too (tag urself, I'm `UMNR`):
 
@@ -275,7 +274,7 @@ The phone number I found looked like this: `CTCM QF HK1 [phone number]`. Googlin
 *`CTCM QF HK1` translates as "Contact phone number of passenger 1"*
 
 #### Is the phone number actually his?
-I thought maybe the phone number belonged to the travel agency, but I [checked](https://portal.iata.org/faq/articles/en_US/FAQ/Is-it-mandatory-for-travel-agents-to-provide-the-passenger-s-mobile-phone-and-email-address-1448977338174) and it has to be the passenger's real phone number. That would be, if my calculations are correct,,,, Tony Abbott's phone number.
+I thought maybe the phone number belonged to the travel agency, but I [checked](https://portal.iata.org/faq/articles/en_US/FAQ/Is-it-mandatory-for-travel-agents-to-provide-the-passenger-s-mobile-phone-and-email-address-1448977338174) and it has to be the passenger's real phone number. That would be, if my calculations are correct,,,, \*steeples fingers\* Tony Abbott's phone number.
 
 ## what have i done
 
@@ -320,7 +319,7 @@ By this point I'd had enough defending my country, and had recently noticed some
 ----
 
 #### Let's skip the boring bits
-I contacted a _lot_ of people about this. If my calculations are correct[^calculations], I called at least 30 phone numbers, to say nothing of The Emails. If you laid all the people I contacted end to end along a football field, the game would be cancelled. Eventually I started keeping track of who I talked to in a note I now refer to as "the hashtag struggle".
+I contacted a _lot_ of people about this. If my calculations are correct[^calculations], I called at least 30 phone numbers, to say nothing of The Emails. If you laid all the people I contacted end to end along the equator, they would die, and you would be arrested. Eventually I started keeping track of who I talked to in a note I now refer to as "the hashtag struggle".
 
 I'm gonna skip a considerable volume of tedious and ultimately unsatisfying telephony, because it's been a long day of scrolling already, and you need to save your strength.
 
@@ -331,9 +330,9 @@ Alright strap yourself in and enjoy as I am drop-kicked through the goal posts o
 ------
 
 ## Part 1: is it possible that i've done a crime
-I didn't _think_ anything I did sounded like a crime, but I knew that sometimes when the other person is rich or famous, things can suddenly _become_ crimes.
+I didn't _think_ anything I did sounded like a crime, but I knew that sometimes when the other person is rich or famous, things can suddenly _become_ crimes. Like, was there going to be some Monarch Law or something? Was Queen Elizabeth II gonna be mad about this?
 
-My usual defence against being arrested for hacking is making sure the person being hacked is okay with it. You heard me, it's the power of 🌸consent🌸. But this time I could uh only get it in retrospect, which is a bit yikes.
+My usual defence against being arrested for hacking is making sure the person being hacked is okay with it. You heard me, it's the power of ✨consent✨. But this time I could uh only get it in retrospect, which is a bit yikes.
 
 So I was wondering like... was logging in with someone else's booking reference a crime? Was _having_ someone else's passport number a crime? What if they were, say, the former Prime Minister? Would I get in trouble for publishing a blog post about it? I mean you're reading the blog post right now so obviousl
 
@@ -415,13 +414,17 @@ I later decided to try anyway, using the same Inspect Element ritual from earlie
 ![Contact us 403|](/img/sunburnt-country/contact_us_403_error.png)
 *This is an excellent way of using computers to solve the problem of "random people keep sending me angry letters"*
 
-Well rip I guess. I eventually realised the people to talk to were probably the government.
+Well rip I guess[^underconstruction]. I eventually realised the people to talk to were probably the government.
+
+[^underconstruction]: Tony Abbott's personal assistant later told me that the form was broken because the website was in the middle of some construction/upgrading.
 
 ## The government
 
 It's a big place.
 
-There are like fifty thousand million different departments, and they all know which acronyms to call each other, but you don't. If you EVER call it DMP&C instead of DPM&C you are gonna be express email forwarded into a nightmare realm the likes of which cannot be expressed in _any_ number of spreadsheet cells. And believe me, they've lost a lotta good people trying.
+In the beginning, humans developed the concept of language by banging rocks together and saying "oof, oog, and so on". Then something went horribly wrong, and now people unironically begin every sentence with "in regards to". Our story begins here.
+
+The government has like fifty thousand million different departments, and they all know which acronyms to call each other, but you don't. If you EVER call it DMP&C instead of DPM&C you are gonna be express email forwarded into a nightmare realm the likes of which cannot be expressed in _any_ number of spreadsheet cells, in spite of all the good people they've lost trying.
 
 I didn't even know where to begin with this. Desperately, I called Tony Abbott's former political party, who were all like
 
@@ -431,7 +434,7 @@ Skip skip skip a few more calls like this.
 
 ### Maybe I knew someone who knew someone
 
->_That's_ right, the true government channels were the friends we made along the way.
+_That's_ right, the true government channels were the friends we made along the way.
 
 I asked hacker friends who seemed like they might know government security people. "Where do I report a security issue with like.... a person, not a website?"
 
@@ -553,21 +556,40 @@ Airlines were going through kinda a _struggle_ at the time, so I guess that's wh
 
 ### Struggles
 
-After much struggling, I later ended up calling their secret media hotline number and talking to one of their media people, who organised getting the issue fixed[^spam]. 
+After filling up my "get left on read" combo meter, I desperately resorted to calling Qantas' secret media hotline number[^spam]. 
 
-[^spam]: They kept not replying to me, which turned out to be because my emails were getting sent to Junk, presumably because of the illicit hacker keywords they contained.
+[^spam]: They kept not replying to me, which turned out to be because my emails were getting sent to Junk, presumably because of the illicit hacker keywords contained within.
 
-They said the issue was being fixed by [Amadeus](https://en.wikipedia.org/wiki/Amadeus_CRS), the company who makes their booking software, rather than with Qantas itself.
+They said the issue was being fixed by [Amadeus](https://en.wikipedia.org/wiki/Amadeus_CRS), the company who makes their booking software, rather than with Qantas itself. I'm not sure if that means other Amadeus customers were also affected, or if it was just the way Qantas was using their software, or what.
+
+
+It's common to give companies 90 days to fix the bug, before you publicly disclose it. It's a tradeoff between giving them enough time to fix it, and people being hacked because of the bug as long as it's out there.
+
+But, well, this was kinda a special case. Qantas was going through some #struggles, so it was taking longer. Lots of their staff were stood down, and the world was just generally more cooked. At the same time, hardly anybody was flying at the time, due to see above re: #struggles. So, I gave Qantas as much time as they needed.
+
 
 ### Five months later
 
-The world is a completely different place, and Qantas suddenly emails me saying they fixed the bug. They didn't say what they did, or reply when I asked for technical details, just that it was fixed. I don't have a valid Booking Reference, so I can't actually check what's changed. I asked a friend to check (with an expired Booking Reference), and they said they didn't see a mention of "documentNumber" anymore, which sounds like the passport number is no longer there.
+The world is a completely different place, and Qantas replies to me, saying they fixed the bug. 
+It _did_ take five months, which is why it took so long for you and I to be having this weird textual interaction right now.
 
-It _did_ take five months though, which is why it took so long for you and I to be having this weird textual interaction right now.
+I don't have a valid Booking Reference, so I can't actually check what's changed. I asked a friend to check (with an expired Booking Reference), and they said they didn't see a mention of "documentNumber" anymore, which sounds like the passport number is no longer there. But That's Not Science, so I don't know for sure.
 
-Normally the time limit companies are given for fixing a bug is 90 days, but, well, Qantas was going through some #struggles, so it was taking longer. At the same time, hardly anybody was flying at the time, due to see above re: #struggles. So, I gave Qantas as much time as they needed.
+I originally found the bug in March, which was about 60 years ago. BUT we got there baybee, Qantas emailed me saying the bug had been fixed on August 21.  They later told me they actually fixed the bug in July, but the person I was talking too didn't know about it until August.
 
-I originally found the bug in March, which was about 60 years ago. BUT we got there baybee, Qantas emailed me saying the bug had been fixed on August 21. 
+Qantas also said this when I asked them to review this post:
+>Thanks again for letting us have the opportunity to review and again for refraining from posting until the fix was in place for vulnerability.
+
+>Our standard advice to customers is not to post pictures of the boarding pass, or to at least obscure the key personal information if they do, because of the detail it contains. 
+
+>We appreciate you bringing it to our attention in such a responsible way, so we could fix the issue, which we did a few months ago now. 
+
+I couldn't find any advice on their website about not posting pictures of customer boarding passes, only news articles about how [Qantas stopped printing the Frequent Flyer number on the boarding pass](https://www.escape.com.au/news/big-change-coming-to-your-qantas-boarding-pass/news-story/1946086dcb3dab1ef614af6322b2585f) last year, because... well, you can see why.
+
+I also asked Qantas what they did to fix the bug, and they said:
+> Unfortunately we’re not able to provide the details of fix as it is part of the protection of personal information.
+
+:((
 
 ------
 
@@ -583,7 +605,7 @@ Like 2003's _Finding Nemo_, this section was an emotional rollercoaster.
 
 The government was presumably helping Tony Abbott reset his passport number, and making sure his current one wasn't being used for any of that yucky identity fraud.
 
-But, much like Shannon Noll's 2004 _What About Me?_, what _about_ me? I really wanted to write a blog post about it, you know? So I could warn people about the non-obvious risk of sharing their boarding passes, and also make dumb and inaccessible references to the early 2000s.
+But, much like Shannon Noll's 2004 [_What About Me?_](https://www.youtube.com/watch?v=uCda5P_f4S8), what _about_ me? I really wanted to write a blog post about it, you know? So I could warn people about the non-obvious risk of sharing their boarding passes, and also make dumb and inaccessible references to the early 2000s.
 
 The government people I talked to couldn't give me permission to write this post, so rather than willingly wandering deeper into the procedurally generated labyrinth of government department email addresses (it's dark in there), I tried to find Tony Abbott or his staff directly.
 
@@ -613,7 +635,7 @@ I roll out of bed and stare bleary-eyed into the morning sun, my ultimate nemesi
 
 _This_ time for sure.
 
-In a moment of determination/desperation/hubris, I went and asked even _more_ people that _might_ know how to contact Tony Abbott's staff. 
+Retinas burning, in a moment of determination/desperation/hubris, I went and asked even _more_ people that _might_ know how to contact Tony Abbott's staff. 
 
 I asked a journalist friend, who had the kind of ruthlessly efficient ideas that come from, like, being a professional journalist. They suggested I find Tony Abbott's former staff from when he was PM, and contact their offices and see if they have his contact details.
 
@@ -626,7 +648,7 @@ Apparently Prime Ministers themselves have "ministers" (not prime), and those ar
 ![Screenshot of Tony Abbott's former staff-medium](/img/sunburnt-country/ministers.png)
 *Big "me and the boys" energy*
 
-Okay but, the problem was that most of these people are retired now, and the glory days of 2013 are over. Each time I hover over one of their names, I see "so-and-so is a former politician and...." and discard their Wikipedia page like a [LeSnak](https://cdn0.woolworths.media/content/wowproductimages/large/248197.jpg) wrapper.
+Okay but, the problem was that most of these people are retired now, and the glory days of 2013 are over. Each time I hover over one of their names, I see "so-and-so is a former politician and...." and discard their Wikipedia page like a [LeSnak](https://cdn0.woolworths.media/content/wowproductimages/large/248197.jpg) wrapper into the wind.
 
 Eventually though, I saw _this_ minister.
 
@@ -716,9 +738,12 @@ Anyway I hadn't heard of a book that was any good, so I told a story about my mu
 
 I said there probably was a book out there about "the basics of IT", but it wouldn't help much. I didn't learn from a book. 13 year old TikTok influencers don't learn from a book. They just _vibe_.
 
-My mum[^mum] always said when I was growing up that there were "too many buttons", and she was afraid to press the buttons, because she didn't know what they did. 
+My mum[^himum] always said when I was growing up that:
 
-[^mum]: hi mum
+1. There were "too many buttons"
+2. She was afraid to press the buttons, because she didn't know what they did
+
+[^himum]: hi mum
 
 I can understand that, since grown ups don't have the sheer dumb hubris of a child, and that's what makes them afraid of the buttons.
 
@@ -729,7 +754,7 @@ Like, when a toddler uses a spoon for the first time, they don't know what a spo
 ![yeA](/img/sunburnt-country/baby-spoon.jpg)
 *leaked footage of me learning how to hack*
 
-Okay so I didn't tell the spoon thing to Tony Abbott, but I did tell him what I always told my mum, which was: "Mum you just gotta press _all_ the buttons, to find out what they do".[^mum]
+Okay so I didn't tell the spoon thing to Tony Abbott, but I did tell him what I always told my mum, which was: "Mum you just gotta press _all_ the buttons, to find out what they do"[^mum].
 
 [^mum]: But like, I didn't call _him_ "Mum", that would be weird, in startling contrast to the rest of this story.
 
@@ -742,6 +767,8 @@ When I asked Tony Abbott for permission to publish the post you are reading righ
 At the end of the call, he said "If there's ever anything you think I need to know, give us a shout".
 
 Look you gotta hand it to him. That's exactly the right way to respond when someone tells you about a security problem. Back at the beginning, I was kinda worried that he might misunderstand, and think I was trying to hack him or something, and that I'd be instantly slam dunked into jail. But nope, he was fine with it. And now you, a sweet and honourable blog post browser, get to learn the dangers of posting your boarding pass by the realest of real-world examples. 
+
+During the call, I was completely in shock from the lost in the bush thing killing me instantly, and so on. But afterwards, when I looked at the quotes, I realised he just wanted to understand what had happened to him, and more about how technology works. That's the same kind of curiosity _I_ had, that started this whole surrealist three-act drama. That... wasn't really what I was expecting from Tony Abbott, but it's what I found.
 
 The point of this story isn't to say "wow Tony Abbott got hacked, what a dummy[^dummy]". The point is that if someone famous can unknowingly post their boarding pass, anyone can. 
 
@@ -760,7 +787,7 @@ Anyway that's why I vote right wing now baybeeeee.
 
 ![Do Not Get Arrested Challenge 2020](/img/sunburnt-country/donotgetarrestedchallenge2020.png)
 
-## What the heck did I just read
+## Wait no what the heck did I just read
 
 Yeah look, reasonable.
 
@@ -772,13 +799,15 @@ The Booking Reference on the boarding pass can be used to log in to the airline'
 
 ## Why did _you_ do this?
 
-One day, my friend who was also in "the group chat" said "I was thinking.... why didn't _I_ hack Tony Abbott? And I realised I guess it's because you have more hubris".
+One day, my friend who was also in "the group chat" said "I was thinking.... why didn't _I_ hack Tony Abbott?[^understanding] And I realised I guess it's because you have more hubris".
+
+[^understanding]: Which was a big misunderstanding, because I stress once again that I did not subvert any Commonwealths of anything, no matter who's askin'
 
 I was deeply complimented by this, but that's not the point. The point is that you, too, can have hubris. 
 
-You know how they say to commit a crime (which once again I insist did not happen in my case) you need means, motive, and opportunity? Means is the ability to use right click > Inspect Element, motive is hubris, and opportunity is the dumb luck of having my friend message me the Instagram post.
+You know how they say to commit a crime (which once again I insist did not happen in my case) you need means, motive, and opportunity? Means is the ability to use `right click > Inspect Element`, motive is hubris, and opportunity is the dumb luck of having my friend message me the Instagram post.
 
-I know, I've been saying "hubris" a lot. I mean "the willingness to risk breaking the rules". Now hold up, don't go outside and do crimes (unless it's _really_ funny). I'm not talking about breaking the _law_, I'm talking about rules we just follow without realising, like social rules and conventions.
+I know, I've been saying "hubris" a lot. I mean "the willingness to risk breaking the rules". Now hold up, don't go outside and do crimes (unless it's really funny). I'm not talking about breaking the _law_, I'm talking about rules we just follow without realising, like social rules and conventions.
 
 Here's a simple example. You're at a sufficiently fancy restaurant, like I dunno, with white tablecloths or something? The waiter asks if you'd like "still or sparkling water?"
 
@@ -826,10 +855,11 @@ _But_ now that you've read this blog post, I regret to inform you that you _will
 * March 27 - ASD tells me their investigation is complete, I send them a shakas gif, and they thank me for being a good citizen.
 * March 29 - I learn from lawyers that I have not done a crime 💯
 * March 30 - I contact Qantas and tell them about the vulnerability. 
-* May 1 - Tony Abbott calls me, we chat about being dropped in the middle of the bush
+* May 1 - Tony Abbott calls me, we chat about being dropped in the middle of the bush.
 * July 17 - *Paper Mario: The Origami King* is released for Nintendo Switch.
 * August 21 - Qantas emails me saying the security problem has been fixed.
-* $DATE - Various people finish reviewing this post.
+* September 13 - Various friends finish reviewing this post <3
+* September 15 - Tony Abbott and Qantas review this post.
 * Today - You read this post instead of letting it read you, nice job you.
 
 ### I'm bored and tired
@@ -851,7 +881,10 @@ Yeah, exactly.
 ---------------------------------------------------
 
 
-*I wrote this because I can't go back to the Catholic church ever since they excommunicated me in 1633 for insisting the Earth revolves around the sun. You can talk to me about it by sliding into my DMs in [the tweet zone](https://twitter.com/mangopdf) or, if you must, [email](mailto:operation.sunburnt.country@gmail.com).*
+*I wrote this because I can't go back to the Catholic church ever since they excommunicated me in 1633 for insisting the Earth revolves around the sun.*
+
+*You can talk to me about it by sliding into my DMs in [the tweet zone](https://twitter.com/mangopdf) or, if you must, [email](mailto:operation.sunburnt.country@gmail.com).*
 
 --------------------------------------------------
+
 
