@@ -21,11 +21,7 @@
 <meta name="twitter:description" content="{{ page.description| default: "Blog and dumb websites by the hacker known as &quot;Alex&quot;" }}">
 <meta name="twitter:image" content="{{ page.image | default: "https://pbs.twimg.com/profile_images/1019746918728019969/CdUJIbpP_400x400.jpg" }}">
 
-
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/littlefoot/dist/littlefoot.css"
-    />
+    <link href="{{ "vendor/littlefoot/littlefoot.css" | relative_url }}" rel="stylesheet">
 
     <link href="{{ "vendor/bootstrap/css/bootstrap.min.css" | relative_url }}" rel="stylesheet">
 
