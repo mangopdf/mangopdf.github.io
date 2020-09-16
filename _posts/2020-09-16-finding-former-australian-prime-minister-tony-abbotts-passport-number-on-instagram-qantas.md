@@ -255,7 +255,7 @@ What is even going on here? Why do Qantas flight staff talk to eachother via thi
 
 ### Forbidden airline code
 
-I realised the allcaps museli I saw must be some airline code for something. Furious and intense googling led me to several ancient forbidden PDFs that explained some of the codes. 
+I realised the allcaps muesli I saw must be some airline code for something. Furious and intense googling led me to several ancient forbidden PDFs that explained some of the codes. 
 
 Apparently, they're called "SSR codes" (Special Service Request). There are codes for things like "Vegetarian lacto-ovo meal" (`VLML`), "Vegetarian oriental meal" (`VOML`), and even "Vegetarian vegan meal" (`VGML`). Because I was curious about these codes, here's some for you to be curious about too (tag urself, I'm `UMNR`):
 
