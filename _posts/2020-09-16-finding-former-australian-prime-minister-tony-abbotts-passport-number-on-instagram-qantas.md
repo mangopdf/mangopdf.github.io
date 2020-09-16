@@ -575,7 +575,7 @@ It _did_ take five months, which is why it took so long for you and I to be havi
 
 I don't have a valid Booking Reference, so I can't actually check what's changed. I asked a friend to check (with an expired Booking Reference), and they said they didn't see a mention of "documentNumber" anymore, which sounds like the passport number is no longer there. But That's Not Science, so I don't know for sure.
 
-I originally found the bug in March, which was about 60 years ago. BUT we got there baybee, Qantas emailed me saying the bug had been fixed on August 21.  They later told me they actually fixed the bug in July, but the person I was talking too didn't know about it until August.
+I originally found the bug in March, which was about 60 years ago. BUT we got there baybee, Qantas emailed me saying the bug had been fixed on August 21.  They later told me they actually fixed the bug in July, but the person I was talking to didn't know about it until August.
 
 Qantas also said this when I asked them to review this post:
 >Thanks again for letting us have the opportunity to review and again for refraining from posting until the fix was in place for vulnerability.
