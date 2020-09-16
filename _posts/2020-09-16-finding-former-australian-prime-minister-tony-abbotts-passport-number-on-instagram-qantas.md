@@ -7,7 +7,7 @@ description: Do not get arrested challenge 2020
 standfirst: Do not get arrested challenge 2020
 colour: lightblue
 author: mangopdf (Alex Hope)
-image: /img/sunburnt-country/title.png
+image: https://mango.pdf.zone/img/sunburnt-country/title.png
 permalink: /finding-former-australian-prime-minister-tony-abbotts-passport-number-on-instagram
 
 ---
