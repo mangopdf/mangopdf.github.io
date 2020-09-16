@@ -230,7 +230,7 @@ At this point I was fairly sure I was looking at the _extremely_ secret governme
 
 Well damn, if Tony Abbott's passport number is in this treasure trove of computer spaghetti, maybe there's wayyyyy more. Perhaps this HTML contains the lost launch codes to the Sydney Opera House, or Harold Holt[^holt].
 
-[^holt]: Harold Holt was another former Prime Minster and we... lost him? He disappeared while going for a swim one morning. This is not a joke. We named [Harold Holt Memorial Swim Centre](https://en.wikipedia.org/wiki/Harold_Holt_Memorial_Swimming_Centre)after him. I repeat, this is _not_ a joke.
+[^holt]: Harold Holt was another former Prime Minster and we... lost him? He disappeared while going for a swim one morning. This is not a joke. We named [Harold Holt Memorial Swim Centre](https://en.wikipedia.org/wiki/Harold_Holt_Memorial_Swimming_Centre) after him. I repeat, this is _not_ a joke.
 
 Maybe there's a phone number?
 
