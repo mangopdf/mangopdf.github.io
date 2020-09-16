@@ -38,7 +38,7 @@ If you want to actually hack some Wi-Fi, try disconnecting and doing this to you
 ### Step 1: Find the right Wi-Fi
 So in our 99.99999% theoretical scenario, you and your laptop are within range of your neighbour's Wi-Fi router. You don't know the password, but you want to connect. Time to do some crimes.
 
-The first thing you'd do is take out your laptop and run [airodump-ng](https://google.com/q=aircrack-ng), a tool for precisely the job of hacking Wi-Fi.
+The first thing you'd do is take out your laptop and run [airodump-ng](https://google.com/?q=aircrack-ng), a tool for precisely the job of hacking Wi-Fi.
 
 Here's what it looks like.
 ![bssids](/img/airodump_censored.png) 

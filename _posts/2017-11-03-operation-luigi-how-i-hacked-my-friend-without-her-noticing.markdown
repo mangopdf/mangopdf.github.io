@@ -364,7 +364,7 @@ I'm sure you're wondering how this whole process ends up with me getting Diana's
 [^loggedin]: This makes *no sense*, since she'll be reading her Hotmail, and then asked to log in to *the same thing she's already reading*, but NON-fake websites have bad enough UX that this is believable.
 
 How can I make such a page? Well I'll clone the real page, register a domain that looks similar to `login.live.com`, host my cloned page there, and so on.
-Juuust kidding, the static website hosting service [Aerobatic](aerobatic.io) happens to also be an _excellent_ phishing service.
+Juuust kidding, the static website hosting service [Aerobatic](https://aerobatic.io) happens to also be an _excellent_ phishing service.
 
 I can register `[anything].aerobatic.io`, and deploy my static HTML to that domain with their command line tool for free.
 
