@@ -3,6 +3,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+lang: en
+locale: en_US
 title: mango.pdf.zone
 url: https://mango.pdf.zone
 description: "you have entered the m a n g o  z o n e"
