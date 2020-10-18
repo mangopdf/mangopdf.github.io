@@ -336,7 +336,7 @@ want to be able to have the power to do this.
 
 ## Your dumb graph screenshots are too small. Give me a live graph to play with
 
-[You got it, boss. Click here. Or anywhere, really. This whole sentence is a
+[You got it, boss. Click here. Or anywhere, really. This whole paragraph is a
 link.](https://cdn.rawgit.com/defaultnamehere/zzzzz/70d407736092304ee247fbbacbe9f82bc0cba472/templates/sample_graph.html)
 
 ## What else can you do with this data?
