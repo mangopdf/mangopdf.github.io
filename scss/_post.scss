@@ -1,20 +1,20 @@
-
-h1,h2,h3,h4,h5 {
-    font-family: Open Sans,'Helvetica Neue',Helvetica,Arial,sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: Open Sans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
+
 article.post {
     color: #ffffff;
-
     h1 {
         font-size: 40px;
-
     }
-
     h1.post-title {
         text-align: center;
     }
-
     h2 {
         font-size: 35px;
     }
@@ -22,107 +22,95 @@ article.post {
         font-size: 30px;
     }
     h4 {
+        font-size: 25px;
+    }
+    h5 {
         font-size: 19px;
     }
-
-    h1,h2,h3,h4,h5 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
         margin-top: 50px;
         margin-bottom: 10px;
     }
-
     @media (min-width: 320px) {
         //padding-top: 50px;
         width: 100%;
     }
     @media (max-width: 480px) and (min-width: 320px) {
-       // styles for mobile browsers smaller than 480px; (iPhone) 
-
+        // styles for mobile browsers smaller than 480px; (iPhone) 
         h1 {
             font-size: 27px;
         }
-
         h1.post-title {
             text-align: center;
             margin-top: 0px;
             font-size: 28px
         }
-
         h2 {
             font-size: 23px;
         }
-
         h3 {
             font-size: 20px;
         }
-
         h4 {
             font-size: 19px;
         }
     }
-
     @media (min-width: 1050px) {
         width: 740px;
     }
     margin-bottom: 300px;
-
     div.post-content {
         text-rendering: optimizeLegibility;
         line-height: 28px;
         margin: 0 auto;
         overflow-wrap: break-word;
-        font-family: Open Sans,'Helvetica Neue',Helvetica,Arial,sans-serif;
+        font-family: Open Sans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-weight: 300;
         font-size: 21px !important;
         letter-spacing: -.003em;
-
-
-
         hr {
             margin-bottom: 25px;
             margin-top: 25px;
         }
-
     }
     div.text-pink {
-        p,ul,ol,li {
+        p,
+        ul,
+        ol,
+        li {
             color: $text-pink;
         }
-
     }
-
     header.post-header {
-
         p.post-meta {
             margin-bottom: 0;
             padding-bottom: 10px;
             font-size: 14px;
         }
-
         p.standfirst {
             font-size: 22px;
             font-style: italic;
-
             @media (max-width: 480px) and (min-width: 320px) {
                 font-size: 20px;
             }
         }
-
-
     }
-
     li {
         margin-top: 5px;
         margin-bottom: 5px;
     }
-
 }
-
 
 pre.highlight {
     white-space: pre-line;
     color: white;
     background-color: #2f2f2f;
 }
+
 code.highlighter-rouge {
     background-color: #2f2f2f;
 }
@@ -130,25 +118,24 @@ code.highlighter-rouge {
 p.post-meta {
     padding-bottom: 20px;
 }
+
 div.footnotes {
     font-size: 16px;
     p {
         font-size: 16px;
     }
-
 }
-
 
 div.post-content {
     img {
         display: block;
         margin: 0 auto;
         max-width: 100%;
+        max-height: 60%;
         margin-top: 40px;
         margin-bottom: 10px;
     }
-
-
+    // Desktop
     @media (min-width: 500px) {
         img[alt$=tiny] {
             width: 25%;
@@ -156,11 +143,9 @@ div.post-content {
         img[alt$=small] {
             width: 50%;
         }
-
         img[alt$=medium] {
             width: 75%;
         }
-
         img[alt$=large] {
             width: 90%;
         }
@@ -169,18 +154,19 @@ div.post-content {
 
 
 /* cursed image caption markdown hack */
-img + em {
+
+img+em {
     display: inherit;
     text-align: center;
     font-size: 90%;
 }
-
 
 code {
     background-color: inherit;
     color: inherit;
     padding: inherit;
 }
+
 hr {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -189,7 +175,6 @@ blockquote {
     font-style: italic;
     margin-left: 2rem;
 }
-
 
 video.sunburntcountry {
     width: 100%;
