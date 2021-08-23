@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Freelancer v4.0.0-beta (https://mango.pdf.zone)
- * Copyright 2013-2020 Start Bootstrap
+ * Copyright 2013-2021 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
  */
 body {
@@ -622,8 +622,12 @@ div.post-item .caption-content p {
   -o-animation: rotating 3s linear infinite;
   animation: rotating 3s linear infinite; }
 
-h1, h2, h3, h4, h5 {
-  font-family: Open Sans,'Helvetica Neue',Helvetica,Arial,sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Open Sans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700; }
 
 article.post {
@@ -638,8 +642,14 @@ article.post {
   article.post h3 {
     font-size: 30px; }
   article.post h4 {
+    font-size: 25px; }
+  article.post h5 {
     font-size: 19px; }
-  article.post h1, article.post h2, article.post h3, article.post h4, article.post h5 {
+  article.post h1,
+  article.post h2,
+  article.post h3,
+  article.post h4,
+  article.post h5 {
     margin-top: 50px;
     margin-bottom: 10px; }
   @media (min-width: 320px) {
@@ -666,14 +676,17 @@ article.post {
     line-height: 28px;
     margin: 0 auto;
     overflow-wrap: break-word;
-    font-family: Open Sans,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: Open Sans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 21px !important;
     letter-spacing: -.003em; }
     article.post div.post-content hr {
       margin-bottom: 25px;
       margin-top: 25px; }
-  article.post div.text-pink p, article.post div.text-pink ul, article.post div.text-pink ol, article.post div.text-pink li {
+  article.post div.text-pink p,
+  article.post div.text-pink ul,
+  article.post div.text-pink ol,
+  article.post div.text-pink li {
     color: #ffdaf9; }
   article.post header.post-header p.post-meta {
     margin-bottom: 0;
@@ -709,6 +722,7 @@ div.post-content img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  max-height: 60%;
   margin-top: 40px;
   margin-bottom: 10px; }
 

@@ -1,1 +1,1 @@
-bundle exec jekyll serve --drafts & gulp dev && fg
+bundle exec jekyll serve --incremental --drafts & gulp dev && fg
