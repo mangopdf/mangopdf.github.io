@@ -308,8 +308,7 @@ No that's it, this part is all you.
 <br>
 <br>
 
-
------------------------------------------------------------------------
+----------------------------------------------------------
 
 
 # Post-credits cutscene: But how do I decide _what_ to write about? 
