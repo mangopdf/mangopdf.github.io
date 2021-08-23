@@ -225,7 +225,6 @@ Yes 👏 KING that's the 👏 stuff 👏 right there.
 ## Put a summary at the top maybe?
 
 ![Summary Icon|tiny](/img/howtoblog/tldr_icon.png)
-
 You want to let the reader quickly decide whether to read your post or not. Maybe they get what they wanted _just_ from the summary, and can just stop reading there, _instantly_ winning you a Nobel Peace Prize but for like, blogging.
 
 In the first few sentences, you want the reader to know:
