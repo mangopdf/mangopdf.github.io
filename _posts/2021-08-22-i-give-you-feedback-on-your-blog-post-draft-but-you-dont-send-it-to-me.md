@@ -7,7 +7,7 @@ description: "I say to you the same things I say to everyone, but it's good."
 standfirst: "That simply will not be necessary."
 colour: "pink"
 author: "mangopdf"
-image: "img/howtoblog/best_practices.png"
+image: "https://mango.pdf.zone/img/howtoblog/best_practices.png"
 permalink: "/i-give-you-feedback-on-your-blog-post-draft-but-you-dont-send-it-to-me"
 
 ---
