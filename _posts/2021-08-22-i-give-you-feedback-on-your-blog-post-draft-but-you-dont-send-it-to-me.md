@@ -148,7 +148,9 @@ What are they here for? It sure ain't top text bottom text, I'll tell ya that fo
 
 You already know that QPU movement takes a lot of speed, and it's _incredible_ that there's a slope that's _just right_ for Mario to walk up it for 12 hours building up speed.
 
-But unless your audience is in _exactly_ the right niche, they don't know what the [heck](https://www.youtube.com/watch?v=kpk2tdsPh0A) you're talking about, so they just shrug and don't read it.
+But unless your audience is in _exactly_ the right niche, they don't know what the [heck](https://www.youtube.com/watch?v=kpk2tdsPh0A) you're talking about, so they just shrug and don't read it[^exception].
+
+[^exception]: Of course, you can go _off_ talking about something you find interesting, so long as you explain it in a way the audience can understand. You can use the Mario 0.5x A presses video as your guiding light, your North Star, if you will.
 
 ------
 <br>
@@ -206,7 +208,122 @@ Listen, sometimes it is too hard to explain where New Zealand is over text. "Wha
 You know what we _do_ understand?
 
 ![New Zealand|small](/img/howtoblog/nz.png)
-We live in a world of rich media where you can probably embed a talking pelican that follows the mouse around the screen and gives tax advice in your post, to say nothing of a picture.
+<span></span>
+
+We live in a world of rich media where you can probably embed a [talking pelican that follows the mouse around the screen and gives tax advice](#pelicantime)[^rattles] in your post, to say nothing of a picture.
+
+[^rattles]: thank u [rattlebones](https://open.spotify.com/artist/4YrZTJmrwvUhUWGAsohGgQ) for blessing us with this pelican. (sorry, u have to be using a mouse to read this for the [pelican](https://nebula.wsimg.com/360920e58a126715c141a5d2230904e5?AccessKeyId=FD728A617B617E8917F9&disposition=0&alloworigin=1) to visit. think about it.)
+<div class="pelican-time">
+<style>
+.pelican-time {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.speech-bubble {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    display: none;
+}
+.tax-advice {
+    position: absolute;
+    max-width: 175px;
+    /* when ur a top */
+    top: 22%;
+    /* when ur a leftist*/
+    left: 81%;
+    transform: translate(-50%, -50%);
+    font-size: 12pt;
+    line-height: normal;
+    color: black;
+    text-align: center;
+}
+.pelican-image {
+    padding-top: 75px;
+    padding-left: 50px;
+}
+</style>
+    <div class="pelican">
+        <div class="row">
+            <div class="column">
+                <div class="pelican-image">
+                    <img src="/img/howtoblog/pelican/pelican_NO_MALWARE.gif">
+                </div>
+            </div>
+            <div class="column">
+                <div class="speech-bubble">
+                    <img src="/img/howtoblog/pelican/CLOUDBUBBLE.png" width="200" height="150">
+                    <div class="tax-advice">
+                        TAX ADVICE <br> OK? LOREM <br> IPSUM?
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript">
+        const pelican = document.querySelector('.pelican');
+        pelican.style.transform= `translateX(${400}px)`
+        window.addEventListener('mousemove', (evt) => {
+            var rect = pelican.getBoundingClientRect();
+            const x = evt.clientX - 400;
+            const y = Math.max(evt.clientY, 0);
+            const xLimit = 0;
+            const yLimit = $(window).height() - rect.height;
+            //if not out of bounds, move both axis!
+            if (x>0 && y<yLimit) {
+                pelican.style.transform = `translateX(${x}px) translateY(${y}px)`;
+            }
+            // if up against a wall (wink), only move y axis
+            if (x<0) {
+                pelican.style.transform = `translateX(${xLimit}px) translateY(${y}px`;
+            }
+            //if squashed below, only move x axis
+            if (y>yLimit) {
+                pelican.style.transform = `translateX(${x}px) translateY(${yLimit}px)`;
+            }
+            //if in the corner, stay in corner
+            if (y>yLimit && x<0) {
+                pelican.style.transform = `translateX(${xLimit}px) translateY(${yLimit}px)`;
+            }
+        });  
+        const speechBubble = document.getElementsByClassName('speech-bubble')[0];
+        const taxAdvice = document.getElementsByClassName('tax-advice')[0];
+        //WAIT FUNCTIONS
+        function dontSpeak() {
+            speechBubble.style.display = "none";
+            setTimeout(speak, 3000);
+        }
+        function speak() {
+            chooseRandomTaxAdvice();
+            speechBubble.style.display = "block";
+            setTimeout(dontSpeak, 4000);
+        }   
+        var arr = ["PAY UR TAXES ON TIME", 
+                "Lodge by October 31 (In Aus)", 
+                "Check your eligibility for deductions", 
+                "Get help from a registered tax agent", 
+                "Buy Low, Sell High", 
+                "Fish are my income!", 
+                "Chippies are my income!", 
+                "Continue Avoiding Debt Collectors!", 
+                "*Pelican noises*", 
+                "Claim work-related expenses"];
+        function random(mn, mx) { 
+            return Math.random() * (mx - mn) + mn; 
+        }
+        function chooseRandomTaxAdvice() {
+            taxAdvice.innerHTML = arr[Math.floor(random(1, arr.length))-1];
+        }  
+        //TAX ADVICE:
+        dontSpeak()
+        document.querySelector("a[href='#pelicantime']").addEventListener('click', () => {
+            const pelicanTime = $('.pelican-time');
+            pelicanTime.toggle()
+        });
+        </script>
+</div>
+</div>
+
+
 
 ## Use more examples. I'm talkin' wayyyyyyy more
 
