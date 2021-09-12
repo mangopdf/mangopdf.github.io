@@ -221,6 +221,14 @@ header.masthead {
   header.masthead .intro-text h2 {
     text-align: left; }
 
+.portfolio .portfolio-item div.post-image-container .post-image {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px #121212;
+  aspect-ratio: 16 / 9;
+  transition: box-shadow 0.05s ease-in-out; }
+
 .portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
@@ -490,7 +498,8 @@ body {
 div.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 50px; }
+  grid-column-gap: 50px;
+  grid-row-gap: 50px; }
   @media (min-width: 320px) and (max-width: 480px) {
     div.grid {
       grid-template-columns: 1fr; } }
@@ -500,8 +509,8 @@ div.grid {
   transition: all .1s ease-in-out;
   max-height: 150px;
   width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis; }
+  /* normcore */
+  line-height: normal; }
 
 .btn:focus {
   background: inherit !important; }

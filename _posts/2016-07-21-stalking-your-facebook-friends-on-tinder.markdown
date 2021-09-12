@@ -6,6 +6,7 @@ excerpt: How I found a way to see the Tinder profiles of your Facebook friends. 
 colour: purple
 description: A hidden Tinder API lets you see the Tinder profiles of your Facebook friends.
 permalink: /stalking-your-facebook-friends-on-tinder
+image: img/2016-07-21-stalking-your-facebook-friends-on-tinder/37d7cc91dc609517a090314b5e34bb8db52b3ac4a4ae889fe5d4932bac6c2ba7.png
 ---
 
 Whoa hello hey look I think I made a thing that lets you see the Tinder
