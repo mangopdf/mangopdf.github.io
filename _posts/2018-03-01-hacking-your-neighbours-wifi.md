@@ -6,7 +6,7 @@ excerpt: Hacking Wi-Fi, cracking passwords, and spying on mysterious handshakes 
 description: Hacking Wi-Fi, cracking passwords, and spying on mysterious handshakes is an easy game for babies.
 permalink: /hacking-your-neighbours-wifi
 colour: purple
-image: https://iihelp.iinet.net.au/sites/iihelp.iinet.net.au/files/macoswifi3.png
+image: img/wifipassword.png
 ---
 
 Hey kid, wanna hack some Wi-Fi?

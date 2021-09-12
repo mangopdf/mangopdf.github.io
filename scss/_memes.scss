@@ -15,8 +15,7 @@ div.grid {
     grid-template-columns: 1fr;
     }
     grid-column-gap: 50px;
-
-
+    grid-row-gap: 50px;
 }
 
 .btn-outline {
@@ -24,8 +23,8 @@ div.grid {
     transition: all .1s ease-in-out;
     max-height: 150px;
     width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /* normcore */
+    line-height: normal;
 }
 
 @mixin btn-color($color){

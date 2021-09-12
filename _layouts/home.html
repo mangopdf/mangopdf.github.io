@@ -1,5 +1,5 @@
----
-layout: default
+--- 
+layout: default 
 ---
 
 <div class="home">
@@ -9,21 +9,17 @@ layout: default
             <h2 class="text-center scrollspy" id="blog">blog posts</h2>
             <hr class="star-primary star-blue">
             <div class="grid">
-                {% for post in site.posts %}
-                {% unless post.hidden  %}
+                {% for post in site.posts %} {% unless post.hidden %}
                 <div class="portfolio-item">
-                    <a href="{{ post.url | relative_url }}" class="btn btn-lg btn-outline btn-{{ post.colour }}">{{ post.title | escape }}</a>
-                    <div class="caption">
-                        <div class="caption-content">
-                            <p>
-                            {{ post.excerpt }}
-                            </p>
-                        </div>
+                    <div class="post-image-container">
+                        <a href="{{ post.url | relative_url }}">
+                            <img class="post-image" src="{{ post.image }}" />
+                        </a>
                     </div>
-                </div>
-                {% endunless %} 
 
-                {% endfor %}
+                    <a href="{{ post.url | relative_url }}" class="btn btn-lg btn-outline btn-{{ post.colour }}">{{ post.title | escape }}</a>
+                </div>
+                {% endunless %} {% endfor %}
             </div>
 
     </section>
@@ -39,7 +35,7 @@ layout: default
                     <div class="caption">
                         <div class="caption-content">
                             <p>
-                            "Smart kid"
+                                "Smart kid"
                             </p>
                         </div>
                     </div>
@@ -50,7 +46,7 @@ layout: default
                     <div class="caption">
                         <div class="caption-content">
                             <p>
-                            "still not sure but really good"
+                                "still not sure but really good"
                             </p>
                         </div>
                     </div>
@@ -61,7 +57,7 @@ layout: default
                     <div class="caption">
                         <div class="caption-content">
                             <p>
-                            "In 1633 Alex was excommunicated for insisting that the Earth revolves around the Sun"
+                                "In 1633 Alex was excommunicated for insisting that the Earth revolves around the Sun"
                             </p>
                         </div>
                     </div>
@@ -83,7 +79,7 @@ layout: default
                     <div class="caption">
                         <div class="caption-content">
                             <p>
-                            a gentle, pastel information security conference.
+                                a gentle, pastel information security conference.
                             </p>
                         </div>
                     </div>
@@ -94,7 +90,7 @@ layout: default
                     <div class="caption">
                         <div class="caption-content">
                             <p>
-                            Click-to-copy unicode faces like these guys: ( ͡° ͜ʖ ͡°) ¯\_(ツ)_/¯
+                                Click-to-copy unicode faces like these guys: ( ͡° ͜ʖ ͡°) ¯\_(ツ)_/¯
                             </p>
                         </div>
                     </div>
@@ -105,7 +101,7 @@ layout: default
                     <div class="caption">
                         <div class="caption-content">
                             <p>
-                            A link shortener that makes the link look really dodgy. <a href="https://news.ycombinator.com/item?id=14628278">Hacker News Comments</a>.
+                                A link shortener that makes the link look really dodgy. <a href="https://news.ycombinator.com/item?id=14628278">Hacker News Comments</a>.
                             </p>
                             </p>
                         </div>
@@ -118,7 +114,7 @@ layout: default
                     <div class="caption">
                         <div class="caption-content">
                             <p>
-                            Type words, get emoji. Made with <a href="https://twitter.com/samthor">@samthor</a>. Possibly a Google product.
+                                Type words, get emoji. Made with <a href="https://twitter.com/samthor">@samthor</a>. Possibly a Google product.
                             </p>
 
                         </div>
@@ -132,7 +128,7 @@ layout: default
                     </a>
                     <div class="caption">
                         <div class="caption-content">
-                            <p>Generates SICK 2003 usernames like [MTNDEW]xxX_m@ng0PdF_Xxx. 
+                            <p>Generates SICK 2003 usernames like [MTNDEW]xxX_m@ng0PdF_Xxx.
                             </p>
 
                         </div>
@@ -145,7 +141,7 @@ layout: default
                     <div class="caption">
                         <div class="caption-content">
                             <p>
-                            Juuuuuust kidding.
+                                Juuuuuust kidding.
                             </p>
 
                         </div>
@@ -160,7 +156,7 @@ layout: default
 
     <section id="" class="portfolio success">
         <div class="container">
-            <h2 class="text-center scrollspy" id="talks">talk recordings</h2>
+            <h2 class="text-center scrollspy" id="talks">conference talk videos</h2>
             <hr class="star-primary star-pink">
             <div class="grid">
 
@@ -169,7 +165,7 @@ layout: default
                     <div class="caption">
                         <div class="caption-content">
                             <p>
-                            Come on down to luigi town, we've got: the 2013 tumblr hack, linkedin roasting, your sweet mango boy, one loopy b o i, regrets
+                                Come on down to luigi town, we've got: the 2013 tumblr hack, linkedin roasting, your sweet mango boy, one loopy b o i, regrets
                             </p>
                         </div>
                     </div>
@@ -180,7 +176,7 @@ layout: default
                     <div class="caption">
                         <div class="caption-content">
                             <p>
-                            I found a new way to get Chrome to give you someone's Chrome cookies after you get into their computer, logging you in as them.
+                                I found a new way to get Chrome to give you someone's Chrome cookies after you get into their computer, logging you in as them.
                             </p>
                         </div>
                     </div>
@@ -191,7 +187,7 @@ layout: default
                     <div class="caption">
                         <div class="caption-content">
                             <p>
-                            The techniques magicians and pickpockets use to trick people work for hacking too.
+                                The techniques magicians and pickpockets use to trick people work for hacking too.
                             </p>
                         </div>
                     </div>
@@ -201,7 +197,7 @@ layout: default
                     <div class="caption">
                         <div class="caption-content">
                             <p>
-                            At PyCon AU 2016. For the record, this is creepy and I think doing it is not okay!
+                                At PyCon AU 2016. For the record, this is creepy and I think doing it is not okay!
                             </p>
                         </div>
                     </div>
@@ -217,7 +213,8 @@ layout: default
             <h2 class="text-center scrollspy" id="tweets">tweets</h2>
             <hr class="star-primary star-purple">
             <div class="container col-lg-8">
-                <a class="twitter-timeline" data-width="700" data-height="400" data-dnt="true" data-theme="dark" data-link-color="#9266CC" href="https://twitter.com/mangopdf">Tweets by mangopdf</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a class="twitter-timeline" data-width="700" data-height="400" data-dnt="true" data-theme="dark" data-link-color="#9266CC" href="https://twitter.com/mangopdf">Tweets by mangopdf</a>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
 
         </div>
@@ -232,15 +229,15 @@ layout: default
                 <div class="portfolio-item">
                     <h4>What's with the "Alex" thing?</h4>
                     <p>
-                    Once, an article referred to me as <a href="https://www.vice.com/en_us/article/9a3dkv/tinder-social-lets-you-stalk-your-friends-dating-habits-hack-last-active">a hacker who goes by the name "Alex"</a>, so that's my hacker handle now and there's nothing I can do about it.
+                        Once, an article referred to me as <a href="https://www.vice.com/en_us/article/9a3dkv/tinder-social-lets-you-stalk-your-friends-dating-habits-hack-last-active">a hacker who goes by the name "Alex"</a>, so that's my hacker handle
+                        now and there's nothing I can do about it.
                     </p>
                 </div>
 
                 <div class="portfolio-item">
                     <h4>Do you have an actual pdf called mango.pdf?</h4>
                     <p>
-                    Sure, <a id="pdf" href="/mango.pdf" data-uh-dont-worry-about-it="lisreal2401">here you go</a>.
-                    It's got a password on it though. The password is hidden somewhere in this page. Have fun!
+                        Sure, <a id="pdf" href="/mango.pdf" data-uh-dont-worry-about-it="lisreal2401">here you go</a>. It's got a password on it though. The password is hidden somewhere in this page. Have fun!
                     </p>
                 </div>
 
