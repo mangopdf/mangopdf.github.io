@@ -39,7 +39,7 @@ article.post {
         //padding-top: 50px;
         width: 100%;
     }
-    @media (max-width: 480px) and (min-width: 320px) {
+    @media (max-width: 480px) {
         // styles for mobile browsers smaller than 480px; (iPhone) 
         h1 {
             font-size: 27px;
@@ -94,7 +94,7 @@ article.post {
         p.standfirst {
             font-size: 22px;
             font-style: italic;
-            @media (max-width: 480px) and (min-width: 320px) {
+            @media (max-width: 480px) {
                 font-size: 20px;
             }
         }
