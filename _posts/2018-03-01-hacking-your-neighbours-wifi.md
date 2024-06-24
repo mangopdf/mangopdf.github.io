@@ -15,7 +15,7 @@ This article is your 100% lactose-free guide to hacking home Wi-Fi. By the end i
 
 -------
 
-Isn't is strange how when you move into a place and get an internet connection, you typically get given a home router as part of the package? Isn't it strange how this router is held together using nothing but matchsticks, broken promises, and man's hubris?
+Isn't it strange how when you move into a place and get an internet connection, you typically get given a home router as part of the package? Isn't it strange how this router is held together using nothing but matchsticks, broken promises, and man's hubris?
 
 ![routerinterface](/img/routerinterface.png)
 
