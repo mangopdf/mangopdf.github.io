@@ -1,0 +1,28 @@
+{{ define "main" }}
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">{{ .Title }}</h1>
+        <hr class="star-primary star-{{ .Params.colour }} star-post">
+        <p class="post-meta">
+            {{ with .Params.standfirst }}
+                <p class="standfirst">
+                    {{ . }}
+                </p>
+            {{ end }}
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" itemprop="datePublished">
+            {{ .Date.Format "Jan 2, 2006" }}
+        </time>
+        {{ with .Params.author }}
+            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ . }}</span></span>
+        {{ end }}
+        </p>
+    </header>
+
+    <div class="post-content text-{{ .Params.text_colour }}" itemprop="articleBody">
+        <hr/>
+        {{ .Content }}
+    </div>
+
+</article>
+{{ end }}

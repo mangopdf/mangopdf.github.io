@@ -1,0 +1,278 @@
+{{ define "main" }}
+<div class="home">
+
+    <section id="" class="portfolio success">
+        <div class="container">
+            <h2 class="text-center scrollspy" id="blog">blog posts</h2>
+            <hr class="star-primary star-blue">
+            <div class="grid">
+                {{ range where .Site.RegularPages "Type" "post" }}
+                {{ if not .Params.hidden }}
+                <div class="portfolio-item">
+                    <div class="post-image-container">
+                        <a href="{{ .RelPermalink }}">
+                            <img class="post-image" src="{{ .Params.image }}" />
+                        </a>
+                    </div>
+
+                    <a href="{{ .RelPermalink }}" class="btn btn-lg btn-outline btn-{{ .Params.colour }}">{{ .Title }}</a>
+                </div>
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="portfolio success" style="display: none;">
+        <div class="container">
+            <h2 class="text-center scrollspy spooked" id="">testimonials</h2>
+            <hr class="star-primary star-pink">
+            <div class="grid">
+
+                <div class="portfolio-item">
+                    <a href="https://en.wikipedia.org/wiki/David_Koch_(television_presenter)" class="btn btn-lg btn-outline btn-pink">Kochie, 7 Sunrise</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                                "Smart kid"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="//twitter.com/ctrlshifti" class="btn btn-lg btn-outline btn-lightblue">@ctrlshifti</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                                "still not sure but really good"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" portfolio-item">
+                    <a href="#" class="btn btn-lg btn-outline btn-purple">The Catholic Church</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                                "In 1633 Alex was excommunicated for insisting that the Earth revolves around the Sun"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="" class="portfolio success">
+        <div class="container">
+            <h2 class="text-center scrollspy" id="talks">conference talk videos</h2>
+            <hr class="star-primary star-pink">
+            <div class="grid">
+                <div class="portfolio-item">
+                    <a href="https://www.youtube.com/watch?v=IWT6Y0YDJUo" class="btn btn-lg btn-outline btn-lightblue">Finding Tony Abbott's Passport Number and entering the Do Not Get Arrested Challenge 2020</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                                Feature-length film (50 minutes) in which I go through my Twitter DMs live on stage. Includes a <em>very</em> special segment from Channel 7's Sunrise.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="https://darknetdiaries.com/episode/84/" class="btn btn-lg btn-outline btn-pink">Darknet Diaries episode 84: Jet-setters</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                                I talk about my exemplary performance in the Do Not Get Arrested Challenge 2020, and share some tips and tricks for future participants. Not a talk video, I'm a fraud.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" portfolio-item">
+                    <a href="https://www.youtube.com/watch?v=9S3zwwCEe0E" class="btn btn-lg btn-outline btn-purple">Operation Luigi: How I hacked my friend without her noticing</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                                Come on down to luigi town, we've got: the 2013 tumblr hack, linkedin roasting, your sweet mango boy, one loopy b o i, regrets
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="https://www.youtube.com/watch?v=BWAetsJqey0" class="btn btn-lg btn-outline btn-lightblue">Stealing Chrome Cookies without a password</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                                I found a new way to get Chrome to give you someone's Chrome cookies after you get into their computer, logging you in as them.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="https://www.youtube.com/watch?v=nSu11VvVL9M" class="btn btn-lg btn-outline btn-pink">Tricking people</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                                The techniques magicians and pickpockets use to trick people work for hacking too.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" portfolio-item">
+                    <a href="https://www.youtube.com/watch?v=MkSkqMvGBuo" class="btn btn-lg btn-outline btn-lightblue">Graphing when your Facebook friends are awake</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                                At PyCon AU 2016. For the record, this is creepy and I think doing it is not okay!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="" class="portfolio success">
+        <div class="container">
+            <h2 class="text-center scrollspy" id="websites">one-use novelty websites</h2>
+            <hr class="star-primary star-purple">
+            <div class="grid">
+
+                <div class=" portfolio-item">
+                    <a href="https://purplecon.nz" class="btn btn-lg btn-outline btn-purple">purplecon.nz</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                                a gentle, pastel information security conference.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="https://textfac.es" class="btn btn-lg btn-outline btn-lightblue">textfac.es</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                                Click-to-copy unicode faces like these guys: ( ͡° ͜ʖ ͡°) ¯\_(ツ)_/¯
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" portfolio-item">
+                    <a href="https://verylegit.link" class="btn btn-lg btn-outline btn-pink">verylegit.link</a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                                A link shortener that makes the link look really dodgy. <a href="https://news.ycombinator.com/item?id=14628278">Hacker News Comments</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" portfolio-item">
+                    <a href="https://emojityper.com" class="btn btn-lg btn-outline btn-lightblue">
+                        emojityper.com
+                    </a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                                Type words, get emoji. Made with <a href="https://twitter.com/samthor">@samthor</a>. Possibly a Google product.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class=" portfolio-item">
+                    <a href="http://swagify.net" class="btn btn-lg btn-outline btn-pink">
+                        swagify.net
+                    </a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>Generates SICK 2003 usernames like [MTNDEW]xxX_m@ng0PdF_Xxx.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" portfolio-item useragent " style="display: none;">
+                    <a href="#" class="btn btn-lg btn-outline btn-purple">
+                    </a>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <p>
+                                Juuuuuust kidding.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section id="" class="portfolio success">
+        <div class="container">
+            <h2 class="text-center scrollspy" id="tweets">tweets</h2>
+            <hr class="star-primary star-purple">
+            <div class="container col-lg-8">
+                <a class="twitter-timeline" data-width="700" data-height="400" data-dnt="true" data-theme="dark" data-link-color="#9266CC" href="https://twitter.com/mangopdf">Tweets by mangopdf</a>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="portfolio success" id="">
+        <div class="container">
+            <h2 class="text-center scrollspy" id="about">about</h2>
+            <hr class="star-primary star-blue">
+            <div class="grid">
+                <div class="portfolio-item">
+                    <h4>What's with the "Alex" thing?</h4>
+                    <p>
+                        Once, an article referred to me as <a href="https://www.vice.com/en_us/article/9a3dkv/tinder-social-lets-you-stalk-your-friends-dating-habits-hack-last-active">a hacker who goes by the name "Alex"</a>, so that's my hacker handle
+                        now and there's nothing I can do about it.
+                    </p>
+                </div>
+
+                <div class="portfolio-item">
+                    <h4>Do you have an actual pdf called mango.pdf?</h4>
+                    <p>
+                        Sure, <a id="pdf" href="/mango.pdf" data-uh-dont-worry-about-it="lisreal2401">here you go</a>. It's got a password on it though. The password is hidden somewhere in this page. Have fun!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Whoa, you scrolling down here felt weird. Did something happen up there?
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+{{ end }}

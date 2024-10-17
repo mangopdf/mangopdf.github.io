@@ -5,3 +5,7 @@ _site
 scss/.sass-cache*
 *.scssc
 .bundle
+*~
+jekyll
+public
+resources
