@@ -2,3 +2,10 @@ baseURL: ""
 disablePathToLower: true
 languageCode: en-us
 title: mango.pdf.zone
+assetDir: "static"
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
+      xHTML: true

@@ -1,0 +1,12 @@
+- Title: "Introducing vmdiff: a tool to find everything that changes on your computer"
+  RelPermalink: https://community.atlassian.com/t5/Trust-Security-articles/Introducing-vmdiff-a-tool-to-find-everything-that-changes-on/ba-p/2321969
+  Params:
+    colour: white 
+    date: "2023-04-16T09:30:00Z"
+    image: https://community.atlassian.com/t5/image/serverpage/image-id/250140i6BA42D04B2F49CE1/image-dimensions/280x210?v=v2
+- Title: Hiding malware in Docker Desktop's virtual machine
+  RelPermalink: https://community.atlassian.com/t5/Trust-Security-articles/Hiding-malware-in-Docker-Desktop-s-virtual-machine/ba-p/1924743
+  Params:
+    colour: white 
+    date: "2022-02-01T09:30:00Z"
+    image: /img/thumbnails/docker-flushed.webp

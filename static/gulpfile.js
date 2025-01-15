@@ -17,10 +17,14 @@ var banner = ['/*!\n',
   ''
 ].join('');
 
-// Compiles SCSS files from /scss into /css
+// Compiles SCSS files from /scss into /css with custom properties enabled
 gulp.task('sass', function() {
   return gulp.src('scss/freelancer.scss')
-    .pipe(sass())
+    .pipe(sass({
+      outputStyle: 'expanded',
+      precision: 10,
+      includePaths: ['node_modules']
+    }).on('error', sass.logError))
     .pipe(header(banner, {
       pkg: pkg
     }))
@@ -29,6 +33,8 @@ gulp.task('sass', function() {
       stream: true
     }))
 });
+
+
 
 // Minify compiled CSS
 gulp.task('minify-css', ['sass'], function() {

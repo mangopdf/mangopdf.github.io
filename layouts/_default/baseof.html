@@ -1,94 +1,110 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en" }}">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="@mangopdf">
 
-    <title>{{ .Title | default "the mango zone" }}</title>
-    <meta name="description" content="{{ .Description | default "Blog and dumb websites by the hacker known as \"Alex\"" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="@mangopdf">
 
-    <meta property="og:title" content="{{ .Title | default "the mango zone" }}">
-    <meta property="og:description" content="{{ .Description | default "Blog and dumb websites by the hacker known as \"Alex\"" }}">
-    <meta property="og:type" content="article" />
-    <meta property="og:image" content="{{ .Params.image | default "https://pbs.twimg.com/profile_images/1019746918728019969/CdUJIbpP_400x400.jpg" }}">
-    <meta property="og:url" content="{{ .Permalink }}">
+  <title>{{ .Title | default "the mango zone" }}</title>
+  <meta name="description" content="{{ .Description | default " Blog and dumb websites by the hacker known as \"Alex\"" }}">
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="mango.pdf.zone" />
-    <meta name="twitter:title" content="{{ .Title | default "mango.pdf.zone" }}">
-    <meta name="twitter:description" content="{{ .Description | default "Blog and dumb websites by the hacker known as \"Alex\"" }}">
-    <meta name="twitter:image" content="{{ .Params.image | default "https://pbs.twimg.com/profile_images/1019746918728019969/CdUJIbpP_400x400.jpg" }}">
+  <meta property="og:title" content="{{ .Title | default "the mango zone" }}">
+  <meta property="og:description" content="{{ .Description | default "Blog and dumb websites by the hacker known as \"Alex\"" }}">
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="{{ .Params.image | default "https://pbs.twimg.com/profile_images/1019746918728019969/CdUJIbpP_400x400.jpg" }}">
+  <meta property="og:url" content="{{ .Permalink }}">
 
-    <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css"/>
-    <link href="{{ "/vendor/bootstrap/css/bootstrap.min.css" }}" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="mango.pdf.zone" />
+  <meta name="twitter:title" content="{{ .Title | default " mango.pdf.zone" }}">
+  <meta name="twitter:description" content="{{ .Description | default " Blog and dumb websites by the hacker known as \"Alex\"" }}">
+  <meta name="twitter:image" content="{{ .Params.image | default "https://pbs.twimg.com/profile_images/1019746918728019969/CdUJIbpP_400x400.jpg" }}">
 
-    <link href="{{ "/css/freelancer.css" }}" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+  <link href="{{ "/vendor/bootstrap/css/bootstrap.min.css" }}" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
-    <link href="feed.xml" type="application/atom+xml" rel="alternate" title="Atom (RSS) feed for nerds" />
+  <!-- <link href="{{ "/css/freelancer.css" }}" rel="stylesheet"> -->
+  {{ $opts := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
+  {{ with resources.Get "scss/freelancer.scss" | toCSS $opts | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+  {{ end }}
+  
 
-    <!-- NSA has been very good this year so let's give them a little treat -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMYRY9GN5C"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-ZMYRY9GN5C');
-    </script>
-  </head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css"
+    integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+  <link href="feed.xml" type="application/atom+xml" rel="alternate" title="Atom (RSS) feed for nerds" />
+
+  <!-- NSA has been very good this year so let's give them a little treat -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMYRY9GN5C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-ZMYRY9GN5C');
+  </script>
+</head>
 
 <body>
-    <header class="masthead">
-      <div class="container">
-          <div class="settings">
-              <form action="#">
-                  <label for="hardmode">
-                  <input id="hardmode" type="checkbox"/>
-                  hard mode</label>
-              </form>
-          </div>
-          <div class="intro-text">
-              <div class="logo">
-              <span class="star-inline star-primary star-purple"></span>
-              <a href="/">
-                  <h2 class="logo">mango.pdf.zone</h2>
-              </a>
-              <span class="star-inline star-primary star-purple"></span>
-          </div>
-            <p class="intro" id="intro"class="scrollspy">"work" by <a href="/">the hacker known as "Alex"</a> / <a href="https://twitter.com/mangopdf">@mangopdf</a></p>
+
+  
+
+  <header class="masthead">
+    <div class="container">
+      <div class="settings">
+        <form action="#">
+          <label for="hardmode">
+            <input id="hardmode" type="checkbox" />
+            hard mode</label>
+        </form>
       </div>
-
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ block "main" . }}{{ end }}
+      <div class="intro-text">
+        <div class="logo">
+          <span class="star-inline star-primary star-purple"></span>
+          <a href="/">
+            <h2 class="logo">mango.pdf.zone</h2>
+          </a>
+          <span class="star-inline star-primary star-purple"></span>
+        </div>
+        <p class="intro" id="intro" class="scrollspy">"work" by <a href="#alex">the hacker known as "Alex"</a> / <a
+            href="https://twitter.com/mangopdf">@mangopdf</a></p>
       </div>
-    </main>
+    </div>
+  </header>
 
-    <!-- NSA tracking-->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-39885839-8', 'auto');
-      ga('send', 'pageview');
-    </script>
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {{ block "main" . }}{{ end }}
+    </div>
+  </main>
 
-    <script src="{{ "vendor/jquery/jquery.min.js" | relURL }}"></script>
-    <script src="{{ "vendor/popper/popper.min.js" | relURL }}"></script>
-    <script src="{{ "vendor/bootstrap/js/bootstrap.min.js" | relURL }}"></script>
-    <script src="{{ "js/freelancer.min.js" | relURL }}"></script>
+  <!-- NSA tracking-->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    <script src="https://unpkg.com/littlefoot/dist/littlefoot.js" type="application/javascript"></script>
-    <script type="application/javascript">
-      littlefoot.littlefoot()
-    </script>
+    ga('create', 'UA-39885839-8', 'auto');
+    ga('send', 'pageview');
+  </script>
 
-    <script src="{{ "js/emojicursor.js" | relURL }}"></script>
-  </body>
+  <script src="{{ "vendor/jquery/jquery.min.js" | relURL }}"></script>
+  <script src="{{ "vendor/popper/popper.min.js" | relURL }}"></script>
+  <script src="{{ "vendor/bootstrap/js/bootstrap.min.js" | relURL }}"></script>
+  <script src="{{ "js/freelancer.min.js" | relURL }}"></script>
+
+  <script src="https://unpkg.com/littlefoot/dist/littlefoot.js" type="application/javascript"></script>
+  <script type="application/javascript">
+    littlefoot.littlefoot()
+  </script>
+
+  <script src="{{ "js/emojicursor.js" | relURL }}"></script>
+</body>
+
 </html>
