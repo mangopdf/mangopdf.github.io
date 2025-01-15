@@ -486,6 +486,7 @@ I guess they must have found this website (hi asd) by stalking the email address
 2. The prize for doing the puzzle is me tweeting this gif of a shakas to you[^prize]
 
 [^prize]: Or it _was_, at least. It's something else now, since otherwise it wouldn't be a surprise 👀
+
 ![shakas.gif|tiny](https://media.giphy.com/media/13JoHhCFtUMAZa/giphy.gif)
 *yeahhhhhhhhhh, nice*
 

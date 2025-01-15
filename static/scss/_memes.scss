@@ -1,4 +1,3 @@
-
 body {
     background-image: url("/img/stardust.png") !important;
     background: url("/img/stardust.png") !important;
@@ -10,9 +9,11 @@ body {
 div.grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
     @media (max-width: 480px) {
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
+
     grid-column-gap: 50px;
     grid-row-gap: 50px;
 }
@@ -26,16 +27,21 @@ div.grid {
     line-height: normal;
 }
 
-@mixin btn-color($color){
+@mixin btn-color($color) {
     @extend .btn-outline;
     color: white;
     border-color: $color;
-    &:hover, :visited, :active, :focus {
+
+    &:hover,
+    :visited,
+    :active,
+    :focus {
         color: lighten($color, 10%);
         border-color: lighten($color, 10%);
         background: inherit !important;
     }
 }
+
 .btn:focus {
     background: inherit !important;
 }
@@ -48,12 +54,16 @@ div.settings form {
     @include btn-color($lightblue);
 }
 
-.btn-pink{
+.btn-pink {
     @include btn-color($pink);
 }
 
-.btn-purple{
+.btn-purple {
     @include btn-color($purple);
+}
+
+.btn-white {
+    @include btn-color(white);
 }
 
 
@@ -64,6 +74,14 @@ div.portfolio-item {
         padding-top: 50px;
     }
 
+    .thumbnail {
+        margin-top: 10px;
+
+        img {
+            width: 100%;
+        }
+    }
+
     div.caption {
         font-weight: 300;
         margin-top: 10px;
@@ -72,6 +90,7 @@ div.portfolio-item {
     a {
         word-break: break-word;
     }
+
     p {
         font-size: 17px;
     }
@@ -113,31 +132,35 @@ div.post-item {
 
 
 
-.star-light:after, .star-primary:after {
-  -webkit-animation: rotating 20s linear infinite;
-  -moz-animation: rotating 20s linear infinite;
-  -ms-animation: rotating 20s linear infinite;
-  -o-animation: rotating 20s linear infinite;
-  animation: rotating 20s linear infinite;
+.star-light:after,
+.star-primary:after {
+    -webkit-animation: rotating 20s linear infinite;
+    -moz-animation: rotating 20s linear infinite;
+    -ms-animation: rotating 20s linear infinite;
+    -o-animation: rotating 20s linear infinite;
+    animation: rotating 20s linear infinite;
 
-  border-radius: 50%;
+    border-radius: 50%;
 
 }
 
-.star-pink, .star-pink:after {
+.star-pink,
+.star-pink:after {
     color: $star-pink;
     background-color: $background-grey;
     border-color: $star-pink;
 }
 
 
-.star-lightblue, .star-lightblue:after {
+.star-lightblue,
+.star-lightblue:after {
     color: $star-lightblue;
     border-color: $star-lightblue;
     background-color: $background-grey;
 }
 
-.star-purple, .star-purple:after {
+.star-purple,
+.star-purple:after {
     color: $star-purple;
     border-color: $star-purple;
     background-color: $background-grey;
@@ -145,37 +168,52 @@ div.post-item {
 
 
 @-webkit-keyframes rotating {
-  from {
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
+
 @keyframes rotating {
-  from {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
+
 .rotating {
-  -webkit-animation: rotating 3s linear infinite;
-  -moz-animation: rotating 3s linear infinite;
-  -ms-animation: rotating 3s linear infinite;
-  -o-animation: rotating 3s linear infinite;
-  animation: rotating 3s linear infinite;
+    -webkit-animation: rotating 3s linear infinite;
+    -moz-animation: rotating 3s linear infinite;
+    -ms-animation: rotating 3s linear infinite;
+    -o-animation: rotating 3s linear infinite;
+    animation: rotating 3s linear infinite;
+}
+
+.littlefoot {
+    --button-active-background-color: #e54ed0;
+    --popover-background-color: #444349;
+    --popover-font-family: Open Sans,helvetica neue,Helvetica,Arial,sans-serif;
+    --popover-text-color: #fff;
+    --popover-transform: none;
+    --popover-transition: none;
+    --popover-transform-origin: none;
+    --popover-active-transform: none;
 }
