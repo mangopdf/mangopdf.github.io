@@ -64,7 +64,7 @@ jobs:
         run: echo "mango.pdf.zone" > ./public/CNAME
       - name: Rename RSS feed file
         run: |
-          mv ./public/feed.xml ./public/index.xml || true
+          mv ./public/index.xml ./public/feed.xml || true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
