@@ -62,6 +62,9 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/"          
       - name: Create CNAME file
         run: echo "mango.pdf.zone" > ./public/CNAME
+      - name: Rename RSS feed file
+        run: |
+          mv ./public/feed.xml ./public/index.xml || true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
