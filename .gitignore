@@ -9,3 +9,4 @@ scss/.sass-cache*
 jekyll
 public
 resources
+package-lock.json
