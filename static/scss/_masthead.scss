@@ -1,19 +1,24 @@
 // Styling for the masthead
 header.masthead {
-
-
     @media (min-width: 320px) {
         padding-top: 25px;
     }
 
     text-align: center;
     color: white;
+    
     img {
         display: block;
         margin: 0 auto 20px;
     }
     div.logo {
         text-align: left;
+        
+        // Hide the logo on mobile since navbar provides branding
+        @media (max-width: 767px) {
+            display: none;
+        }
+        
         h2 {
             display: inline-block;
             &:hover {

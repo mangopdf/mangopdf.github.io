@@ -133,7 +133,9 @@ div.post-item {
 
 
 .star-light:after,
-.star-primary:after {
+.star-primary:after,
+.star-inline.star-primary:after,
+.navbar-star:after {
     -webkit-animation: rotating 20s linear infinite;
     -moz-animation: rotating 20s linear infinite;
     -ms-animation: rotating 20s linear infinite;
