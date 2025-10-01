@@ -1,6 +1,7 @@
 
 // Yeah it's called "freelancer.js" what EVER do not @ me
 
+console.log("poggers");
 (function($) {
     "use strict";
 
@@ -12,7 +13,7 @@
     }
 
     // Spin the stars faster when hard mode is on, it's only fair.
-    $('#hardmode').change(function() {
+    $('#hardmode-desktop, #hardmode-mobile').change(function() {
         if (this.checked) {
             window.stopEmoji = false;
             emojiCursor();
@@ -35,9 +36,8 @@
         'blog': 'textual spaghetti',
         'websites': 'hypertext fever dreams',
         'talks': 'legitimate educational resources',
-        'tweets': 'the goddAmn TWEET ZONE',
-        'intro': 'you have entered the ~mango zone~'
-    };
+    }
+    
 
 
     if (window.location.pathname === '/') {

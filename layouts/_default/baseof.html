@@ -49,30 +49,63 @@
 
 <body>
 
-  
-
-  <header class="masthead">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
     <div class="container">
-      <div class="settings">
-        <form action="#">
-          <label for="hardmode">
-            <input id="hardmode" type="checkbox" />
-            hard mode</label>
-        </form>
-      </div>
-      <div class="intro-text">
-        <div class="logo">
-          <span class="star-inline star-primary star-purple"></span>
-          <a href="/">
-            <h2 class="logo">mango.pdf.zone</h2>
-          </a>
-          <span class="star-inline star-primary star-purple"></span>
+      <!-- Mobile layout: title left, hard mode center, hamburger right -->
+      <div class="mobile-navbar d-lg-none w-100 d-flex justify-content-between align-items-center">
+        <div class="mobile-brand-section d-flex align-items-center">
+          <a class="navbar-brand mobile-brand" href="/">mango.pdf.zone</a>
+          <div class="settings mobile-settings">
+            <form action="#">
+              <label for="hardmode-mobile">
+                <input id="hardmode-mobile" type="checkbox" />
+                hard mode
+              </label>
+            </form>
+          </div>
         </div>
-        <p class="intro" id="intro" class="scrollspy">"work" by <a href="#alex">the hacker known as "Alex"</a> / <a
-            href="https://twitter.com/mangopdf">@mangopdf</a></p>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      
+      <!-- Desktop layout: stars + title + intro -->
+      <div class="desktop-navbar d-none d-lg-flex align-items-center">
+        <span class="star-inline star-primary star-purple navbar-star"></span>
+        <a class="navbar-brand logo" href="/">mango.pdf.zone</a>
+        <span class="star-inline star-primary star-purple navbar-star"></span>
+        
+        <div class="navbar-intro">
+          <p class="intro">"work" by <a href="#alex">the hacker known as "Alex"</a> / <a href="https://twitter.com/mangopdf">@mangopdf</a></p>
+        </div>
+      </div>
+      
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/#blog">blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#talks">talks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mangopdfcommunication.com" target="_blank" rel="noopener noreferrer">classes 👀</a>
+          </li>
+        </ul>
+        <div class="settings desktop-settings d-none d-lg-block">
+          <form action="#">
+            <label for="hardmode-desktop">
+              <input id="hardmode-desktop" type="checkbox" />
+              hard mode
+            </label>
+          </form>
+        </div>
       </div>
     </div>
-  </header>
+  </nav>
+
 
 
   <main class="page-content" aria-label="Content">
@@ -98,6 +131,7 @@
   <script src="{{ "vendor/popper/popper.min.js" | relURL }}"></script>
   <script src="{{ "vendor/bootstrap/js/bootstrap.min.js" | relURL }}"></script>
   <script src="{{ "js/freelancer.min.js" | relURL }}"></script>
+  <script src="{{ "js/navbar.js" | relURL }}"></script>
 
   <script src="https://unpkg.com/littlefoot/dist/littlefoot.js" type="application/javascript"></script>
   <script type="application/javascript">
