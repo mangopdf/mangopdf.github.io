@@ -12,7 +12,7 @@
                 {{ range $newPages}}
                 <div class="portfolio-item">
                     <div class="post-image-container">
-                        <a href="{{ .RelPermalink }}"><img class="post-image" src="{{ .Params.image }}" /></a>
+                        <a href="{{ .RelPermalink }}">{{ partial "responsive-image.html" (dict "src" .Params.image "alt" .Title "class" "post-image" "sizes" "(max-width: 480px) 100vw, (max-width: 1050px) 50vw, 33vw") }}</a>
                     </div>
                     <a href="{{ .RelPermalink }}" class="btn btn-lg btn-outline btn-{{ .Params.colour }}">{{ .Title }}</a>
                 </div>
@@ -20,7 +20,7 @@
                 {{ range $externalPosts }}
                 <div class="portfolio-item">
                     <div class="post-image-container">
-                        <a href="{{ .RelPermalink }}"><img class="post-image" src="{{ .Params.image }}" /></a>
+                        <a href="{{ .RelPermalink }}">{{ partial "responsive-image.html" (dict "src" .Params.image "alt" .Title "class" "post-image" "sizes" "(max-width: 480px) 100vw, (max-width: 1050px) 50vw, 33vw") }}</a>
                     </div>
                     <a href="{{ .RelPermalink }}" class="btn btn-lg btn-outline btn-{{ .Params.colour }}">{{ .Title }}</a>
                 </div>
@@ -28,7 +28,7 @@
                 {{ range $oldPages}}
                 <div class="portfolio-item">
                     <div class="post-image-container">
-                        <a href="{{ .RelPermalink }}"><img class="post-image" src="{{ .Params.image }}" /></a>
+                        <a href="{{ .RelPermalink }}">{{ partial "responsive-image.html" (dict "src" .Params.image "alt" .Title "class" "post-image" "sizes" "(max-width: 480px) 100vw, (max-width: 1050px) 50vw, 33vw") }}</a>
                     </div>
                     <a href="{{ .RelPermalink }}" class="btn btn-lg btn-outline btn-{{ .Params.colour }}">{{ .Title }}</a>
                 </div>
@@ -89,7 +89,7 @@
                 <div class="portfolio-item">
                     <div class="post-image-container">
                         <a href="https://www.youtube.com/watch?v=nllWyRBQFcM"></a>
-                            <img class="post-image" src="/img/thumbnails/redteaming-yt-thumbnail.png" />
+                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/redteaming-yt-thumbnail.png" "alt" "Testing whether your security actually works with Red Teaming" "class" "post-image") }}
                         </a>
                     </div>
                     <a href="https://www.youtube.com/watch?v=nllWyRBQFcM" class="btn btn-lg btn-outline btn-lightblue">
@@ -100,7 +100,7 @@
                 <div class="portfolio-item">
                     <div class="post-image-container">
                         <a href="https://www.youtube.com/watch?v=KsS_5Y25tnE">
-                            <img class="post-image" src="/img/thumbnails/docker-yt-thumbnail.png" />
+                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/docker-yt-thumbnail.png" "alt" "Hiding malware in Docker Desktop's virtual machine" "class" "post-image") }}
                         </a>
                     </div>
                     <a href="https://www.youtube.com/watch?v=KsS_5Y25tnE" class="btn btn-lg btn-outline btn-purple">
@@ -112,7 +112,7 @@
                 <div class="portfolio-item">
                     <div class="post-image-container">
                         <a href="https://www.youtube.com/watch?v=iwt6y0ydjuo">
-                            <img class="post-image" src="https://img.youtube.com/vi/IWT6Y0YDJUo/0.jpg" />
+                            {{ partial "responsive-image.html" (dict "src" "https://img.youtube.com/vi/IWT6Y0YDJUo/0.jpg" "alt" "Finding Tony Abbott's Passport Number and entering the Do Not Get Arrested Challenge 2020" "class" "post-image") }}
                         </a>
                     </div>
                     <a href="https://youtu.be/lijyQ_HAysA" class="btn btn-lg btn-outline btn-purple">
@@ -123,7 +123,7 @@
                 <div class="portfolio-item">
                     <div class="post-image-container">
                         <a href="https://darknetdiaries.com/imgs/airplane.jpg">
-                            <img class="post-image" src="https://darknetdiaries.com/imgs/airplane.jpg" />
+                            {{ partial "responsive-image.html" (dict "src" "https://darknetdiaries.com/imgs/airplane.jpg" "alt" "Darknet Diaries episode 84: Jet-setters" "class" "post-image") }}
                         </a>
                     </div>
                     <a href="https://darknetdiaries.com/episode/84/" class="btn btn-lg btn-outline btn-pink">Darknet Diaries episode 84: Jet-setters</a>
@@ -132,7 +132,7 @@
                 <div class="portfolio-item">
                     <div class="post-image-container">
                         <a href="https://www.youtube.com/watch?v=9S3zwwCEe0E">
-                            <img class="post-image" src="/img/thumbnails/operation-luigi-yt-thumbnail.png" />
+                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/operation-luigi-yt-thumbnail.png" "alt" "Operation Luigi: How I hacked my friend without her noticing" "class" "post-image") }}
                         </a>
                     </div>
                     <a href="https://www.youtube.com/watch?v=9S3zwwCEe0E" class="btn btn-lg btn-outline btn-purple">Operation Luigi: How I hacked my friend without her noticing</a>
@@ -141,7 +141,7 @@
                 <div class="portfolio-item">
                     <div class="post-image-container">
                         <a href="https://www.youtube.com/watch?v=BWAetsJqey0">
-                            <img class="post-image" src="/img/thumbnails/cookies-yt-thumbnail.png" />
+                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/cookies-yt-thumbnail.png" "alt" "Stealing Chrome Cookies without a password" "class" "post-image") }}
                         </a>
                     </div>
                     <a href="https://www.youtube.com/watch?v=BWAetsJqey0" class="btn btn-lg btn-outline btn-lightblue">Stealing Chrome Cookies without a password</a>
@@ -150,7 +150,7 @@
                 <div class="portfolio-item">
                     <div class="post-image-container">
                         <a href="https://www.youtube.com/watch?v=nSu11VvVL9M">
-                            <img class="post-image" src="/img/thumbnails/tricking-people-yt-thumbnail.png" />
+                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/tricking-people-yt-thumbnail.png" "alt" "Tricking people" "class" "post-image") }}
                         </a>
                     </div>
                     <a href="https://www.youtube.com/watch?v=nSu11VvVL9M" class="btn btn-lg btn-outline btn-pink">Tricking people</a>
@@ -159,7 +159,7 @@
                 <div class="portfolio-item">
                     <div class="post-image-container">
                         <a href="https://www.youtube.com/watch?v=MkSkqMvGBuo">
-                            <img class="post-image" src="/img/thumbnails/graphing-yt-thumbnail.png" />
+                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/graphing-yt-thumbnail.png" "alt" "Graphing when your Facebook friends are awake" "class" "post-image") }}
                         </a>
                     </div>
                     <a href="https://www.youtube.com/watch?v=MkSkqMvGBuo" class="btn btn-lg btn-outline btn-lightblue">Graphing when your Facebook friends are awake</a>
@@ -260,7 +260,7 @@
             <hr class="star-primary star-blue">
             <div class="grid">
                 <div class="portfolio-item">
-                    <h4 id="alex">What's with the "Alex" thing?</h4>
+                    <h3 id="alex">What's with the "Alex" thing?</h3>
                     <p>
                         Once, an article referred to me as <a href="https://www.vice.com/en_us/article/9a3dkv/tinder-social-lets-you-stalk-your-friends-dating-habits-hack-last-active">a hacker who goes by the name "Alex"</a>, so that's my hacker handle
                         now and there's nothing I can do about it.
@@ -268,7 +268,7 @@
                 </div>
 
                 <div class="portfolio-item">
-                    <h4>Do you have an actual pdf called mango.pdf?</h4>
+                    <h3>Do you have an actual pdf called mango.pdf?</h3>
                     <p>
                         Sure, <a id="pdf" href="/mango.pdf" data-uh-dont-worry-about-it="lisreal2401">here you go</a>. It's got a password on it though. The password is hidden somewhere in this page. Have fun!
                     </p>
