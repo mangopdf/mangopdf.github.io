@@ -1,6 +1,7 @@
 // Navbar functionality for mango.pdf.zone
 
-$(document).ready(function() {
+(function() {
+    "use strict";
     
     // Synchronize hard mode checkboxes
     function syncHardModeCheckboxes() {
@@ -34,11 +35,12 @@ $(document).ready(function() {
             window.hardModeToggle(enabled);
         }
         
-        // Also trigger the star speed functionality from freelancer.js
+        // Also trigger the star speed functionality
+        const stars = document.querySelectorAll("hr.star-light, hr.star-primary, .star-primary, .navbar-star");
         if (enabled) {
-            $("hr.star-light, hr.star-primary, .star-primary, .navbar-star").addClass("speedy");
+            stars.forEach(function(el) { el.classList.add("speedy"); });
         } else {
-            $("hr.star-light, hr.star-primary, .star-primary, .navbar-star").removeClass("speedy");
+            stars.forEach(function(el) { el.classList.remove("speedy"); });
         }
     }
     
@@ -49,7 +51,6 @@ $(document).ready(function() {
     }
     
     // Set active nav link based on scroll position - DISABLED
-    // User requested to remove auto-highlighting, only show hover effects
     function setActiveNavLink() {
         // Functionality disabled - no auto-highlighting of nav links
         return;
@@ -87,6 +88,17 @@ $(document).ready(function() {
         });
     }
     
+    // Setup star click functionality for speed toggle
+    function setupStarClickHandlers() {
+        document.querySelectorAll('.star-primary, .star-inline.star-primary, .navbar-star').forEach(function(el) {
+            el.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                this.classList.toggle('speedy');
+            });
+        });
+    }
+    
     // Initialize all functionality
     syncHardModeCheckboxes();
     setupSmoothScroll();
@@ -101,14 +113,4 @@ $(document).ready(function() {
     // Initial calls
     navbarShrink();
     setActiveNavLink();
-    
-    // Setup star click functionality for speed toggle
-    function setupStarClickHandlers() {
-        // Add click handlers to all star elements (including navbar stars)
-        $('.star-primary, .star-inline.star-primary, .navbar-star').click(function(e) {
-            e.preventDefault(); // Prevent any default behavior
-            e.stopPropagation(); // Stop event bubbling
-            $(this).toggleClass('speedy');
-        });
-    }
-});
+})();

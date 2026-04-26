@@ -89,7 +89,7 @@ function emojiCursor() {
         document.removeEventListener('touchmove', onTouchMove);
         document.removeEventListener('touchstart', onTouchMove);
         window.removeEventListener('resize', onWindowResize);
-        $(".emojicursor").remove();
+        document.querySelectorAll(".emojicursor").forEach(function(el) { el.parentNode.removeChild(el); });
         return;
     }
     requestAnimationFrame(loop);
