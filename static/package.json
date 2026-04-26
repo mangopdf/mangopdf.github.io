@@ -27,7 +27,6 @@
     "browser-sync": "^3.0.2",
     "gulp": "^5.0.0",
     "gulp-clean-css": "3.7.0",
-    "gulp-filter": "^5.0.1",
     "gulp-header": "1.8.9",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^5.1.0",

@@ -1,6 +1,5 @@
 // Yeah it's called "freelancer.js" what EVER do not @ me
 
-console.log("poggers");
 (function() {
     "use strict";
 
@@ -27,13 +26,6 @@ console.log("poggers");
                 emojiCursor();
                 stars.forEach(function(el) { el.classList.remove("speedy"); });
             }
-        });
-    });
-
-    // When the logo stars are clicked, make 'em spin fast on toggle.
-    document.querySelectorAll('.star-primary').forEach(function(el) {
-        el.addEventListener('click', function() {
-            this.classList.toggle('speedy');
         });
     });
 

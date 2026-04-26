@@ -66,23 +66,31 @@ function minifyJs() {
 
 // Copy vendor files from /node_modules into /vendor
 function copy() {
-  gulp.src([
-      'node_modules/bootstrap/dist/**/*',
-      '!**/npm.js',
-      '!**/bootstrap-theme.*',
-      '!**/*.map'
-    ])
-    .pipe(gulp.dest('vendor/bootstrap'))
+  return new Promise((resolve, reject) => {
+    let pending = 3;
+    function check() { if (--pending === 0) resolve(); }
+    
+    gulp.src([
+        'node_modules/bootstrap/dist/**/*',
+        '!**/npm.js',
+        '!**/bootstrap-theme.*',
+        '!**/*.map'
+      ])
+      .pipe(gulp.dest('vendor/bootstrap'))
+      .on('finish', check).on('error', reject);
 
-  gulp.src([
-      'node_modules/littlefoot/dist/littlefoot.css',
-      'node_modules/littlefoot/dist/littlefoot.js',
-    ])
-    .pipe(gulp.dest('vendor/littlefoot'))
+    gulp.src([
+        'node_modules/littlefoot/dist/littlefoot.css',
+        'node_modules/littlefoot/dist/littlefoot.js',
+      ])
+      .pipe(gulp.dest('vendor/littlefoot'))
+      .on('finish', check).on('error', reject);
 
-  return gulp.src(['node_modules/@popperjs/core/dist/umd/popper.js', 'node_modules/@popperjs/core/dist/umd/popper.min.js',
-      'node_modules/@popperjs/core/dist/umd/popper.min.js.map'])
-    .pipe(gulp.dest('vendor/popper'))
+    gulp.src(['node_modules/@popperjs/core/dist/umd/popper.js', 'node_modules/@popperjs/core/dist/umd/popper.min.js',
+        'node_modules/@popperjs/core/dist/umd/popper.min.js.map'])
+      .pipe(gulp.dest('vendor/popper'))
+      .on('finish', check).on('error', reject);
+  });
 }
 
 // Configure the browserSync task
@@ -106,7 +114,7 @@ function watch() {
 
 // Define complex tasks
 var build = gulp.series(sassTask, minifyCss, minifyJs, copy);
-var dev = gulp.parallel(browserSyncTask, watch);
+var dev = gulp.series(build, gulp.parallel(browserSyncTask, watch));
 
 // Export tasks
 exports.sass = sassTask;
