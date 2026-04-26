@@ -36,8 +36,12 @@ h6 {
     text-align: inherit !important;
     margin: 0 !important;
     padding: 0 !important;
+    position: relative;
+    &:before {
+        display: none;
+    }
     &:after {
-        top: 0 !important;;
+        top: 0 !important;
     }
 }
 
@@ -52,21 +56,49 @@ h6 {
   border-top: solid 5px;
   opacity: 1 !important;
   overflow: visible !important;
-}
-.star-light:after,
-.star-primary:after {
-  font-family: "Font Awesome 5 Free";
-  font-size: 2em;
   position: relative;
-  top: -.8em;
-  display: inline-block;
+}
+
+// ::before creates the dark grey circle backdrop behind the star
+.star-light:before,
+.star-primary:before {
+  content: '';
+  position: absolute;
+  display: block;
   width: 1.6em;
   height: 1.6em;
-  line-height: 1.6em;
-  text-align: center;
-  padding: 0;
-  content: '\f005';
   border-radius: 50%;
+  background-color: $background-grey;
+  font-size: 2em;
+  top: -.8em;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+// ::after creates the colored star via CSS mask
+.star-light:after,
+.star-primary:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 50%;
+  background-color: currentColor;
+  mask-image: url('../img/star.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-image: url('../img/star.svg');
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  font-size: 2em;
+  top: -.8em;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 .star-light {
@@ -74,7 +106,6 @@ h6 {
 }
 .star-light:after {
   color: white;
-  background-color: $background-grey;
 }
 
 .star-primary {
@@ -82,7 +113,6 @@ h6 {
 }
 .star-primary:after {
   color: $theme-primary;
-  background-color: $background-grey;
 }
 
 .img-centered {

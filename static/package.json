@@ -19,7 +19,8 @@
     "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer.git"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.8",
+    "@fontsource/open-sans": "^5.2.7",
+    "@fontsource/roboto-mono": "^5.2.8",
     "bootstrap": "^5.3.3",
     "littlefoot": "^4.1.4"
   },

@@ -21,18 +21,12 @@
   <meta name="twitter:description" content="{{ .Description | default " Blog and dumb websites by the hacker known as \"Alex\"" }}">
   <meta name="twitter:image" content="{{ .Params.image | default "https://pbs.twimg.com/profile_images/1019746918728019969/CdUJIbpP_400x400.jpg" }}">
 
-  <link rel="stylesheet" href="https://unpkg.com/littlefoot@4.1.4/dist/littlefoot.css" />
-  <link href="{{ "/vendor/bootstrap/css/bootstrap.min.css" }}" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-  <!-- <link href="{{ "/css/freelancer.css" }}" rel="stylesheet"> -->
-  {{ $opts := dict "transpiler" "dartsass" "targetPath" "css/style.css" }}
-  {{ with resources.Get "scss/freelancer.scss" | toCSS $opts | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ "vendor/littlefoot/littlefoot.css" | relURL }}">
+  {{ $opts := dict "targetPath" "css/style.css" }}
+  {{ with resources.Get "scss/freelancer.scss" | css.Sass $opts | minify | fingerprint }}
     <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
   {{ end }}
   
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css"
-    integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
   <link href="index.xml" type="application/rss+xml" rel="alternate" title="RSS feed for nerds" />
   <link href="feed.xml" type="application/rss+xml" rel="alternate" title="RSS feed for huge nerds" />
