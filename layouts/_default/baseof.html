@@ -21,12 +21,12 @@
   <meta name="twitter:description" content="{{ .Description | default " Blog and dumb websites by the hacker known as \"Alex\"" }}">
   <meta name="twitter:image" content="{{ .Params.image | default "https://pbs.twimg.com/profile_images/1019746918728019969/CdUJIbpP_400x400.jpg" }}">
 
-  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+  <link rel="stylesheet" href="https://unpkg.com/littlefoot@4.1.4/dist/littlefoot.css" />
   <link href="{{ "/vendor/bootstrap/css/bootstrap.min.css" }}" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
   <!-- <link href="{{ "/css/freelancer.css" }}" rel="stylesheet"> -->
-  {{ $opts := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
+  {{ $opts := dict "transpiler" "dartsass" "targetPath" "css/style.css" }}
   {{ with resources.Get "scss/freelancer.scss" | toCSS $opts | minify | fingerprint }}
     <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
   {{ end }}
@@ -66,7 +66,7 @@
           </div>
         </div>
         
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
@@ -83,7 +83,7 @@
       </div>
       
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="/#blog">blog</a>
           </li>
@@ -127,13 +127,11 @@
     ga('send', 'pageview');
   </script>
 
-  <script src="{{ "vendor/jquery/jquery.min.js" | relURL }}"></script>
-  <script src="{{ "vendor/popper/popper.min.js" | relURL }}"></script>
   <script src="{{ "vendor/bootstrap/js/bootstrap.min.js" | relURL }}"></script>
-  <script src="{{ "js/freelancer.min.js" | relURL }}"></script>
+  <script src="{{ "js/freelancer.js" | relURL }}"></script>
   <script src="{{ "js/navbar.js" | relURL }}"></script>
 
-  <script src="https://unpkg.com/littlefoot/dist/littlefoot.js" type="application/javascript"></script>
+  <script src="https://unpkg.com/littlefoot@4.1.4/dist/littlefoot.js" type="application/javascript"></script>
   <script type="application/javascript">
     littlefoot.littlefoot()
   </script>
