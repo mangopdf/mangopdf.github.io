@@ -12,41 +12,26 @@
     "template"
   ],
   "homepage": "https://mango.pdf.zone",
-  "bugs": {
-    "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer/issues",
-    "email": "feedback@startbootstrap.com"
-  },
   "license": "MIT",
   "author": "Start Bootstrap",
-  "contributors": [
-    "David Miller (http://davidmiller.io/)"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer.git"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-beta",
-    "font-awesome": "4.7.0",
-    "jquery": "^3.4.1",
-    "jquery.easing": "^1.4.1",
-    "littlefoot": "^3.2.4",
-    "popper.js": "^1.11.1"
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "littlefoot": "^4.1.4"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "gulp": "^3.9.1",
+    "browser-sync": "^3.0.2",
+    "gulp": "^5.0.0",
     "gulp-clean-css": "3.7.0",
     "gulp-filter": "^5.0.1",
     "gulp-header": "1.8.9",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "3.0.0"
-  },
-  "scripts": {
-    "preinstall": "npx npm-force-resolutions"
-  },
-  "resolutions": {
-    "graceful-fs": "4.2.3"
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "3.0.0",
+    "sass": "^1.99.0"
   }
 }
