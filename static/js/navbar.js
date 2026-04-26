@@ -62,28 +62,29 @@
         
         navLinks.forEach(link => {
             link.addEventListener('click', function(e) {
-                e.preventDefault();
-                
                 const targetId = this.getAttribute('href').substring(2); // Remove /#
                 const targetElement = document.getElementById(targetId);
                 
                 if (targetElement) {
+                    e.preventDefault();
                     const offsetTop = targetElement.offsetTop - 100; // Account for fixed navbar
                     
                     window.scrollTo({
                         top: offsetTop,
                         behavior: 'smooth'
                     });
-                }
-                
-                // Close mobile menu if open
-                const navbarCollapse = document.getElementById('navbarResponsive');
-                if (navbarCollapse.classList.contains('show')) {
-                    const navbarToggler = document.querySelector('.navbar-toggler');
-                    if (navbarToggler) {
-                        navbarToggler.click();
+                    
+                    // Close mobile menu if open
+                    const navbarCollapse = document.getElementById('navbarResponsive');
+                    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                        const navbarToggler = document.querySelector('.navbar-toggler');
+                        if (navbarToggler) {
+                            navbarToggler.click();
+                        }
                     }
                 }
+                // If targetElement doesn't exist (e.g. on a blog post page),
+                // let the browser handle the navigation normally to /#blog or /#talks
             });
         });
     }
