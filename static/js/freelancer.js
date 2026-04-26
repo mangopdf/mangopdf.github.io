@@ -1,5 +1,6 @@
 // Yeah it's called "freelancer.js" what EVER do not @ me
 
+console.log("poggers");
 (function() {
     "use strict";
 
