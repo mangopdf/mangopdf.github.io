@@ -96,9 +96,8 @@
     flex-wrap: nowrap; // Prevent wrapping
     
     .navbar-star {
-      margin: 0 12px;
+      margin: 0 24px;
       user-select: none;
-      display: inline-block;
       flex-shrink: 0; // Don't shrink stars
       
       &:hover {
@@ -108,12 +107,12 @@
       
       // Ensure consistent spacing around the brand
       &:first-child {
-        margin-right: 12px;
+        margin-right: 24px;
         margin-left: 0;
       }
       
       &:last-of-type {
-        margin-left: 12px;
+        margin-left: 24px;
         margin-right: 0;
       }
     }
@@ -127,7 +126,6 @@
   .navbar-star {
     margin: 0 8px;
     user-select: none;
-    display: inline-block;
     
     &:hover {
       color: white;

@@ -32,9 +32,10 @@ h6 {
 
 .star-inline {
     border: none !important;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     text-align: inherit !important;
-    margin: 0 !important;
     padding: 0 !important;
     position: relative;
     // Suppress grey circle backdrop on inline stars.
@@ -46,15 +47,19 @@ h6 {
     }
 }
 
-// Higher specificity than .star-primary:after so inline stars get relative positioning
-// while divider stars (.star-primary alone) keep absolute positioning.
+// Inline stars must override the divider star absolute positioning from
+// .star-primary:after (below). Higher specificity (0,2,1 vs 0,1,1) wins.
+// Parent .star-inline uses inline-flex for center alignment.
 .star-inline.star-primary:after {
     content: '';
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
+    position: static;
+    display: block;
     width: 1.6em;
     height: 1.6em;
+    font-size: 1em;
+    top: auto;
+    left: auto;
+    margin-left: 0;
     border-radius: 50%;
     background-color: currentColor;
     mask-image: url('../img/star.svg');
@@ -65,9 +70,6 @@ h6 {
     -webkit-mask-size: contain;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
-    font-size: 1em;
-    z-index: 1;
-    line-height: 1.6em;
 }
 
 
@@ -155,10 +157,6 @@ section {
 }
 
 
-input[type=checkbox] {
-
-}
-
 section.success {
   color: white;
 }
@@ -189,10 +187,6 @@ section.success {
       outline: none;
     }
   }
-}
-
-strong {
-    font-weight: bold
 }
 
 
