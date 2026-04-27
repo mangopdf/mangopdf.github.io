@@ -111,8 +111,8 @@ h6 {
   content: '';
   position: absolute;
   display: block;
-  width: 2em;
-  height: 2em;
+  width: 1.6em;
+  height: 1.6em;
   border-radius: 50%;
   background-color: currentColor;
   mask-image: url('../img/star.svg');
@@ -124,9 +124,9 @@ h6 {
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
   font-size: 2em;
-  top: -1em;
+  top: -0.8em;
   left: 50%;
-  margin-left: -1em;
+  margin-left: -0.8em;
   z-index: 1;
 }
 
