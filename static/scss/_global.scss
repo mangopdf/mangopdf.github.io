@@ -92,12 +92,12 @@ h6 {
   content: '';
   position: absolute;
   display: block;
-  width: 1.6em;
-  height: 1.6em;
+  width: 2em;
+  height: 2em;
   border-radius: 50%;
   background-color: $background-grey;
   font-size: 2em;
-  top: -.8em;
+  top: -1em;
   left: 50%;
   transform: translateX(-50%);
   z-index: 0;
@@ -111,8 +111,8 @@ h6 {
   content: '';
   position: absolute;
   display: block;
-  width: 1.6em;
-  height: 1.6em;
+  width: 2em;
+  height: 2em;
   border-radius: 50%;
   background-color: currentColor;
   mask-image: url('../img/star.svg');
@@ -124,9 +124,9 @@ h6 {
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
   font-size: 2em;
-  top: -.8em;
+  top: -1em;
   left: 50%;
-  margin-left: -0.8em;
+  margin-left: -1em;
   z-index: 1;
 }
 
