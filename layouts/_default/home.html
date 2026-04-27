@@ -12,7 +12,7 @@
                 {{ range $newPages}}
                 <div class="portfolio-item">
                     <div class="post-image-container">
-                        <a href="{{ .RelPermalink }}">{{ partial "responsive-image.html" (dict "src" .Params.image "alt" .Title "class" "post-image" "sizes" "(max-width: 480px) 100vw, (max-width: 1050px) 50vw, 33vw") }}</a>
+                        <a href="{{ .RelPermalink }}">{{ partial "responsive-image.html" (dict "src" .Params.image "alt" .Title "class" "post-image" "sizes" "(max-width: 480px) 100vw, (max-width: 1050px) 50vw, 33vw" "no_dims" true) }}</a>
                     </div>
                     <a href="{{ .RelPermalink }}" class="btn btn-lg btn-outline btn-{{ .Params.colour }}">{{ .Title }}</a>
                 </div>
@@ -20,7 +20,7 @@
                 {{ range $externalPosts }}
                 <div class="portfolio-item">
                     <div class="post-image-container">
-                        <a href="{{ .RelPermalink }}">{{ partial "responsive-image.html" (dict "src" .Params.image "alt" .Title "class" "post-image" "sizes" "(max-width: 480px) 100vw, (max-width: 1050px) 50vw, 33vw") }}</a>
+                        <a href="{{ .RelPermalink }}">{{ partial "responsive-image.html" (dict "src" .Params.image "alt" .Title "class" "post-image" "sizes" "(max-width: 480px) 100vw, (max-width: 1050px) 50vw, 33vw" "no_dims" true) }}</a>
                     </div>
                     <a href="{{ .RelPermalink }}" class="btn btn-lg btn-outline btn-{{ .Params.colour }}">{{ .Title }}</a>
                 </div>
@@ -28,7 +28,7 @@
                 {{ range $oldPages}}
                 <div class="portfolio-item">
                     <div class="post-image-container">
-                        <a href="{{ .RelPermalink }}">{{ partial "responsive-image.html" (dict "src" .Params.image "alt" .Title "class" "post-image" "sizes" "(max-width: 480px) 100vw, (max-width: 1050px) 50vw, 33vw") }}</a>
+                        <a href="{{ .RelPermalink }}">{{ partial "responsive-image.html" (dict "src" .Params.image "alt" .Title "class" "post-image" "sizes" "(max-width: 480px) 100vw, (max-width: 1050px) 50vw, 33vw" "no_dims" true) }}</a>
                     </div>
                     <a href="{{ .RelPermalink }}" class="btn btn-lg btn-outline btn-{{ .Params.colour }}">{{ .Title }}</a>
                 </div>
@@ -89,7 +89,7 @@
                 <div class="portfolio-item">
                     <div class="post-image-container">
                         <a href="https://www.youtube.com/watch?v=nllWyRBQFcM"></a>
-                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/redteaming-yt-thumbnail.png" "alt" "Testing whether your security actually works with Red Teaming" "class" "post-image") }}
+                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/redteaming-yt-thumbnail.png" "alt" "Testing whether your security actually works with Red Teaming" "class" "post-image" "no_dims" true) }}
                         </a>
                     </div>
                     <a href="https://www.youtube.com/watch?v=nllWyRBQFcM" class="btn btn-lg btn-outline btn-lightblue">
@@ -100,7 +100,7 @@
                 <div class="portfolio-item">
                     <div class="post-image-container">
                         <a href="https://www.youtube.com/watch?v=KsS_5Y25tnE">
-                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/docker-yt-thumbnail.png" "alt" "Hiding malware in Docker Desktop's virtual machine" "class" "post-image") }}
+                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/docker-yt-thumbnail.png" "alt" "Hiding malware in Docker Desktop's virtual machine" "class" "post-image" "no_dims" true) }}
                         </a>
                     </div>
                     <a href="https://www.youtube.com/watch?v=KsS_5Y25tnE" class="btn btn-lg btn-outline btn-purple">
@@ -112,7 +112,7 @@
                 <div class="portfolio-item">
                     <div class="post-image-container">
                         <a href="https://www.youtube.com/watch?v=iwt6y0ydjuo">
-                            {{ partial "responsive-image.html" (dict "src" "https://img.youtube.com/vi/IWT6Y0YDJUo/0.jpg" "alt" "Finding Tony Abbott's Passport Number and entering the Do Not Get Arrested Challenge 2020" "class" "post-image") }}
+                            {{ partial "responsive-image.html" (dict "src" "https://img.youtube.com/vi/IWT6Y0YDJUo/0.jpg" "alt" "Finding Tony Abbott's Passport Number and entering the Do Not Get Arrested Challenge 2020" "class" "post-image" "no_dims" true) }}
                         </a>
                     </div>
                     <a href="https://youtu.be/lijyQ_HAysA" class="btn btn-lg btn-outline btn-purple">
@@ -123,7 +123,7 @@
                 <div class="portfolio-item">
                     <div class="post-image-container">
                         <a href="https://darknetdiaries.com/imgs/airplane.jpg">
-                            {{ partial "responsive-image.html" (dict "src" "https://darknetdiaries.com/imgs/airplane.jpg" "alt" "Darknet Diaries episode 84: Jet-setters" "class" "post-image") }}
+                            {{ partial "responsive-image.html" (dict "src" "https://darknetdiaries.com/imgs/airplane.jpg" "alt" "Darknet Diaries episode 84: Jet-setters" "class" "post-image" "no_dims" true) }}
                         </a>
                     </div>
                     <a href="https://darknetdiaries.com/episode/84/" class="btn btn-lg btn-outline btn-pink">Darknet Diaries episode 84: Jet-setters</a>
@@ -132,7 +132,7 @@
                 <div class="portfolio-item">
                     <div class="post-image-container">
                         <a href="https://www.youtube.com/watch?v=9S3zwwCEe0E">
-                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/operation-luigi-yt-thumbnail.png" "alt" "Operation Luigi: How I hacked my friend without her noticing" "class" "post-image") }}
+                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/operation-luigi-yt-thumbnail.png" "alt" "Operation Luigi: How I hacked my friend without her noticing" "class" "post-image" "no_dims" true) }}
                         </a>
                     </div>
                     <a href="https://www.youtube.com/watch?v=9S3zwwCEe0E" class="btn btn-lg btn-outline btn-purple">Operation Luigi: How I hacked my friend without her noticing</a>
@@ -141,7 +141,7 @@
                 <div class="portfolio-item">
                     <div class="post-image-container">
                         <a href="https://www.youtube.com/watch?v=BWAetsJqey0">
-                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/cookies-yt-thumbnail.png" "alt" "Stealing Chrome Cookies without a password" "class" "post-image") }}
+                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/cookies-yt-thumbnail.png" "alt" "Stealing Chrome Cookies without a password" "class" "post-image" "no_dims" true) }}
                         </a>
                     </div>
                     <a href="https://www.youtube.com/watch?v=BWAetsJqey0" class="btn btn-lg btn-outline btn-lightblue">Stealing Chrome Cookies without a password</a>
@@ -150,7 +150,7 @@
                 <div class="portfolio-item">
                     <div class="post-image-container">
                         <a href="https://www.youtube.com/watch?v=nSu11VvVL9M">
-                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/tricking-people-yt-thumbnail.png" "alt" "Tricking people" "class" "post-image") }}
+                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/tricking-people-yt-thumbnail.png" "alt" "Tricking people" "class" "post-image" "no_dims" true) }}
                         </a>
                     </div>
                     <a href="https://www.youtube.com/watch?v=nSu11VvVL9M" class="btn btn-lg btn-outline btn-pink">Tricking people</a>
@@ -159,7 +159,7 @@
                 <div class="portfolio-item">
                     <div class="post-image-container">
                         <a href="https://www.youtube.com/watch?v=MkSkqMvGBuo">
-                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/graphing-yt-thumbnail.png" "alt" "Graphing when your Facebook friends are awake" "class" "post-image") }}
+                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/graphing-yt-thumbnail.png" "alt" "Graphing when your Facebook friends are awake" "class" "post-image" "no_dims" true) }}
                         </a>
                     </div>
                     <a href="https://www.youtube.com/watch?v=MkSkqMvGBuo" class="btn btn-lg btn-outline btn-lightblue">Graphing when your Facebook friends are awake</a>

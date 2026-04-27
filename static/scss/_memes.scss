@@ -143,26 +143,36 @@ div.post-item {
     animation: rotating 20s linear infinite;
 }
 
-.star-pink,
-.star-pink:after {
+// Element gets the grey backdrop; :after gets color-only for mask-image via currentColor
+.star-pink {
     color: $star-pink;
     background-color: $background-grey;
     border-color: $star-pink;
 }
+.star-pink:after {
+    color: $star-pink;
+    border-color: $star-pink;
+}
 
 
-.star-lightblue,
-.star-lightblue:after {
+.star-lightblue {
     color: $star-lightblue;
     border-color: $star-lightblue;
     background-color: $background-grey;
 }
+.star-lightblue:after {
+    color: $star-lightblue;
+    border-color: $star-lightblue;
+}
 
-.star-purple,
-.star-purple:after {
+.star-purple {
     color: $star-purple;
     border-color: $star-purple;
     background-color: $background-grey;
+}
+.star-purple:after {
+    color: $star-purple;
+    border-color: $star-purple;
 }
 
 

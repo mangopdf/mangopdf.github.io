@@ -37,12 +37,37 @@ h6 {
     margin: 0 !important;
     padding: 0 !important;
     position: relative;
+    // Suppress grey circle backdrop on inline stars.
+    // !important needed because .star-primary:before (same specificity,
+    // later in source) sets display:block. Without it, the grey circle
+    // renders and overlays adjacent navbar text.
     &:before {
-        display: none;
+        display: none !important;
     }
-    &:after {
-        top: 0 !important;
-    }
+}
+
+// Higher specificity than .star-primary:after so inline stars get relative positioning
+// while divider stars (.star-primary alone) keep absolute positioning.
+.star-inline.star-primary:after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 50%;
+    background-color: currentColor;
+    mask-image: url('../img/star.svg');
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-image: url('../img/star.svg');
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    font-size: 1em;
+    z-index: 1;
+    line-height: 1.6em;
 }
 
 
@@ -77,6 +102,8 @@ h6 {
 }
 
 // ::after creates the colored star via CSS mask
+// Uses margin-left for centering instead of transform, so the transform property
+// is free for rotation animations (see _memes.scss).
 .star-light:after,
 .star-primary:after {
   content: '';
@@ -97,7 +124,7 @@ h6 {
   font-size: 2em;
   top: -.8em;
   left: 50%;
-  transform: translateX(-50%);
+  margin-left: -0.8em;
   z-index: 1;
 }
 

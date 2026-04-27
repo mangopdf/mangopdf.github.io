@@ -7,6 +7,7 @@
 {{ $class := .class | default "" }}
 {{ $sizes := .sizes | default "100vw" }}
 {{ $loading := .loading | default "lazy" }}
+{{ $no_dims := .no_dims | default false }}
 
 {{ if hasPrefix $src "http" }}
   {{/* External URL: just render with lazy loading */}}
@@ -35,8 +36,7 @@
       alt="{{ $alt }}" 
       class="{{ $class }}" 
       loading="{{ $loading }}"
-      width="{{ $resized.Width }}" 
-      height="{{ $resized.Height }}"
+      {{ if not $no_dims }}width="{{ $resized.Width }}" height="{{ $resized.Height }}"{{ end }}
     />
   {{ else }}
     {{/* Fallback: image not found, use original path */}}
