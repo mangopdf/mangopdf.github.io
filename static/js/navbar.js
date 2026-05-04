@@ -78,7 +78,21 @@
         });
     }
     
+    // Randomize brand segment colours on each page load
+    function randomizeBrandColors() {
+        var colors = ['#c6a5ff', '#ff9cf1', '#a3e6f5'];
+        for (var i = colors.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var tmp = colors[i]; colors[i] = colors[j]; colors[j] = tmp;
+        }
+        var root = document.documentElement;
+        root.style.setProperty('--brand-a', colors[0]);
+        root.style.setProperty('--brand-b', colors[1]);
+        root.style.setProperty('--brand-c', colors[2]);
+    }
+
     // Initialize all functionality
+    randomizeBrandColors();
     syncHardModeCheckboxes();
     setupSmoothScroll();
     setupStarClickHandlers();

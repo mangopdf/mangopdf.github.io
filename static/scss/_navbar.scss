@@ -33,14 +33,13 @@
       
       .mobile-brand {
         font-size: 1.1rem;
-        color: #c6a5ff;
         font-weight: 700;
         margin-right: 15px;
         text-decoration: none;
-        
+
         &:hover {
-          color: white;
           text-decoration: none;
+          .brand-seg { color: white; }
         }
       }
     }
@@ -135,16 +134,22 @@
   
   .navbar-brand {
     font-size: 1.2rem;
-    color: #c6a5ff;
     font-weight: 700;
     &.active,
     &:active,
     &:focus,
     &:hover {
-      color: white;
       text-decoration: none;
+      .brand-seg { color: white; }
     }
   }
+
+  .brand-seg {
+    transition: color 0.3s ease;
+  }
+  .brand-seg-a { color: var(--brand-a, #c6a5ff); }
+  .brand-seg-b { color: var(--brand-b, #c6a5ff); }
+  .brand-seg-c { color: var(--brand-c, #c6a5ff); }
   
   .navbar-intro {
     flex-grow: 0;
