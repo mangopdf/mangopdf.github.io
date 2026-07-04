@@ -1,0 +1,47 @@
+<details class="expand">
+  <summary class="expand-summary">
+    <span class="expand-chevron" aria-hidden="true"></span>
+    <span class="expand-title">{{ .Get 0 }}</span>
+  </summary>
+  <div class="expand-inner">
+    {{ .Inner | markdownify | safeHTML }}
+  </div>
+</details>
+{{ if not (.Page.Store.Get "expand-js") }}
+{{ .Page.Store.Set "expand-js" true }}
+<script>
+(function () {
+  document.querySelectorAll("details.expand").forEach(function (el) {
+    var summary = el.querySelector("summary");
+    var inner = el.querySelector(".expand-inner");
+    summary.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (el.open) {
+        inner.style.height = inner.scrollHeight + "px";
+        requestAnimationFrame(function () {
+          inner.style.transition = "height 0.28s ease";
+          inner.style.height = "0";
+        });
+        inner.addEventListener("transitionend", function done() {
+          el.open = false;
+          inner.style.cssText = "";
+          inner.removeEventListener("transitionend", done);
+        });
+      } else {
+        el.open = true;
+        inner.style.height = "0";
+        inner.style.overflow = "hidden";
+        requestAnimationFrame(function () {
+          inner.style.transition = "height 0.28s ease";
+          inner.style.height = inner.scrollHeight + "px";
+        });
+        inner.addEventListener("transitionend", function done() {
+          inner.style.cssText = "";
+          inner.removeEventListener("transitionend", done);
+        });
+      }
+    });
+  });
+})();
+</script>
+{{ end }}
