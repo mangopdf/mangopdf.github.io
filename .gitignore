@@ -10,3 +10,4 @@ jekyll
 public
 resources
 package-lock.json
+.DS_Store
