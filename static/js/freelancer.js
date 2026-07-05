@@ -12,24 +12,6 @@ console.log("poggers");
         if (uaDiv) uaDiv.style.display = "block";
     }
 
-    // Spin the stars faster when hard mode is on, it's only fair.
-    var hardModeCheckboxes = document.querySelectorAll('#hardmode-desktop, #hardmode-mobile');
-    hardModeCheckboxes.forEach(function(cb) {
-        cb.addEventListener('change', function() {
-            var stars = document.querySelectorAll("hr.star-light, hr.star-primary");
-            if (this.checked) {
-                window.stopEmoji = false;
-                emojiCursor();
-                stars.forEach(function(el) { el.classList.add("speedy"); });
-            }
-            else {
-                window.stopEmoji = true;
-                emojiCursor();
-                stars.forEach(function(el) { el.classList.remove("speedy"); });
-            }
-        });
-    });
-
     var gags = {
         'blog': 'textual spaghetti',
         'websites': 'hypertext fever dreams',

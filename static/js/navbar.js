@@ -23,14 +23,17 @@
         }
     }
     
-    // Trigger hard mode functionality (preserving existing behavior)
+    // Trigger hard mode functionality
     function triggerHardMode(enabled) {
-        // Toggle star speed when hard mode is enabled
         const stars = document.querySelectorAll("hr.star-light, hr.star-primary, .star-primary, .navbar-star");
         if (enabled) {
             stars.forEach(function(el) { el.classList.add("speedy"); });
+            window.stopEmoji = false;
+            if (typeof emojiCursor === 'function') emojiCursor();
         } else {
             stars.forEach(function(el) { el.classList.remove("speedy"); });
+            window.stopEmoji = true;
+            if (typeof emojiCursor === 'function') emojiCursor();
         }
     }
     
