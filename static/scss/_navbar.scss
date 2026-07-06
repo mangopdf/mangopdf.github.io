@@ -3,20 +3,18 @@
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   border: none;
-  background-color: #444349 !important;
-  background: #444349 !important;
+  --bs-navbar-bg: #444349;
+  background-color: var(--bs-navbar-bg);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease-in-out;
-  
+
   // Override Bootstrap navbar defaults
   &.navbar {
-    background-color: #444349 !important;
-    background: #444349 !important;
+    background-color: var(--bs-navbar-bg);
   }
-  
+
   &.navbar-dark {
-    background-color: #444349 !important;
-    background: #444349 !important;
+    background-color: var(--bs-navbar-bg);
   }
   
   a:focus {
@@ -252,8 +250,6 @@
   #mainNav.navbar-shrink {
     padding-top: 8px;
     padding-bottom: 8px;
-    background-color: #444349 !important;
-    background: #444349 !important;
     
     .navbar-brand {
       font-size: 1.2em;

@@ -1,3 +1,7 @@
+// Article headings use Open Sans (matching body text) instead of the
+// site-wide Roboto Mono — this is the original design intent for post
+// readability. h6 is intentionally omitted so it inherits the global
+// Roboto Mono.
 h1,
 h2,
 h3,
@@ -65,13 +69,29 @@ article.post {
     margin-bottom: 300px;
     div.post-content {
         text-rendering: optimizeLegibility;
-        line-height: 28px;
+        line-height: 34px;
         margin: 0 auto;
         overflow-wrap: break-word;
         font-family: Open Sans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        font-weight: 300;
+        color: $text-offwhite;
         font-size: 21px !important;
         letter-spacing: -.003em;
+        p {
+            margin: 0 0 28px;
+        }
+        strong {
+            color: #ffffff;
+        }
+        a {
+            color: $lightblue;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+            transition: color 0.2s ease;
+        }
+        ::selection {
+            background: $theme-primary;
+            color: #ffffff;
+        }
         hr {
             margin-bottom: 25px;
             margin-top: 25px;
