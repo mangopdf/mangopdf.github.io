@@ -48,4 +48,24 @@
 </script>
 
 </article>
+
+{{ if eq .Type "post" }}
+<section class="portfolio success">
+    <div class="container">
+        <h2 class="text-center">read another one</h2>
+        <hr class="star-primary star-pink">
+        <div class="grid">
+            {{ $others := where (where site.RegularPages "Type" "post") "Permalink" "ne" .Permalink }}
+            {{ range first 3 $others }}
+            <div class="portfolio-item">
+                <div class="post-image-container">
+                    <a href="{{ .RelPermalink }}">{{ partial "responsive-image.html" (dict "src" .Params.image "alt" .Title "class" "post-image" "sizes" "(max-width: 480px) 100vw, (max-width: 1050px) 50vw, 33vw" "no_dims" true) }}</a>
+                </div>
+                <a href="{{ .RelPermalink }}" class="btn btn-lg btn-outline btn-{{ .Params.colour }}">{{ .Title }}</a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
 {{ end }}
