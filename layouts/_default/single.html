@@ -4,12 +4,12 @@
     <header class="post-header">
         <h1 class="post-title" itemprop="name headline">{{ .Title }}</h1>
         <hr class="star-primary star-{{ .Params.colour }} star-post">
+        {{ with .Params.standfirst }}
+        <p class="standfirst">
+            {{ . }}
+        </p>
+        {{ end }}
         <p class="post-meta">
-            {{ with .Params.standfirst }}
-                <p class="standfirst">
-                    {{ . }}
-                </p>
-            {{ end }}
         <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" itemprop="datePublished">
             {{ .Date.Format "Jan 2, 2006" }}
         </time>
