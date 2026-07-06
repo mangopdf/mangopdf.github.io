@@ -23,7 +23,9 @@
   <meta name="twitter:description" content="{{ .Description | default "Blog and dumb websites by the hacker known as \"Alex\"" }}">
   <meta name="twitter:image" content="{{ .Params.image | default "/img/mango-social.jpg" | absURL }}">
 
+  {{ if .IsPage }}
   <link rel="stylesheet" href="{{ "vendor/littlefoot/littlefoot.css" | relURL }}">
+  {{ end }}
   {{ $opts := dict "targetPath" "css/style.css" }}
   {{ with resources.Get "scss/freelancer.scss" | css.Sass $opts | minify | fingerprint }}
     <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
@@ -134,6 +136,7 @@
   <script src="{{ "js/freelancer.js" | relURL }}"></script>
   <script src="{{ "js/navbar.js" | relURL }}"></script>
 
+  {{ if .IsPage }}
   <script src="{{ "vendor/littlefoot/littlefoot.js" | relURL }}"></script>
   <script type="application/javascript">
     littlefoot.littlefoot({
@@ -143,6 +146,7 @@
       }
     })
   </script>
+  {{ end }}
 
   <script src="{{ "js/emojicursor.js" | relURL }}"></script>
 </body>
