@@ -12,7 +12,6 @@
 <script>
 (function () {
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-  var spring = "cubic-bezier(0.34, 1.56, 0.64, 1)";
   document.querySelectorAll("details.expand").forEach(function (el) {
     var summary = el.querySelector("summary");
     var inner = el.querySelector(".expand-inner");
@@ -26,9 +25,15 @@
         inner.style.height = inner.scrollHeight + "px";
         inner.style.overflow = "hidden";
         requestAnimationFrame(function () {
-          inner.style.transition = "height 0.28s ease-out, padding-bottom 0.28s ease-out";
+          inner.style.transition =
+            "height 0.28s ease-out" +
+            ", padding-bottom 0.28s ease-out" +
+            ", transform 0.28s ease-out" +
+            ", opacity 0.22s ease-out";
           inner.style.height = "0";
           inner.style.paddingBottom = "0";
+          inner.style.opacity = "0";
+          inner.style.transform = "translateY(-10px)";
         });
         inner.addEventListener("transitionend", function done(ev) {
           if (ev.target !== inner || ev.propertyName !== "height") return;
@@ -47,9 +52,9 @@
         inner.style.overflow = "hidden";
         requestAnimationFrame(function () {
           inner.style.transition =
-            "height 0.38s " + spring +
-            ", padding-bottom 0.38s " + spring +
-            ", transform 0.38s " + spring +
+            "height 0.28s ease-out" +
+            ", padding-bottom 0.28s ease-out" +
+            ", transform 0.28s ease-out" +
             ", opacity 0.22s ease-out 0.06s";
           inner.style.height = target + "px";
           inner.style.paddingBottom = pad;
