@@ -29,7 +29,11 @@
         if (enabled) {
             stars.forEach(function(el) { el.classList.add("speedy"); });
             window.stopEmoji = false;
-            if (typeof emojiCursor === 'function') emojiCursor();
+            const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+            const prefersReducedMotion = mediaQuery.matches;
+            if (!prefersReducedMotion) {
+                if (typeof emojiCursor === 'function') emojiCursor();
+            }
         } else {
             stars.forEach(function(el) { el.classList.remove("speedy"); });
             window.stopEmoji = true;
@@ -83,12 +87,12 @@
     
     // Randomize brand segment colours on each page load
     function randomizeBrandColors() {
-        var colors = ['#c6a5ff', '#ff9cf1', '#a3e6f5'];
-        for (var i = colors.length - 1; i > 0; i--) {
-            var j = Math.floor(Math.random() * (i + 1));
-            var tmp = colors[i]; colors[i] = colors[j]; colors[j] = tmp;
+        const colors = ['#c6a5ff', '#ff9cf1', '#a3e6f5'];
+        for (let i = colors.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            const tmp = colors[i]; colors[i] = colors[j]; colors[j] = tmp;
         }
-        var root = document.documentElement;
+        const root = document.documentElement;
         root.style.setProperty('--brand-a', colors[0]);
         root.style.setProperty('--brand-b', colors[1]);
         root.style.setProperty('--brand-c', colors[2]);
