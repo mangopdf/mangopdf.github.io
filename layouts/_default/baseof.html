@@ -138,7 +138,12 @@
 
   <script src="{{ "vendor/littlefoot/littlefoot.js" | relURL }}"></script>
   <script type="application/javascript">
-    littlefoot.littlefoot()
+    littlefoot.littlefoot({
+      activateDelay: 0,
+      activateCallback: function (popover, button) {
+        gtag('event', 'footnote_open', { footnote_id: button.dataset.footnoteId })
+      }
+    })
   </script>
 
   <script src="{{ "js/emojicursor.js" | relURL }}"></script>
