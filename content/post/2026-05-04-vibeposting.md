@@ -6,7 +6,7 @@ text_colour: text-pink
 description: This appears in link previews
 standfirst: The vibe coders are at it again
 excerpt: The vibe coders are at it again
-image: https://mango.pdf.zone/img/vibeleaking.png
+image: /img/vibeposting/hetzner-id.png
 url: /finding-vibe-leaked-api-keys-every-day
 ---
 
