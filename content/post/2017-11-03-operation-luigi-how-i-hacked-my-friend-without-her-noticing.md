@@ -5,7 +5,7 @@ description: My friend gave me permission to hack her, here's how I did it and h
   to stop it happening to you.
 excerpt: It's probably easier if you just read it. <a href="https://news.ycombinator.com/item?id=14919845">Salty
   Hacker News comments</a>
-image: https://i.imgur.com/xgqR3Ss.png
+image: /img/thumbnails/operation-luigi-preview.png
 title: 'Operation Luigi: How I hacked my friend without her noticing'
 url: /operation-luigi-how-i-hacked-my-friend-without-her-noticing
 ---

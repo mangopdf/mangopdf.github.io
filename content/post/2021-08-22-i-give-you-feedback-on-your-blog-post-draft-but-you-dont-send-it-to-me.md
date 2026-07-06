@@ -4,7 +4,7 @@ colour: pink
 date: "2021-08-22T09:30:00Z"
 description: I say to you the same things I say to everyone, but it's good.
 excerpt: That simply will not be necessary.
-image: https://mango.pdf.zone/img/howtoblog/best_practices_preview.png
+image: /img/howtoblog/best_practices_preview.png
 standfirst: That simply will not be necessary.
 title: I give you feedback on your blog post draft but you don't send it to me
 url: /i-give-you-feedback-on-your-blog-post-draft-but-you-dont-send-it-to-me

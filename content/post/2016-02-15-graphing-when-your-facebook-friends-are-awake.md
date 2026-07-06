@@ -5,7 +5,7 @@ description: A hidden Facebook API shows online activity, and can be used to mak
   graphs of when people are awake.
 excerpt: I stumbled upon a dodgy Facebook API. Read for tips on how to apply at the
   NSA. <a href="https://news.ycombinator.com/item?id=11130688">Hacker News comments</a>
-image: https://mango.pdf.zone/img/2016-02-15-graphing-when-your-facebook-friends-are-awake/c40272b2c7c3b9e438ef7c664d7885e84a11d339e5ba4592bcd8439c2a4f1b46.png
+image: /img/2016-02-15-graphing-when-your-facebook-friends-are-awake/c40272b2c7c3b9e438ef7c664d7885e84a11d339e5ba4592bcd8439c2a4f1b46.png
 title: Graphing when your Facebook friends are awake
 url: /graphing-when-your-facebook-friends-are-awake
 ---

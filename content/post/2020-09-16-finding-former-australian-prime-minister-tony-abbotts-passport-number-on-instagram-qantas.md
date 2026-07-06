@@ -5,7 +5,7 @@ date: "2020-09-16T09:30:00Z"
 description: Do not get arrested challenge 2020
 excerpt: I went on an emotional rollercoaster. A spiritual journey. I sent a lot of
   emails. I tried so, so much not to get arrested.
-image: https://mango.pdf.zone/img/sunburnt-country/title.png
+image: /img/sunburnt-country/title.png
 standfirst: Do not get arrested challenge 2020
 title: When you browse Instagram and find former Australian Prime Minister Tony Abbott's
   passport number
