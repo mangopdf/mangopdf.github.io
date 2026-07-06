@@ -14,3 +14,11 @@ package-lock.json
 hugo.log
 .vscode
 .playwright-mcp
+
+# Extra Bootstrap JS variants — only bootstrap.min.js is used
+static/vendor/bootstrap/js/*
+!static/vendor/bootstrap/js/bootstrap.min.js
+
+# Unminified dupe and source map — only popper.min.js is used
+static/vendor/popper/popper.js
+static/vendor/popper/popper.min.js.map
