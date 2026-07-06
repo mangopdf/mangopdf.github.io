@@ -7,7 +7,7 @@
             <hr class="star-primary star-blue">
             <div class="grid">
                 {{ $oldPages := (where (where .Site.RegularPages "Type" "post") ".Date.Unix" "<" (time "2022-01-01").Unix) }}
-                {{ $externalPosts := .Site.Data.externalposts }}
+                {{ $externalPosts := hugo.Data.externalposts }}
                 {{ $newPages := (where (where .Site.RegularPages "Type" "post") ".Date.Unix" ">" (time "2025-01-01").Unix) }}
                 {{ range $newPages}}
                 <div class="portfolio-item">

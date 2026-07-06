@@ -1,6 +1,6 @@
 baseURL: "https://mango.pdf.zone/"
 disablePathToLower: true
-languageCode: en-us
+locale: en-us
 title: mango.pdf.zone
 assetDir: "static"
 markup:

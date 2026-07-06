@@ -10,12 +10,9 @@ hugo server -D
 
 # production build
 hugo --gc --minify
-
-# run the gulp build pipeline for static assets (from static/)
-cd static && npm ci && npx gulp
 ```
 
-The CI workflow (`.github/workflows/hugo.yaml`) is the authoritative build. It uses **Hugo extended 0.137.1** + **Dart Sass**. SCSS is compiled by Hugo via the Dart Sass transpiler; the old gulp pipeline in `static/` is secondary.
+SCSS is compiled by Hugo's built-in Dart Sass transpiler.
 
 ## Project structure
 
@@ -48,13 +45,12 @@ Posts are bucketed in the template (`layouts/_default/home.html`):
 Posts from 2022–2024 are in a display gap. To show a post from that era, adjust the template thresholds.
 
 ### File extensions
-Posts use a mix of `.md` and `.markdown` extensions — both work.
+Post files use the `.md` extension.
 
 ## CI deployment
 
 - Deploys on push to `master` (also manual dispatch)
-- Hugo version: **0.137.1** (extended, installed via `.deb`)
-- Dart Sass installed via `snap`
+- Hugo version: **0.160.1** (extended, installed via `.deb`)
 - `HUGO_ENVIRONMENT=production`, `TZ=America/Los_Angeles`
 - Build artifacts: CNAME file + duplicated RSS (`index.xml` → `feed.xml`)
 - Deploys to GitHub Pages via `actions/deploy-pages`
@@ -66,4 +62,4 @@ Posts use a mix of `.md` and `.markdown` extensions — both work.
 - The repo has many `*~` backup files (emacs-style). Do not commit more.
 - `themes/` is empty — do not add a theme dependency. All styling is in `static/scss/` + custom layouts.
 - `package.json` (with actual deps) lives in `static/`, not the repo root. The root `package.json` is empty.
-- The gulp pipeline in `static/` copies vendor libs (`bootstrap`, `popper`, `littlefoot`) to `static/vendor/`. If adding frontend deps, update both `static/package.json` and the gulp `copy` task.
+- Vendor JS libraries (Bootstrap, littlefoot, Popper) are committed directly to `static/vendor/`. To update them, download the new version and replace the files.

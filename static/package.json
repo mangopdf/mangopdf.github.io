@@ -1,36 +1,15 @@
 {
-  "title": "Freelancer",
-  "name": "startbootstrap-freelancer",
-  "version": "4.0.0-beta",
-  "description": "A freelancer portfolio HTML theme for Bootstrap.",
-  "keywords": [
-    "css",
-    "sass",
-    "html",
-    "responsive",
-    "theme",
-    "template"
-  ],
-  "homepage": "https://mango.pdf.zone",
-  "license": "MIT",
-  "author": "Start Bootstrap",
+  "title": "mango.pdf.zone",
+  "name": "mangopdf",
+  "version": "1.0.0",
+  "description": "Personal blog of the hacker known as Alex",
+  "author": "mangopdf",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer.git"
+    "url": "https://github.com/mangopdf/mangopdf"
   },
   "dependencies": {
-    "@fontsource/open-sans": "^5.2.7",
     "bootstrap": "^5.3.3",
     "littlefoot": "^4.1.4"
-  },
-  "devDependencies": {
-    "browser-sync": "^3.0.2",
-    "gulp": "^5.0.0",
-    "gulp-clean-css": "3.7.0",
-    "gulp-header": "1.8.9",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^5.1.0",
-    "gulp-uglify": "3.0.0",
-    "sass": "^1.99.0"
   }
 }
