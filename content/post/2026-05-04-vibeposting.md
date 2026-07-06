@@ -1,6 +1,7 @@
 ---
 title: Finding vibe leaked API keys every day 
 date: "2026-05-04T12:00:00Z"
+draft: true
 colour: pink
 text_colour: text-pink
 description: This appears in link previews
