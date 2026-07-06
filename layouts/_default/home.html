@@ -9,9 +9,9 @@
             <h2 class="text-center scrollspy" id="blog">blog posts</h2>
             <hr class="star-primary star-blue">
             <div class="grid">
-                {{ $oldPages := (where (where .Site.RegularPages "Type" "post") ".Date.Unix" "<" (time "2022-01-01").Unix) }}
+                {{ $oldPages := (where (where .Site.RegularPages "Type" "post") ".Date.Unix" "<" (time "2025-01-01").Unix) }}
                 {{ $externalPosts := hugo.Data.externalposts }}
-                {{ $newPages := (where (where .Site.RegularPages "Type" "post") ".Date.Unix" ">" (time "2025-01-01").Unix) }}
+                {{ $newPages := (where (where .Site.RegularPages "Type" "post") ".Date.Unix" ">=" (time "2025-01-01").Unix) }}
                 {{ range $newPages}}
                 <div class="portfolio-item">
                     <div class="post-image-container">
