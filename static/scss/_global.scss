@@ -195,3 +195,11 @@ section.success {
 }
 
 
+// Mobile-only intro line at the top of the homepage; the desktop
+// equivalent lives inside the navbar (baseof.html, .navbar-intro).
+.mobile-intro {
+  font-size: 16px;
+  color: $text-offwhite;
+  margin: 24px 16px 0;
+}
+
