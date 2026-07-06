@@ -12,3 +12,5 @@ resources
 package-lock.json
 .DS_Store
 hugo.log
+.vscode
+.playwright-mcp
