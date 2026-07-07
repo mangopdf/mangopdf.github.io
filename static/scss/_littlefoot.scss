@@ -12,8 +12,8 @@
     --button-font-size: 15px;
     --button-font-weight: 700;
     --button-border-radius: 99px;
-    --button-border: 1.5px solid #{$pink};
-    --button-background-color: #{$pink};
+    --button-border: 1.5px solid #{darken($pink, 8%)};
+    --button-background-color: #{darken($pink, 8%)};
     --button-text-color: #fff;
     --button-active-background-color: #{$theme-primary};
     --button-active-text-color: #fff;
@@ -56,8 +56,8 @@
 
     &:hover {
         transform: translateY(-1px);
-        background-color: darken($pink, 8%);
-        border-color: darken($pink, 8%);
+        background-color: $pink;
+        border-color: $pink;
     }
 
     &.is-active,
