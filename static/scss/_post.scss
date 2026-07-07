@@ -83,10 +83,19 @@ article.post {
             color: #ffffff;
         }
         a {
-            color: $lightblue;
-            text-decoration-thickness: 1px;
-            text-underline-offset: 3px;
-            transition: color 0.2s ease;
+            color: $pink;
+            text-decoration: none;
+            background-image: linear-gradient(120deg, $theme-primary 0%, $theme-primary 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 0%;
+            background-position: 0 100%;
+            transition: color 0.08s ease;
+
+            &:hover,
+            &:focus-visible {
+                background-size: 100% 100%;
+                color: #ffffff;
+            }
         }
         ::selection {
             background: $theme-primary;
