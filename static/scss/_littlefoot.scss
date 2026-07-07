@@ -1,6 +1,7 @@
-// Littlefoot footnotes: lavender dot chips sitting inline with body text;
-// popover is a light speech bubble with a chunky tail. Configured through
-// littlefoot's CSS custom properties wherever it exposes one.
+// Littlefoot footnotes: lavender outline dot chips sitting inline with
+// body text; popover is a light speech bubble with a chunky tail.
+// Configured through littlefoot's CSS custom properties wherever it
+// exposes one.
 
 .littlefoot {
     // littlefoot uses this var to compute the popover gap; the button's
@@ -11,8 +12,8 @@
     --button-font-size: 15px;
     --button-font-weight: 700;
     --button-border-radius: 99px;
-    --button-border: 1.5px solid #{rgba($purple, 0.6)};
-    --button-background-color: #{rgba($purple, 0.24)};
+    --button-border: 1.5px solid #{$purple};
+    --button-background-color: transparent;
     --button-text-color: #dcc9ff;
     --button-active-background-color: #{$purple};
     --button-active-text-color: #2e2838;
