@@ -168,10 +168,12 @@
       a {
         color: $purple;
         text-decoration: none;
-        
+        background-image: none;
+        background-size: auto;
+        transition: color 0.3s ease;
+
         &:hover {
-          color: $lightblue;
-          text-decoration: underline;
+          color: white;
         }
       }
     }
@@ -183,14 +185,16 @@
     
     li.nav-item {
       a.nav-link {
-        color: white;
+        color: $purple;
         font-weight: 500;
         padding: 8px 12px; // Reduce horizontal padding to save space
-        transition: all 0.3s ease;
+        background-image: none;
+        background-size: auto;
+        transition: color 0.3s ease;
         white-space: nowrap; // Prevent text wrapping
-        
+
         &:hover {
-          color: $purple;
+          color: white;
           outline: none;
         }
         &:active,
@@ -244,10 +248,15 @@
     }
     
     // Removed active state styling - only show hover effects
+    .navbar-nav > li.nav-item > a.nav-link {
+      background-image: none;
+      background-size: auto;
+    }
+    .navbar-nav > li.nav-item > a.nav-link {
+      color: $purple;
+    }
     .navbar-nav > li.nav-item > a.nav-link:hover {
       color: white;
-      border-radius: 4px;
-      background: rgba(255, 156, 241, 0.3);
     }
   }
   
