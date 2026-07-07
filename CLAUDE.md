@@ -43,3 +43,7 @@ The brand text "mango.pdf.zone" is split into three `<span>` segments (`mango` /
 `assetDir` is set to `static/` in `hugo.yaml`, so `resources.Get` resolves paths relative to `static/` (e.g. `resources.Get "scss/freelancer.scss"`). Hugo reads filesystem timestamps for cache invalidation — a touch or rebuild may be needed if changes aren't picked up.
 
 `static/vendor/` contains third-party libs (Bootstrap, Popper, littlefoot). These are populated by the gulp pipeline in `static/` — see AGENTS.md.
+
+## Commit policy
+
+**Do not commit unless explicitly asked.** Make changes, build, verify — but wait for an explicit "commit" instruction before running `git commit`.
