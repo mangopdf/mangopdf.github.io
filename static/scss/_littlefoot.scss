@@ -1,7 +1,7 @@
-// Littlefoot footnotes: pink dot chips (#ff9cf1, matching the brand logo)
-// sitting inline with body text; popover is a light speech bubble with a
-// chunky tail. Configured through littlefoot's CSS custom properties
-// wherever it exposes one.
+// Littlefoot footnotes: subtle grey dot chips, slightly lighter than the
+// page background, sitting inline with body text; popover is a light
+// speech bubble with a chunky tail. Configured through littlefoot's CSS
+// custom properties wherever it exposes one.
 
 .littlefoot {
     // littlefoot uses this var to compute the popover gap; the button's
@@ -12,10 +12,10 @@
     --button-font-size: 15px;
     --button-font-weight: 700;
     --button-border-radius: 99px;
-    --button-border: 1.5px solid #{darken($pink, 8%)};
-    --button-background-color: #{darken($pink, 8%)};
+    --button-border: 1.5px solid #{lighten($background-grey, 12%)};
+    --button-background-color: #{lighten($background-grey, 12%)};
     --button-text-color: #fff;
-    --button-active-background-color: #{$theme-primary};
+    --button-active-background-color: #{lighten($background-grey, 28%)};
     --button-active-text-color: #fff;
 
     --popover-background-color: #fff6fc;
@@ -56,13 +56,13 @@
 
     &:hover {
         transform: translateY(-1px);
-        background-color: $pink;
-        border-color: $pink;
+        background-color: lighten($background-grey, 20%);
+        border-color: lighten($background-grey, 20%);
     }
 
     &.is-active,
     &:active {
-        border-color: $theme-primary;
+        border-color: lighten($background-grey, 28%);
     }
 
     &:focus-visible {
