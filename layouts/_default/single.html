@@ -52,7 +52,6 @@
 {{ if eq .Type "post" }}
 <section class="portfolio success">
     <div class="container">
-        <h2 class="text-center">read another one</h2>
         <hr class="star-primary star-pink">
         <div class="grid">
             {{ $others := where (where site.RegularPages "Type" "post") "Permalink" "ne" .Permalink }}
