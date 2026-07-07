@@ -15,7 +15,7 @@
     --button-border: 1.5px solid #{$pink};
     --button-background-color: #{$pink};
     --button-text-color: #fff;
-    --button-active-background-color: #{$purple};
+    --button-active-background-color: #{$theme-primary};
     --button-active-text-color: #fff;
 
     --popover-background-color: #fff6fc;
@@ -56,14 +56,13 @@
 
     &:hover {
         transform: translateY(-1px);
-        background-color: #fff;
-        color: $pink;
-        border-color: #fff;
+        background-color: darken($pink, 8%);
+        border-color: darken($pink, 8%);
     }
 
     &.is-active,
     &:active {
-        border-color: $purple;
+        border-color: $theme-primary;
     }
 
     &:focus-visible {
