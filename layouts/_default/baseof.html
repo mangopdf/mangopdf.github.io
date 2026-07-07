@@ -26,6 +26,10 @@
   {{ if .IsPage }}
   <link rel="stylesheet" href="{{ "vendor/littlefoot/littlefoot.css" | relURL }}">
   {{ end }}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+
   {{ $opts := dict "targetPath" "css/style.css" }}
   {{ with resources.Get "scss/freelancer.scss" | css.Sass $opts | minify | fingerprint }}
     <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">

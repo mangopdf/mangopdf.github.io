@@ -1,0 +1,7 @@
+// Inline text effects — paired shortcode: {{< fx fancy >}}text{{< /fx >}}
+// Add new effects by adding a .fx-<name> class below.
+
+.fx-fancy {
+  font-family: 'Great Vibes', 'Snell Roundhand', 'Apple Chancery', cursive;
+  font-size: 1.3em;
+}
