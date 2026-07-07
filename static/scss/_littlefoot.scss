@@ -8,15 +8,15 @@
     // real height is padding-driven (height: auto below)
     --button-height: 1.8em;
     --button-margin: 0 0.15em;
-    --button-padding: 0.38em 0.85em;
+    --button-padding: 0.38em 0.55em;
     --button-font-size: 15px;
     --button-font-weight: 700;
     --button-border-radius: 99px;
     --button-border: 1.5px solid #{$pink};
     --button-background-color: #{$pink};
-    --button-text-color: #2e2838;
+    --button-text-color: #fff;
     --button-active-background-color: #{$purple};
-    --button-active-text-color: #2e2838;
+    --button-active-text-color: #fff;
 
     --popover-background-color: #fff6fc;
     --popover-text-color: #322b39;
@@ -56,6 +56,9 @@
 
     &:hover {
         transform: translateY(-1px);
+        background-color: #fff;
+        color: $pink;
+        border-color: #fff;
     }
 
     &.is-active,
