@@ -31,12 +31,14 @@
       
       .mobile-brand {
         font-size: 1.1rem;
-        font-weight: 700;
+        font-weight: 400;
         margin-right: 15px;
         text-decoration: none;
+        background: none;
 
         &:hover {
           text-decoration: none;
+          background: none;
           .brand-seg { color: white; }
         }
       }
@@ -132,12 +134,14 @@
   
   .navbar-brand {
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 400;
+    background: none;
     &.active,
     &:active,
     &:focus,
     &:hover {
       text-decoration: none;
+      background: none;
       .brand-seg { color: white; }
     }
   }
