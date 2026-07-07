@@ -141,8 +141,13 @@
   <script type="application/javascript">
     littlefoot.littlefoot({
       activateDelay: 0,
+      dismissDelay: 220,
       activateCallback: function (popover, button) {
+        document.body.classList.add('footnote-open')
         gtag('event', 'footnote_open', { footnote_id: button.dataset.footnoteId })
+      },
+      dismissCallback: function () {
+        document.body.classList.remove('footnote-open')
       }
     })
   </script>

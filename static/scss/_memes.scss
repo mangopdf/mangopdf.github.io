@@ -196,13 +196,3 @@ div.post-item {
 .rotating {
     animation: rotating 3s linear infinite;
 }
-
-.littlefoot {
-    --button-active-background-color: #e54ed0;
-    --popover-background-color: #444349;
-    --popover-font-family: Open Sans,helvetica neue,Helvetica,Arial,sans-serif;
-    --popover-text-color: #fff;
-    --popover-transition: opacity 0.12s ease, transform 0.12s ease;
-    --button-margin: 0 0.3em;
-    --button-padding: 0 0.4rem;
-}
