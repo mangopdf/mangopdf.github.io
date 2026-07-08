@@ -11,6 +11,7 @@ image: /img/vibeposting/hetzner-id.png
 url: /finding-vibe-leaked-api-keys-every-day
 ---
 
+
 But it's not as bad as it seems[^seems]
 
 [^seems]: It is tho
@@ -30,4 +31,4 @@ Anyway this is right after the expand.
 More post content down here, after the expand.
 
 
-Wolfgang Amadeus Mozart 2
+Wolfgang {{< fx fancy >}}Amadeus{{< /fx >}} Mozart 2
