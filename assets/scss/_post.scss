@@ -105,6 +105,52 @@ article.post {
             margin-bottom: 25px;
             margin-top: 25px;
         }
+        // Hanging-bar headings: a vertical bar in the left margin, so the
+        // heading text stays flush with the body copy. Bars thin and step
+        // down the palette as levels descend; h5 gets none.
+        h2,
+        h3,
+        h4 {
+            position: relative;
+        }
+        h2::before,
+        h3::before,
+        h4::before {
+            content: '';
+            position: absolute;
+            top: 0.1em;
+            bottom: 0.1em;
+            border-radius: 3px;
+        }
+        h2::before {
+            left: -22px;
+            width: 6px;
+            background: $theme-primary;
+        }
+        h3::before {
+            left: -20px;
+            width: 4px;
+            background: $theme-primary;
+        }
+        h4::before {
+            left: -18px;
+            width: 3px;
+            background: $theme-primary;
+        }
+        // Below the fixed-width breakpoint there's no margin to hang into,
+        // so tuck the bar inside the column instead.
+        @media (max-width: 1049px) {
+            h2,
+            h3,
+            h4 {
+                padding-left: 16px;
+            }
+            h2::before,
+            h3::before,
+            h4::before {
+                left: 0;
+            }
+        }
     }
     div.text-pink {
         p,
