@@ -611,7 +611,7 @@ The government people I talked to couldn't give me permission to write this post
 
 I called Tony Abbott's former political party again, and asked them how to contact him, or his office, or _something_ I'm really having a moment rn. They said they weren't associated with him anymore, and suggested I call _Parliament House_, like I was the Queen or something.
 
-![picture of parliament house](https://www.fma.com.au/sites/default/files/imagecache/event_full/uploaded-content/field_f_content_image/aph_from_website.jpg)
+![picture of parliament house](/img/sunburnt-country/parliament_house.jpg)
 
 In case you don't know it, Parliament House is sorta like the White House, I think? The Prime Minister lives there and has a nice little garden out the back with a macadamia tree that never runs out, and everyone works in different colourful sections like "Making it so Everyone Gets a Fair Shake of the Sauce Bottle R&D" and "Mateship" and they all wear matching uniforms with lil kangaroo and emu hats, and they all do a little dance every hour on the hour to celebrate another accident-free day in the Prime Minister's chocolate factory.
 
