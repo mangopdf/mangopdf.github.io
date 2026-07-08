@@ -19,7 +19,7 @@
         </p>
     </header>
 
-    <div class="post-content text-{{ .Params.text_colour }}" itemprop="articleBody">
+    <div class="post-content{{ with .Params.text_colour }} text-{{ . }}{{ end }}" itemprop="articleBody">
         <hr/>
         {{ .Content }}
     </div>

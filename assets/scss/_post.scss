@@ -44,23 +44,27 @@ article.post {
         width: 100%;
     }
     @media (max-width: 480px) {
-        // styles for mobile browsers smaller than 480px; (iPhone) 
+        // styles for mobile browsers smaller than 480px; (iPhone)
         h1 {
-            font-size: 27px;
+            font-size: 30px;
         }
         h1.post-title {
             text-align: center;
-            margin-top: 0px;
-            font-size: 28px
+            margin-top: 28px;
+            font-size: 32px
         }
         h2 {
-            font-size: 23px;
+            font-size: 26px;
         }
         h3 {
-            font-size: 20px;
+            font-size: 23px;
         }
         h4 {
-            font-size: 19px;
+            font-size: 21px;
+        }
+        div.post-content {
+            padding-left: 12px;
+            padding-right: 12px;
         }
     }
     @media (min-width: 1050px) {
@@ -107,12 +111,14 @@ article.post {
         }
         // Hanging-bar headings: a vertical bar in the left margin, so the
         // heading text stays flush with the body copy. Bars thin and step
-        // down the palette as levels descend; h5 gets none.
+        // down as heading levels descend; h5 gets none, h1 gets the widest.
+        h1,
         h2,
         h3,
         h4 {
             position: relative;
         }
+        h1::before,
         h2::before,
         h3::before,
         h4::before {
@@ -121,6 +127,11 @@ article.post {
             top: 0.1em;
             bottom: 0.1em;
             border-radius: 3px;
+        }
+        h1::before {
+            left: -24px;
+            width: 8px;
+            background: $theme-primary;
         }
         h2::before {
             left: -22px;
@@ -140,11 +151,13 @@ article.post {
         // Below the fixed-width breakpoint there's no margin to hang into,
         // so tuck the bar inside the column instead.
         @media (max-width: 1049px) {
+            h1,
             h2,
             h3,
             h4 {
                 padding-left: 16px;
             }
+            h1::before,
             h2::before,
             h3::before,
             h4::before {
@@ -165,6 +178,8 @@ article.post {
             margin-bottom: 0;
             padding-bottom: 10px;
             font-size: 14px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
         }
         p.standfirst {
             font-size: 22px;
@@ -180,14 +195,33 @@ article.post {
     }
 }
 
-pre.highlight {
-    white-space: pre-line;
-    color: white;
-    background-color: #2f2f2f;
-}
-
-code.highlighter-rouge {
-    background-color: #2f2f2f;
+// Code blocks and inline code in post content
+div.post-content {
+    pre {
+        background-color: #2f2f2f;
+        padding: 16px 20px;
+        border-radius: 6px;
+        overflow-x: auto;
+        font-size: 0.85em;
+        line-height: 1.5;
+        margin: 0 0 28px;
+        code {
+            background-color: transparent;
+            color: inherit;
+            padding: 0;
+            font-size: inherit;
+        }
+    }
+    // Inline code — more specific than pre code so it doesn't fight
+    > code,
+    p code,
+    li code {
+        background-color: rgba(255, 255, 255, 0.08);
+        color: #e0e0e0;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-size: 0.9em;
+    }
 }
 
 p.post-meta {
@@ -234,6 +268,7 @@ img+em {
     display: inherit;
     text-align: center;
     font-size: 90%;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 code {
@@ -246,9 +281,12 @@ hr {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-blockquote {
+.post-content blockquote {
     font-style: italic;
-    margin-left: 2rem;
+    margin: 0 0 28px;
+    padding: 8px 0 8px 20px;
+    border-left: 3px solid $theme-primary;
+    color: rgba(255, 255, 255, 0.82);
 }
 
 video.sunburntcountry {
