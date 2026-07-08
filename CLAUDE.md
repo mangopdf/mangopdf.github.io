@@ -16,7 +16,7 @@ All template logic is inline — there are no partials, no shortcodes (until rec
 
 ## SCSS architecture
 
-Entry point: `static/scss/freelancer.scss` → compiled by Hugo's Dart Sass transpiler into `/css/style.min.<hash>.css` via `resources.Get` + `css.Sass` + `minify` + `fingerprint`.
+Entry point: `assets/scss/freelancer.scss` → compiled by Hugo's Dart Sass transpiler into `/css/style.min.<hash>.css` via `resources.Get` + `css.Sass` + `minify` + `fingerprint`.
 
 Partials are prefixed with `_` and `@import`ed. Order in `freelancer.scss` matters — variables first, then mixins, then component partials. Key partials:
 
@@ -40,7 +40,7 @@ The brand text "mango.pdf.zone" is split into three `<span>` segments (`mango` /
 
 ## Static assets
 
-`assetDir` is set to `static/` in `hugo.yaml`, so `resources.Get` resolves paths relative to `static/` (e.g. `resources.Get "scss/freelancer.scss"`). Hugo reads filesystem timestamps for cache invalidation — a touch or rebuild may be needed if changes aren't picked up.
+SCSS lives in `assets/` (Hugo's asset dir), so the dev server watches it as an asset and re-runs the Sass pipeline on change — live reload works for style edits. `static/` is additionally mounted into `assets` via `module.mounts` in `hugo.yaml`, so `resources.Get` can still process images that live under `static/` (used by the responsive-image partial).
 
 `static/vendor/` contains third-party libs (Bootstrap, Popper, littlefoot). These are populated by the gulp pipeline in `static/` — see AGENTS.md.
 

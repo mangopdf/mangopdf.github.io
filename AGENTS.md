@@ -22,7 +22,8 @@ SCSS is compiled by Hugo's built-in Dart Sass transpiler.
 | `content/draft/` | Drafts — rendered as content (NOT Hugo drafts), excluded from homepage listings |
 | `data/externalposts.yaml` | External (Atlassian) posts shown on homepage |
 | `layouts/_default/` | Custom templates (baseof, home, single) — no theme |
-| `static/` | All assets; also set as `assetDir` in `hugo.yaml`. SCSS, JS, images, vendor libs live here |
+| `assets/` | SCSS (watched by the dev server; edits re-run the Sass pipeline) |
+| `static/` | JS, images, vendor libs; also mounted into `assets` in `hugo.yaml` so `resources.Get` can process images |
 | `public/` | Build output (gitignored) |
 | `resources/` | Hugo cache (gitignored) |
 | `jekyll/` | Legacy Jekyll version — still committed but no longer used |
@@ -60,6 +61,6 @@ Post files use the `.md` extension.
 - `disablePathToLower: true` in `hugo.yaml` — URLs preserve original casing
 - Goldmark `unsafe: true` — raw HTML in markdown is rendered
 - The repo has many `*~` backup files (emacs-style). Do not commit more.
-- `themes/` is empty — do not add a theme dependency. All styling is in `static/scss/` + custom layouts.
+- `themes/` is empty — do not add a theme dependency. All styling is in `assets/scss/` + custom layouts.
 - `package.json` (with actual deps) lives in `static/`, not the repo root. The root `package.json` is empty.
 - Vendor JS libraries (Bootstrap, littlefoot, Popper) are committed directly to `static/vendor/`. To update them, download the new version and replace the files.

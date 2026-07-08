@@ -2,7 +2,17 @@ baseURL: "https://mango.pdf.zone/"
 disablePathToLower: true
 locale: en-us
 title: mango.pdf.zone
-assetDir: "static"
+# SCSS lives in assets/ so the dev server watches it as an asset and re-runs
+# the Sass pipeline on change. static/ is also mounted into assets so
+# resources.Get can still process images that live there.
+module:
+  mounts:
+    - source: assets
+      target: assets
+    - source: static
+      target: assets
+    - source: static
+      target: static
 markup:
   defaultMarkdownHandler: goldmark
   goldmark:
