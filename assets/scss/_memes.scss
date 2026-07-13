@@ -18,6 +18,7 @@ div.grid {
 }
 
 .btn-outline {
+    position: relative;
     white-space: inherit !important;
     transition: all .1s ease-in-out;
     //max-height: 150px;
@@ -43,6 +44,17 @@ div.grid {
 
 .btn:focus {
     background: inherit !important;
+}
+
+.btn .btn-year {
+    position: absolute;
+    right: 8px;
+    bottom: 3px;
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
 }
 
 div.settings form {
