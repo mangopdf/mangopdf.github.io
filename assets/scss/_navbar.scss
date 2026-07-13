@@ -296,6 +296,16 @@
         }
       }
     }
+
+    .navbar-collapse {
+      .navbar-nav {
+        text-align: center;
+
+        .nav-link {
+          display: inline-block;
+        }
+      }
+    }
   }
   
   // Smaller screens need even more compact layout
