@@ -19,9 +19,14 @@ url: /finding-vibe-leaked-api-keys-every-day
 ![nothing happened in any squares](/img/image-1.png)
 ![dear mr mozart](/img/image.png)
 
+
+# """jokes"""""
+
+- "c*ntent creators"
+- "AI's primary purpose, stealing the jobs of zoomers"
+
 # stim cave
 
-"c*ntent creators"
 
 Wolfgang {{< fx fancy >}}Amadeus{{< /fx >}} Mozart 2
 

@@ -54,9 +54,6 @@ My friend once told me how she had this _insanely_ elaborate system for sneaking
 
 Her front door had two _really_ loud locks on it, and she didn't want her parents to hear her sneaking out.
 
-![Door with two locks, inside](/img/)
-
-
 She just casually explained that to sneak out, she takes advantage of her nearby bedroom door being very noisy too, because it has a flap on the bottom that drags along the ground when it moves.
 
 So she gets dressed to sneak out, and when she's all ready, slowly starts to push her bedroom door closed. It's really loud now, so she undoes one of the locks, covering the lock sound with the door sound. Then she shuts the door fully, making a loud thud, and at the exact same time, quickly undoes the second lock.
