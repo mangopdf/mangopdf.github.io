@@ -49,3 +49,7 @@ SCSS lives in `assets/` (Hugo's asset dir), so the dev server watches it as an a
 **Do not commit unless explicitly asked.** Make changes, build, verify — but wait for an explicit "commit" instruction before running `git commit`.
 
 **Never include `Co-Authored-By` lines in commit messages.**
+
+## Website testing
+Always remember to test both desktop and mobile views - the site is mobile first.
+Do not attempt to emulate/test mobile view by changing the window width or height - the tiling window manager will auto resize the window. Use Chrome's devtools to enable the mobile emulator to test mobile view.
