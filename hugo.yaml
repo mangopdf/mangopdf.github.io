@@ -1,5 +1,7 @@
 baseURL: "https://mango.pdf.zone/"
 disablePathToLower: true
+disableKinds: [taxonomy, term, section]
+enableRobotsTXT: true
 locale: en-us
 title: mango.pdf.zone
 # SCSS lives in assets/ so the dev server watches it as an asset and re-runs
