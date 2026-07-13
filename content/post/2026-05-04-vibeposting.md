@@ -21,6 +21,8 @@ url: /finding-vibe-leaked-api-keys-every-day
 
 # stim cave
 
+"c*ntent creators"
+
 Wolfgang {{< fx fancy >}}Amadeus{{< /fx >}} Mozart 2
 
 But it's not as bad as it seems[^seems]
