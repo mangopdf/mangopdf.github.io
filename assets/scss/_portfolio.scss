@@ -1,52 +1,90 @@
+// Per-post accent colour on the title capsule. Hover/press lightens the
+// border and title text 10%, same as the website section's outline buttons.
+@mixin post-card-accent($color) {
+  .post-card-body {
+    border-color: $color;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    .post-card-body {
+      border-color: lighten($color, 10%);
+    }
+
+    .post-card-title {
+      color: lighten($color, 10%);
+    }
+  }
+}
+
 // Styling for the portfolio section
 .portfolio {
   .portfolio-item {
 
-    div.post-image-container {
+    // One link per item: thumbnail on top, outline-button-style capsule
+    // holding the title and date below it. Flat, transparent, centred.
+    a.post-card {
+      display: flex;
+      flex-direction: column;
+      // opt out of the global link gradient-fill — on a card-sized <a> it
+      // floods the whole item magenta on hover/tap
+      background-image: none;
+      -webkit-tap-highlight-color: transparent;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+
+      &.post-card-pink { @include post-card-accent($pink); }
+      &.post-card-purple { @include post-card-accent($purple); }
+      &.post-card-lightblue { @include post-card-accent($lightblue); }
+      &.post-card-white { @include post-card-accent(white); }
 
       .post-image {
+        display: block;
         object-fit: cover;
         width: 100%;
+        aspect-ratio: 16 / 9;
         border-radius: 5px;
         box-shadow: 0px 0px 10px 0px #121212;
-        aspect-ratio: 16 / 9;
-        transition: box-shadow 0.05s ease-in-out;
       }
-    }
-    .portfolio-link {
-      position: relative;
-      display: block;
-      max-width: 400px;
-      margin: 0 auto;
-      cursor: pointer;
-      .caption {
+
+      .post-card-body {
+        position: relative;
+        margin-top: 14px;
+        // bottom padding doubles as a clear strip for the corner date
+        padding: 8px 14px 19px;
+        border: 2px solid rgba(255, 255, 255, 0.14);
+        border-radius: 6px;
+        transition: border-color 0.1s ease-in-out;
+      }
+
+      .post-card-title {
+        display: block;
+        color: white;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.4;
+        text-align: center;
+        text-wrap: balance;
+        transition: color 0.1s ease-in-out;
+      }
+
+      .post-card-date {
         position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-transition: all ease 0.5s;
-        -moz-transition: all ease 0.5s;
-        transition: all ease 0.5s;
-        opacity: 0;
-        background: fade-out($theme-success, .1);
-        &:hover {
-          opacity: 1;
-        }
-        .caption-content {
-          font-size: 20px;
-          position: absolute;
-          top: 50%;
-          width: 100%;
-          height: 20px;
-          margin-top: -12px;
-          text-align: center;
-          color: white;
-          i {
-            margin-top: -12px;
-          }
-          h3,
-          h4 {
-            margin: 0;
-          }
+        right: 8px;
+        bottom: 3px;
+        color: rgba(255, 255, 255, 0.45);
+        font-size: 11px;
+        letter-spacing: 0.3px;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .post-card-body,
+        .post-card-title {
+          transition: none;
         }
       }
     }

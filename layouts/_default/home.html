@@ -14,26 +14,41 @@
                 {{ $newPages := (where (where .Site.RegularPages "Type" "post") ".Date.Unix" ">=" (time "2025-01-01").Unix) }}
                 {{ range $newPages}}
                 <div class="portfolio-item">
-                    <div class="post-image-container">
-                        <a href="{{ .RelPermalink }}">{{ partial "responsive-image.html" (dict "src" .Params.image "alt" .Title "class" "post-image" "sizes" "(max-width: 480px) 100vw, (max-width: 1050px) 50vw, 33vw" "no_dims" true) }}</a>
-                    </div>
-                    <a href="{{ .RelPermalink }}" class="btn btn-lg btn-outline btn-{{ .Params.colour }}">{{ .Title }}</a>
+                    <a href="{{ .RelPermalink }}" class="post-card post-card-{{ .Params.colour }}">
+                        <div class="post-image-container">
+                            {{ partial "responsive-image.html" (dict "src" .Params.image "alt" "" "class" "post-image" "sizes" "(max-width: 480px) 100vw, (max-width: 1050px) 50vw, 33vw" "no_dims" true) }}
+                        </div>
+                        <span class="post-card-body">
+                            <span class="post-card-title">{{ .Title }}</span>
+                            <span class="post-card-date" title="{{ .Date.Format "2006" }}">{{ partial "relative-date.html" .Date }}</span>
+                        </span>
+                    </a>
                 </div>
                 {{ end }}
                 {{ range $externalPosts }}
                 <div class="portfolio-item">
-                    <div class="post-image-container">
-                        <a href="{{ .RelPermalink }}">{{ partial "responsive-image.html" (dict "src" .Params.image "alt" .Title "class" "post-image" "sizes" "(max-width: 480px) 100vw, (max-width: 1050px) 50vw, 33vw" "no_dims" true) }}</a>
-                    </div>
-                    <a href="{{ .RelPermalink }}" class="btn btn-lg btn-outline btn-{{ .Params.colour }}">{{ .Title }}</a>
+                    <a href="{{ .RelPermalink }}" class="post-card post-card-{{ .Params.colour }}">
+                        <div class="post-image-container">
+                            {{ partial "responsive-image.html" (dict "src" .Params.image "alt" "" "class" "post-image" "sizes" "(max-width: 480px) 100vw, (max-width: 1050px) 50vw, 33vw" "no_dims" true) }}
+                        </div>
+                        <span class="post-card-body">
+                            <span class="post-card-title">{{ .Title }}</span>
+                            <span class="post-card-date" title="{{ dateFormat "2006" .Params.date }}">{{ partial "relative-date.html" .Params.date }}</span>
+                        </span>
+                    </a>
                 </div>
                 {{ end }}
                 {{ range $oldPages}}
                 <div class="portfolio-item">
-                    <div class="post-image-container">
-                        <a href="{{ .RelPermalink }}">{{ partial "responsive-image.html" (dict "src" .Params.image "alt" .Title "class" "post-image" "sizes" "(max-width: 480px) 100vw, (max-width: 1050px) 50vw, 33vw" "no_dims" true) }}</a>
-                    </div>
-                    <a href="{{ .RelPermalink }}" class="btn btn-lg btn-outline btn-{{ .Params.colour }}">{{ .Title }}</a>
+                    <a href="{{ .RelPermalink }}" class="post-card post-card-{{ .Params.colour }}">
+                        <div class="post-image-container">
+                            {{ partial "responsive-image.html" (dict "src" .Params.image "alt" "" "class" "post-image" "sizes" "(max-width: 480px) 100vw, (max-width: 1050px) 50vw, 33vw" "no_dims" true) }}
+                        </div>
+                        <span class="post-card-body">
+                            <span class="post-card-title">{{ .Title }}</span>
+                            <span class="post-card-date" title="{{ .Date.Format "2006" }}">{{ partial "relative-date.html" .Date }}</span>
+                        </span>
+                    </a>
                 </div>
                 {{ end }}
             </div>
@@ -90,82 +105,100 @@
             <div class="grid">
 
                 <div class="portfolio-item">
-                    <div class="post-image-container">
-                        <a href="https://www.youtube.com/watch?v=nllWyRBQFcM">
-                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/redteaming-yt-thumbnail.png" "alt" "Testing whether your security actually works with Red Teaming" "class" "post-image" "no_dims" true) }}
-                        </a>
-                    </div>
-                    <a href="https://www.youtube.com/watch?v=nllWyRBQFcM" class="btn btn-lg btn-outline btn-lightblue">
-                        Testing whether your security actually works with Red Teaming
-                        </a>
+                    <a href="https://www.youtube.com/watch?v=nllWyRBQFcM" class="post-card post-card-lightblue">
+                        <div class="post-image-container">
+                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/redteaming-yt-thumbnail.png" "alt" "" "class" "post-image" "no_dims" true) }}
+                        </div>
+                        <span class="post-card-body">
+                            <span class="post-card-title">Testing whether your security actually works with Red Teaming</span>
+                            <span class="post-card-date" title="2024">{{ partial "relative-date.html" 2024 }}</span>
+                        </span>
+                    </a>
                 </div>
 
                 <div class="portfolio-item">
-                    <div class="post-image-container">
-                        <a href="https://www.youtube.com/watch?v=KsS_5Y25tnE">
-                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/docker-yt-thumbnail.png" "alt" "Hiding malware in Docker Desktop's virtual machine" "class" "post-image" "no_dims" true) }}
-                        </a>
-                    </div>
-                    <a href="https://www.youtube.com/watch?v=KsS_5Y25tnE" class="btn btn-lg btn-outline btn-purple">
-                        Hiding malware in Docker Desktop's virtual machine
-                        </a>
+                    <a href="https://www.youtube.com/watch?v=KsS_5Y25tnE" class="post-card post-card-purple">
+                        <div class="post-image-container">
+                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/docker-yt-thumbnail.png" "alt" "" "class" "post-image" "no_dims" true) }}
+                        </div>
+                        <span class="post-card-body">
+                            <span class="post-card-title">Hiding malware in Docker Desktop's virtual machine</span>
+                            <span class="post-card-date" title="2022">{{ partial "relative-date.html" 2022 }}</span>
+                        </span>
+                    </a>
                 </div>
 
 
                 <div class="portfolio-item">
-                    <div class="post-image-container">
-                        <a href="https://youtu.be/lijyQ_HAysA">
-                            {{ partial "responsive-image.html" (dict "src" "https://img.youtube.com/vi/IWT6Y0YDJUo/0.jpg" "alt" "Finding Tony Abbott's Passport Number and entering the Do Not Get Arrested Challenge 2020" "class" "post-image" "no_dims" true) }}
-                        </a>
-                    </div>
-                    <a href="https://youtu.be/lijyQ_HAysA" class="btn btn-lg btn-outline btn-purple">
-                        Finding Tony Abbott's Passport Number and entering the Do Not Get Arrested Challenge 2020
-                        </a>
+                    <a href="https://youtu.be/lijyQ_HAysA" class="post-card post-card-purple">
+                        <div class="post-image-container">
+                            {{ partial "responsive-image.html" (dict "src" "https://img.youtube.com/vi/IWT6Y0YDJUo/0.jpg" "alt" "" "class" "post-image" "no_dims" true) }}
+                        </div>
+                        <span class="post-card-body">
+                            <span class="post-card-title">Finding Tony Abbott's Passport Number and entering the Do Not Get Arrested Challenge 2020</span>
+                            <span class="post-card-date" title="2021">{{ partial "relative-date.html" 2021 }}</span>
+                        </span>
+                    </a>
                 </div>
 
                 <div class="portfolio-item">
-                    <div class="post-image-container">
-                        <a href="https://darknetdiaries.com/episode/84/">
-                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/darknet-diaries-84.jpg" "alt" "Darknet Diaries episode 84: Jet-setters" "class" "post-image" "no_dims" true) }}
-                        </a>
-                    </div>
-                    <a href="https://darknetdiaries.com/episode/84/" class="btn btn-lg btn-outline btn-pink">Darknet Diaries episode 84: Jet-setters</a>
+                    <a href="https://darknetdiaries.com/episode/84/" class="post-card post-card-pink">
+                        <div class="post-image-container">
+                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/darknet-diaries-84.jpg" "alt" "" "class" "post-image" "no_dims" true) }}
+                        </div>
+                        <span class="post-card-body">
+                            <span class="post-card-title">Darknet Diaries episode 84: Jet-setters</span>
+                            <span class="post-card-date" title="2021">{{ partial "relative-date.html" 2021 }}</span>
+                        </span>
+                    </a>
                 </div>
 
                 <div class="portfolio-item">
-                    <div class="post-image-container">
-                        <a href="https://www.youtube.com/watch?v=9S3zwwCEe0E">
-                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/operation-luigi-yt-thumbnail.png" "alt" "Operation Luigi: How I hacked my friend without her noticing" "class" "post-image" "no_dims" true) }}
-                        </a>
-                    </div>
-                    <a href="https://www.youtube.com/watch?v=9S3zwwCEe0E" class="btn btn-lg btn-outline btn-purple">Operation Luigi: How I hacked my friend without her noticing</a>
+                    <a href="https://www.youtube.com/watch?v=9S3zwwCEe0E" class="post-card post-card-purple">
+                        <div class="post-image-container">
+                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/operation-luigi-yt-thumbnail.png" "alt" "" "class" "post-image" "no_dims" true) }}
+                        </div>
+                        <span class="post-card-body">
+                            <span class="post-card-title">Operation Luigi: How I hacked my friend without her noticing</span>
+                            <span class="post-card-date" title="2018">{{ partial "relative-date.html" 2018 }}</span>
+                        </span>
+                    </a>
                 </div>
 
                 <div class="portfolio-item">
-                    <div class="post-image-container">
-                        <a href="https://www.youtube.com/watch?v=BWAetsJqey0">
-                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/cookies-yt-thumbnail.png" "alt" "Stealing Chrome Cookies without a password" "class" "post-image" "no_dims" true) }}
-                        </a>
-                    </div>
-                    <a href="https://www.youtube.com/watch?v=BWAetsJqey0" class="btn btn-lg btn-outline btn-lightblue">Stealing Chrome Cookies without a password</a>
+                    <a href="https://www.youtube.com/watch?v=BWAetsJqey0" class="post-card post-card-lightblue">
+                        <div class="post-image-container">
+                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/cookies-yt-thumbnail.png" "alt" "" "class" "post-image" "no_dims" true) }}
+                        </div>
+                        <span class="post-card-body">
+                            <span class="post-card-title">Stealing Chrome Cookies without a password</span>
+                            <span class="post-card-date" title="2019">{{ partial "relative-date.html" 2019 }}</span>
+                        </span>
+                    </a>
                 </div>
 
                 <div class="portfolio-item">
-                    <div class="post-image-container">
-                        <a href="https://www.youtube.com/watch?v=nSu11VvVL9M">
-                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/tricking-people-yt-thumbnail.png" "alt" "Tricking people" "class" "post-image" "no_dims" true) }}
-                        </a>
-                    </div>
-                    <a href="https://www.youtube.com/watch?v=nSu11VvVL9M" class="btn btn-lg btn-outline btn-pink">Tricking people</a>
+                    <a href="https://www.youtube.com/watch?v=nSu11VvVL9M" class="post-card post-card-pink">
+                        <div class="post-image-container">
+                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/tricking-people-yt-thumbnail.png" "alt" "" "class" "post-image" "no_dims" true) }}
+                        </div>
+                        <span class="post-card-body">
+                            <span class="post-card-title">Tricking people</span>
+                            <span class="post-card-date" title="2017">{{ partial "relative-date.html" 2017 }}</span>
+                        </span>
+                    </a>
                 </div>
 
                 <div class="portfolio-item">
-                    <div class="post-image-container">
-                        <a href="https://www.youtube.com/watch?v=MkSkqMvGBuo">
-                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/graphing-yt-thumbnail.png" "alt" "Graphing when your Facebook friends are awake" "class" "post-image" "no_dims" true) }}
-                        </a>
-                    </div>
-                    <a href="https://www.youtube.com/watch?v=MkSkqMvGBuo" class="btn btn-lg btn-outline btn-lightblue">Graphing when your Facebook friends are awake</a>
+                    <a href="https://www.youtube.com/watch?v=MkSkqMvGBuo" class="post-card post-card-lightblue">
+                        <div class="post-image-container">
+                            {{ partial "responsive-image.html" (dict "src" "/img/thumbnails/graphing-yt-thumbnail.png" "alt" "" "class" "post-image" "no_dims" true) }}
+                        </div>
+                        <span class="post-card-body">
+                            <span class="post-card-title">Graphing when your Facebook friends are awake</span>
+                            <span class="post-card-date" title="2016">{{ partial "relative-date.html" 2016 }}</span>
+                        </span>
+                    </a>
                 </div>
 
 
@@ -180,7 +213,7 @@
             <div class="grid">
 
                 <div class=" portfolio-item">
-                    <a href="https://purplecon.org" class="btn btn-lg btn-outline btn-purple">purplecon.org</a>
+                    <a href="https://purplecon.org" class="btn btn-lg btn-outline btn-purple">purplecon.org <span class="btn-year" title="2018">{{ partial "relative-date.html" 2018 }}</span></a>
                     <div class="caption">
                         <div class="caption-content">
                             <p>
@@ -191,7 +224,7 @@
                 </div>
 
                 <div class="portfolio-item">
-                    <a href="https://textfac.es" class="btn btn-lg btn-outline btn-lightblue">textfac.es</a>
+                    <a href="https://textfac.es" class="btn btn-lg btn-outline btn-lightblue">textfac.es <span class="btn-year" title="2014">{{ partial "relative-date.html" 2014 }}</span></a>
                     <div class="caption">
                         <div class="caption-content">
                             <p>
@@ -202,7 +235,7 @@
                 </div>
 
                 <div class=" portfolio-item">
-                    <a href="https://verylegit.link" class="btn btn-lg btn-outline btn-pink">verylegit.link</a>
+                    <a href="https://verylegit.link" class="btn btn-lg btn-outline btn-pink">verylegit.link <span class="btn-year" title="2017">{{ partial "relative-date.html" 2017 }}</span></a>
                     <div class="caption">
                         <div class="caption-content">
                             <p>
@@ -213,7 +246,7 @@
                 </div>
                 <div class=" portfolio-item">
                     <a href="https://emojityper.com" class="btn btn-lg btn-outline btn-lightblue">
-                        emojityper.com
+                        emojityper.com <span class="btn-year" title="2018">{{ partial "relative-date.html" 2018 }}</span>
                     </a>
                     <div class="caption">
                         <div class="caption-content">

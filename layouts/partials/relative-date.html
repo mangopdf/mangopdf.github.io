@@ -1,0 +1,16 @@
+{{/*
+  Renders a compact relative age: "5y", "3mo", or "new" (under a month).
+  Accepts a time.Time (e.g. .Date), a date string ("2023-04-16T09:30:00Z"),
+  or a bare year int (e.g. 2024, treated as Jan 1 of that year).
+*/}}
+{{- $t := . -}}
+{{- $type := printf "%T" $t -}}
+{{- if eq $type "int" -}}
+  {{- $t = time (printf "%d-01-01" $t) -}}
+{{- else if eq $type "string" -}}
+  {{- $t = time $t -}}
+{{- end -}}
+{{- $seconds := sub now.Unix $t.Unix -}}
+{{- $years := div $seconds 31536000 -}}
+{{- $months := div $seconds 2628000 -}}
+{{- if ge $years 1 -}}{{ $years }}y{{- else if ge $months 1 -}}{{ $months }}mo{{- else -}}new{{- end -}}

@@ -57,10 +57,15 @@
             {{ $others := where (where site.RegularPages "Type" "post") "Permalink" "ne" .Permalink }}
             {{ range first 3 $others }}
             <div class="portfolio-item">
-                <div class="post-image-container">
-                    <a href="{{ .RelPermalink }}">{{ partial "responsive-image.html" (dict "src" .Params.image "alt" .Title "class" "post-image" "sizes" "(max-width: 480px) 100vw, (max-width: 1050px) 50vw, 33vw" "no_dims" true) }}</a>
-                </div>
-                <a href="{{ .RelPermalink }}" class="btn btn-lg btn-outline btn-{{ .Params.colour }}">{{ .Title }}</a>
+                <a href="{{ .RelPermalink }}" class="post-card post-card-{{ .Params.colour }}">
+                    <div class="post-image-container">
+                        {{ partial "responsive-image.html" (dict "src" .Params.image "alt" "" "class" "post-image" "sizes" "(max-width: 480px) 100vw, (max-width: 1050px) 50vw, 33vw" "no_dims" true) }}
+                    </div>
+                    <span class="post-card-body">
+                        <span class="post-card-title">{{ .Title }}</span>
+                        <span class="post-card-date" title="{{ .Date.Format "2006" }}">{{ partial "relative-date.html" .Date }}</span>
+                    </span>
+                </a>
             </div>
             {{ end }}
         </div>
