@@ -1,6 +1,17 @@
 details.expand {
   width: 100%;
   margin: 1.5em 0;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 6px;
+  transition: border-color 0.15s ease;
+
+  // hover: hover — touch devices emulate :hover on tap and it sticks until
+  // the next tap elsewhere, leaving the border stuck bright.
+  @media (hover: hover) {
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.35);
+    }
+  }
 
   > summary {
     list-style: none;
@@ -12,24 +23,31 @@ details.expand {
   display: flex;
   align-items: center;
   gap: 0.5em;
+  padding: 0.6em 0.9em;
   cursor: pointer;
   user-select: none;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.65);
   transition: color 0.15s ease;
 
-  &:hover,
-  &:focus-visible {
-    color: #ffffff;
+  @media (hover: hover) {
+    &:hover {
+      color: #ffffff;
 
-    .expand-chevron {
-      border-left-color: rgba(255, 255, 255, 0.9);
+      .expand-chevron {
+        border-left-color: rgba(255, 255, 255, 0.9);
+      }
     }
   }
 
   &:focus-visible {
+    color: #ffffff;
     outline: 2px solid $pink;
     outline-offset: 2px;
+
+    .expand-chevron {
+      border-left-color: rgba(255, 255, 255, 0.9);
+    }
   }
 }
 
@@ -60,7 +78,9 @@ details.expand[open] .expand-chevron {
 }
 
 .expand-inner {
-  padding: 0 0 1em 1em;
+  // Left padding lines the content up with the title text: summary padding
+  // (0.9em) + chevron width (7px) + flex gap (0.5em).
+  padding: 0 0.9em 1em calc(1.4em + 7px);
 
   > :first-child {
     margin-top: 0.75em;
