@@ -1,0 +1,41 @@
+{{/* Image render hook — routes local PNG/JPG to responsive-image partial, passes through external URLs/GIFs/SVGs */}}
+{{ $src := .Destination }}
+{{ $alt := .PlainText | default "" }}
+{{ $title := .Title }}
+
+{{ $isExternal := or (hasPrefix $src "http://") (hasPrefix $src "https://") }}
+{{ $isGIF := hasSuffix $src ".gif" }}
+{{ $isSVG := hasSuffix $src ".svg" }}
+
+{{ if or $isExternal $isGIF $isSVG }}
+  {{/* Passthrough: external URLs, GIFs (Hugo can't resize animated ones), SVGs (vector) */}}
+  {{ $width := "" }}
+  {{ $height := "" }}
+  {{ if not $isExternal }}
+    {{ $imgPath := $src }}
+    {{ if hasPrefix $imgPath "/" }}
+      {{ $imgPath = substr $imgPath 1 }}
+    {{ end }}
+    {{ with resources.Get $imgPath }}
+      {{ $width = .Width }}
+      {{ $height = .Height }}
+    {{ end }}
+  {{ end }}
+  <img
+    src="{{ $src }}"
+    alt="{{ $alt }}"
+    {{ with $title }}title="{{ . }}"{{ end }}
+    loading="lazy"
+    {{ with $width }}width="{{ . }}"{{ end }}
+    {{ with $height }}height="{{ . }}"{{ end }}
+  />
+{{ else }}
+  {{/* Local raster image: delegate to responsive-image partial for WebP + srcset */}}
+  {{ partial "responsive-image.html" (dict
+    "src" $src
+    "alt" $alt
+    "title" $title
+    "sizes" "(max-width: 800px) 100vw, 740px"
+    "Page" .Page
+  ) }}
+{{ end }}

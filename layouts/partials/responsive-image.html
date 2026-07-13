@@ -1,6 +1,6 @@
-{{/* 
+{{/*
   Usage: {{ partial "responsive-image.html" (dict "src" .Params.image "alt" .Title "class" "post-image" "sizes" "(max-width: 480px) 100vw, (max-width: 1050px) 50vw, 33vw") }}
-  Accepts: src (required), alt (required), class (optional), sizes (optional, defaults to 100vw), width (optional hint), height (optional hint)
+  Accepts: src (required), alt (required), class (optional), sizes (optional, defaults to 100vw), title (optional), loading (optional, default "lazy"), no_dims (optional), width (optional hint), height (optional hint), Page (optional, for error messages)
 */}}
 {{ $src := .src }}
 {{ $alt := .alt }}
@@ -8,14 +8,16 @@
 {{ $sizes := .sizes | default "100vw" }}
 {{ $loading := .loading | default "lazy" }}
 {{ $no_dims := .no_dims | default false }}
+{{ $title := .title | default "" }}
 
 {{ if hasPrefix $src "http" }}
   {{/* External URL: just render with lazy loading */}}
-  <img 
-    src="{{ $src }}" 
-    alt="{{ $alt }}" 
-    class="{{ $class }}" 
+  <img
+    src="{{ $src }}"
+    alt="{{ $alt }}"
+    class="{{ $class }}"
     loading="{{ $loading }}"
+    {{ with $title }}title="{{ . }}"{{ end }}
     {{ with $.width }}width="{{ . }}"{{ end }}
     {{ with $.height }}height="{{ . }}"{{ end }}
   />
@@ -27,25 +29,46 @@
   {{ end }}
   {{ $img := resources.Get $imgPath }}
   {{ if $img }}
-    {{ $resized := $img.Resize "800x webp" }}
-    {{ $resized2x := $img.Resize "1600x webp" }}
-    <img 
-      src="{{ $resized.RelPermalink }}" 
-      srcset="{{ $resized.RelPermalink }} 800w, {{ $resized2x.RelPermalink }} 1600w"
-      sizes="{{ $sizes }}"
-      alt="{{ $alt }}" 
-      class="{{ $class }}" 
-      loading="{{ $loading }}"
-      {{ if not $no_dims }}width="{{ $resized.Width }}" height="{{ $resized.Height }}"{{ end }}
-    />
+    {{ $imgWidth := $img.Width }}
+    {{ $target1x := math.Min 800 $imgWidth | int }}
+    {{ $resized := $img.Resize (printf "%dx webp" $target1x) }}
+    {{ if gt $imgWidth 800 }}
+      {{ $target2x := math.Min 1600 $imgWidth | int }}
+      {{ $resized2x := $img.Resize (printf "%dx webp" $target2x) }}
+      <img
+        src="{{ $resized.RelPermalink }}"
+        srcset="{{ $resized.RelPermalink }} {{ $resized.Width }}w, {{ $resized2x.RelPermalink }} {{ $resized2x.Width }}w"
+        sizes="{{ $sizes }}"
+        alt="{{ $alt }}"
+        class="{{ $class }}"
+        loading="{{ $loading }}"
+        {{ with $title }}title="{{ . }}"{{ end }}
+        {{ if not $no_dims }}width="{{ $resized.Width }}" height="{{ $resized.Height }}"{{ end }}
+      />
+    {{ else }}
+      <img
+        src="{{ $resized.RelPermalink }}"
+        sizes="{{ $sizes }}"
+        alt="{{ $alt }}"
+        class="{{ $class }}"
+        loading="{{ $loading }}"
+        {{ with $title }}title="{{ . }}"{{ end }}
+        {{ if not $no_dims }}width="{{ $resized.Width }}" height="{{ $resized.Height }}"{{ end }}
+      />
+    {{ end }}
   {{ else }}
     {{/* Fallback: image not found, use original path */}}
-    {{ warnf "Image not found: %s (referenced from page: %s)" $imgPath $.Page.RelPermalink }}
-    <img 
-      src="{{ $src }}" 
-      alt="{{ $alt }}" 
-      class="{{ $class }}" 
+    {{ if $.Page }}
+      {{ warnf "Image not found: %s (referenced from page: %s)" $imgPath $.Page.RelPermalink }}
+    {{ else }}
+      {{ warnf "Image not found: %s" $imgPath }}
+    {{ end }}
+    <img
+      src="{{ $src }}"
+      alt="{{ $alt }}"
+      class="{{ $class }}"
       loading="{{ $loading }}"
+      {{ with $title }}title="{{ . }}"{{ end }}
       {{ with $.width }}width="{{ . }}"{{ end }}
       {{ with $.height }}height="{{ . }}"{{ end }}
     />
