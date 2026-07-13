@@ -47,3 +47,5 @@ SCSS lives in `assets/` (Hugo's asset dir), so the dev server watches it as an a
 ## Commit policy
 
 **Do not commit unless explicitly asked.** Make changes, build, verify — but wait for an explicit "commit" instruction before running `git commit`.
+
+**Never include `Co-Authored-By` lines in commit messages.**
