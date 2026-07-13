@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "sass:color";
+
 // Littlefoot footnotes: subtle grey dot chips, slightly lighter than the
 // page background, sitting inline with body text; popover is a light
 // speech bubble with a chunky tail. Configured through littlefoot's CSS
@@ -12,10 +15,10 @@
     --button-font-size: 15px;
     --button-font-weight: 700;
     --button-border-radius: 99px;
-    --button-border: 1.5px solid #{lighten($background-grey, 12%)};
-    --button-background-color: #{lighten($background-grey, 12%)};
+    --button-border: 1.5px solid #{color.adjust($background-grey, $lightness: 12%)};
+    --button-background-color: #{color.adjust($background-grey, $lightness: 12%)};
     --button-text-color: #fff;
-    --button-active-background-color: #{lighten($background-grey, 28%)};
+    --button-active-background-color: #{color.adjust($background-grey, $lightness: 28%)};
     --button-active-text-color: #fff;
 
     --popover-background-color: #fff6fc;
@@ -56,13 +59,13 @@
 
     &:hover {
         transform: translateY(-1px);
-        background-color: lighten($background-grey, 20%);
-        border-color: lighten($background-grey, 20%);
+        background-color: color.adjust($background-grey, $lightness: 20%);
+        border-color: color.adjust($background-grey, $lightness: 20%);
     }
 
     &.is-active,
     &:active {
-        border-color: lighten($background-grey, 28%);
+        border-color: color.adjust($background-grey, $lightness: 28%);
     }
 
     &:focus-visible {

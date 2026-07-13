@@ -13,8 +13,14 @@ module:
       target: assets
     - source: static
       target: assets
+      files:
+        - '! node_modules/**'
     - source: static
       target: static
+      files:
+        - '! node_modules/**'
+        - '! package.json'
+        - '! package-lock.json'
 markup:
   defaultMarkdownHandler: goldmark
   goldmark:

@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "sass:color";
+
 // Per-post accent colour on the title capsule. Hover/press lightens the
 // border and title text 10%, same as the website section's outline buttons.
 @mixin post-card-accent($color) {
@@ -9,11 +12,11 @@
   &:focus,
   &:active {
     .post-card-body {
-      border-color: lighten($color, 10%);
+      border-color: color.adjust($color, $lightness: 10%);
     }
 
     .post-card-title {
-      color: lighten($color, 10%);
+      color: color.adjust($color, $lightness: 10%);
     }
   }
 }

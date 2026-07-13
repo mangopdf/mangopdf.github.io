@@ -1,9 +1,11 @@
+@use "sass:color";
+
 // Variables
 
 // Gray and Brand Colors for use across theme
 
 $lightblue: #a3e6f5;
-$lightblue-dark: darken($lightblue, 50%);
+$lightblue-dark: color.adjust($lightblue, $lightness: -50%);
 $purple: #c6a5ff;
 $pink: #ff9cf1;
 $text-pink: #ffdaf9;
@@ -26,12 +28,12 @@ $background-grey: #444349;
 // Softened body-copy white, tinted toward the purple/pink palette
 $text-offwhite: #f2eff7;
 
-$pink-lighter: lighten($theme-success, 50%);
+$pink-lighter: color.adjust($theme-success, $lightness: 50%);
 
 $gray-base: #000;
-$gray-darker: lighten($gray-base, 13.5%);
-$gray-dark: lighten($gray-base, 20%);
-$gray: lighten($gray-base, 33.5%);
-$gray-light: lighten($gray-base, 46.7%);
-$gray-lighter: lighten($gray-base, 93.5%);
+$gray-darker: color.adjust($gray-base, $lightness: 13.5%);
+$gray-dark: color.adjust($gray-base, $lightness: 20%);
+$gray: color.adjust($gray-base, $lightness: 33.5%);
+$gray-light: color.adjust($gray-base, $lightness: 46.7%);
+$gray-lighter: color.adjust($gray-base, $lightness: 93.5%);
 

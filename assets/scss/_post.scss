@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 // Article headings use Open Sans (matching body text) instead of the
 // site-wide Roboto Mono — this is the original design intent for post
 // readability. h6 is intentionally omitted so it inherits the global

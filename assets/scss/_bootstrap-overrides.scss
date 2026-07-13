@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "mixins" as *;
+
 // Bootstrap overrides for this template
 .btn-outline {
   font-size: 20px;

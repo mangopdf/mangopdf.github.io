@@ -1,38 +1,14 @@
-// Bootstrap required functions and variables
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/maps";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/utilities";
-
-// Bootstrap layout & components we actually use
-@import "../node_modules/bootstrap/scss/root";
-@import "../node_modules/bootstrap/scss/reboot";
-@import "../node_modules/bootstrap/scss/type";
-@import "../node_modules/bootstrap/scss/containers";
-@import "../node_modules/bootstrap/scss/grid";
-@import "../node_modules/bootstrap/scss/nav";
-@import "../node_modules/bootstrap/scss/navbar";
-@import "../node_modules/bootstrap/scss/transitions";
-@import "../node_modules/bootstrap/scss/buttons";
-@import "../node_modules/bootstrap/scss/close";
-
-// Bootstrap utilities API
-@import "../node_modules/bootstrap/scss/utilities/api";
-
-// Our custom styles
-@import "fonts.scss";
-@import "variables.scss";
-@import "mixins.scss";
-@import "accessibility.scss";
-@import "global.scss";
-@import "navbar.scss";
-@import "masthead.scss";
-@import "portfolio.scss";
-@import "contact.scss";
-@import "bootstrap-overrides.scss";
-@import "memes.scss";
-@import "post.scss";
-@import "littlefoot.scss";
-@import "expand.scss";
-@import "fx.scss";
+@use 'vendor/bootstrap';
+@use 'fonts';
+@use 'accessibility';
+@use 'global';
+@use 'navbar';
+@use 'masthead';
+@use 'portfolio';
+@use 'contact';
+@use 'bootstrap-overrides';
+@use 'memes';
+@use 'post';
+@use 'littlefoot';
+@use 'expand';
+@use 'fx';

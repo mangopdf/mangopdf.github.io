@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
 
-  {{ $opts := dict "targetPath" "css/style.css" }}
+  {{ $opts := dict "transpiler" "dartsass" "includePaths" (slice "static/node_modules") "silenceDeprecations" (slice "import") "targetPath" "css/style.css" }}
   {{ with resources.Get "scss/freelancer.scss" | css.Sass $opts | minify | fingerprint }}
     <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
   {{ end }}
