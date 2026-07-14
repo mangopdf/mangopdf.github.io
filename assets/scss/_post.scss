@@ -16,22 +16,31 @@ h5 {
 article.post {
     color: #ffffff;
     h1 {
-        font-size: 40px;
+        font-size: 45px;
+        line-height: 1.15;
+        letter-spacing: -0.022em;
     }
     h1.post-title {
         text-align: center;
     }
     h2 {
-        font-size: 35px;
+        font-size: 38px;
+        line-height: 1.2;
+        letter-spacing: -0.018em;
     }
     h3 {
-        font-size: 30px;
+        font-size: 32px;
+        line-height: 1.25;
+        letter-spacing: -0.012em;
     }
     h4 {
-        font-size: 25px;
+        font-size: 28px;
+        line-height: 1.3;
+        letter-spacing: -0.008em;
     }
     h5 {
-        font-size: 22px;
+        font-size: 25px;
+        line-height: 1.35;
     }
     h1,
     h2,
@@ -40,6 +49,7 @@ article.post {
     h5 {
         margin-top: 50px;
         margin-bottom: 10px;
+        color: #ffffff;
     }
     @media (min-width: 320px) {
         //padding-top: 50px;
@@ -48,21 +58,24 @@ article.post {
     @media (max-width: 480px) {
         // styles for mobile browsers smaller than 480px; (iPhone)
         h1 {
-            font-size: 30px;
+            font-size: 34px;
         }
         h1.post-title {
             text-align: center;
             margin-top: 28px;
-            font-size: 32px
+            font-size: 36px
         }
         h2 {
-            font-size: 26px;
+            font-size: 31px;
         }
         h3 {
-            font-size: 23px;
+            font-size: 27px;
         }
         h4 {
-            font-size: 21px;
+            font-size: 25px;
+        }
+        h5 {
+            font-size: 23px;
         }
         div.post-content {
             padding-left: 12px;
