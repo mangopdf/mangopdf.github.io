@@ -52,10 +52,23 @@
 {{ if eq .Type "post" }}
 <section class="portfolio success">
     <div class="container">
+        {{ $all := where site.RegularPages "Type" "post" }}
+        {{ $related := slice }}
+        {{ $exclude := slice .Permalink }}
+        {{ $tony := index (where $all "RelPermalink" "/finding-former-australian-prime-minister-tony-abbotts-passport-number-on-instagram/") 0 }}
+        {{ if and $tony (ne $tony.Permalink .Permalink) }}
+          {{ $related = $related | append $tony }}
+          {{ $exclude = $exclude | append $tony.Permalink }}
+        {{ end }}
+        {{ with .NextInSection }}{{ if not (in $exclude .Permalink) }}{{ $related = $related | append . }}{{ end }}{{ end }}
+        {{ with .PrevInSection }}{{ if not (in $exclude .Permalink) }}{{ $related = $related | append . }}{{ end }}{{ end }}
+        {{ range $related }}{{ $exclude = $exclude | append .Permalink }}{{ end }}
+        {{ $pool := where $all "Permalink" "not in" $exclude }}
+        {{ with index (shuffle $pool) 0 }}{{ $related = $related | append . }}{{ end }}
+        {{ if gt (len $related) 0 }}
         <hr class="star-primary star-pink">
         <div class="grid">
-            {{ $others := where (where site.RegularPages "Type" "post") "Permalink" "ne" .Permalink }}
-            {{ range first 3 $others }}
+            {{ range $related }}
             <div class="portfolio-item">
                 <a href="{{ .RelPermalink }}" class="post-card post-card-{{ .Params.colour }}">
                     <div class="post-image-container">
@@ -69,6 +82,7 @@
             </div>
             {{ end }}
         </div>
+        {{ end }}
     </div>
 </section>
 {{ end }}
