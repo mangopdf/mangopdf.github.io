@@ -1,66 +1,72 @@
-# AGENTS.md — mango.pdf.zone
+# mango.pdf.zone
 
-Hugo static site deployed to GitHub Pages. No theme; all templates are custom in `layouts/_default/`.
+Hugo static site deployed to GitHub Pages. There is no theme; templates and styling are custom.
 
 ## Commands
 
 ```bash
-# dev server (drafts included)
+# Install frontend dependencies
+(cd static && npm ci)
+
+# Development server, including drafts
 hugo server -D
 
-# production build
-hugo --gc --minify
+# Production-style local build
+hugo --cleanDestinationDir --gc --minify --panicOnWarning
 ```
 
-SCSS is compiled by Hugo's built-in Dart Sass transpiler.
+Hugo compiles SCSS with its embedded Dart Sass. CI also sets `HUGO_ENVIRONMENT=production`, `TZ=America/Los_Angeles`, and the Pages base URL.
 
-## Project structure
+## Project map
 
-| Directory | Purpose |
-|---|---|
-| `content/post/` | Published blog posts |
-| `content/draft/` | Drafts — rendered as content (NOT Hugo drafts), excluded from homepage listings |
-| `data/externalposts.yaml` | External (Atlassian) posts shown on homepage |
-| `layouts/_default/` | Custom templates (baseof, home, single) — no theme |
-| `assets/` | SCSS (watched by the dev server; edits re-run the Sass pipeline) |
-| `static/` | JS, images, vendor libs; also mounted into `assets` in `hugo.yaml` so `resources.Get` can process images |
-| `public/` | Build output (gitignored) |
-| `resources/` | Hugo cache (gitignored) |
-| `jekyll/` | Legacy Jekyll version — still committed but no longer used |
+- `content/post/` — posts. Use `draft: true` for work in progress; production builds exclude drafts.
+- `data/externalposts.yaml` — external posts displayed on the homepage.
+- `layouts/_default/` — `baseof.html`, `home.html`, `single.html`, and the page shell.
+- `layouts/partials/` — responsive images, social-image metadata, and shared template helpers.
+- `layouts/_markup/render-image.html` — sends local raster Markdown images through the responsive-image pipeline; GIFs, SVGs, and external URLs pass through.
+- `layouts/shortcodes/` — custom Markdown shortcodes.
+- `assets/scss/` — SCSS entry point and partials; `freelancer.scss` produces the fingerprinted site stylesheet.
+- `assets/img/` — source images processed by Hugo and published as generated WebP files.
+- `static/` — raw-served media, JavaScript, fonts, vendor files, and the favicon. Keep only files referenced directly by HTML, CSS, or metadata here.
+- `public/` and `resources/` — generated output and cache; both are ignored.
+- `jekyll/` — obsolete local implementation; do not modify.
+
+Bootstrap SCSS is selected from `static/node_modules` through the Sass options in `layouts/_default/baseof.html`. Committed vendor JavaScript lives in `static/vendor/`; update it through the frontend dependency workflow when required.
 
 ## Content conventions
 
-### Frontmatter fields
-- `colour` — maps to Bootstrap outline button classes: `pink`, `purple`, `blue`, `lightblue`, `white`
-- `image` — post thumbnail (shown on homepage grid)
-- `standfirst` — subtitle shown on post page, also used for `description`/OG tags via template
-- `url` — optional custom path; otherwise Hugo derives from filename
-- `text_colour` — optional body text colour override
+Frontmatter commonly includes:
 
-### Homepage post ordering
-Posts are bucketed in the template (`layouts/_default/home.html`):
-- **New posts**: `date > 2025-01-01`
-- **External posts**: from `data/externalposts.yaml`
-- **Old posts**: `date < 2022-01-01`
+- `colour` — Bootstrap outline color (`pink`, `purple`, `blue`, `lightblue`, or `white`).
+- `image` — post thumbnail and social-image source.
+- `standfirst` — subtitle and page description source.
+- `url` — optional custom path.
+- `text_colour` — optional body text color class.
 
-Posts from 2022–2024 are in a display gap. To show a post from that era, adjust the template thresholds.
+The homepage buckets posts in `layouts/_default/home.html` by date: new posts after 2025-01-01, external posts, and old posts before 2022-01-01. Posts dated 2022–2024 are intentionally outside those buckets unless the thresholds change. Post files use `.md`.
 
-### File extensions
-Post files use the `.md` extension.
+Local images in frontmatter or Markdown use paths under `/img/`, backed by `assets/img/`. `responsive-image.html` generates WebP and `srcset` variants. `social-image.html` generates an absolute, published image URL for Open Graph, Twitter, and JSON-LD metadata. Keep raw files such as GIFs, SVGs, video, and `mango-social.jpg` in `static/img/` when they must be served unchanged.
 
-## CI deployment
+## CI and deployment
 
-- Deploys on push to `master` (also manual dispatch)
-- Hugo version: **0.160.1** (extended, installed via `.deb`)
-- `HUGO_ENVIRONMENT=production`, `TZ=America/Los_Angeles`
-- Build artifacts: CNAME file + duplicated RSS (`index.xml` → `feed.xml`)
-- Deploys to GitHub Pages via `actions/deploy-pages`
+`.github/workflows/hugo.yaml` deploys on pushes to `master` and manual dispatch:
+
+- Hugo **0.163.3 extended**.
+- `npm ci` runs in `static/`.
+- The build uses `--cleanDestinationDir --gc --minify --panicOnWarning` and the Pages-provided base URL.
+- Warnings fail the build. The Bootstrap deprecation categories silenced in `baseof.html` must stay current.
+- The workflow sets `HUGO_ENVIRONMENT=production` and `TZ=America/Los_Angeles`.
+- It creates `public/CNAME`, duplicates `index.xml` as `feed.xml`, and deploys `public/` with GitHub Pages.
 
 ## Gotchas
 
-- `disablePathToLower: true` in `hugo.yaml` — URLs preserve original casing
-- Goldmark `unsafe: true` — raw HTML in markdown is rendered
-- The repo has many `*~` backup files (emacs-style). Do not commit more.
-- `themes/` is empty — do not add a theme dependency. All styling is in `assets/scss/` + custom layouts.
-- `package.json` (with actual deps) lives in `static/`, not the repo root. The root `package.json` is empty.
-- Vendor JS libraries (Bootstrap, littlefoot, Popper) are committed directly to `static/vendor/`. To update them, download the new version and replace the files.
+- `disablePathToLower: true` preserves URL casing.
+- Goldmark `unsafe: true` allows raw HTML in Markdown.
+- Do not add a theme dependency; `themes/` is intentionally empty.
+- `package.json` and `package-lock.json` live in `static/`.
+
+## Working rules
+
+- Do not commit unless explicitly asked.
+- Do not add `Co-Authored-By` lines to commit messages.
+- For UI changes, verify both desktop and mobile behavior in the browser; use browser device emulation for mobile checks.
