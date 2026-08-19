@@ -4,21 +4,17 @@ disableKinds: [taxonomy, term, section]
 enableRobotsTXT: true
 locale: en-us
 title: mango.pdf.zone
-# SCSS lives in assets/ so the dev server watches it as an asset and re-runs
-# the Sass pipeline on change. static/ is also mounted into assets so
-# resources.Get can still process images that live there.
+# SCSS and processed image sources live in assets/ so the dev server watches
+# them as assets and re-runs the Sass/image pipeline on change.
 module:
   mounts:
     - source: assets
       target: assets
     - source: static
-      target: assets
-      files:
-        - '! node_modules/**'
-    - source: static
       target: static
       files:
         - '! node_modules/**'
+        - '! node_modules'
         - '! package.json'
         - '! package-lock.json'
 markup:
