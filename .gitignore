@@ -10,12 +10,9 @@ jekyll
 public
 resources
 package-lock.json
+!static/package-lock.json
 .DS_Store
 hugo.log
 .vscode
 .claude
 .playwright-mcp
-
-# Unminified dupe and source map — only popper.min.js is used
-static/vendor/popper/popper.js
-static/vendor/popper/popper.min.js.map
