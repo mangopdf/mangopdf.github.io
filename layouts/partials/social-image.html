@@ -1,0 +1,24 @@
+{{/*
+  Return an absolute URL for social metadata.
+
+  Frontmatter images live in assets/ and are not copied to their original
+  /img/... URL. Resize local asset images so Open Graph, Twitter, and JSON-LD
+  all point at a file Hugo actually publishes.
+*/}}
+{{- $imageURL := "/img/mango-social.jpg" | absURL -}}
+{{- with .Params.image -}}
+  {{- $source := . -}}
+  {{- if or (hasPrefix $source "http://") (hasPrefix $source "https://") -}}
+    {{- $imageURL = $source -}}
+  {{- else -}}
+    {{- if hasPrefix $source "/" -}}
+      {{- $source = substr $source 1 -}}
+    {{- end -}}
+    {{- $imageURL = (printf "/%s" $source) | absURL -}}
+    {{- with resources.Get $source -}}
+      {{- $socialImage := .Resize "1200x webp" -}}
+      {{- $imageURL = $socialImage.Permalink -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $imageURL -}}

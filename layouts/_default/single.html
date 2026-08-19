@@ -28,7 +28,7 @@
 <script type="application/ld+json">
   {{ $author := .Params.author | default "mangopdf" }}
   {{ $desc := .Params.standfirst | default .Summary }}
-  {{ $image := .Params.image | absURL }}
+  {{ $image := partial "social-image.html" . }}
   {{ $jsonld := dict
     "@context" "https://schema.org"
     "@type" "BlogPosting"

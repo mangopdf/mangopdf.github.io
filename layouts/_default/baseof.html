@@ -8,20 +8,21 @@
 
   <link rel="preload" href="/fonts/open-sans-400.woff2" as="font" type="font/woff2" crossorigin>
 
+  {{ $socialImage := partial "social-image.html" . }}
   <title>{{ .Title | default "the mango zone" }}</title>
   <meta name="description" content="{{ .Description | default "Blog and dumb websites by the hacker known as \"Alex\"" }}">
 
   <meta property="og:title" content="{{ .Title | default "the mango zone" }}">
   <meta property="og:description" content="{{ .Description | default "Blog and dumb websites by the hacker known as \"Alex\"" }}">
   <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
-  <meta property="og:image" content="{{ .Params.image | default "/img/mango-social.jpg" | absURL }}">
+  <meta property="og:image" content="{{ $socialImage }}">
   <meta property="og:url" content="{{ .Permalink }}">
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@mangopdf" />
   <meta name="twitter:title" content="{{ .Title | default "the mango zone" }}">
   <meta name="twitter:description" content="{{ .Description | default "Blog and dumb websites by the hacker known as \"Alex\"" }}">
-  <meta name="twitter:image" content="{{ .Params.image | default "/img/mango-social.jpg" | absURL }}">
+  <meta name="twitter:image" content="{{ $socialImage }}">
 
   {{ if .IsPage }}
   <link rel="stylesheet" href="{{ "vendor/littlefoot/littlefoot.css" | relURL }}">
@@ -30,7 +31,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
 
-  {{ $opts := dict "transpiler" "dartsass" "includePaths" (slice "static/node_modules") "silenceDeprecations" (slice "import") "targetPath" "css/style.css" }}
+  {{/* Bootstrap 5.3.x vendor SCSS still uses deprecated @import, color functions,
+       if(), and global built-ins; silence those deprecations until Bootstrap fixes them. */}}
+  {{ $opts := dict "transpiler" "dartsass" "includePaths" (slice "static/node_modules") "silenceDeprecations" (slice "import" "color-functions" "if-function" "global-builtin") "targetPath" "css/style.css" }}
   {{ with resources.Get "scss/freelancer.scss" | css.Sass $opts | minify | fingerprint }}
     <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
   {{ end }}
