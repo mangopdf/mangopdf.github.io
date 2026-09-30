@@ -881,7 +881,7 @@ Yeah, exactly.
 
 *I wrote this because I can't go back to the Catholic church ever since they excommunicated me in 1633 for insisting the Earth revolves around the sun.*
 
-*You can talk to me about it by sliding into my DMs in [the tweet zone](https://twitter.com/mangopdf) or, if you must, [email](mailto:operation.sunburnt.country@gmail.com).*
+*You can talk to me about it by sliding into my DMs in [the tweet zone](https://twitter.com/mangopdf) or, if you must, [email](mailto:mangodotpdf@gmail.com).*
 
 --------------------------------------------------
 
